@@ -1,0 +1,239 @@
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* ul {
+  list-style: none;
+}
+
+.csr-svg {
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 4000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 4000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 4000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  fill: #78a22e !important;
+  color: #575757;
+  width: 130px;
+  height: 130px;
+}
+
+.nav-item {
+  position: relative;
+  background-color: #3f3d40;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  height: 55px;
+  border-radius: 50px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: #c4c5c5;
+  font-size: 19px;
+  padding: 15px 17px;
+}
+
+.sect-one {
+  display: none !important;
+  position: absolute;
+  width: 680px;
+  top: 39px;
+  background: rgba(22, 22, 22, 0.9019607843);
+  border-radius: 10px;
+}
+
+.certificate-menu:hover .sect-one {
+  display: block !important;
+}
+
+.sect-one li {
+  width: calc(50% - 1px);
+  transition: 0.4s;
+}
+
+.sect-one li:nth-child(2),
+.sect-one li:nth-child(4),
+.sect-one li:nth-child(6) {
+  border-bottom: 1px solid rgba(83, 82, 82, 0.552);
+  border-left: 1px solid rgba(83, 82, 82, 0.552);
+}
+
+.sect-one li:nth-child(1),
+.sect-one li:nth-child(3),
+.sect-one li:nth-child(5) {
+  border-bottom: 1px solid rgba(83, 82, 82, 0.552);
+}
+
+.sect-one li:nth-child(8) {
+  border-left: 1px solid rgba(83, 82, 82, 0.552);
+}
+
+.sect-one li:hover {
+  background-color: rgba(164, 164, 164, 0.195);
+  transition: 0.4s ease-in-out;
+}
+
+.sect-one-1 {
+  border-radius: 10px 0 0 0;
+}
+
+.sect-one-2 {
+  border-radius: 0 10px 0 0;
+}
+
+.sect-one-3 {
+  border-radius: 0 0 0 10px;
+}
+
+.sect-one-4 {
+  border-radius: 0 0 10px 0;
+}
+
+.dv {
+  padding: 15px;
+  position: relative;
+}
+
+.nav-icons {
+  width: 30px;
+  height: 33px;
+}
+
+.img-text-icon {
+  position: relative;
+  top: -12px;
+}
+
+.nav-link-box {
+  display: flex;
+  gap: 10px;
+  text-decoration: none;
+  align-items: center;
+  position: relative;
+}
+
+.symbol-d {
+  position: absolute;
+  font-weight: bold;
+  font-size: 16px;
+  left: 9px;
+  top: 6px;
+  color: #25958b;
+}
+
+.symbol-s {
+  position: absolute;
+  font-weight: bold;
+  font-size: 16px;
+  left: 9px;
+  top: 6px;
+  color: rgba(210, 20, 60, 0.9019607843);
+}
+
+.symbol-b {
+  position: absolute;
+  font-weight: bold;
+  font-size: 16px;
+  left: 9px;
+  top: 6px;
+  color: rgba(220, 133, 16, 0.9019607843);
+}
+
+.symbol-w {
+  position: absolute;
+  font-weight: bold;
+  font-size: 16px;
+  left: 7px;
+  top: 7px;
+  color: rgba(157, 112, 64, 0.9019607843);
+}
+
+.symbol-e {
+  position: absolute;
+  font-size: 17px;
+  font-weight: bold;
+  left: 9px;
+  top: 6px;
+  color: rgba(120, 162, 46, 0.9019607843);
+}
+
+.symbol-a {
+  position: absolute;
+  font-size: 15px;
+  font-weight: bold;
+  left: 6.5px;
+  top: 5px;
+  color: rgba(198, 50, 0, 0.9019607843);
+}
+
+.symbol-c {
+  position: absolute;
+  font-size: 17px;
+  font-weight: bold;
+  left: 9px;
+  top: 6px;
+  color: rgb(140, 140, 140);
+}
+
+.symbol-v {
+  position: absolute;
+  font-size: 17px;
+  font-weight: bold;
+  left: 9px;
+  top: 6px;
+  color: rgba(35, 160, 149, 0.9019607843);
+}
+
+.text-box span {
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.text-box p {
+  font-size: 18px;
+  color: #5e5e5e;
+  padding: 4px 0 0 0;
+  line-height: 135%;
+  display: block;
+}
+
+.nav-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px;
+}
+
+.nav-item li {
+  position: relative;
+}/*# sourceMappingURL=import.css.map */
