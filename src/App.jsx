@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 
 export default function App() {
@@ -18,8 +19,10 @@ export default function App() {
 
 
   return (
-    <div className='wrapper'>
-      <Navbar />
-    </div>
+    <Router>
+      <div className='wrapper'>
+        <Navbar />
+      </div>
+    </Router>
   );
 }
