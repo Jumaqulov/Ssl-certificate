@@ -3,7 +3,7 @@ import React from 'react'
 export default function Company() {
     return (
         <div className='main-sect'>
-            <ul className='sect-four'>
+            <ul className='sect-four sect-res'>
                 <li className='sect-one-1'>
                     <a href="/privacy-policy/" className="sect-three-link">
                         <div className='img-icon'>

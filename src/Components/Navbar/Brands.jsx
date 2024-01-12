@@ -24,7 +24,7 @@ export default function Brands() {
 
     return (
         <div className='main-sect'>
-            <div className='sect-two'>
+            <div className='sect-two sect-res'>
                 <div className='sect-two-item'>
                     <button onClick={() => handleClick('digicert')} className='sect-two-item-btn btn-digicert'>Digicert</button>
                     <a href="">Basic OV (FLEX)</a>

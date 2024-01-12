@@ -3,7 +3,7 @@ import React from 'react'
 export default function Support() {
     return (
         <div className='main-sect'>
-            <ul className='sect-three'>
+            <ul className='sect-three sect-res'>
                 <li className='sect-one-1'>
                     <a href="/online-csr-generator/" className="sect-three-link">
                         <div className='img-icon'>

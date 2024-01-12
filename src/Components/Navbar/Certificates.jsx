@@ -3,7 +3,7 @@ import React from 'react'
 export default function Certificates() {
     return (
         <div className='main-sect main-sect-res'>
-            <ul className='sect-one'>
+            <ul className='sect-one sect-res'>
                 <li className='sect-one-1'>
                     <a href="/dv-ssl/" className="dv nav-link-box">
                         <div className='img-text-icon'>

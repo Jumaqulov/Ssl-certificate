@@ -36,6 +36,14 @@
         padding: 10px;
     }
 
+    .nav-item-li-last {
+        border: none;
+        background-color: #323332;
+        border-radius: 10px;
+        margin: 3px 0;
+        padding: 10px;
+    }
+
     .nav-item-li {
         border: none;
     }
@@ -44,17 +52,26 @@
         display: block;
     }
 
-    .sect-one {
+    .sect-res {
         position: static;
         width: 100%;
         padding: 5px;
-        margin: 0;
+        margin: 10px 0 0 0;
         display: block;
+        background: #2c2a2b;
+        text-align: center;
     }
 
-    .sect-one li {
-        width: 100%;
+    .sect-res li {
+        width: 100% !important;
         transition: 0.4s;
+        margin: 2px 0;
+        border: none !important;
+    }
+    
+    .img-text-icon {
+        position: relative;
+        top: 5px;
     }
 
     .text-box {
@@ -71,5 +88,9 @@
     
     .title {
         font-size: 15px !important;
+    }
+
+    .sect-two-item-btn {
+        width: 100%;
     }
 }
