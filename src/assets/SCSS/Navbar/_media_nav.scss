@@ -29,14 +29,47 @@
         margin: 20px 0;
     }
 
-    .nav-item-responsive li {
+    .nav-item-li {
         background-color: #323332;
         border-radius: 10px;
-        margin: 5px 0;
+        margin: 3px 0;
         padding: 10px;
     }
 
     .nav-item-li {
         border: none;
+    }
+
+    .main-sect-res {
+        display: block;
+    }
+
+    .sect-one {
+        position: static;
+        width: 100%;
+        padding: 5px;
+        margin: 0;
+        display: block;
+    }
+
+    .sect-one li {
+        width: 100%;
+        transition: 0.4s;
+    }
+
+    .text-box {
+        align-items: center;
+    }
+
+    .text-box p {
+        display: none;
+    }
+    
+    .nav-item a {
+        padding: 0;
+    }
+    
+    .title {
+        font-size: 15px !important;
     }
 }

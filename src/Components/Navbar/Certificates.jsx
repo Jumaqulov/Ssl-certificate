@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Certificates() {
     return (
-        <div className='main-sect'>
+        <div className='main-sect main-sect-res'>
             <ul className='sect-one'>
                 <li className='sect-one-1'>
                     <a href="/dv-ssl/" className="dv nav-link-box">
