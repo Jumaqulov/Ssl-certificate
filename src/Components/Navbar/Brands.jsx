@@ -98,7 +98,7 @@ export default function Brands() {
                     </button>
                     <button onClick={() => handleClick('compare-dv-ssl')} className='sect-two-item-btn btn-compare'>
                         <svg width={'30px'} height={'30px'} xmlns="http://www.w3.org/2000/svg" viewBox='0 0 32 32'>
-                            <g fill="#4b4b4b" stroke="null"><path d="M.063 3.542H16V21.25H.063v3.542H16a3.54 3.54 0 0 0 3.542-3.542V3.542A3.54 3.54 0 0 0 16 0H.063v3.542z"></path><path d="M16 23.083h-3.542v5.313A3.54 3.54 0 0 0 16 31.937h15.937v-3.541H16v-5.313zM17.771 7.146h14.167v3.542H17.771z"></path></g><g fill="#DC8510"><path stroke="null" d="M5.438 7.083l5.312 5.313-5.312 5.312z"></path><path stroke="#DC8510" stroke-width="2" stroke-miterlimit="10" d="M8.979 12.396H.125"></path></g><g fill="#78a22e"><path stroke="null" d="M26.687 14.292l-5.312 5.312 5.312 5.313z"></path><path stroke="#78a22e" stroke-width="2" stroke-miterlimit="10" d="M24.854 19.542h7.083"></path></g>
+                            <g fill="#4b4b4b" stroke="null"><path d="M.063 3.542H16V21.25H.063v3.542H16a3.54 3.54 0 0 0 3.542-3.542V3.542A3.54 3.54 0 0 0 16 0H.063v3.542z"></path><path d="M16 23.083h-3.542v5.313A3.54 3.54 0 0 0 16 31.937h15.937v-3.541H16v-5.313zM17.771 7.146h14.167v3.542H17.771z"></path></g><g fill="#DC8510"><path stroke="null" d="M5.438 7.083l5.312 5.313-5.312 5.312z"></path><path stroke="#DC8510" strokeWidth="2" strokeMiterlimit="10" d="M8.979 12.396H.125"></path></g><g fill="#78a22e"><path stroke="null" d="M26.687 14.292l-5.312 5.312 5.312 5.313z"></path><path stroke="#78a22e" strokeWidth="2" strokeMiterlimit="10" d="M24.854 19.542h7.083"></path></g>
                         </svg>
                         <span>Compare</span>
                     </button>

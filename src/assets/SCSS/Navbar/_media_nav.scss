@@ -1,10 +1,18 @@
-@media (max-width:766px){
+@media (max-width:766px) {
     .wrapper {
         max-width: 766px;
+        padding: 0 10px;
     }
 
     .nav {
         max-width: 766px;
+        background: $nav_responsive_backround;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px 0;
+        border-radius: $nav_responsive_border_radius;
     }
 
     .navigation-btn {
@@ -15,5 +23,20 @@
         display: none;
     }
 
+    .nav-item-responsive {
+        display: block;
+        width: 100%;
+        margin: 20px 0;
+    }
 
+    .nav-item-responsive li {
+        background-color: #323332;
+        border-radius: 10px;
+        margin: 5px 0;
+        padding: 10px;
+    }
+
+    .nav-item-li {
+        border: none;
+    }
 }

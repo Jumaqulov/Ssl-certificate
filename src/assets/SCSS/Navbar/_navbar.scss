@@ -1,11 +1,17 @@
+.nav-main {
+    display: flex;
+    justify-content: center;
+}
+
 .nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
     background-color: $nav_backround_color;
     border-radius: $nav_border_radius;
     height: $nav_height;
     margin-top: 30px;
+    width: 1150px;
 }
 
 .nav-item {
@@ -17,6 +23,11 @@
 
 .nav-item-li {
     border-right: 1px solid white;
+}
+
+.nav-item-li-last:hover .nav-item-link {
+    transition: 0.4s;
+    color: #DC8510;
 }
 
 .nav-item-li:hover .nav-item-link {
@@ -201,32 +212,6 @@
     position: relative;
 }
 
-.currency {
-    width: 100px;
-}
-
-.currency button {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    border: none;
-    margin: 0 5px;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    background: #323233;
-    color: #8c8c8c;
-}
-
-.currency button:hover {
-    background: $main_color_2;
-}
-
-.curr-active {
-    color: #2b2b2b !important;
-    background: $main_color_1 !important;
-}
-
 // ==============================================================================
 
 .sect-two {
@@ -384,7 +369,7 @@
     position: absolute;
     width: 680px;
     top: 39px;
-    left: -200px;
+    left: -450px;
     display: flex;
     flex-wrap: wrap;
     background: $sect_one_backround;
@@ -424,6 +409,50 @@
 
 // ========================================================================================
 
+.sect-four {
+    position: absolute;
+    width: 680px;
+    top: 39px;
+    left: -550px;
+    display: flex;
+    flex-wrap: wrap;
+    background: $sect_one_backround;
+    border-radius: 10px;
+}
+
+.sect-four li {
+    width: calc(100% / 2);
+    transition: 0.4s;
+}
+
+.sect-four-link {
+    display: flex;
+    align-items: middle;
+    gap: 15px;
+}
+
+.sect-four li:nth-child(2),
+.sect-four li:nth-child(4) {
+    border-bottom: 1px solid $navbar_nav_menu_line;
+    border-left: 1px solid $navbar_nav_menu_line;
+}
+
+.sect-four li:nth-child(1),
+.sect-four li:nth-child(3) {
+    border-bottom: 1px solid $navbar_nav_menu_line;
+}
+
+.sect-four li:nth-child(6) {
+    border-left: 1px solid $navbar_nav_menu_line;
+}
+
+.sect-four li:hover {
+    background-color: rgba(164, 164, 164, 0.195);
+    transition: 0.4s ease-in-out;
+}
+
+// ========================================================================================
+
 .navigation-btn {
     display: none;
     position: relative;
@@ -434,10 +463,21 @@
     border-radius: 15px;
     border: 2px solid #5e5e5e;
     background-color: #373737;
+    cursor: pointer;
 }
 
-.navigation-btn:active {
-    color: #c63200e6;
+.activeNavBtn {
+    .navigation-svg {
+        fill: #c63200e6;
+    }
+
+    span {
+        color: #c63200e6 !important;
+    }
+}
+
+.navigation-svg {
+    fill: $main_color_1;
 }
 
 .navigation-btn span {
