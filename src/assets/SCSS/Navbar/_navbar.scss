@@ -26,9 +26,14 @@
     height: 40px;
 }
 
+.img-icon-support {
+    width: 55px;
+    height: 55px;
+}
+
 .img-text-icon {
-    width: 30px;
-    height: 33px;
+    width: 30px !important;
+    height: 33px !important;
 }
 
 .nav-item-li {
@@ -122,6 +127,11 @@
 .img-text-icon {
     position: relative;
     top: -12px;
+}
+
+.img-text-icon svg {
+    width: 30px;
+    height: 33px;
 }
 
 .nav-link-box {
@@ -226,7 +236,7 @@
 .sect-two {
     position: absolute;
     width: 1190px;
-    left: -150px;
+    left: -210px;
     top: 39px;
     display: flex;
     justify-content: center !important;

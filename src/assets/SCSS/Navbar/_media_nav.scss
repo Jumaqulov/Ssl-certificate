@@ -59,6 +59,7 @@
         margin: 10px 0 0 0;
         display: block;
         text-align: center;
+        background-color: transparent !important;
     }
 
     .sect-res li {
@@ -67,7 +68,7 @@
         margin: 2px 0;
         border: none !important;
     }
-    
+
     .img-text-icon {
         position: relative;
         top: 5px;
@@ -80,11 +81,11 @@
     .text-box p {
         display: none;
     }
-    
+
     .nav-item a {
         padding: 0;
     }
-    
+
     .title {
         font-size: 15px !important;
     }
@@ -93,18 +94,21 @@
         width: 100%;
     }
 
-    .img-icon {
-        width: 25px;
-        height: 25px;
+    .img-icon,
+    .img-icon-support {
+        width: 30px;
+        height: 30px;
     }
 
     .img-text-icon {
-        width: 25px;
-        height: 25px;
+        width: 25px !important;
+        height: 25px !important;
         position: relative;
     }
 
     .img-text-icon svg {
+        width: 25px !important;
+        height: 25px !important;
         position: absolute;
         top: -5px;
         left: 0;
@@ -119,6 +123,7 @@
     .symbol-a,
     .symbol-c,
     .symbol-v {
+        top: 0px !important;
         left: 7px;
         font-size: 12px;
     }
@@ -132,7 +137,7 @@
         top: 2px;
         left: 8px;
     }
-    
+
     .symbol-a {
         top: 1px;
         left: 6px;
@@ -156,20 +161,17 @@
     .symbol-w {
         top: 2px;
     }
-    
+
     .symbol-c {
         top: 2px;
     }
-    
-    .nav-link-box {
+
+    .nav-link-box,
+    .sect-three-link {
         margin: 5px 0;
         border-radius: 5px;
         padding: 10px 5px !important;
         background: #2c2a2b;
-    }
-
-    .sect-two {
-        background-color: transparent;
     }
 
     .sect-two-item a {
@@ -177,7 +179,7 @@
         padding: 5px;
         background-color: #2c2a2b;
     }
-    
+
     .sect-two-item button {
         background-color: #2c2a2b;
     }

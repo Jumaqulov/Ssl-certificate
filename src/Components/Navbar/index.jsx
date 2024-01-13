@@ -23,7 +23,7 @@ export default function Navbar() {
                 </button>
                 <ul className={`nav-item ${activeBtn ? 'nav-item-responsive' : ''}`}>
                     <li className='certificate-menu nav-item-li'>
-                        <a href="/ssl-certificates/" aria-haspopup="true" className='nav-item-link'>SSL Certificates</a>
+                        <a href="/ssl-certificates" aria-haspopup="true" className='nav-item-link'>SSL Certificates</a>
                         <Certificates />
                     </li>
                     <li className='certificate-menu nav-item-li'>
@@ -31,7 +31,7 @@ export default function Navbar() {
                         <Brands />
                     </li>
                     <li className='nav-item-li'>
-                        <a href="/reseller-program/" aria-haspopup="true" className='nav-item-link'>Reseller Program</a>
+                        <a href="/reseller-program" aria-haspopup="true" className='nav-item-link'>Reseller Program</a>
                     </li>
                     <li className='nav-item-li'>
                         <a href="/lei/" aria-haspopup="true" className='nav-item-link'>LEI Codes</a>
