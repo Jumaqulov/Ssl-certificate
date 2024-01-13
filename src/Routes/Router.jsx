@@ -9,7 +9,7 @@ export default function Router() {
     <Routes>
       {routes.map(({ path, Component }, i) => (
         <Fragment key={i}>
-          <Route element={<Layout />} key={i}>
+          <Route>
             <Route path={path} element={Component} />
           </Route>
         </Fragment>
