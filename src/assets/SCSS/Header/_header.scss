@@ -12,7 +12,7 @@
 }
 
 .left-side div {
-    border-left: 0.1px solid white;
+    border-left: 0.1px solid #5e5e5e;
     padding: 0 20px;
 }
 
@@ -42,7 +42,7 @@
 .right-side-link {
     margin: 0 10px;
     color: #8c8c8c;
-    text-decoration: none;  
+    text-decoration: none;
 }
 
 .right-side-link span {
@@ -52,8 +52,27 @@
     padding-right: 10px;
 }
 
+.right-side-link-d-none {
+    display: none;
+}
+
 .right-side-link-span {
     border-right: 1px solid #575757;
+    font-weight: bold;
+}
+
+.right-side-link-last-span {
+    font-weight: bold;
+}
+
+.right-side-link:hover svg{
+    transition: 0.4s;
+    fill: #ccc;
+}
+
+.right-side-link:hover span{
+    transition: 0.4s;
+    color: #ccc;
 }
 
 .right-side-svg {

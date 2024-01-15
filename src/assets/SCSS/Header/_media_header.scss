@@ -1,0 +1,50 @@
+@media (max-width: 766px) {
+    .header {
+        padding: 30px 10px;
+        display: block;
+    }
+    
+    .left-side {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .left-side div {
+        text-align: center;
+        width: 100%;
+        border: none;
+        border-top: 0.1px dashed #5e5e5e;
+        padding: 15px 0;
+    }
+
+    .right-side {
+        background-color: transparent;
+        display: flex;
+    }
+
+    .right-side-link {
+        border: 1px solid #525252;
+        padding: 10px;
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .right-side-link span {
+        margin-top: 10px;
+    }
+    
+    .right-side-link-span {
+        display: none;
+    }
+
+    .right-side-link-d-none {
+        display: block;
+    }
+
+    .right-side-link span {
+        border: none;
+    }
+}
