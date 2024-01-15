@@ -9,7 +9,6 @@ export default function Navbar() {
 
     const handleNavActive = () => {
         setActiveBtn(!activeBtn)
-        console.log("salom");
     }
 
     return (

@@ -1,0 +1,22 @@
+@media (max-width:766px) {
+    .footer-top-main {
+        width: 100%;
+        display: block;
+    }
+
+    .footer-top-left {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-top-right {
+        border-top: 1px dashed #636363;
+        margin-top: 15px;
+        padding: 15px 0;
+    }
+
+    .footer-top-right p {
+        text-align: center;
+    }
+}

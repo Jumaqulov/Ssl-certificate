@@ -1,0 +1,63 @@
+.footer-top {
+    padding: 20px 0;
+    border-top: 1px solid #313131;
+    border-bottom: 1px solid #313131;
+    background-color: #212122;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-top-main {
+    width: 1400px;
+    display: flex;
+    justify-content: space-between !important;
+}
+
+.footer-top-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.browsers {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.browsers span {
+    font-size: 22px;
+    color: #4d4d4d;
+}
+
+.browsers svg {
+    width: 27px;
+    height: 27px;
+}
+
+.opera-svg {
+    fill: #be2226e6;
+}
+
+.ie-svg {
+    fill: #23a095e6;
+}
+
+.firefox-svg {
+    fill: $main_color_1;
+}
+
+.safari-svg {
+    fill: #636363;
+}
+
+.chrome-svg {
+    fill: #78a22ee6;
+}
+
+.footer-top-right p {
+    color: #5e5e5e;
+    font-size: 21px;
+    font-weight: 500;
+    margin: 0;
+}
