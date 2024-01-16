@@ -1,4 +1,16 @@
 @media (max-width:766px) {
+    .holder-promos {
+        display: block;
+    }
+
+    .promo2,
+    .promo3,
+    .promo4 {
+        margin-top: 40px;
+    }
+
+    // -----------------------------------
+
     .footer-top-main {
         width: 100%;
         display: block;

@@ -1,3 +1,98 @@
+.holder-promos {
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid #4d4d4d;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    box-shadow: inset 0 0 15px #242424;
+    padding: 30px;
+}
+
+.promos h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.promos span b {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.promos span p {
+    font-size: 18px;
+    font-weight: 100;
+    color: #bfbfbf;
+}
+
+.promo1 h3 {
+    color: #bfbfbf;
+}
+
+.promo2 h3 {
+    color: $main_color_1;
+}
+
+.promo3 h3 {
+    color: #78a22e;
+}
+
+.promo4 h3 {
+    color: #23a095;
+}
+
+.promos-text {
+    font-size: 20px;
+    color: #8c8c8c;
+    text-align: start;
+    margin-top: 20px;
+}
+
+.promos-text a:hover {
+    text-decoration: none;
+}
+
+.promo1-text a {
+    color: #8c8c8c;
+}   
+
+.promo2-text a {
+    color:$main_color_1;
+}
+
+.promo3-text a {
+    color: #78a22e;
+}
+
+.promo4-text a {
+    color: #23a095;
+}
+
+.timer-svg {
+    width: 60px;
+    height: 60px;
+    fill: #8c8c8c
+}
+
+.target-svg {
+    width: 65px;
+    height: 65px;
+    fill: $main_color_1;
+}
+
+.shield-svg {
+    width: 65px;
+    height: 65px;
+    fill: #78a22e;
+}
+
+.money-back-svg {
+    width: 60px;
+    height: 60px;
+    fill: #23a095;
+}
+
 .footer-top {
     padding: 20px 0;
     border-top: 1px solid #313131;
