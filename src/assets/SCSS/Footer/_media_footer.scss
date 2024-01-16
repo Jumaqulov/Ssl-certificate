@@ -19,4 +19,47 @@
     .footer-top-right p {
         text-align: center;
     }
+
+    .title-link {
+        text-decoration: none;
+        color: #575757;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid #525252;
+        border-radius: 100px;
+        padding: 8px 15px 8px 15px;
+        margin: 0 0 15px;
+    }
+
+    .link-box li {
+        padding: 30px 0;
+    }
+
+    .content {
+        display: block;
+        padding: 0 10px;
+    }
+
+    .middle-left,
+    .middle-right,
+    .payment,
+    .social {
+        width: 100%;
+    }
+
+    .link-box {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .box {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .payment,
+    .social {
+        margin-bottom: 20px;
+    }
 }
