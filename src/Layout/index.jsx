@@ -4,6 +4,7 @@ import { Outlet } from 'react-router-dom'
 import Header from '../Components/Header/Header'
 import Footer from '../Components/Footer'
 import HolderPromos from '../Components/Footer/HolderPromos'
+import HolderExtra from '../Components/Footer/HolderExtra'
 
 
 export default function Layout() {
@@ -14,6 +15,7 @@ export default function Layout() {
         <Navbar />
         <Outlet />
         <HolderPromos />
+        <HolderExtra />
       </div>
       <Footer />
     </Fragment>

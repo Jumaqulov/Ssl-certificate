@@ -9,7 +9,24 @@
         margin-top: 40px;
     }
 
-    // -----------------------------------
+    .holder-extra {
+        display: block;
+    }
+
+    .left,
+    .right {
+        display: block;
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .holder-logo {
+        margin-bottom: 25px;
+    }
+
+    .block-one {
+        border: none;
+    }
 
     .footer-top-main {
         width: 100%;
@@ -73,5 +90,14 @@
     .payment,
     .social {
         margin-bottom: 20px;
+    }
+
+    .payment {
+        display: flex;
+        justify-content: center;
+    }
+
+    .payment img {
+        width: 50%;
     }
 }

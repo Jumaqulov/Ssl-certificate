@@ -25,6 +25,10 @@ body {
   list-style: none;
 }
 
+.gb-padding {
+  padding: 0 15px;
+}
+
 .wrapper {
   max-width: 1400px;
   margin: 0 auto;
@@ -841,6 +845,247 @@ body {
     border: none;
   }
 }
+.holder-promos {
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid #4d4d4d;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  box-shadow: inset 0 0 15px #242424;
+  padding: 30px;
+}
+
+.promos h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.promos span b {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.promos span p {
+  font-size: 18px;
+  font-weight: 100;
+  color: #bfbfbf;
+}
+
+.promo1 h3 {
+  color: #bfbfbf;
+}
+
+.promo2 h3 {
+  color: #dc8510;
+}
+
+.promo3 h3 {
+  color: #78a22e;
+}
+
+.promo4 h3 {
+  color: #23a095;
+}
+
+.promos-text {
+  font-size: 20px;
+  color: #8c8c8c;
+  text-align: start;
+  margin-top: 20px;
+}
+
+.promos-text a:hover {
+  text-decoration: none;
+}
+
+.promo1-text a {
+  color: #8c8c8c;
+}
+
+.promo2-text a {
+  color: #dc8510;
+}
+
+.promo3-text a {
+  color: #78a22e;
+}
+
+.promo4-text a {
+  color: #23a095;
+}
+
+.timer-svg {
+  width: 60px;
+  height: 60px;
+  fill: #8c8c8c;
+}
+
+.target-svg {
+  width: 65px;
+  height: 65px;
+  fill: #dc8510;
+}
+
+.shield-svg {
+  width: 65px;
+  height: 65px;
+  fill: #78a22e;
+}
+
+.money-back-svg {
+  width: 60px;
+  height: 60px;
+  fill: #23a095;
+}
+
+.holder-extra {
+  padding: 30px 0 45px;
+  display: flex;
+  color: #9e9e9e;
+}
+
+.holder-extra .left,
+.right {
+  width: 50%;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.holder-extra .left a {
+  text-decoration: underline;
+}
+
+.holder-extra p {
+  font-size: 20px;
+}
+
+.holder-extra a:hover {
+  text-decoration: none;
+}
+
+.holder-text h3 {
+  font-size: 30px;
+}
+
+.holder-text h3 b {
+  color: #23a095;
+}
+
+.holder-text p {
+  margin-top: 15px;
+  font-size: 20px;
+  line-height: 30px;
+  word-spacing: 2px;
+}
+
+.holder-text p a {
+  color: #9e9e9e;
+}
+
+.holder-logo {
+  flex-direction: column;
+  display: flex;
+  padding: 0 30px 0 40px;
+}
+
+.holder-logo a {
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.holder-logo svg {
+  width: 190px;
+  transition: all 0.2s ease-in-out;
+  fill: #23a095;
+  color: #28b5a8;
+}
+
+.holder-logo a:hover svg {
+  transition: all 0.2s ease-in-out;
+  fill: #3bd4c7;
+  color: #3bd4c7;
+}
+
+.holder-logo span {
+  display: block;
+  padding: 7px 15px;
+  border-radius: 100px;
+  white-space: nowrap;
+  margin: 10px 0 0 0;
+  background: rgba(255, 255, 255, 0.05);
+  font-size: 18px;
+  color: #8c8c8c;
+  text-align: center;
+}
+
+.block-one p {
+  text-align: center;
+  font-size: 44px;
+  color: #78a22e;
+  padding: 5px 10px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.block-one a {
+  border: 1px solid #78a22e;
+  color: #78a22e;
+  font-size: 19px;
+  padding: 7px 15px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.block-one a:hover {
+  background: #78a22e;
+  color: #1c1c1c;
+}
+
+.block-one,
+.block-two {
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+}
+
+.block-one {
+  border-left: 1px dashed #454545;
+  border-right: 1px dashed #454545;
+}
+
+.block-two div {
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4);
+  border-radius: 100px;
+  text-align: center;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border: 1px solid #454545;
+}
+
+.block-two div .num {
+  font-size: 30px;
+  color: #adadad;
+}
+
+.block-two div .txt {
+  font-size: 20px;
+  color: #757575;
+}
+
 .footer-top {
   padding: 20px 0;
   border-top: 1px solid #313131;
@@ -1106,6 +1351,29 @@ body {
 }
 
 @media (max-width: 766px) {
+  .holder-promos {
+    display: block;
+  }
+  .promo2,
+  .promo3,
+  .promo4 {
+    margin-top: 40px;
+  }
+  .holder-extra {
+    display: block;
+  }
+  .left,
+  .right {
+    display: block;
+    width: 100% !important;
+    text-align: center;
+  }
+  .holder-logo {
+    margin-bottom: 25px;
+  }
+  .block-one {
+    border: none;
+  }
   .footer-top-main {
     width: 100%;
     display: block;
@@ -1158,5 +1426,12 @@ body {
   .payment,
   .social {
     margin-bottom: 20px;
+  }
+  .payment {
+    display: flex;
+    justify-content: center;
+  }
+  .payment img {
+    width: 50%;
   }
 }/*# sourceMappingURL=styles.css.map */

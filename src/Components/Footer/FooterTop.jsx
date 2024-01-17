@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function FooterTop() {
     return (
-        <div className='footer-top'>
+        <div className='footer-top gb-padding'>
             <div className='footer-top-main'>
                 <div className='footer-top-left'>
                     <div className='browsers'>

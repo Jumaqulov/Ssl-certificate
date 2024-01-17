@@ -4,7 +4,7 @@ import click from '../../assets/svg/click-up.svg'
 
 export default function FooterMiddle() {
     return (
-        <div className="footer-middle-contain">
+        <div className="footer-middle-contain gb-padding">
             <div className='wrapper'>
                 <div className="content">
                     <div className='middle-left'>
