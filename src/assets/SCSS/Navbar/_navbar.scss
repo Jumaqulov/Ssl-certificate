@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: center;
     background-color: $nav_backround_color;
+    opacity: 1;
     border-radius: $nav_border_radius;
     height: $nav_height;
     // width: 1150px;
@@ -19,6 +20,7 @@
     display: flex;
     align-items: center;
     padding: 0 20px;
+    z-index: 10;
 }
 
 .img-icon {

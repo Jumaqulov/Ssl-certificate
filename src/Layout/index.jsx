@@ -5,6 +5,7 @@ import Header from '../Components/Header/Header'
 import Footer from '../Components/Footer'
 import HolderPromos from '../Components/Footer/HolderPromos'
 import HolderExtra from '../Components/Footer/HolderExtra'
+import Carousel from '../Components/Carousel/Carousel'
 
 
 export default function Layout() {
@@ -13,6 +14,7 @@ export default function Layout() {
       <div className="wrapper">
         <Header />
         <Navbar />
+        <Carousel />
         <Outlet />
         <HolderPromos />
         <HolderExtra />
