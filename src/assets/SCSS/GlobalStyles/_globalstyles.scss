@@ -10,6 +10,23 @@ body {
     background-image: url('../../Images/bg-main.jpg');
 }
 
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+::-webkit-scrollbar {
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(28, 31, 26);
+    border-radius: 10px;
+}
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;

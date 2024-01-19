@@ -44,12 +44,12 @@
 
 .nav-item-li-last:hover .nav-item-link {
     transition: 0.4s;
-    color: #DC8510;
+    color: $main_color_1;
 }
 
 .nav-item-li:hover .nav-item-link {
     transition: 0.4s;
-    color: #DC8510;
+    color: $main_color_1;
 }
 
 .nav-item a {
@@ -481,7 +481,7 @@
     width: 150px;
     padding: 8px 8px 4px 8px;
     border-radius: 15px;
-    border: 2px solid #5e5e5e;
+    border: 2px solid $main_color_2;
     background-color: #373737;
     cursor: pointer;
 }
