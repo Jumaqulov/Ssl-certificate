@@ -13,7 +13,7 @@ export default function Carousel() {
         cssEase: 'linear',
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2000,
     });
 
@@ -46,7 +46,7 @@ export default function Carousel() {
                                 <p>Billed Annually</p>
                                 <a href="/lei">Check Offer</a>
                             </div>
-                            <div className={`fade-right ${show ? 'show' : ''}`}>
+                            <div className={`fade-right ${show ? 'show' : ''} slide-txt-box`}>
                                 <p>
                                     <span>
                                         <svg className='slide-txt-small-svg' role='img' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 32">
@@ -95,7 +95,7 @@ export default function Carousel() {
                                 <p>Starting at</p>
                                 <a href="/multi-domian-ssl">Check Offer</a>
                             </div>
-                            <div className={`fade-up ${show ? 'show' : ''}`}>
+                            <div className={`fade-up ${show ? 'show' : ''} slide-txt-box`}>
                                 <p>
                                     <span>
                                         <svg className='slide-txt-small-svg' role='img' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 88">
@@ -162,7 +162,7 @@ export default function Carousel() {
                                 <h2>15.00$</h2>
                                 <a href="/multi-domian-ssl">Check Offer</a>
                             </div>
-                            <div className={`fade-up ${show ? 'show' : ''}`}>
+                            <div className={`fade-up ${show ? 'show' : ''} slide-txt-box`}>
                                 <p>
                                     <span>
                                         <svg className='tt-symbol' role='img' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 181 144">

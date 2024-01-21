@@ -32,7 +32,6 @@
     left: auto !important;
     width: 600px;
     height: 400px;
-    left: calc(50% - 300px);
     overflow-x: hidden;
     fill: rgba(255, 255, 255, 0.02);
 }
@@ -137,7 +136,7 @@
     position: relative;
     top: 15px;
     text-decoration: none;
-    margin: 15px 20px 0 20px;
+    margin: 15px 20px;
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     color: $main_color_1;
