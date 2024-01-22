@@ -16,9 +16,15 @@
 
 .offers {
     margin: 0 10px;
-    background-color: #2a2c2a66;
+    background-color: #2b2b2b;
     border-radius: 15px;
     padding: 15px;
+}
+
+.offer-bottom {
+    position: relative;
+    margin-top: 60px;
+    padding: 30px;
 }
 
 .offer-1 {
@@ -169,11 +175,12 @@
 }
 
 .offer-pics div {
-   
+   text-align: center;
 }
 
 .offer-support {
-
+    position: relative;
+    top: 15px;
     border: 1px solid #78a22e;
     background: #78a22e;
     color: black;
@@ -185,5 +192,229 @@
 }
 
 .offer-support:hover {
-    color: white;
+    color: white;   
+}
+
+.svg-txt {
+    margin: 10px 0 0 0;
+    position: relative;
+    text-align: center;
+}
+
+.svg-txt-bg {
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: 110px;
+    background-color: #2b2b2b;
+    border-radius: 100px;
+    z-index: -1;
+    top: 50px;
+}
+
+.svg-txt svg {
+    width: 256px;
+    height: 161px;
+}
+
+.txt-domian {
+    position: absolute;
+    color: #78a22e;
+    left: 20px;
+    top: 75px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.txt-business {
+    position: absolute;
+    color: $main_color_1;
+    right: 20px;
+    top: 75px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.mln-txt {
+    font-size: 48px !important;
+    color: #c92967 !important;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.mln-txt b {
+    color: #696969;
+}
+
+.mln-txt-1 {
+    font-size: 19px !important;
+    color: #696969 !important;
+}
+
+.logos {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo-box {
+    width: calc(100% / 3 - 2px);
+    margin: 10px 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-google svg{
+    width: 73px;
+    height: 23px;
+    fill: #696969;
+}
+
+.logo-paypal svg{
+    width: 71px;
+    height: 23px;
+    fill: #696969;
+}
+
+.logo-skrill svg {
+    width: 58px;
+    height: 20px;
+    fill: #696969;
+}
+
+.logo-visa svg {
+    width: 58px;
+    height: 18px;
+    fill: #696969;
+}
+
+.logo-ibm svg{
+    width: 60px;
+    height: 25px;
+    fill: #696969;
+}
+
+.logo-huawei svg {
+    width: 68px;
+    height: 12px;
+    fill: #696969;
+}
+
+.logo-nokia svg {
+    width: 72px;
+    height: 12px;
+    fill: #696969;
+}
+
+.logo-canon svg {
+    width: 65px;
+    height: 16px;
+    fill: #696969;
+}
+
+.logo-adobe svg {
+    width: 65px;
+    height: 22px;
+    fill: #696969;
+}
+
+.platinium-svg {
+    width: 115px;
+    height: 115px;
+    fill: #78a22e;
+}
+
+.about-offer {
+    display: flex;
+    margin-top: 40px;
+}
+
+.about-offer div:first-child {
+    width: 50% !important;
+}
+
+.about-offer div:nth-child(2),
+.about-offer div:nth-child(3) {
+    width: 25% !important;
+}
+
+.about-offer div {
+    padding: 10px 20px;
+}
+
+.about-offer div:nth-child(1),
+.about-offer div:nth-child(2) {
+    border-right: 1px dashed #8c8c8c;
+}
+
+.about-offer h3 {
+    font-size: 36px;
+    color: #bfbfbf;
+    font-weight: 500;
+}
+
+.about-offer-p {
+    padding-left: 125px !important;
+}
+
+.about-offer p {
+    font-size: 20px;
+    color: #8c8c8c;
+    margin-top: 20px;
+    line-height: 145%;
+}
+
+.big-link {
+    display: block;
+    font-size: 24px;
+    border-radius: 100px;
+    text-align: center;
+    padding: 12px 0;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+}
+
+.big-link-1 {
+    color: #78a22e;
+    border: 1px solid #78a22e;
+}
+
+.big-link-1:hover {
+    background-color: #78a22e;
+    color: #2b2b2b;
+}
+
+.big-link-2 {
+    color: $main_color_1;
+    border: 1px solid $main_color_1;
+}
+
+.big-link-2:hover {
+    background-color: $main_color_1;
+    color: #2b2b2b;
+}
+
+.small-link {
+    text-decoration: none;
+    color: #8c8c8c;
+    text-decoration: underline;
+}
+
+.small-link:hover {
+    text-decoration: none;
+}
+
+.sm-link-1 {
+    color: #78a22e;
+}
+
+.sm-link-2 {
+    color: $main_color_1;
+}
+
+.view-sm {
+    display: none;
 }

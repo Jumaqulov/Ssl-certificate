@@ -78,14 +78,7 @@ body {
     height: 130px;
 }
 
-.a-com {
-    width: 100%;
-    height: 100vh;
-    background-color: red;
-}
-
-.b-com {
-    width: 100%;
-    height: 100vh;
-    background-color: orange;
+.d-flex {
+    display: flex;
+    gap: 10px;
 }
