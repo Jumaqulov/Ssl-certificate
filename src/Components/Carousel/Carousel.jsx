@@ -13,7 +13,7 @@ export default function Carousel() {
         cssEase: 'linear',
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2000,
     });
 

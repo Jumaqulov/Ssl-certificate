@@ -3,15 +3,18 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './styles.scss'
 import Router from './Routes/Router';
-import Layout from './Layout';
+import { LayoutHome, LayoutOther } from './Layout';
+import NotFound from './Components/404Page/NotFound';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter basename={'/'}>
     <Routes>
-      <Route path={'/'} element={<Layout/>}>
+      <Route path={'/'} element={<LayoutHome />} />
+      <Route path='' element={<LayoutOther />}>
         <Route path={`/*`} element={<Router />} />
       </Route>
+      <Route path='' element={<NotFound />} />
     </Routes>
   </BrowserRouter>
 );
