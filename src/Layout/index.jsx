@@ -42,6 +42,8 @@ function LayoutOther() {
             <Outlet />
           </div>
         </div>
+        <HolderPromos />
+        <HolderExtra />
       </div>
       <Footer />
     </Fragment>
