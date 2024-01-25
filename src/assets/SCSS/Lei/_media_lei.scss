@@ -1,0 +1,91 @@
+@media (max-width:766px) {
+
+    .lei-header,
+    .lei-support-box,
+    .lei-info {
+        display: block !important;
+    }
+
+    .lei-header div:first-child {
+        text-align: center;
+    }
+
+    .to-lei-site {
+        display: block;
+        width: 100%;
+    }
+
+    .lei-support-boxes {
+        width: 100%;
+    }
+
+    .lei-table {
+        display: none;
+    }
+
+    .mobile {
+        display: block !important;
+    }
+
+    .mobile td {
+        text-align: center !important;
+    }
+
+    .desktop {
+        display: none !important;
+    }
+
+    .lei-pricing {
+        width: 100%;
+    }
+
+    .lei-pricing tr {
+        display: table-cell;
+    }
+
+    .lei-pricing .desktop {
+        display: none;
+    }
+
+    .lei-pricing .mobile {
+        display: table-cell;
+    }
+
+    .lei-pricing td a {
+        display: block !important;
+        padding: 15px !important;
+    }
+
+    .lei-pricing table,
+    .lei-pricing thead,
+    .lei-pricing tbody,
+    .lei-pricing th,
+    .lei-pricing td,
+    .lei-pricing tr {
+        display: block;
+        width: auto;
+    }
+
+    .lei-pricing tr {
+        margin-bottom: 10px;
+    }
+
+    .lei-pricing td {
+        text-align: left;
+        position: relative;
+        text-align: center;
+    }
+
+    .lei-info-left {
+        margin-bottom: 10px;
+    }
+
+    .lei-info-left span {
+        padding: 30px 0 0 0;
+        display: block !important;
+        width: 100%;
+        text-align: center;
+        background: #313030;
+        border-radius: 10px;
+    }
+}

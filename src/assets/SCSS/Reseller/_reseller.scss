@@ -263,14 +263,16 @@
     padding: 15px;
     width: 100%;
     line-height: 135%;
-    font-size: 20px
+    margin-top: 10px;
 }
 
 .textarea textarea {
     outline: none;
     background: none;
     width: 100%;
-    border: none
+    border: none;
+    color: #8c8c8c;
+    font-size: 20px;
 }
 
 .textarea:hover {
@@ -285,6 +287,7 @@
 }
 
 .form-submit button{
+    cursor: pointer;
     font-size: 20px;
     border: 1px solid #DC8510;
     border-radius: 100px;

@@ -1,0 +1,496 @@
+.lei-main h3 {
+    color: #9e9e9e;
+    font-weight: 100;
+    font-size: 36px;
+}
+
+.lei-main p {
+    color: #9e9e9e;
+    font-size: 20px;
+    line-height: 145%;
+}
+
+.lei-header {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.getlie-svg {
+    width: 105px;
+    height: 130px;
+    fill: #23a095;
+}
+
+.to-lei-site {
+    position: relative;
+    top: 25px;
+    text-align: center;
+    width: 15%;
+    color: #23a095;
+    border: 1px dashed #525252;
+    font-size: 19px;
+    text-align: center;
+    padding: 8px 18px 8px 22px;
+    border-radius: 100px;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+}
+
+.to-lei-site:hover {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    background-color: #23a095;
+    border: 1px solid #00e394;
+    color: #0f0f0f;
+}
+
+.lei-support {
+    margin-top: 40px;
+    padding-top: 40px;
+}
+
+.lei-support h6 {
+    font-size: 30px;
+    padding: 0 0 3px 0;
+    text-align: center;
+    color: #9e9e9e;
+    font-weight: 100;
+}
+
+.lei-svg {
+    width: 50px;
+    height: 50px;
+}
+
+.lei-business {
+    fill: #23a095;
+}
+
+.lei-charity {
+    fill: #c63200;
+}
+
+.lei-funds {
+    fill: $main_color_1;
+}
+
+.lei-bank {
+    fill: #696969;
+}
+
+.lei-veriuser {
+    fill: #9d7040;
+}
+
+.lei-office {
+    fill: #78a22e;
+}
+
+.lei-support-box {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.lei-support-boxes {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: calc(100% / 3 - 20px);
+    margin: 10px;
+    border-radius: 100px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4);
+    border: 1px dashed #575757;
+    padding: 10px 15px;
+}
+
+.lei-support-boxes span {
+    font-size: 22px;
+    color: #9e9e9e;
+}
+
+.lei-table p {
+    text-align: center;
+    padding: 35px 0 5px 0 !important;
+    font-size: 30px;
+    color: #78a22e;
+}
+
+.lei-table-code th {
+    text-align: center
+}
+
+.lei-table-code th span {
+    display: block;
+    padding: 8px 5px
+}
+
+.lei-table-code th:last-child span {
+    border-radius: 0 6px 6px 0 !important
+}
+
+.lei-table-code p {
+    padding: 0 !important;
+    font-size: 20px;
+    text-align: center;
+    color: #1c1c1c;
+    margin: 0;
+    line-height: 100%;
+}
+
+.blue-one span {
+    border-left: 2px solid rgba(35, 160, 149, 0.7);
+    color: rgba(35, 160, 149, 0.7);
+    background: rgba(35, 160, 149, 0.05)
+}
+
+.blue-two span {
+    border-left: 2px solid #23a095;
+    color: #23a095;
+    background: rgba(35, 160, 149, 0.1)
+}
+
+.green-one span {
+    border-left: 2px solid rgba(120, 162, 46, 0.7);
+    color: rgba(120, 162, 46, 0.7);
+    background: rgba(120, 162, 46, 0.05)
+}
+
+.green-two span {
+    border-left: 2px solid #78a22e;
+    color: #78a22e;
+    background: rgba(120, 162, 46, 0.1)
+}
+
+.lei-table-code td span {
+    padding: 8px 5px;
+    text-align: center;
+    color: #1c1c1c;
+    display: block
+}
+
+.lei-table-code td.blue-one {
+    background: rgba(35, 160, 149, 0.7);
+    border-radius: 0 0 0 6px !important
+}
+
+.lei-table-code td.blue-two {
+    background: #23a095
+}
+
+.lei-table-code td.green-one {
+    background: rgba(120, 162, 46, 0.7)
+}
+
+.lei-table-code td.green-two {
+    background: #78a22e;
+    border-radius: 0 6px 6px 0 !important;
+    white-space: nowrap
+}
+
+.lei-table-code td.gray-one {
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 6px 0 0 6px !important
+}
+
+.lei-table-code td.gray-two {
+    background: rgba(255, 255, 255, 0.06)
+}
+
+.lei-table-code td.gray-three {
+    background: rgba(255, 255, 255, 0.08)
+}
+
+.lei-table-code td.gray-four {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0 6px 6px 0 !important
+}
+
+.lei-table-code .td-line td {
+    height: 1px
+}
+
+.lei-table-code .td-data td span {
+    color: #8c8c8c;
+    font-size: 15px;
+    padding: 15px 10px !important
+}
+
+.lei-pricing-title {
+    margin: 40px 0 10px 0;
+    color: #23a095 !important;
+    text-align: center;
+    font-size: 30px !important;
+}
+
+.lei-pricing th {
+    min-width: 170px
+}
+
+.lei-pricing tr:last-child td:last-child {
+    border-radius: 0 0 6px 0;
+}
+
+.lei-pricing th {
+    font-size: 22px;
+    text-align: center;
+    padding: 10px;
+    font-weight: normal
+}
+
+.lei-pricing th:nth-child(2) {
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px 0 0 0;
+    border-bottom: 1px solid #303030
+}
+
+.lei-pricing th:nth-child(5) {
+    border-radius: 0 6px 0 0
+}
+
+.lei-pricing th:last-child {
+    border-radius: 0 6px 0 0
+}
+
+.lei-pricing td {
+    vertical-align: middle;
+    text-align: center;
+    border-bottom: 1px solid #242424;
+    padding: 8px 15px;
+    line-height: 135%
+}
+
+.lei-pricing td:nth-child(1) {
+    background: rgba(255, 255, 255, 0.03);
+    font-size: 18px;
+    color: #9e9e9e;
+    text-align: left
+}
+
+.lei-pricing td:nth-child(2) {
+    border-bottom: 1px solid #1c1c1c !important
+}
+
+.lei-pricing td:nth-child(4) {
+    background: rgba(0, 0, 0, 0.15);
+    border-bottom: 1px solid #1c1c1c !important
+}
+
+.lei-pricing td:nth-child(5) {
+    background: rgba(0, 0, 0, 0.15);
+    border-bottom: 1px solid #1c1c1c !important
+}
+
+.lei-pricing td span {
+    display: block;
+    text-align: center
+}
+
+.lei-pricing td a {
+    display: inline-block;
+    font-size: 18px;
+    margin: 5px 0;
+    padding: 7px 15px;
+    color: #8c8c8c;
+    border-radius: 100px;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+}
+
+.lei-pricing td a:hover {
+    color: #303030;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+
+.lei-pricing tr:first-child td:nth-child(1) {
+    border-radius: 12px 0 0 0
+}
+
+.lei-pricing tr:last-child td {
+    border-bottom: none !important
+}
+
+.lei-pricing tr:last-child td:nth-child(1) {
+    border-radius: 0 0 0 12px
+}
+
+.lei-pricing tr:last-child td:nth-child(5) {
+    border-radius: 0 0 12px 0
+}
+
+.lei-pricing .price span {
+    display: inline-block
+}
+
+.lei-pricing .price span:first-child {
+    font-size: 35px;
+    padding: 10px;
+    color: rgba(0, 176, 115, 0.9)
+}
+
+.lei-pricing .price span:last-child {
+    color: rgba(0, 176, 115, 0.6)
+}
+
+.lei-pricing .detailed {
+    text-align: left
+}
+
+.lei-pricing .detailed a {
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none;
+    text-decoration: underline
+}
+
+.lei-pricing .detailed a:hover {
+    text-decoration: none
+}
+
+.lei-pricing .detailed span {
+    text-align: left !important
+}
+
+.lei-pricing .detailed span:last-child {
+    font-size: 16px;
+    color: #696969;
+    line-height: 135%;
+    padding: 5px 0 5px 0
+}
+
+.lei-pricing .yes-num {
+    display: block;
+    padding: 7px 0 0 0;
+    font-size: 18px
+}
+
+.lei-yes svg {
+    width: 24px;
+    height: 18px;
+    fill: #23a095;
+}
+
+.mobile {
+    display: none !important;
+}
+
+.lei-pricing th:nth-child(2) {
+    background: rgba(35, 160, 149, 0.1);
+    border-bottom: 1px solid rgba(35, 160, 149, 0.1)
+}
+
+.lei-pricing th:nth-child(3) {
+    background: rgba(35, 160, 149, 0.2);
+    border-bottom: 1px solid rgba(35, 160, 149, 0.2)
+}
+
+.lei-pricing th:nth-child(4) {
+    background: rgba(35, 160, 149, 0.3);
+    border-bottom: 1px solid rgba(35, 160, 149, 0.3)
+}
+
+.lei-pricing td:nth-child(2) {
+    background: rgba(35, 160, 149, 0.05);
+    color: #23a095
+}
+
+.lei-pricing td:nth-child(3) {
+    background: rgba(35, 160, 149, 0.1);
+    color: #23a095
+}
+
+.lei-pricing td:nth-child(4) {
+    background: rgba(35, 160, 149, 0.15);
+    color: #23a095
+}
+
+.lei-pricing td span.yes svg {
+    fill: #23a095
+}
+
+.lei-pricing td span.no svg {
+    fill: #c63200
+}
+
+.lei-pricing td>a {
+    border: 1px solid rgba(35, 160, 149, 0.8);
+    color: #23a095
+}
+
+.lei-pricing td>a:hover {
+    background: rgba(35, 160, 149, 0.9)
+}
+
+.lei-pricing td>span a {
+    border: 1px solid rgba(35, 160, 149, 0.8);
+    color: #23a095
+}
+
+.lei-pricing td>span a:hover {
+    text-decoration: none !important;
+    color: #23a095 !important
+}
+
+.lei-pricing .lie-price span {
+    display: inline-block
+}
+
+.lei-pricing .lie-price span:first-child {
+    font-size: 28px;
+    padding: 10px;
+    color: rgba(35, 160, 149, 0.9)
+}
+
+.lei-pricing .lie-price span:last-child {
+    color: rgba(35, 160, 149, 0.6)
+}
+
+.lei-info {
+    display: flex;
+    margin-top: 20px;
+    padding-top: 20px;
+    gap: 20px;
+}
+
+.lei-info-left span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 155px;
+    height: 155px;
+    background: #313030;
+    border-radius: 50%;
+}
+
+.lei-info-right h4 {
+    font-size: 30px;
+    color: #9e9e9e;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.lei-info-right p {
+    font-size: 20px !important;
+    text-align: start;
+}
+
+.lei-lsymbol {
+    width: 70px;
+    height: 86px;
+    fill: #23a095;
+}
+
+.lei-api {
+    width: 90px;
+    height: 85px;
+    fill: #23a095;
+}
+
+.lei-shield {
+    width: 70px;
+    height: 80px;
+    fill: #23a095;
+}

@@ -1,8 +1,18 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 
-export default function Country() {
+export default function Country({ onChange }) {
     const [country, setCountry] = useState([])
+
+    const handleCountryChange = (e) => {
+        const selectedCountry = e.target.value;
+        onChange({
+            target: {
+                name: 'country',
+                value: selectedCountry,
+            },
+        });
+    };
 
     useEffect(() => {
         const fetchData = async () => {
@@ -25,10 +35,10 @@ export default function Country() {
         return 0;
     });
     return (
-        <select>
-            <option selected value="">-- Select Country --</option>
+        <select onChange={handleCountryChange}>
+            <option selected>-- Select Country --</option>
             {sortedCountries.map((country, index) => (
-                <option key={index}>{country.name.common}</option>
+                <option key={index} value={country.name.common}>{country.name.common}</option>
             ))}
         </select>
     )
