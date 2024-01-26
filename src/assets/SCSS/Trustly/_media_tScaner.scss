@@ -1,0 +1,34 @@
+@media (max-width:766px) {
+
+    .tscaner h3 {
+        font-size: 28px;
+    }
+
+    .tscaner-header,
+    .ts-section-change,
+    .ts-row-1,
+    .ts-row-2 {
+        display: block;
+    }
+
+    .ts-row-1 div,
+    .ts-row-2 div {
+        width: 100%;
+        margin: 10px 0;    
+    }
+
+    .tscaner-header div:nth-child(1) {
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .ts-section-change {
+        border-radius: 10px;
+    }
+
+    .tscaner-btn {
+        margin-top: 5px;
+        width: 100%;
+    }
+
+}

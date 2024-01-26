@@ -1,0 +1,153 @@
+.tscaner-header {
+    display: flex;
+    gap: 15px;
+}
+
+.ts-code-svg {
+    width: 130px;
+    height: 130px;
+    fill: #9d7040;
+}
+
+.tscaner h3 {
+    font-size: 36px;
+    color: #ccc;
+    margin: 15px 0;
+}
+
+.tscaner-header {
+    margin: 20px 0;
+}
+
+.tscaner-header {
+    font-size: 20px;
+    color: #9e9e9e;
+    line-height: 145%;
+}
+
+.ts-section-change {
+    border: 1px dashed rgba(157, 112, 64, 0.2) !important;
+    background: rgba(157, 112, 64, 0.03) !important;
+    margin: 20px 0 30px 0 !important;
+    padding: 10px 15px !important;
+    border-radius: 100px;
+}
+
+.ts-section-change {
+    display: flex;
+    gap: 15px;
+}
+
+.tscaner-btn {
+    cursor: pointer;
+    color: #9e9e9e;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 9px 18px !important;
+    line-height: 100% !important;
+    border: 1px solid rgba(157, 112, 64, 0.3);
+    background: rgba(0, 0, 0, 0.15) !important;
+    border-radius: 100px;
+}
+
+.tscaner-btn svg {
+    width: 33px;
+    height: 33px;
+    fill: #9d7040cc;
+}
+
+.tscaner-active {
+    border: 1px solid #9d7040e6;
+    color: #ba8a56;
+}
+
+.tscaner-active svg {
+    fill: #ba8a56;
+}
+
+// =================================================================
+//                  TS OVERVIEW
+// =================================================================
+
+.ts-row-1,
+.ts-row-2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0 0 0;
+}
+
+.ts-row-1 div,
+.ts-row-2 div {
+    width: calc(100% / 2 - 20px);
+    margin: 10px;
+}
+
+.ts-row-1 h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #9d7040, #c19668);
+    -webkit-text-fill-color: transparent;
+}
+
+.ts-row-1 p {
+    font-size: 20px;
+    color: #9e9e9e !important;
+    line-height: 145%;
+}
+
+.ts-row-1 ul {
+    margin: 20px 0 0 0;
+    padding: 15px 0 0 15px;
+    list-style: disc;
+    color: #9d7040;
+}
+
+.ts-row-1 img {
+    width: 100%;
+    border: 1px solid #9d7040b3;
+    border-radius: 10px;
+}
+
+.ts-row-2 h4 {
+    font-size: 24px;
+    color: #ba8a56;
+    font-weight: 100;
+}
+
+.ts-row-2 p {
+    margin: 15px 0 0 0;
+    font-size: 20px;
+    color: #9e9e9e;
+    line-height: 145%;
+}
+
+.ts-ad-h2 svg {
+    width: 40px;
+    height: 40px;
+    fill: #af7d47;
+}
+
+.ts-ad-h2 {
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 15px !important;
+    font-size: 28px;
+    color: #af7d47;
+    box-shadow: inset 0 0 100px #342f29;
+    text-align: center;
+    border: 1px dashed #af7d4757;
+    border-radius: 100px;
+    margin: 20px 0 25px 0;
+}
+
+.ts-check {
+    width: 24px;
+    height: 18px;
+    fill: #ba8a56;
+}
