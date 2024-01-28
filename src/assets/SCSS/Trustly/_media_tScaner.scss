@@ -14,7 +14,7 @@
     .ts-row-1 div,
     .ts-row-2 div {
         width: 100%;
-        margin: 10px 0;    
+        margin: 10px 0;
     }
 
     .tscaner-header div:nth-child(1) {
@@ -31,4 +31,25 @@
         width: 100%;
     }
 
+    .ts-mobile-table table tbody tr td {
+        font-size: 23px;
+        padding: 10px;
+    }
+
+    .ts-mobile-table {
+        display: block;
+    }
+
+    .ts-mobile-table table {
+        width: 100%;
+    }
+
+    .ts-desktop-table {
+        display: none;
+    }
+
+    .ts-order {
+        padding: 8px 15px;
+        border-radius: 10px;
+    }
 }
