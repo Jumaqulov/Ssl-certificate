@@ -1,6 +1,19 @@
-.trsutly-part-svg {
+.trsutly-part-svg div {
+    display: flex;
     flex-wrap: wrap;
-    vertical-align: middle !important;
+    justify-content: center;
+    gap: 25px !important;
+}
+
+.tt-part-1 h4 {
+    margin: 10px 0 0 0;
+    font-size: 26px;
+    font-weight: 100;
+    color: #9e9e9e;
+}
+
+.tp3l-brown {
+    color: #9d7040;
 }
 
 .sl-digicert {
@@ -22,4 +35,74 @@
     width: 100px !important;
     height: 100px !important;
     fill: #9d7040;
+}
+
+.tpsvg-mobile {
+    display: none !important;
+}
+
+.solution-form {
+    margin: 40px 0 0 0;
+}
+
+.solution-cols {
+    margin: 20px 0;
+}
+
+.solution-cols label {
+    color: #9e9e9e;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.solution-cols label b {
+    color: red;
+}
+
+.solution-cols label,
+.solution-cols input,
+.solution-cols select,
+.solution-cols textarea {
+    margin: 5px 0;
+    width: 100%;
+}
+
+.solution-cols select,
+.solution-cols input {
+    border: 1px solid #cbd6e2;
+    border-radius: 100px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.solution-cols textarea {
+    max-width: 100% !important;
+    padding: 5px 10px;
+    font-size: 18px;
+    border: 1px solid #cbd6e2;
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+.solution-cols ul {
+    margin: 7px 0;
+}
+
+.solution-cols ul input {
+    width: auto;
+    margin-right: 10px;
+}
+
+.solution-cols ul label {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.solution-submit {
+    padding: 10px 25px;
+    background-color: $main_color_1;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
 }

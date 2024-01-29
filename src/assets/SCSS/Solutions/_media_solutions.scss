@@ -1,0 +1,17 @@
+@media(max-width: 766px) {
+    .tpsvg-mobile {
+        display: block;
+        margin: 15px 0;
+    }
+
+    .tpsvg-desktop {
+        display: none !important;
+    }
+
+    .tpsvg-mobile span {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+}
