@@ -4,7 +4,7 @@ export default function Certificates() {
     return (
         <div className='certificates'>
             <div className='cert-txt'>
-                <h3>SSL certificates</h3>
+                <h3>SSL-сертификаты</h3>
                 <p className='cert-txt-item'>
                     <span>
                         <svg className='cert-txt-svg' viewBox="0 0 25 32">
@@ -13,10 +13,10 @@ export default function Certificates() {
                             </path>
                         </svg>
                     </span>
-                    <span>SSL certificates protect all sensitive and private data transferring via websites and online systems. SSL certificates gain trust from end-customers and boost sales by increasing conversions. Certificates help to get higher ranking positions since Google added SSL certs to its algorithm. GoGetSSL provides all possible SSL certificates available on the market, starting with Domain validation till Extended validation certs.</span>
+                    <span>SSL-сертификаты защищают все конфиденциальные и частные данные, передаваемые через веб-сайты и онлайн-системы. SSL-сертификаты вызывают доверие у конечных покупателей и повышают продажи за счет увеличения конверсии. Сертификаты помогают занять более высокие позиции в рейтинге, поскольку Google добавил SSL-сертификаты в свой алгоритм. GoGetSSL предоставляет все возможные SSL-сертификаты, доступные на рынке, начиная с сертификатов с проверкой домена и заканчивая сертификатами с расширенной проверкой.</span>
                 </p>
-                <p>You will find a suitable solution for reasonable prices to fit your budget. In most cases, it is hard work to find the accurate SSL certificate suitable for all your needs, and that is why we built online <a className='small-link sm-link-2' href="/compare-dv-ssl">comparison tool</a> to help you compare SSL certificates and make the selection.</p>
-                <h4>SSL Certificates we sell</h4>
+                <p>Вы найдете подходящее решение по разумным ценам, чтобы соответствовать вашему бюджету. В большинстве случаев найти точный SSL-сертификат, подходящий для всех ваших потребностей, - задача не из легких, и именно поэтому мы создали онлайн-сервис <a className='small-link sm-link-2' href="/compare-dv-ssl">инструмент сравнения</a> чтобы помочь вам сравнить SSL-сертификаты и сделать выбор.</p>
+                <h4>SSL-сертификаты, которые мы продаем</h4>
                 <div className='ad-brand'>
                     <div>
                         <div className='ad-brand-box'>
@@ -60,9 +60,9 @@ export default function Certificates() {
                                 </svg>
                             </div>
                         </div>
-                        <p>Same certs, just new brand</p>
+                        <p>Те же сертификаты, только новый бренд</p>
                     </div>
-                    <a className='ad-brand-link' href="/news">Read more</a>
+                    <a className='ad-brand-link' href="/news">Читать далее</a>
                 </div>
                 <ul className='cert-info'>
                     <li className='cert-info-item'>
@@ -75,8 +75,8 @@ export default function Certificates() {
                             <span className='cert-symbol'>D</span>
                         </div>
                         <div className='cert-info-txt'>
-                            <h3>Domain Validation SSL</h3>
-                            <p>Domain Validation SSL certificates are the essential products we offer. They do not require any business/organization verification and no paperwork involved, any individual, a sole trader may get it in minutes for as low as $14.21 per year. Use DV certs to protect small websites and non-e-commerce platforms. Google booster enabled for all certs.  </p>
+                            <h3>SSL с проверкой домена</h3>
+                            <p>SSL-сертификаты с проверкой домена - это основные продукты, которые мы предлагаем. Они не требуют проверки бизнеса/организации и бумажной волокиты, любой человек, индивидуальный предприниматель может получить их за считанные минуты по цене всего $14,21 в год. Используйте DV-сертификаты для защиты небольших сайтов и некоммерческих платформ. Для всех сертификатов включена функция Google booster.</p>
                             <div className="cert-pricing">
                                 <a className='go-dv-ssl' href="/dv-ssl">
                                     <div className='arrows-link'>
@@ -98,9 +98,9 @@ export default function Certificates() {
                                             </span>
                                         </span>
                                     </div>
-                                    <span>View SSL certificates</span>
+                                    <span>Просмотр SSL-сертификатов</span>
                                 </a>
-                                <span className='cert-price'>Starting at <b className='dv-price'>$14.21</b> per year</span>
+                                <span className='cert-price'>Начиная с <b className='dv-price'>$14.21</b> в год</span>
                             </div>
                         </div>
                     </li>
@@ -114,8 +114,8 @@ export default function Certificates() {
                             <span className='cert-symbol'>B</span>
                         </div>
                         <div className='cert-info-txt'>
-                            <h3>Business Validation SSL</h3>
-                            <p>Ensure your visitors can check your business name, address and verified organization number by ordering Business Validation SSL certificates. OV/BV certificates build high trust level, help increase conversions and protect every single bit of information transferred via your website. Make sure your business protected.</p>
+                            <h3>Удостоверение бизнеса SSL</h3>
+                            <p>Убедитесь, что ваши посетители могут проверить название вашего предприятия, адрес и номер проверенной организации, заказав SSL-сертификаты Business Validation. Сертификаты OV/BV создают высокий уровень доверия, помогают увеличить конверсию и защищают каждый бит информации, передаваемой через ваш сайт. Убедитесь, что ваш бизнес защищен.</p>
                             <div className="cert-pricing">
                                 <a className='go-ov-ssl' href="/ov-ssl">
                                     <div className='arrows-link'>
@@ -137,9 +137,9 @@ export default function Certificates() {
                                             </span>
                                         </span>
                                     </div>
-                                    <span>View SSL certificates</span>
+                                    <span>Просмотр SSL-сертификатов</span>
                                 </a>
-                                <span className='cert-price'>Starting at <b className='ov-price'>$30.36</b> per year</span>
+                                <span className='cert-price'>Начиная с <b className='ov-price'>$30.36</b> в год</span>
                             </div>
                         </div>
                     </li>
@@ -153,8 +153,8 @@ export default function Certificates() {
                             <span className='cert-symbol'>E</span>
                         </div>
                         <div className='cert-info-txt'>
-                            <h3>Extended Validation SSL</h3>
-                            <p>Extended validation SSL certificate the only products equipped with Green Address Bar with your verified company name inside. Visitors instantly points attention to Green Bar. That are the most trusted certs we provide. Statistics show that EV certs may increase sales conversions up to 17,3%. Be patient as it takes 5-7 working days to pass the validation process.</p>
+                            <h3>SSL с расширенной проверкой</h3>
+                            <p>SSL-сертификат расширенной валидации - единственный продукт, оснащенный зеленой адресной строкой с названием вашей проверенной компании внутри. Посетители мгновенно обращают внимание на зеленую полосу. Это самые надежные сертификаты, которые мы предоставляем. Статистика показывает, что EV-сертификаты могут увеличить конверсию продаж до 17,3%. Будьте терпеливы, так как процесс проверки занимает 5-7 рабочих дней.</p>
                             <div className="cert-pricing">
                                 <a className='ev-ov-ssl' href="/ev-ssl">
                                     <div className='arrows-link'>
@@ -176,9 +176,9 @@ export default function Certificates() {
                                             </span>
                                         </span>
                                     </div>
-                                    <span>View SSL certificates</span>
+                                    <span>Просмотр SSL-сертификатов</span>
                                 </a>
-                                <span className='cert-price'>Starting at <b className='ev-price'>$74.97</b> per year</span>
+                                <span className='cert-price'>Начиная с <b className='ev-price'>$74.97</b> в год</span>
                             </div>
                         </div>
                     </li>
@@ -192,8 +192,8 @@ export default function Certificates() {
                             <span className='cert-symbol cert-symbol-w'>W</span>
                         </div>
                         <div className='cert-info-txt'>
-                            <h3>Wildcard SSL certificates</h3>
-                            <p>Wildcard SSL certs are great cost-savers as protect unlimited sub-domains within the base domain. You can secure all your secondary pages like client area, order process or any other sub-domains. Wildcard SSL comes with unlimited server licensing, and it is possible to install them on all your servers and devices. Use our comparison tool to find the best solution for your project.</p>
+                            <h3>Сертификаты Wildcard SSL</h3>
+                            <p>SSL-сертификаты Wildcard - это отличная экономия средств, поскольку они защищают неограниченное количество поддоменов в пределах базового домена. Вы можете защитить все свои второстепенные страницы, такие как клиентская зона, процесс оформления заказа или любые другие поддомены. Wildcard SSL поставляется с неограниченным лицензированием серверов, и его можно установить на всех ваших серверах и устройствах. Используйте наш инструмент сравнения, чтобы найти лучшее решение для вашего проекта.</p>
                             <div className="cert-pricing">
                                 <a className='wild-ssl' href="/wildcard-ssl">
                                     <div className='arrows-link'>
@@ -215,9 +215,9 @@ export default function Certificates() {
                                             </span>
                                         </span>
                                     </div>
-                                    <span>View SSL certificates</span>
+                                    <span>Просмотр SSL-сертификатов</span>
                                 </a>
-                                <span className='cert-price'>Starting at <b className='wild-price'>$72.00</b> per year</span>
+                                <span className='cert-price'>Начиная с <b className='wild-price'>$72.00</b> в год</span>
                             </div>
                         </div>
                     </li>
@@ -231,8 +231,8 @@ export default function Certificates() {
                             <span className='cert-symbol'>S</span>
                         </div>
                         <div className='cert-info-txt'>
-                            <h3>Multi-Domain SSL certificates</h3>
-                            <p>It is possible to protect up to 250 SAN items with Multi-Domain SSL certificates. Each SAN element can be used for a domain as well as for sub-domains. Now, you can protect all your corporate websites, mail servers or any other pages/systems with only one powerful SSL certificate. UCC/SAN SSL certificates have complete compatibility with MS Exchange servers.</p>
+                            <h3>Многодоменные SSL-сертификаты</h3>
+                            <p>С помощью многодоменных SSL-сертификатов можно защитить до 250 элементов SAN. Каждый элемент SAN может использоваться как для домена, так и для субдоменов. Теперь вы можете защитить все свои корпоративные сайты, почтовые серверы или любые другие страницы/системы с помощью всего одного мощного SSL-сертификата. SSL-сертификаты UCC/SAN полностью совместимы с серверами MS Exchange.</p>
                             <div className="cert-pricing">
                                 <a className='md-ssl' href="/multi-domian-ssl">
                                     <div className='arrows-link'>
@@ -254,9 +254,9 @@ export default function Certificates() {
                                             </span>
                                         </span>
                                     </div>
-                                    <span>View SSL certificates</span>
+                                    <span>Просмотр SSL-сертификатов</span>
                                 </a>
-                                <span className='cert-price'>Starting at <b className='md-price'>$72.00</b> per year</span>
+                                <span className='cert-price'>Начиная с <b className='md-price'>$72.00</b> в год</span>
                             </div>
                         </div>
                     </li>
@@ -270,8 +270,8 @@ export default function Certificates() {
                             <span className='cert-symbol'>C</span>
                         </div>
                         <div className='cert-info-txt'>
-                            <h3>Code Signing SSL Certificates</h3>
-                            <p>Code Signing Certificates becomes very popular as ensure downloaded software has no 3rd party changes in the code. Most hackers add malware code to downloaded soft to attack servers, desktop, and mobile devices. Make sure to install programs with a valid Code Signing SSL Certificate.</p>
+                            <h3>SSL-сертификаты с подписью кода</h3>
+                            <p>Сертификаты подписи кода становятся очень популярными, так как гарантируют, что загружаемое программное обеспечение не имеет сторонних изменений в коде. Большинство хакеров добавляют вредоносный код в загружаемое программное обеспечение для атак на серверы, настольные и мобильные устройства. Убедитесь, что вы устанавливаете программы с действительным сертификатом SSL Code Signing.</p>
                             <div className="cert-pricing">
                                 <a className='cs-ssl' href="/code-signing-ssl">
                                     <div className='arrows-link'>
@@ -293,9 +293,9 @@ export default function Certificates() {
                                             </span>
                                         </span>
                                     </div>
-                                    <span>View SSL certificates</span>
+                                    <span>Просмотр SSL-сертификатов</span>
                                 </a>
-                                <span className='cert-price'>Starting at <b className='cs-price'>$72.00</b> per year</span>
+                                <span className='cert-price'>Начиная с <b className='cs-price'>$72.00</b> в год</span>
                             </div>
                         </div>
                     </li>
@@ -309,8 +309,8 @@ export default function Certificates() {
                             <span className='cert-symbol cert-symbol-a'>@</span>
                         </div>
                         <div className='cert-info-txt'>
-                            <h3>Email & Document Signing</h3>
-                            <p>Personal authentification SSL certificates are new on the market. They are allowing to sign your e-mails or MS documents. We highly suggest to use them to protect personal correspondence and to ensure your partners and end-customers the e-mails they receive are original and signed by your personal signature.</p>
+                            <h3>Подписание электронной почты и документов</h3>
+                            <p>Персональные аутентификационные SSL-сертификаты - новинка на рынке. Они позволяют подписывать ваши электронные письма или документы MS. Мы настоятельно рекомендуем использовать их для защиты личной переписки и для того, чтобы гарантировать вашим партнерам и конечным клиентам, что получаемые ими письма являются оригинальными и подписаны вашей личной подписью.</p>
                             <div className="cert-pricing">
                                 <a className='sm-ssl' href="/smime-ssl">
                                     <div className='arrows-link'>
@@ -332,9 +332,9 @@ export default function Certificates() {
                                             </span>
                                         </span>
                                     </div>
-                                    <span>View SSL certificates</span>
+                                    <span>Просмотр SSL-сертификатов</span>
                                 </a>
-                                <span className='cert-price'>Starting at <b className='sm-price'>$11.95</b> per year</span>
+                                <span className='cert-price'>Начиная с <b className='sm-price'>$11.95</b> в год</span>
                             </div>
                         </div>
                     </li>

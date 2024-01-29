@@ -10,17 +10,17 @@ export default function FooterMiddle() {
                     <div className='middle-left'>
                         <ul className='link-box'>
                             <li>
-                                <Link className='title-link' to="/company">Company</Link>
-                                <Link className='box-link-item' to="/">Homepage</Link>
-                                <Link className='box-link-item' to="/reseller-program">Reseller Program</Link>
-                                <Link className='box-link-item' to="/refund-policy">Payments/Refunds</Link>
-                                <Link className='box-link-item' to="/news">Corporate News</Link>
-                                <Link className='box-link-item' to="/terms-and-conditions">Terms & Conditions</Link>
-                                <Link className='box-link-item' to="/support">Company contacts</Link>
-                                <Link className='box-link-item' to="/sitemap">Sitemap</Link>
+                                <Link className='title-link' to="/company">Компания</Link>
+                                <Link className='box-link-item' to="/">Главная страница</Link>
+                                <Link className='box-link-item' to="/reseller-program">Программа для реселлеров</Link>
+                                <Link className='box-link-item' to="/refund-policy">Платежи/Возвраты</Link>
+                                <Link className='box-link-item' to="/news">Корпоративные новости</Link>
+                                <Link className='box-link-item' to="/terms-and-conditions">Условия и положения</Link>
+                                <Link className='box-link-item' to="/support">Контакты компании</Link>
+                                <Link className='box-link-item' to="/sitemap">Карта сайта</Link>
                             </li>
                             <li>
-                                <Link className='title-link' to="/ssl-certificates">Vendors</Link>
+                                <Link className='title-link' to="/ssl-certificates">Поставщики</Link>
                                 <Link className='box-link-item' to="/digicert">DigiCert</Link>
                                 <Link className='box-link-item' to="/sslcerts">GoGetSSL</Link>
                                 <Link className='box-link-item' to="/geotrust">GeoTrust</Link>
@@ -29,14 +29,14 @@ export default function FooterMiddle() {
                                 <Link className='box-link-item' to="/thawte">Thawte</Link>
                             </li>
                             <li>
-                                <Link className='title-link' to='/dv-ssl'>Categories</Link>
-                                <Link className='box-link-item' to='/dv-ssl'>Domain Validation</Link>
-                                <Link className='box-link-item' to='/ov-ssl'>Business Validation</Link>
-                                <Link className='box-link-item' to='/ev-ssl'>Extended Validation</Link>
+                                <Link className='title-link' to='/dv-ssl'>Категории</Link>
+                                <Link className='box-link-item' to='/dv-ssl'>Валидация домена</Link>
+                                <Link className='box-link-item' to='/ov-ssl'>Валидация бизнеса</Link>
+                                <Link className='box-link-item' to='/ev-ssl'>Расширенная проверка</Link>
                                 <Link className='box-link-item' to='/wildcard-ssl'>Wildcard SSL</Link>
-                                <Link className='box-link-item' to='/multi-domian-ssl'>UCC/SAN Certificates</Link>
+                                <Link className='box-link-item' to='/multi-domian-ssl'>Сертификаты UCC/SAN</Link>
                                 <Link className='box-link-item' to='/code-signing-ssl'>CodeSigning SSL</Link>
-                                <Link className='box-link-item' to='/vcm-certificates'>VMC Certificates</Link>
+                                <Link className='box-link-item' to='/vcm-certificates'>Сертификаты VMC</Link>
                             </li>
                         </ul>
                     </div>
@@ -82,7 +82,7 @@ export default function FooterMiddle() {
                                         <svg role='img' xmlns="http://www.w3.org/2000/svg" viewBox='0 0 28 32'>
                                             <path d="M14.0015 9.25c-1.375 0-2.438 1.063-2.438 2.375v1.688h4.875v-1.688c0-1.313-1.125-2.375-2.438-2.375h.001zm13.999-5.312C26.5015 2.875 24.1885.25 24.1885.25s-2.063 1.313-4.875 1.313c-2.875 0-5.313-1.563-5.313-1.563s-2.5 1.563-5.313 1.563c-2.813 0-4.938-1.313-4.938-1.313s-2.25 2.625-3.75 3.688c.625.875 3.938 6.063 1.625 12.875-2.188 6.563-1.813 8.188 1.313 10.625 3.5 2.625 6.75.688 11.063 4.438 4.313-3.75 7.563-1.813 11-4.438 3.188-2.438 3.563-4.063 1.375-10.625-2.375-6.813 1-12 1.625-12.875zm-7.75 17.687c0 .563-.5 1.063-1.063 1.063H8.8135c-.563 0-1.063-.5-1.063-1.063v-7.25c0-.563.5-1.063 1.063-1.063h.938v-1.688c0-2.313 1.875-4.188 4.25-4.188 2.313 0 4.25 1.875 4.25 4.188v1.688h.938c.563 0 1.063.5 1.063 1.063v7.25h-.002z"></path>
                                         </svg>
-                                        <span>GDPR compliant</span>
+                                        <span>GDPR</span>
                                     </a>
                                 </div>
                             </div>

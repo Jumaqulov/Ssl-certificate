@@ -6,7 +6,7 @@ export default function Lei() {
     return (
         <div className='certificates'>
             <div className="lei-main">
-                <h3>LEI codes. Know your client</h3>
+                <h3>Коды LEI. Знайте своего клиента</h3>
                 <div className='lei-header'>
                     <div>
                         <svg className='getlie-svg' viewBox="0 0 26 32">
@@ -16,13 +16,13 @@ export default function Lei() {
                         </svg>
                     </div>
                     <div>
-                        <p>Legal Entity Identifier (LEI) code is one of the most robust and modern way to identify any international company participating in financial transactions. The goal of LEI code is a significant help in the monitoring and measuring of systemic risk, support more inexpensive compliance with regulatory reporting requirements. The G20 countries approved usage of LEI codes. There is no need to get LEI code to Private persons. No LEI means no trade.</p>
-                        <a className='to-lei-site' href="https://www.getlei.com" target='_blank' >Visit GetLei website</a>
+                        <p>Код идентификатора юридического лица (LEI) - один из самых надежных и современных способов идентификации любой международной компании, участвующей в финансовых операциях. Целью использования кода LEI является существенная помощь в мониторинге и измерении системного риска, поддержка более недорогого соблюдения требований регуляторов по отчетности. Страны G20 одобрили использование кодов LEI. Частным лицам не нужно получать код LEI. Нет LEI - нет торговли.</p>
+                        <a className='to-lei-site' href="https://www.getlei.com" target='_blank' >Посетите веб-сайт GetLei</a>
                     </div>
                 </div>
                 <div className='lei-support'>
                     <div>
-                        <h6>Supported entities</h6>
+                        <h6>Поддерживаемые организации</h6>
                     </div>
                     <div className="lei-support-box">
                         <div className="lei-support-boxes">
@@ -35,7 +35,7 @@ export default function Lei() {
                                     </path>
                                 </svg>
                             </span>
-                            <span>Registered companies</span>
+                            <span>Зарегистрированные компании</span>
                         </div>
                         <div className="lei-support-boxes">
                             <span>
@@ -43,7 +43,7 @@ export default function Lei() {
                                     <path d="M22.851 1.256A4.396 4.396 0 0 0 19.813.069 4.845 4.845 0 0 0 16.4 1.488l-.4.4-.4-.4A4.846 4.846 0 0 0 12.187.069a4.396 4.396 0 0 0-3.038 1.187 4.537 4.537 0 0 0-.1 6.514L16 14.72l6.951-6.95a4.537 4.537 0 0 0-.1-6.514zM13.563 26.93l-.005-6.887c0-3.326-1.704-5.277-3.96-6.011-.63-.19-1.195-.692-1.72-1.217-.953-.993-1.972-2.351-3.293-2.334l-.001-.005c-.431.005-.862.161-1.235.535-.876.875-.522 2.213.233 2.969l2.454 2.453a1.221 1.221 0 0 1 0 1.727l-3.317-3.317a3.823 3.823 0 0 1-1.075-2.137c-.133-.975.166-1.883.841-2.559a2.953 2.953 0 0 1 1.804-.863l-.496-2.001C3.756-.143.133.765.133 2.51v13.036c0 .81.314 1.573.884 2.149 6.065 6.121 5.22 4.15 5.22 9.234h7.326zM31.867 2.511c0-1.746-3.623-2.654-3.66 4.772l-.496 2a2.952 2.952 0 0 1 1.804.865c.675.675.974 1.583.841 2.558a3.822 3.822 0 0 1-1.075 2.137l-3.317 3.317a1.221 1.221 0 0 1 0-1.727l2.454-2.453c.755-.755 1.109-2.094.233-2.97a1.739 1.739 0 0 0-1.235-.534l-.001.005c-1.32-.017-2.34 1.341-3.293 2.334-.525.526-1.09 1.026-1.72 1.217-2.256.734-3.96 2.685-3.96 6.011l-.005 6.888h7.325c0-5.086-.844-3.114 5.221-9.235.57-.576.884-1.34.884-2.149V2.511z" />
                                 </svg>
                             </span>
-                            <span>Non Profit/Charity</span>
+                            <span>Некоммерческая/благотворительная организация</span>
                         </div>
                         <div className="lei-support-boxes">
                             <span>
@@ -56,7 +56,7 @@ export default function Lei() {
                                     </path>
                                 </svg>
                             </span>
-                            <span>Non Profit/Charity</span>
+                            <span>Фонды и трасты</span>
                         </div>
                         <div className="lei-support-boxes">
                             <span>
@@ -66,7 +66,7 @@ export default function Lei() {
                                     </path>
                                 </svg>
                             </span>
-                            <span>Government entities</span>
+                            <span>Государственные учреждения</span>
                         </div>
                         <div className="lei-support-boxes">
                             <span>
@@ -76,7 +76,7 @@ export default function Lei() {
                                     </path>
                                 </svg>
                             </span>
-                            <span>Sole Proprietors</span>
+                            <span>Индивидуальные предприниматели</span>
                         </div>
                         <div className="lei-support-boxes">
                             <span>
@@ -89,7 +89,7 @@ export default function Lei() {
                                     </path>
                                 </svg>
                             </span>
-                            <span>Branch offices</span>
+                            <span>Филиалы</span>
                         </div>
                     </div>
                     <LeiTable />
@@ -106,8 +106,8 @@ export default function Lei() {
                                 </span>
                             </div>
                             <div className='lei-info-right'>
-                                <h4>Powered by GetLEI®</h4>
-                                <p>GetLEI® service operated by our Digicert Ireland company is a new project established in early 2019 to provide LEI codes globally helping to identify businesses/organization. LEI code is a must be the thing to represent the company in financial transactions or identity assurance use cases.</p>
+                                <h4>Работает под управлением GetLEI®</h4>
+                                <p>Сервис GetLEI®, управляемый нашей компанией Digicert Ireland, - это новый проект, созданный в начале 2019 года для предоставления кодов LEI в глобальном масштабе, помогающих идентифицировать предприятия/организации. Код LEI является обязательным условием для представления компании в финансовых транзакциях или при подтверждении личности.</p>
                             </div>
                         </li>
                         <li className='lei-info'>
@@ -133,8 +133,8 @@ export default function Lei() {
                                 </span>
                             </div>
                             <div className='lei-info-right'>
-                                <h4>API Power</h4>
-                                <p>Automate LEI code registration using our API for fast and simple bulk ordering. API allows new LEI code creation, renew LEI and checking order status. LEI reseller program available for all our customers. We are the first company released WHMCS LEI module for reselling to automate the process.</p>
+                                <h4>Мощность API</h4>
+                                <p>Автоматизируйте регистрацию кодов LEI с помощью нашего API для быстрого и простого массового заказа. API позволяет создавать новые LEI-коды, обновлять LEI и проверять статус заказа. Программа для реселлеров LEI доступна для всех наших клиентов. Мы являемся первой компанией, выпустившей WHMCS LEI модуль для реселлинга, чтобы автоматизировать этот процесс.</p>
                             </div>
                         </li>
                         <li className='lei-info'>
@@ -146,8 +146,8 @@ export default function Lei() {
                                 </span>
                             </div>
                             <div className='lei-info-right'>
-                                <h4>Free 1yr SSL within LEI transfer</h4>
-                                <p>We offer free 1-year GoGetSSL® Domain SSL certificate with every LEI transfer to our system. You will receive Domain or Extended Validation SSL for free during a renewal of your transferred LEI code for your transferred code. Please note, EV SSL comes with PRO plan.</p>
+                                <h4>Бесплатный 1 год SSL в рамках передачи LEI</h4>
+                                <p>Мы предлагаем бесплатный SSL-сертификат GoGetSSL® Domain сроком на 1 год при каждом переводе LEI в нашу систему. Вы получите SSL-сертификат домена или расширенной проверки бесплатно во время продления срока действия переданного кода LEI для вашего переданного кода. Обратите внимание, EV SSL поставляется с PRO-планом.</p>
                             </div>
                         </li>
                         <li className='lei-info'>
@@ -161,8 +161,8 @@ export default function Lei() {
                                 </span>
                             </div>
                             <div className='lei-info-right'>
-                                <h4>Data protection / GDPR compatible</h4>
-                                <p>We take our responsibility to protect all your Persona Data according to GDPR rules and guides. Our security team monitors and analyzes our system for any possible vulnerabilities using PCI scanning tools and advice of best security experts on the market. Check out Privacy Policy guide.</p>
+                                <h4>Защита данных / совместимость с GDPR</h4>
+                                <p>Мы берем на себя ответственность за защиту всех ваших персональных данных в соответствии с правилами и руководствами GDPR. Наша команда безопасности отслеживает и анализирует нашу систему на предмет любых возможных уязвимостей, используя инструменты PCI-сканирования и советы лучших экспертов по безопасности на рынке. Ознакомьтесь с руководством по политике конфиденциальности.</p>
                             </div>
                         </li>
                     </ul>

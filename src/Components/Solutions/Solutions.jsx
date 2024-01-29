@@ -68,10 +68,10 @@ export default function Solutions() {
                     </div>
                 </div>
                 <div className='tt-part-1'>
-                    <h3>PKI & Certificate Lifecycle Management Solutions</h3>
-                    <h4>We help you choose, customize, and deploy the right PKI solution to perfectly fit your organization’s needs</h4>
-                    <p>Finding the right PKI solution isn’t always easy—it needs to meet your technical and security requirements, integrate into a variety of existing business systems, and fit within your budget constraints. And the stakes are high—all it takes is one missing feature or integration to turn your PKI project into a nightmare.</p>
-                    <p>The PKI experts here at GoGetSSL are here to help you find, customize, and deploy the perfect PKI solution for your needs. We partner with the top PKI providers so we can help you review and compare multiple options to find the best one for you.</p>
+                    <h3>Решения для управления жизненным циклом сертификатов и PKI</h3>
+                    <h4>Мы поможем вам выбрать, настроить и развернуть правильное решение PKI, идеально соответствующее потребностям вашей организации.</h4>
+                    <p>Найти подходящее решение PKI не всегда просто - оно должно отвечать вашим техническим требованиям и требованиям безопасности, интегрироваться в различные существующие бизнес-системы и укладываться в рамки бюджета. И ставки высоки - достаточно одной недостающей функции или интеграции, чтобы превратить проект PKI в кошмар.</p>
+                    <p>Специалисты по PKI компании GoGetSSL готовы помочь вам найти, настроить и развернуть идеальное решение PKI для ваших нужд. Мы сотрудничаем с ведущими поставщиками PKI, поэтому мы можем помочь вам рассмотреть и сравнить несколько вариантов, чтобы найти лучший для вас.</p>
                 </div>
             </div>
             <div className="trustly-part-2">
@@ -85,7 +85,7 @@ export default function Solutions() {
                         </path>
                     </svg>
                 </span>
-                <span>Our Certificate Management & PKI Solutions</span>
+                <span>Наши решения для управления сертификатами и PKI</span>
             </div>
             <ul className='trustly-part-3'>
                 <li>
@@ -102,8 +102,8 @@ export default function Solutions() {
                         </span>
                     </div>
                     <div className='trustly-part-3-right'>
-                        <h3>Certificate Lifecycle Management</h3>
-                        <p>Easily manage every certificate in your organization with discovery scanning, automated installations, certificate request workflows, lifecycle notifications, compliance reporting, vulnerability audits, and more.</p>
+                        <h3>Управление жизненным циклом сертификата</h3>
+                        <p>Удобное управление каждым сертификатом в вашей организации с помощью сканирования при обнаружении, автоматической установки, рабочих процессов запроса сертификата, уведомлений о жизненном цикле, отчетов о соответствии, аудита уязвимостей и многого другого.</p>
                     </div>
                 </li>
                 <li>
@@ -123,8 +123,8 @@ export default function Solutions() {
                         </span>
                     </div>
                     <div className='trustly-part-3-right'>
-                        <h3>Managed PKI / Private CA</h3>
-                        <p>Get all the benefits of a private CA without the cost of building and maintaining it yourself. A managed private CA lets you issue certificates to your exact specifications for devices, servers, documents, containers, servers, and more on your internal network.</p>
+                        <h3>Управляемый PKI / частный CA</h3>
+                        <p>Получите все преимущества частного ЦС без затрат на его создание и обслуживание. Управляемый частный центр сертификации позволяет выпускать сертификаты по вашим точным спецификациям для устройств, серверов, документов, контейнеров, серверов и многого другого в вашей внутренней сети.</p>
                     </div>
                 </li>
                 <li>
@@ -141,8 +141,8 @@ export default function Solutions() {
                         </span>
                     </div>
                     <div className='trustly-part-3-right'>
-                        <h3>Managed PKI for IoT</h3>
-                        <p>Issue and manage IoT device certificates at scale with a managed PKI purpose-built for IoT manufacturers. Provision certificates in bulk at the point of manufacture or on a one-by-one basis as devices are deployed in the field.</p>
+                        <h3>Управляемая PKI для IoT</h3>
+                        <p>Выпускайте сертификаты для устройств IoT и управляйте ими в масштабе с помощью управляемой PKI, специально разработанной для производителей IoT. Предоставление сертификатов в массовом порядке на этапе производства или поштучно по мере развертывания устройств в полевых условиях.</p>
                     </div>
                 </li>
                 <li>
@@ -156,8 +156,8 @@ export default function Solutions() {
                         </span>
                     </div>
                     <div className='trustly-part-3-right'>
-                        <h3>Device Attestation Certificate for Matter IoT</h3>
-                        <p>Issue and manage Matter-trusted digital certificates for your IoT devices. This allows your devices to connect to other Matter-compatible devices including Amazon Alexa, Google Home, and many others.</p>
+                        <h3>Сертификат аттестации устройств для Matter IoT</h3>
+                        <p>Выпускайте и управляйте цифровыми сертификатами Matter для ваших IoT-устройств. Это позволит вашим устройствам подключаться к другим совместимым с Matter устройствам, включая Amazon Alexa, Google Home и многие другие.</p>
                     </div>
                 </li>
                 <li>
@@ -171,8 +171,8 @@ export default function Solutions() {
                         </span>
                     </div>
                     <div className='trustly-part-3-right'>
-                        <h3>Code Signing Service</h3>
-                        <p>Simplify code signing workflows while keeping your keys secure. Developers can sign code using their favorite tools (such as Microsoft SignTool) without the private key ever leaving its secure storage.</p>
+                        <h3>Служба подписания кодов</h3>
+                        <p>Упрощение рабочих процессов подписания кода при сохранении безопасности ключей. Разработчики могут подписывать код с помощью своих любимых инструментов (например, Microsoft SignTool), при этом закрытый ключ никогда не покидает безопасного хранилища.</p>
                     </div>
                 </li>
                 <li>
@@ -189,8 +189,8 @@ export default function Solutions() {
                         </span>
                     </div>
                     <div className='trustly-part-3-right'>
-                        <h3>Document Signing Service</h3>
-                        <p>Streamline your document signing processes while ensuring that every document has a trusted, compliant digital signature. Employees, contractors, customers, etc. can easily sign documents using our integration options for Adobe, DocuSign, and other popular software.</p>
+                        <h3>Служба подписания документов</h3>
+                        <p>Оптимизируйте процессы подписания документов, гарантируя, что каждый документ будет иметь надежную цифровую подпись, соответствующую требованиям. Сотрудники, подрядчики, клиенты и т. д. могут легко подписывать документы, используя наши возможности интеграции с Adobe, DocuSign и другими популярными программами.</p>
                     </div>
                 </li>
                 <li>
@@ -207,8 +207,8 @@ export default function Solutions() {
                         </span>
                     </div>
                     <div className='trustly-part-3-right'>
-                        <h3>Qualified Certificates (PSD2 / eIDAS)</h3>
-                        <p>Digital certificates that comply with the strictest standards for trust, including certificates for PSD2, ETSI, eIDAS and Swiss ZertES. Issued from European roots and hosted in EU data centers, with global trust and support.</p>
+                        <h3>Квалифицированные сертификаты (PSD2 / eIDAS)</h3>
+                        <p>Цифровые сертификаты, соответствующие самым строгим стандартам доверия, включая сертификаты для PSD2, ETSI, eIDAS и Swiss ZertES. Выпускаются из европейских источников и размещаются в центрах обработки данных ЕС, обеспечивая доверие и поддержку по всему миру.</p>
                     </div>
                 </li>
             </ul>

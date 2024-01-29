@@ -37,7 +37,7 @@ export default function FooterTop() {
                     </div>
                 </div>
                 <div className='footer-top-right'>
-                    <p>SSL Supported by 99.6% of browsers and Mobile Devices</p>
+                    <p>SSL поддерживается 99,6% браузеров и мобильных устройств</p>
                 </div>
             </div>
         </div>

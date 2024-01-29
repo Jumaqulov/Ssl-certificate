@@ -36,7 +36,7 @@ export default function Country({ onChange }) {
     });
     return (
         <select onChange={handleCountryChange}>
-            <option selected>-- Select Country --</option>
+            <option selected>-- Выберите страну --</option>
             {sortedCountries.map((country, index) => (
                 <option key={index} value={country.name.common}>{country.name.common}</option>
             ))}

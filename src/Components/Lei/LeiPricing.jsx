@@ -3,82 +3,55 @@ import React from 'react'
 export default function LeiPricing() {
     return (
         <div className="lei-pricing">
-            <p className='lei-pricing-title'>LEI Pricing/Plans</p>
+            <p className='lei-pricing-title'>LEI Ценообразование/Планы</p>
             <table className='lei-pricing'>
                 <thead>
                     <tr>
                         <th className='desktop'></th>
-                        <th>Basic</th>
-                        <th>Transfer</th>
-                        <th>Pro</th>
+                        <th>Основной</th>
+                        <th>Передача</th>
+                        <th>Про</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr className='mobile'>
-                        <td colSpan='4'>Pricing Plan</td>
+                        <td colSpan='4'>План ценообразования</td>
                     </tr>
                     <tr>
-                        <td className='desktop'>Pricing Plan</td>
+                        <td className='desktop'>План ценообразования</td>
                         <td className='lie-price'>
                             <span>$62.00</span>
-                            <span>billed annually</span>
+                            <span>годовой счет</span>
                         </td>
                         <td className='lie-price'>
                             <span>$62.00</span>
-                            <span>billed annually</span>
+                            <span>годовой счет</span>
                         </td>
                         <td className='lie-price'>
                             <span>$155.00</span>
-                            <span>billed annually</span>
+                            <span>годовой счет</span>
                         </td>
                     </tr>
                     <tr className='mobile'>
-                        <td colSpan='3'>Period</td>
+                        <td colSpan='3'></td>
                     </tr>
                     <tr>
-                        <td className='desktop'>Period</td>
+                        <td className='desktop'>Период</td>
                         <td className='lie-price'>
-                            <span>Up to 5 years</span>
-                        </td>
-                        <td className='lie-price'>
-                            <span>1 year</span>
+                            <span>До 5 лет</span>
                         </td>
                         <td className='lie-price'>
-                            <span>Up to 5 years</span>
+                            <span>1 год</span>
+                        </td>
+                        <td className='lie-price'>
+                            <span>До 5 лет</span>
                         </td>
                     </tr>
                     <tr className='mobile'>
-                        <td colSpan='3'>LEI Registration</td>
+                        <td colSpan='3'>Регистрация LEI</td>
                     </tr>
                     <tr>
-                        <td className='desktop'>LEI Registration</td>
-                        <td className='lei-yes'>
-                            <svg viewBox='0 0 32 25'>
-                                <path
-                                    d="M31.904 5.088c0 .504-.144 1.008-.505 1.368L13.696 24.16c-.431.36-.863.575-1.44.575a1.97 1.97 0 0 1-1.368-.575L.596 13.94c-.358-.431-.502-.862-.502-1.44 0-.504.144-1.007.505-1.368l2.806-2.807c.432-.432.864-.576 1.44-.576.504 0 1.007.144 1.367.576l6.046 6.045L25.788.84c.36-.36.862-.575 1.368-.575.575 0 1.007.216 1.439.575l2.806 2.808c.36.431.505.862.505 1.439l-.002.001z">
-                                </path>
-                            </svg>
-                        </td>
-                        <td className='lei-yes'>
-                            <svg viewBox='0 0 32 25'>
-                                <path
-                                    d="M31.904 5.088c0 .504-.144 1.008-.505 1.368L13.696 24.16c-.431.36-.863.575-1.44.575a1.97 1.97 0 0 1-1.368-.575L.596 13.94c-.358-.431-.502-.862-.502-1.44 0-.504.144-1.007.505-1.368l2.806-2.807c.432-.432.864-.576 1.44-.576.504 0 1.007.144 1.367.576l6.046 6.045L25.788.84c.36-.36.862-.575 1.368-.575.575 0 1.007.216 1.439.575l2.806 2.808c.36.431.505.862.505 1.439l-.002.001z">
-                                </path>
-                            </svg>
-                        </td>
-                        <td className='lei-yes'>
-                            <svg viewBox='0 0 32 25'>
-                                <path
-                                    d="M31.904 5.088c0 .504-.144 1.008-.505 1.368L13.696 24.16c-.431.36-.863.575-1.44.575a1.97 1.97 0 0 1-1.368-.575L.596 13.94c-.358-.431-.502-.862-.502-1.44 0-.504.144-1.007.505-1.368l2.806-2.807c.432-.432.864-.576 1.44-.576.504 0 1.007.144 1.367.576l6.046 6.045L25.788.84c.36-.36.862-.575 1.368-.575.575 0 1.007.216 1.439.575l2.806 2.808c.36.431.505.862.505 1.439l-.002.001z">
-                                </path>
-                            </svg>
-                        </td>
-                    </tr>
-                    <tr className='mobile'>
-                        <td>LEI data update</td>
-                    </tr>
-                    <tr>
-                        <td className='desktop'>LEI data update</td>
+                        <td className='desktop'>Регистрация LEI</td>
                         <td className='lei-yes'>
                             <svg viewBox='0 0 32 25'>
                                 <path
@@ -102,10 +75,37 @@ export default function LeiPricing() {
                         </td>
                     </tr>
                     <tr className='mobile'>
-                        <td colSpan='3'>SSL validation Speed-up</td>
+                        <td>Обновление данных LEI</td>
                     </tr>
                     <tr>
-                        <td className='desktop'>SSL validation Speed-up</td>
+                        <td className='desktop'>Обновление данных LEI</td>
+                        <td className='lei-yes'>
+                            <svg viewBox='0 0 32 25'>
+                                <path
+                                    d="M31.904 5.088c0 .504-.144 1.008-.505 1.368L13.696 24.16c-.431.36-.863.575-1.44.575a1.97 1.97 0 0 1-1.368-.575L.596 13.94c-.358-.431-.502-.862-.502-1.44 0-.504.144-1.007.505-1.368l2.806-2.807c.432-.432.864-.576 1.44-.576.504 0 1.007.144 1.367.576l6.046 6.045L25.788.84c.36-.36.862-.575 1.368-.575.575 0 1.007.216 1.439.575l2.806 2.808c.36.431.505.862.505 1.439l-.002.001z">
+                                </path>
+                            </svg>
+                        </td>
+                        <td className='lei-yes'>
+                            <svg viewBox='0 0 32 25'>
+                                <path
+                                    d="M31.904 5.088c0 .504-.144 1.008-.505 1.368L13.696 24.16c-.431.36-.863.575-1.44.575a1.97 1.97 0 0 1-1.368-.575L.596 13.94c-.358-.431-.502-.862-.502-1.44 0-.504.144-1.007.505-1.368l2.806-2.807c.432-.432.864-.576 1.44-.576.504 0 1.007.144 1.367.576l6.046 6.045L25.788.84c.36-.36.862-.575 1.368-.575.575 0 1.007.216 1.439.575l2.806 2.808c.36.431.505.862.505 1.439l-.002.001z">
+                                </path>
+                            </svg>
+                        </td>
+                        <td className='lei-yes'>
+                            <svg viewBox='0 0 32 25'>
+                                <path
+                                    d="M31.904 5.088c0 .504-.144 1.008-.505 1.368L13.696 24.16c-.431.36-.863.575-1.44.575a1.97 1.97 0 0 1-1.368-.575L.596 13.94c-.358-.431-.502-.862-.502-1.44 0-.504.144-1.007.505-1.368l2.806-2.807c.432-.432.864-.576 1.44-.576.504 0 1.007.144 1.367.576l6.046 6.045L25.788.84c.36-.36.862-.575 1.368-.575.575 0 1.007.216 1.439.575l2.806 2.808c.36.431.505.862.505 1.439l-.002.001z">
+                                </path>
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr className='mobile'>
+                        <td colSpan='3'>Ускорение проверки SSL</td>
+                    </tr>
+                    <tr>
+                        <td className='desktop'>Ускорение проверки SSL</td>
                         <td className='lei-yes'>
                             <svg viewBox='0 0 32 25'>
                                 <path
@@ -131,17 +131,17 @@ export default function LeiPricing() {
                     <tr className='mobile'>
                         <td className='lei-detailed' colSpan='3'>
                             <span>
-                                <a href="">Free SSL certificate</a>
+                                <a href="">Бесплатный SSL-сертификат</a>
                             </span>
-                            <span>Trusted and professional SSL comes with every plan</span>
+                            <span>Надежный и профессиональный SSL поставляется с каждым планом</span>
                         </td>
                     </tr>
                     <tr>
                         <td className='lei-detailed desktop'>
                             <span>
-                                <a href="">Free SSL certificate</a>
+                                <a href="">Бесплатный SSL-сертификат</a>
                             </span>
-                            <span>Trusted and professional SSL comes with every plan</span>
+                            <span>Надежный и профессиональный SSL поставляется с каждым планом</span>
                         </td>
                         <td>
                             <span className='lei-yes'>
@@ -152,7 +152,7 @@ export default function LeiPricing() {
                                 </svg>
                             </span>
                             <i className='yes-num'>
-                                GoGetSSL® Domain SSL certificate
+                                
                             </i>
                         </td>
                         <td>
@@ -164,7 +164,7 @@ export default function LeiPricing() {
                                 </svg>
                             </span>
                             <i className='yes-num'>
-                                GoGetSSL® Domain SSL certificate
+                                GoGetSSL® Доменный SSL-сертификат
                             </i>
                         </td>
                         <td>
@@ -176,7 +176,7 @@ export default function LeiPricing() {
                                 </svg>
                             </span>
                             <i className='yes-num'>
-                                GoGetSSL® Domain SSL certificate
+                                GoGetSSL® Доменный SSL-сертификат
                             </i>
                         </td>
                     </tr>
@@ -184,20 +184,20 @@ export default function LeiPricing() {
                         <td className='desktop'></td>
                         <td>
                             <a href="">
-                                <span className='desktop'>Choose <br /> This plan</span>
-                                <span className='mobile'>Order</span>
+                                <span className='desktop'>Выберите <br /> Этот план</span>
+                                <span className='mobile'>Заказать</span>
                             </a>
                         </td>
                         <td>
                             <a href="">
-                                <span className='desktop'>Choose <br /> This plan</span>
-                                <span className='mobile'>Order</span>
+                                <span className='desktop'>Выберите <br /> Этот план</span>
+                                <span className='mobile'>Заказать</span>
                             </a>
                         </td>
                         <td>
                             <a href="">
-                                <span className='desktop'>Choose <br /> This plan</span>
-                                <span className='mobile'>Order</span>
+                                <span className='desktop'>Выберите <br /> Этот план</span>
+                                <span className='mobile'>Заказать</span>
                             </a>
                         </td>
                     </tr>

@@ -5,7 +5,7 @@ export default function Reseller() {
     return (
         <div className='certificates'>
             <div className='cert-txt'>
-                <h3>SSL Reseller Program</h3>
+                <h3>Программа для реселлеров SSL</h3>
                 <p className='cert-txt-item'>
                     <span>
                         <svg className='cert-txt-svg' viewBox="0 0 32 24">
@@ -14,22 +14,22 @@ export default function Reseller() {
                             </path>
                         </svg>
                     </span>
-                    <span>GoGetSSL® is a well-known and trusted SSL provider offering reasonable prices for start-up, small, medium and large enterprise customers. We are flexible and in some cases, we may provide lower prices for digital certificates to beginners, who just start their business if we feel there will be a success in the future.</span>
+                    <span>GoGetSSL® - известный и надежный SSL-провайдер, предлагающий разумные цены для начинающих, малых, средних и крупных предприятий. Мы проявляем гибкость и в некоторых случаях можем предоставить более низкие цены на цифровые сертификаты для новичков, которые только начинают свой бизнес, если мы чувствуем, что в будущем их ждет успех.</span>
                 </p>
-                <p>Our network includes more than 9k+ active partners who distribute SSL in 188 countries. The reseller program allows to sell Domain, Business, and Extended Validation SSL certificates, S/MIME certificates, SAN/Multi-Domain certificates, Wildcard and Code Signing certificates. Our SSL reseller program offers products by trusted certificate authorities like DigiCert, RapidSSL, Thawtem, GeoTrust and Sectigo.</p>
-                <p>You can resell SSL certificates to your customers using our API or reseller modules and management consoles from WHMCS, HostBillApp, Blesta, RootPanel, ISP Billmanager. All you need to start distribution security solutions is to fill reseller form and managers would create a free account with Premium prices within a few hours..</p>
+                <p>Наша сеть насчитывает более 9 тысяч активных партнеров, которые распространяют SSL в 188 странах. Программа для реселлеров позволяет продавать SSL-сертификаты для доменов, бизнеса и расширенной проверки, S/MIME-сертификаты, SAN/мультидоменные сертификаты, Wildcard и сертификаты с подписью кода. Наша программа SSL-реселлеров предлагает продукты таких надежных центров сертификации, как DigiCert, RapidSSL, Thawtem, GeoTrust и Sectigo.</p>
+                <p>Вы можете перепродавать SSL-сертификаты своим клиентам, используя наш API или реселлерские модули и консоли управления WHMCS, HostBillApp, Blesta, RootPanel, ISP Billmanager. Все, что вам нужно для начала распространения решений по безопасности - это заполнить форму реселлера, и менеджеры создадут бесплатный аккаунт с премиум-ценами в течение нескольких часов.</p>
                 <div className="info-block">
                     <div>
                         <span>2,300,000+</span>
-                        <span>Issued certificates</span>
+                        <span>Выданные сертификаты</span>
                     </div>
                     <div>
                         <span>101,500+</span>
-                        <span>Customers</span>
+                        <span>Клиенты</span>
                     </div>
                     <div>
                         <span>9,000+</span>
-                        <span>Partners globally</span>
+                        <span>Партнеры по всему миру</span>
                     </div>
                 </div>
                 <h2 className='be-partner'>
@@ -39,10 +39,10 @@ export default function Reseller() {
                                 d="M31.905 3.353v9.63s-2.061.405-2.486.459c-.423.053-1.753.483-2.717-.444-1.486-1.425-6.767-6.677-6.767-6.677s-.911-.893-2.373-.12c-1.342.706-3.332 1.743-4.163 2.147-1.57.836-2.873-.49-2.873-1.501 0-.784.49-1.316 1.189-1.707 1.894-1.149 5.888-3.39 7.552-4.275 1.01-.537 1.74-.583 3.127.586C24.104 2.89 25.626 4.2 25.626 4.2s.496.414 1.287.247c1.944-.411 4.992-1.094 4.992-1.094zM10.884 19.67c.256-.657.17-1.392-.32-1.896-.44-.451-1.084-.57-1.697-.43.171-.608.076-1.256-.367-1.712-.441-.45-1.084-.572-1.697-.43.17-.607.076-1.255-.367-1.71-.694-.712-1.895-.682-2.684.07-.784.753-1.287 2.117-.586 2.92.699.798 1.502.312 2.114.173-.17.607-.68 1.172-.052 1.967.628.796 1.502.313 2.115.175-.171.605-.66 1.227-.055 1.964.61.74 1.609.346 2.269.14-.255.655-.8 1.361-.1 2.152.7.796 2.315.428 3.104-.325.787-.753.862-1.946.17-2.66-.478-.49-1.19-.604-1.847-.398zm14.399-5.01c-5.705-5.704-3.022-3.02-6.092-6.096 0 0-.922-.919-2.138-.385-.854.374-1.953.884-2.78 1.273-.908.476-1.562.624-1.87.622-1.756-.012-3.181-1.424-3.181-3.179a3.17 3.17 0 0 1 1.506-2.692c1.267-.877 4.185-2.429 4.185-2.429S14.024.647 12.077.647C10.13.647 6.063 3.31 6.063 3.31s-1.153.739-2.798.073L.095 2.281v11.018s.905.262 1.719.594c.183-.524.48-1.007.89-1.407 1.35-1.285 3.587-1.298 4.814-.034.37.384.628.842.76 1.349.494.153.942.423 1.303.794.37.382.628.843.76 1.347.494.153.942.424 1.303.795.407.42.678.927.805 1.476.516.15.983.43 1.359.814.737.758 1 1.786.84 2.778a24.176 24.176 0 0 0 .74.794 1.401 1.401 0 0 0 1.978 0 1.404 1.404 0 0 0 0-1.978c-.02-.019-1.963-2.05-1.806-2.209.155-.156 2.63 2.42 2.676 2.466.543.544 1.43.544 1.976 0a1.401 1.401 0 0 0 0-1.976 10.26 10.26 0 0 1-.18-.174s-2.453-2.186-2.266-2.373c.189-.188 3.237 2.656 3.242 2.656.548.494 1.392.49 1.919-.037.513-.513.524-1.324.069-1.87-.01-.03-2.323-2.447-2.142-2.63.183-.184 2.472 2.173 2.477 2.178.542.543 1.43.543 1.976 0a1.405 1.405 0 0 0 0-1.978l-.024-.015z">
                             </path>
                         </svg>
-                        <span>Become our Partner</span>
+                        <span>Станьте нашим партнером</span>
                     </a>
                     <a className='be-partner-2' href="#fill-form">
-                        <span>Become our Partner</span>
+                        <span>Станьте нашим партнером</span>
                     </a>
                 </h2>
                 <ul className='reseler-ul'>
@@ -57,8 +57,8 @@ export default function Reseller() {
                             </span>
                         </div>
                         <div>
-                            <h3>Best SSL Prices available</h3>
-                            <p>We receive high discounts as one of the largest providers of SSL certificates in the World and forward competitive prices around our network. Starting in 2019 we provide our own SUB-CA SSL certificates globally with a very low price keeping the best quality. Low prices give you the option to have margin and build own customers network</p>
+                            <h3>Лучшие цены на SSL</h3>
+                            <p>Мы получаем большие скидки как один из крупнейших поставщиков SSL-сертификатов в мире и предлагаем конкурентные цены по всей нашей сети. Начиная с 2019 года мы предоставляем собственные SSL-сертификаты SUB-CA по всему миру по очень низким ценам при сохранении наилучшего качества. Низкие цены дают вам возможность иметь маржу и создавать собственную сеть клиентов</p>
                         </div>
                     </li>
                     <li>
@@ -72,8 +72,8 @@ export default function Reseller() {
                             </span>
                         </div>
                         <div>
-                            <h3>No Deposit, commitments or limits</h3>
-                            <p>There is no need to make any deposit to become our partner, as you can start with Pay As You Go plan. It requires filing a reseller request form, and our sales managers will review it within a short time, normally within 24 hours. However, a deposit may be necessary if you want to receive better pricing.</p>
+                            <h3>Без депозита, обязательств и ограничений</h3>
+                            <p>Чтобы стать нашим партнером, не нужно вносить депозит, так как вы можете начать работу с планом Pay As You Go. Для этого необходимо заполнить форму заявки реселлера, и наши менеджеры по продажам рассмотрят ее в течение короткого времени, обычно в течение 24 часов. Однако, если вы хотите получить более выгодные цены, может потребоваться внесение депозита.</p>
                         </div>
                     </li>
                     <li>
@@ -90,8 +90,8 @@ export default function Reseller() {
                             </span>
                         </div>
                         <div>
-                            <h3>Marketing Development Funds (MDF)</h3>
-                            <p>We are the only SSL provider globally ready to provide you real cash to advertise your company on your local markets. You may receive up to 20,000$ real cash from us for the promo campaign. Don't hesitate to contact our sales team to discuss the conditions</p>
+                            <h3>Фонды развития маркетинга (ФРМ)</h3>
+                            <p>Мы являемся единственным SSL-провайдером во всем мире, готовым предоставить вам реальные деньги для рекламы вашей компании на местных рынках. Вы можете получить от нас до 20 000 долларов реальными деньгами на проведение рекламной кампании. Не стесняйтесь связаться с нашим отделом продаж, чтобы обсудить условия.</p>
                         </div>
                     </li>
                     <li>
@@ -105,8 +105,8 @@ export default function Reseller() {
                             </span>
                         </div>
                         <div>
-                            <h3>Switching from another SSL provider?</h3>
-                            <p>We are proud to say that new partners are switching to us daily, as we offer a complete price match. Please provide us your current prices or sales history for quick analysis to receive the best offer from our sales team. No upfront deposit requires to all partners who switch to us, as you will receive PayAsYouGo or monthly billing plan to start to resell SSL as soon as possible.</p>
+                            <h3>Переход от другого провайдера SSL?</h3>
+                            <p>Мы с гордостью можем сказать, что новые партнеры переходят к нам ежедневно, поскольку мы предлагаем полное соответствие цен. Пожалуйста, предоставьте нам ваши текущие цены или историю продаж для быстрого анализа, чтобы получить лучшее предложение от нашего отдела продаж. Всем партнерам, которые переходят к нам, не требуется авансовый депозит, так как вы получите PayAsYouGo или ежемесячный биллинговый план, чтобы начать перепродажу SSL как можно скорее.</p>
                         </div>
                     </li>
                     <li>
@@ -120,8 +120,8 @@ export default function Reseller() {
                             </span>
                         </div>
                         <div>
-                            <h3>White-label Solutions</h3>
-                            <p>There is the golden rule: "Customer of our customer is not our customer". The SSL distribution mechanism is white-label that means your end-customers will know nothing about GoGetSSL. We try to make all the processes as more transparent as it's possible. We never send any direct messages or try to communicate with the partner's end-customers. Stable relationships based on trust is what we truly offer to all.</p>
+                            <h3>Решения для белых меток</h3>
+                            <p>Существует золотое правило: "Клиент нашего клиента - не наш клиент". Механизм распространения SSL - white-label, то есть ваши конечные клиенты ничего не будут знать о GoGetSSL. Мы стараемся сделать все процессы настолько прозрачными, насколько это возможно. Мы никогда не отправляем никаких прямых сообщений и не пытаемся общаться с конечными клиентами партнера. Стабильные отношения, основанные на доверии, - это то, что мы действительно предлагаем всем.</p>
                         </div>
                     </li>
                     <li>
@@ -135,8 +135,8 @@ export default function Reseller() {
                             </span>
                         </div>
                         <div>
-                            <h3>Monthly billing with credit line</h3>
-                            <p>We offer unique monthly billing service for large customers/partners with a high volume orders to receive one monthly invoice instead of hundreds of them. Monthly service clients receive one invoice every first-month date for all purchases made within a previous month. The credit limit is up to 150,000 USD / 130,000 EUR and the invoice should be paid within 7-10 days.</p>
+                            <h3>Ежемесячное выставление счетов с кредитной линией</h3>
+                            <p>Мы предлагаем уникальную услугу ежемесячного выставления счетов для крупных клиентов/партнеров с большим объемом заказов, чтобы получать один ежемесячный счет вместо сотен. Клиенты, пользующиеся услугой ежемесячного биллинга, получают один счет за все покупки, совершенные в предыдущем месяце. Кредитный лимит составляет до 150 000 USD / 130 000 EUR, а счет должен быть оплачен в течение 7-10 дней.</p>
                         </div>
                     </li>
                     <li>
@@ -150,8 +150,8 @@ export default function Reseller() {
                             </span>
                         </div>
                         <div>
-                            <h3>Flexible Payment Options</h3>
-                            <p>It's crucial to receive payments day and night 365-days a year. Our certificate store has complete integration with Skrill, PayPal, and Webmoney, as well as direct wire bank transfers. We allow GiroPay, JCB, Postepay, iDeal, Carte Bleue, CartaSi and others via Skrill/PayPal gateways. You will receive EU-standard PDF invoice with all credentials to make payments via your Bank (Wire Transfer).</p>
+                            <h3>Гибкие варианты оплаты</h3>
+                            <p>Очень важно получать платежи днем и ночью 365 дней в году. Наше хранилище сертификатов имеет полную интеграцию со Skrill, PayPal и Webmoney, а также с прямыми банковскими переводами. Мы принимаем GiroPay, JCB, Postepay, iDeal, Carte Bleue, CartaSi и другие платежи через шлюзы Skrill/PayPal. Вы получите PDF-инвойс, соответствующий стандартам ЕС, со всеми реквизитами для осуществления платежей через ваш банк (банковский перевод).</p>
                         </div>
                     </li>
                 </ul>

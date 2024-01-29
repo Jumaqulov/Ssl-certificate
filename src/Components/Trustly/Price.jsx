@@ -128,90 +128,90 @@ export default function Price() {
         <table>
           <thead>
             <th></th>
-            <th className='ts-brown-2' colSpan={2}>Basic</th>
-            <th className='ts-brown-3' colSpan={2}>Professional</th>
+            <th className='ts-brown-2' colSpan={2}>Основной</th>
+            <th className='ts-brown-3' colSpan={2}>Профессионал</th>
           </thead>
           <tbody>
-            {DesktopTitle1('General Features')}
+            {DesktopTitle1('Общие характеристики')}
             <tr>
               <td className='ts-brown-1'>
-                <h4>Scanner type</h4>
-                <p>Full scan requires domain verification via validation file (HTTPS)</p>
+                <h4>Тип сканера</h4>
+                <p>Полное сканирование требует проверки домена через файл проверки (HTTPS)</p>
               </td>
               <td className='ts-brown-2 ts-td-center' colSpan={2}>
-                <p>Quick scan</p>
+                <p>Быстрое сканирование</p>
               </td>
               <td className='ts-brown-3 ts-td-center' colSpan={2}>
-                <p>Full Scan</p>
+                <p>Полное сканирование</p>
               </td>
             </tr>
-            {DesktopOnceYes({ title: "OWASP Top 10 Vulnerability Scanning", txt: 'Scans for the OWASP Top 10 vulnerabilities. A complete list of our scanners in the "Features" tab.' })}
-            {DesktopOnceYes({ title: 'Automated Domain Verification', txt: 'Verify scan targets for invasive scanning through placing a file on your system or a specific API-response for a GET-statement.' })}
-            {DesktopOnceYes({ title: 'Speed up Scanning', txt: 'Enables adjusting the scan requests per second.' })}
-            {DesktopDoubleYes({ title: 'Access to security wiki', txt: 'Includes general descriptions, code snippets for fixing, and videos.' })}
-            {DesktopDoubleYes({ title: 'Regular Updates', txt: 'We provide regular updates and new features to our scanners and the user interface.' })}
-            {DesktopTitle1('Scan Targets')}
-            {DesktopDoubleYes({ title: 'Multi Page Web Applications', txt: 'An application, which consists of multiple individual pages. This is typically the case, if you have a HTML, JSP, etc. per page displayed in your browser.' })}
-            {DesktopOnceYes({ title: 'Deep Scan – Automated JavaScript Scanning', txt: 'An application, which is based on JavaScript. This is typically the case, if the application is based on or uses frameworks like Angular, React, Vue, jQuery or similar.' })}
-            {DesktopOnceYes({ title: 'REST API Scanning', txt: 'An application programming interface (API), which is documented in a Swagger / OpenAPI version 2 file. Usually the documentation is stored in a swagger.json file, which can be imported by the scanner.' })}
-            {DesktopTitle1('Authentication')}
-            {DesktopOnceYes({ title: 'Application Login with Credentials', txt: 'Log in to your application via BasicAuth or with user credentials (user/password).' })}
-            {DesktopOnceYes({ title: 'Advanced Application Login', txt: 'Log in to your application by defining keys and values for Cookies, HTTP Headers, or GET parameters.' })}
-            {DesktopTitle1('Scheduling / Automation')}
-            {DesktopDoubleYes({ title: 'Detailed PDF Reporting', txt: 'Get our detailed pdf reporting with a high-level scan summary, detailed scan findings, general and specific descriptions of the found attack vectors, and remediation support.' })}
-            {DesktopOnceYes({ title: 'Scheduled Scanning', txt: 'Create a scan schedule for your project to start scans on a daily or weekly basis.' })}
-            {DesktopOnceYes({ title: 'Machine-readable reports', txt: 'Get our machine-readable reports in CSV, JSON, or XML format.' })}
-            {DesktopTitle1('Scanning vulnerabilities and security issues')}
-            {DesktopDoubleYes({ txt: 'Server Version Fingerprinting' })}
-            {DesktopDoubleYes({ txt: 'Web Application Version Fingerprinting' })}
-            {DesktopDoubleYes({ txt: 'CVE Comparison' })}
+            {DesktopOnceYes({ title: "OWASP Top 10 сканирование уязвимостей", txt: 'Сканирование на наличие 10 лучших уязвимостей OWASP. Полный список наших сканеров на вкладке "Возможности".' })}
+            {DesktopOnceYes({ title: 'Автоматизированная проверка доменов', txt: 'Проверьте цели для инвазивного сканирования, разместив файл на вашей системе или определенный API-ответ на GET-запрос.' })}
+            {DesktopOnceYes({ title: 'Ускорение сканирования', txt: 'Позволяет регулировать количество запросов на сканирование в секунду.' })}
+            {DesktopDoubleYes({ title: 'Доступ к вики по безопасности', txt: 'Содержит общие описания, фрагменты кода для исправления и видеоролики.' })}
+            {DesktopDoubleYes({ title: 'Регулярные обновления', txt: 'Мы регулярно обновляем и добавляем новые функции в наши сканеры и пользовательский интерфейс.' })}
+            {DesktopTitle1('Цели сканирования')}
+            {DesktopDoubleYes({ title: 'Многостраничные веб-приложения', txt: 'Приложение, состоящее из нескольких отдельных страниц. Обычно это происходит, если на каждой странице в браузере отображается HTML, JSP и т. д.' })}
+            {DesktopOnceYes({ title: 'Deep Scan - автоматическое сканирование JavaScript', txt: 'Приложение, основанное на JavaScript. Обычно это происходит, если приложение основано или использует такие фреймворки, как Angular, React, Vue, jQuery или подобные.' })}
+            {DesktopOnceYes({ title: 'Сканирование REST API', txt: 'Интерфейс прикладного программирования (API), который документирован в файле Swagger / OpenAPI версии 2. Обычно документация хранится в файле swagger.json, который может быть импортирован сканером.' })}
+            {DesktopTitle1('Авторизация')}
+            {DesktopOnceYes({ title: 'Вход в приложение с учетными данными', txt: 'Войдите в приложение через BasicAuth или с помощью учетных данных пользователя (пользователь/пароль).' })}
+            {DesktopOnceYes({ title: 'Вход в расширенное приложение', txt: 'Войдите в свое приложение, определив ключи и значения для Cookies, заголовков HTTP или параметров GET.' })}
+            {DesktopTitle1('Планирование / автоматизация')}
+            {DesktopDoubleYes({ title: 'Подробные отчеты в формате PDF', txt: 'Получите подробный отчет в формате pdf с резюме сканирования на высоком уровне, подробными результатами сканирования, общими и конкретными описаниями найденных векторов атак, а также поддержкой по устранению последствий.' })}
+            {DesktopOnceYes({ title: 'Сканирование по расписанию', txt: 'Создайте расписание сканирования для своего проекта, чтобы запускать сканирование ежедневно или еженедельно.' })}
+            {DesktopOnceYes({ title: 'Машиночитаемые отчеты', txt: 'Получайте наши машиночитаемые отчеты в формате CSV, JSON или XML.' })}
+            {DesktopTitle1('Сканирование уязвимостей и проблем безопасности')}
+            {DesktopDoubleYes({ txt: 'Отпечатки версии сервера' })}
+            {DesktopDoubleYes({ txt: 'Отпечатки версий веб-приложений' })}
+            {DesktopDoubleYes({ txt: 'Сравнение CVE' })}
             {DesktopDoubleYes({ txt: 'Heartbleed' })}
             {DesktopDoubleYes({ txt: 'ROBOT, BREACH, BEAST' })}
-            {DesktopDoubleYes({ txt: 'Old SSL/TLS Version' })}
-            {DesktopDoubleYes({ txt: 'SSL/TLS Cipher Order' })}
+            {DesktopDoubleYes({ txt: 'Старая версия SSL/TLS' })}
+            {DesktopDoubleYes({ txt: 'Порядок шифрования SSL/TLS' })}
             {DesktopDoubleYes({ txt: 'SSL/TLS Perfect Forward Secrecy' })}
-            {DesktopDoubleYes({ txt: 'SSL/TLS Session Resumption' })}
-            {DesktopDoubleYes({ txt: 'SSL/TLS secure algorithm' })}
-            {DesktopDoubleYes({ txt: 'SSL/TLS key size' })}
-            {DesktopDoubleYes({ txt: 'SSL/TLS trust chain' })}
-            {DesktopDoubleYes({ txt: 'SSL/TLS expiration date' })}
-            {DesktopDoubleYes({ txt: 'SSL/TLS revocation (CRL, OCSP)' })}
-            {DesktopDoubleYes({ txt: 'SSL/TLS OCSP stapling' })}
-            {DesktopDoubleYes({ txt: 'Security Headers' })}
-            {DesktopDoubleYes({ txt: 'Content-Security-Policy headers' })}
+            {DesktopDoubleYes({ txt: 'Возобновление сеанса SSL/TLS' })}
+            {DesktopDoubleYes({ txt: 'Безопасный алгоритм SSL/TLS' })}
+            {DesktopDoubleYes({ txt: 'Размер ключа SSL/TLS' })}
+            {DesktopDoubleYes({ txt: 'Цепочка доверия SSL/TLS' })}
+            {DesktopDoubleYes({ txt: 'Дата истечения срока действия SSL/TLS' })}
+            {DesktopDoubleYes({ txt: 'Отзыв SSL/TLS (CRL, OCSP)' })}
+            {DesktopDoubleYes({ txt: 'Сшивание SSL/TLS OCSP' })}
+            {DesktopDoubleYes({ txt: 'Заголовок безопасностиs' })}
+            {DesktopDoubleYes({ txt: 'Заголовки Content-Security-Policy' })}
             {DesktopDoubleYes({ txt: 'Portscan' })}
-            {DesktopOnceYes({ txt: 'Boolean-based blind SQL Injection' })}
-            {DesktopOnceYes({ txt: 'Time-based blind SQL Injection' })}
-            {DesktopOnceYes({ txt: 'Error-based SQL Injection' })}
-            {DesktopOnceYes({ txt: 'UNION query-based SQL Injection' })}
-            {DesktopOnceYes({ txt: 'Stacked queries SQL Injection' })}
-            {DesktopOnceYes({ txt: 'Out-of-band SQL Injection' })}
-            {DesktopOnceYes({ txt: 'Reflected Cross-site scripting (XSS)' })}
-            {DesktopOnceYes({ txt: 'Stored Cross-site scripting (XSS)' })}
-            {DesktopOnceYes({ txt: 'Cross-Site Request Forgery (CSRF)' })}
-            {DesktopOnceYes({ txt: 'File Inclusion' })}
-            {DesktopOnceYes({ txt: 'Directory Fuzzer' })}
-            {DesktopOnceYes({ txt: 'File Fuzzer' })}
-            {DesktopOnceYes({ txt: 'Command Injection' })}
-            {DesktopOnceYes({ txt: 'XML External Entity Processing (XXE)' })}
-            {DesktopTitle1('Billing Cycle')}
+            {DesktopOnceYes({ txt: 'Слепая SQL-инъекция на основе булевых значений' })}
+            {DesktopOnceYes({ txt: 'Слепая SQL-инъекция, основанная на времени' })}
+            {DesktopOnceYes({ txt: 'SQL-инъекция на основе ошибок' })}
+            {DesktopOnceYes({ txt: 'SQL-инъекция на основе запроса UNION' })}
+            {DesktopOnceYes({ txt: 'SQL-инъекция в стекированных запросах' })}
+            {DesktopOnceYes({ txt: 'Внеполосная инъекция SQL' })}
+            {DesktopOnceYes({ txt: 'Отраженный межсайтовый скриптинг (XSS)' })}
+            {DesktopOnceYes({ txt: 'Хранящийся межсайтовый скриптинг (XSS)' })}
+            {DesktopOnceYes({ txt: 'Подделка межсайтовых запросов (CSRF)' })}
+            {DesktopOnceYes({ txt: 'Включение файлов' })}
+            {DesktopOnceYes({ txt: 'Фаззер каталогов' })}
+            {DesktopOnceYes({ txt: 'Фазер файлов' })}
+            {DesktopOnceYes({ txt: 'Инъекция команд' })}
+            {DesktopOnceYes({ txt: 'Обработка внешних сущностей XML (XXE)' })}
+            {DesktopTitle1('Цикл выставления счетов')}
             <tr>
-              <td className='ts-brown-1'>Payment type</td>
+              <td className='ts-brown-1'>Тип платежа</td>
               <td className='ts-brown-2 ts-txt-price'>
-                <span>One-time</span>
+                <span>Одноразовый</span>
               </td>
               <td className='ts-brown-2 ts-txt-price'>
-                <span>Yearly</span>
+                <span>Ежегодно</span>
               </td>
               <td className='ts-brown-3 ts-txt-price'>
-                <span>One-time</span>
+                <span>Одноразовый</span>
               </td>
               <td className='ts-brown-3 ts-txt-price'>
-                <span>Yearly</span>
+                <span>Ежегодно</span>
               </td>
             </tr>
             <tr>
-              <td className='ts-brown-1'>Number of scans annualy</td>
+              <td className='ts-brown-1'>Количество сканирований в год</td>
               <td className='ts-brown-2 ts-td-center'>
                 <span>1</span>
               </td>
@@ -226,7 +226,7 @@ export default function Price() {
               </td>
             </tr>
             <tr>
-              <td className='ts-brown-1'>1 year</td>
+              <td className='ts-brown-1'>1 год</td>
               <td className='ts-brown-2 ts-td-center'>
                 <span>$15.00</span>
               </td>
@@ -241,7 +241,7 @@ export default function Price() {
               </td>
             </tr>
             <tr>
-              <td className='ts-brown-1'>2 years</td>
+              <td className='ts-brown-1'>2 года</td>
               <td className='ts-brown-2'></td>
               <td className='ts-brown-2 ts-td-center'>
                 <span>$262.50</span>
@@ -252,7 +252,7 @@ export default function Price() {
               </td>
             </tr>
             <tr>
-              <td className='ts-brown-1'>3 years</td>
+              <td className='ts-brown-1'>3 года</td>
               <td className='ts-brown-2'></td>
               <td className='ts-brown-2 ts-td-center'>
                 <span>$375.00</span>
@@ -265,16 +265,16 @@ export default function Price() {
             <tr>
               <td className='ts-brown-1'></td>
               <td className='ts-brown-2'>
-                <a className='ts-order' href="#">Order</a>
+                <a className='ts-order' href="#">Заказать</a>
               </td>
               <td className='ts-brown-2'>
-                <a className='ts-order' href="#">Order</a>
+                <a className='ts-order' href="#">Заказать</a>
               </td>
               <td className='ts-brown-3'>
-                <a className='ts-order' href="#">Order</a>
+                <a className='ts-order' href="#">Заказать</a>
               </td>
               <td className='ts-brown-3'>
-                <a className='ts-order' href="#">Order</a>
+                <a className='ts-order' href="#">Заказать</a>
               </td>
             </tr>
           </tbody>
@@ -283,121 +283,121 @@ export default function Price() {
       <div className="ts-mobile-table">
         <table>
           <thead>
-            <th className='ts-brown-2'>Basic</th>
-            <th className='ts-brown-3'>Professional</th>
+            <th className='ts-brown-2'>Основной</th>
+            <th className='ts-brown-3'>Профессионал</th>
           </thead>
           <tbody>
-            {MobileTitle2('General Features')}
-            {MobileTitle1('OWASP Top 10 Vulnerability Scanning')}
-            {MobileTitle1('Scan type')}
+            {MobileTitle2('Общие характеристики')}
+            {MobileTitle1('OWASP Top 10 сканирование уязвимостей')}
+            {MobileTitle1('Тип сканирования')}
             <tr>
-              <td className="ts-brown-2">Quick scan</td>
-              <td className="ts-brown-3">Full Scan</td>
+              <td className="ts-brown-2">Быстрое сканирование</td>
+              <td className="ts-brown-3">Полное сканирование</td>
             </tr>
             {Onceyes()}
-            {MobileTitle1('Automated Domain Verification')}
+            {MobileTitle1('Автоматизированная проверка доменов')}
             {Onceyes()}
-            {MobileTitle1('Speed up Scanning')}
+            {MobileTitle1('Ускорение сканирования')}
             {Onceyes()}
-            {MobileTitle1('Access to security wiki')}
+            {MobileTitle1('Доступ к вики по безопасности')}
             {Onceyes()}
-            {MobileTitle1('Regular Updates')}
+            {MobileTitle1('Регулярные обновления')}
             {Onceyes()}
-            {MobileTitle2('Scan Targets')}
-            {MobileTitle1('Multi Page Web Applications')}
+            {MobileTitle2('Цели сканирования')}
+            {MobileTitle1('Многостраничные веб-приложения')}
             {Doubleyes()}
-            {MobileTitle1('Deep Scan – Automated JavaScript Scanning')}
+            {MobileTitle1('Deep Scan - автоматическое сканирование JavaScript')}
             {Onceyes()}
-            {MobileTitle1('REST API Scanning')}
+            {MobileTitle1('Сканирование REST API')}
             {Onceyes()}
-            {MobileTitle2('Authentication')}
-            {MobileTitle1('Application Login with Credentials')}
+            {MobileTitle2('Авторизация')}
+            {MobileTitle1('Вход в приложение с учетными данными')}
             {Onceyes()}
-            {MobileTitle1('Advanced Application Login')}
+            {MobileTitle1('Вход в расширенное приложение')}
             {Onceyes()}
-            {MobileTitle2('Scheduling / Automation')}
-            {MobileTitle1('Detailed PDF Reporting')}
+            {MobileTitle2('Планирование / автоматизация')}
+            {MobileTitle1('Подробные отчеты в формате PDF')}
             {Doubleyes()}
-            {MobileTitle1('Scheduled Scanning')}
+            {MobileTitle1('Сканирование по расписанию')}
             {Onceyes()}
-            {MobileTitle1('Machine-readable reports')}
+            {MobileTitle1('Машиночитаемые отчеты')}
             {Onceyes()}
-            {MobileTitle2('SScanning vulnerabilities and security issues')}
-            {MobileTitle1('Server Version Fingerprinting')}
+            {MobileTitle2('Сканирование уязвимостей и проблем безопасности')}
+            {MobileTitle1('Отпечатки версии сервера')}
             {Doubleyes()}
-            {MobileTitle1('Web Application Version Fingerprinting')}
+            {MobileTitle1('Отпечатки версий веб-приложений')}
             {Doubleyes()}
-            {MobileTitle1('CVE Comparison')}
+            {MobileTitle1('Сравнение CVE')}
             {Doubleyes()}
             {MobileTitle1('Heartbleed')}
             {Doubleyes()}
             {MobileTitle1('ROBOT, BREACH, BEAST')}
             {Doubleyes()}
-            {MobileTitle1('Old SSL/TLS Version')}
+            {MobileTitle1('Старая версия SSL/TLS')}
             {Doubleyes()}
-            {MobileTitle1('SSL/TLS Cipher Order')}
+            {MobileTitle1('Порядок шифрования SSL/TLS')}
             {Doubleyes()}
             {MobileTitle1('SSL/TLS Perfect Forward Secrecy')}
             {Doubleyes()}
-            {MobileTitle1('SSL/TLS Session Resumption')}
+            {MobileTitle1('Возобновление сеанса SSL/TLS')}
             {Doubleyes()}
-            {MobileTitle1('SSL/TLS secure algorithm')}
+            {MobileTitle1('Безопасный алгоритм SSL/TLS')}
             {Doubleyes()}
-            {MobileTitle1('SSL/TLS key size')}
+            {MobileTitle1('Размер ключа SSL/TLS')}
             {Doubleyes()}
-            {MobileTitle1('SSL/TLS trust chain')}
+            {MobileTitle1('Цепочка доверия SSL/TLS')}
             {Doubleyes()}
-            {MobileTitle1('SSL/TLS expiration date')}
+            {MobileTitle1('Дата истечения срока действия SSL/TLS')}
             {Doubleyes()}
-            {MobileTitle1('SSL/TLS revocation (CRL, OCSP)')}
+            {MobileTitle1('Отзыв SSL/TLS (CRL, OCSP)')}
             {Doubleyes()}
-            {MobileTitle1('SSL/TLS OCSP stapling')}
+            {MobileTitle1('Сшивание SSL/TLS OCSP')}
             {Doubleyes()}
-            {MobileTitle1('Security Headers')}
+            {MobileTitle1('Заголовки безопасности')}
             {Doubleyes()}
-            {MobileTitle1('Content-Security-Policy headers')}
+            {MobileTitle1('Заголовки Content-Security-Policy')}
             {Doubleyes()}
             {MobileTitle1('Portscan')}
             {Doubleyes()}
-            {MobileTitle1('Boolean-based blind SQL Injection')}
+            {MobileTitle1('Слепая SQL-инъекция на основе булевых значений')}
             {Onceyes()}
-            {MobileTitle1('Time-based blind SQL Injection')}
+            {MobileTitle1('Слепая SQL-инъекция, основанная на времени')}
             {Onceyes()}
-            {MobileTitle1('Error-based SQL Injection')}
+            {MobileTitle1('SQL-инъекция на основе ошибок')}
             {Onceyes()}
-            {MobileTitle1('UNION query-based SQL Injection')}
+            {MobileTitle1('SQL-инъекция на основе запроса UNION')}
             {Onceyes()}
-            {MobileTitle1('Stacked queries SQL Injection')}
+            {MobileTitle1('SQL-инъекция в стекированных запросах')}
             {Onceyes()}
-            {MobileTitle1('Out-of-band SQL Injection')}
+            {MobileTitle1('Внеполосная инъекция SQL')}
             {Onceyes()}
-            {MobileTitle1('Reflected Cross-site scripting (XSS)')}
+            {MobileTitle1('Отраженный межсайтовый скриптинг (XSS)')}
             {Onceyes()}
-            {MobileTitle1('Stored Cross-site scripting (XSS)')}
+            {MobileTitle1('Хранимый межсайтовый скриптинг (XSS)')}
             {Onceyes()}
-            {MobileTitle1('Cross-Site Request Forgery (CSRF)')}
+            {MobileTitle1('Подделка межсайтовых запросов (CSRF)')}
             {Onceyes()}
-            {MobileTitle1('File Inclusion')}
+            {MobileTitle1('Включение файлов')}
             {Onceyes()}
-            {MobileTitle1('Directory Fuzzer')}
+            {MobileTitle1('Фаззер каталогов')}
             {Onceyes()}
-            {MobileTitle1('File Fuzzer')}
+            {MobileTitle1('Фазер файлов')}
             {Onceyes()}
-            {MobileTitle1('Command Injection')}
+            {MobileTitle1('Инъекция команд')}
             {Onceyes()}
-            {MobileTitle1('XML External Entity Processing (XXE)')}
+            {MobileTitle1('Обработка внешних сущностей XML (XXE)')}
             {Onceyes()}
-            {MobileTitle2('Billing Cycle')}
-            {MobileTitle1('Payment type')}
+            {MobileTitle2('Цикл выставления счетов')}
+            {MobileTitle1('Тип платежа')}
             <tr>
-              {MobileSpan1('One-time')}
-              {MobileSpan1('Yearly')}
+              {MobileSpan1('Одноразовый')}
+              {MobileSpan1('Ежегодно')}
             </tr>
             <tr>
-              {MobileSpan2('One-time')}
-              {MobileSpan2('Yearly')}
+              {MobileSpan2('Одноразовый')}
+              {MobileSpan2('Ежегодно')}
             </tr>
-            {MobileTitle1('Number of scans annualy')}
+            {MobileTitle1('Количество сканирований в год')}
             <tr>
               {MobileSpan1('1')}
               {MobileSpan1('12')}
@@ -406,7 +406,7 @@ export default function Price() {
               {MobileSpan2('1')}
               {MobileSpan2('12')}
             </tr>
-            {MobileTitle1('1-year')}
+            {MobileTitle1('1 год')}
             <tr>
               {MobileSpan1('$15.00')}
               {MobileSpan1('$150.00')}
@@ -415,7 +415,7 @@ export default function Price() {
               {MobileSpan2('$48.00')}
               {MobileSpan2('$480.00')}
             </tr>
-            {MobileTitle1('2-years')}
+            {MobileTitle1('2 года')}
             <tr>
               {MobileSpan1('')}
               {MobileSpan1('$262.50')}
@@ -424,7 +424,7 @@ export default function Price() {
               {MobileSpan2('')}
               {MobileSpan2('$840.00')}
             </tr>
-            {MobileTitle1('3-years')}
+            {MobileTitle1('3 года')}
             <tr>
               {MobileSpan1('')}
               {MobileSpan1('$375.00')}
@@ -435,18 +435,18 @@ export default function Price() {
             </tr>
             <tr>
               <td className='ts-brown-2'>
-                <a className='ts-order' href="">Order</a>
+                <a className='ts-order' href="">Заказать</a>
               </td>
               <td className='ts-brown-2'>
-                <a className='ts-order' href="">Order</a>
+                <a className='ts-order' href="">Заказать</a>
               </td>
             </tr>
             <tr>
               <td className='ts-brown-3'>
-                <a className='ts-order' href="">Order</a>
+                <a className='ts-order' href="">Заказать</a>
               </td>
               <td className='ts-brown-3'>
-                <a className='ts-order' href="">Order</a>
+                <a className='ts-order' href="">Заказать</a>
               </td>
             </tr>
           </tbody>

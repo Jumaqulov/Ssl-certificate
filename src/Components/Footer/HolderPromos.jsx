@@ -11,12 +11,12 @@ export default function HolderPromos() {
             </svg>
           </span>
           <span>
-            <b>Fast Issuance</b>
-            <p>within 3-5 minutes</p>
+            <b>Быстрая выдача</b>
+            <p>в течение 3-5 минут</p>
           </span>
         </h3>
         <p className='promo1-text promos-text'>
-          Get a Domain Validation <a href="/ssl-certificates">SSL certificate</a> within just 5 minutes using our friendly and automated system. No paperwork, callback or company required.
+          Получить подтверждение домена <a href="/ssl-certificates">SSL-сертификат</a> всего за 5 минут с помощью нашей дружелюбной автоматизированной системы. Никакой бумажной волокиты, обратного звонка или компании не требуется.
         </p>
       </div>
       <div className='promos promo2'>
@@ -27,12 +27,12 @@ export default function HolderPromos() {
             </svg>
           </span>
           <span>
-            <b>Price Match</b>
-            <p>100% Guarantee</p>
+            <b>Соответствие цен</b>
+            <p>100% гарантия</p>
           </span>
         </h3>
         <p className='promo2-text promos-text'>
-          Found a better price? We will <a href="/report-better-price">match it</a> - guaranteed. Get the best possible price in the World with us. The correct place to save your money.
+          Нашли лучшую цену? Мы<a href="/report-better-price">соответствовать</a> - гарантировано. Получите лучшую цену в мире вместе с нами. Правильное место для сохранения ваших денег.
         </p>
       </div>
       <div className='promos promo3'>
@@ -43,12 +43,12 @@ export default function HolderPromos() {
             </svg>
           </span>
           <span>
-            <b>Price Match</b>
-            <p>100% Guarantee</p>
+            <b>Бесплатный SSL</b>
+            <p>90 дней бесплатно</p>
           </span>
         </h3>
         <p className='promo3-text promos-text'>
-          <a href="/ssl-certs/free-ssl">Try 90-day Trial</a> SSL Certificate before the real purchase to test cert's functionality. 99.9% browser and mobile support. Free reissues.
+          <a href="/ssl-certs/free-ssl">Попробуйте 90-дневную пробную версию</a> SSL-сертификат перед реальной покупкой для проверки работоспособности сертификата. Поддержка 99,9% браузеров и мобильных устройств. Бесплатные повторные выпуски.
         </p>
       </div>
       <div className='promos promo4'>
@@ -59,12 +59,12 @@ export default function HolderPromos() {
             </svg>
           </span>
           <span>
-            <b>Price Match</b>
-            <p>100% Guarantee</p>
+            <b>Возврат денег</b>
+            <p>30-дневная гарантия</p>
           </span>
         </h3>
         <p className='promo4-text promos-text'>
-          Customer satisfaction is our major concern. <a href="/refund-policy">Get a full refund</a> within 30 days for any purchase of SSL certificates with 100% guarantee.
+        Удовлетворение потребностей клиентов - наша главная задача. <a href="/refund-policy">Получите полный возврат</a> в течение 30 дней на любую покупку SSL-сертификатов со 100% гарантией.
         </p>
       </div>
     </div>

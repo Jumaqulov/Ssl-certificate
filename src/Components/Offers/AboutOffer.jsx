@@ -4,7 +4,7 @@ export default function AboutOffer() {
     return (
         <div className='about-offer'>
             <div>
-                <h3>Trusted SSL Certificates</h3>
+                <h3>Доверенные SSL-сертификаты</h3>
                 <p className='d-flex view-lg'>
                     <span>
                         <svg className='platinium-svg' viewBox='0 0 24 32'>
@@ -20,7 +20,7 @@ export default function AboutOffer() {
                         </svg>
                     </span>
                     <span>
-                        GOGETSSL® is a well-known and trusted brand on the market with more than 101,500 customers from 180+ countries. We sell digital certificates from leading certificate authorities for more than 10 years. Our store is a great place to find the <a className='small-link' href="/ssl-certificates">cheapest SSL certificates</a> to protect any website, application and online transactions. Our certificates issued by leading providers like Digicert, Geotrust, RapidSSL, Thawte, and Sectigo.
+                    GOGETSSL® - известный и надежный бренд на рынке с более чем 101 500 клиентами из 180+ стран. Мы продаем цифровые сертификаты от ведущих центров сертификации уже более 10 лет. В нашем магазине можно найти <a className='small-link' href="/ssl-certificates">самые дешевые SSL-сертификаты</a> для защиты любых сайтов, приложений и онлайн-транзакций. Наши сертификаты выпускаются такими ведущими провайдерами, как Digicert, Geotrust, RapidSSL, Thawte и Sectigo.
                     </span>
                 </p>
                 <p className='view-sm'>
@@ -38,26 +38,26 @@ export default function AboutOffer() {
                                 </path>
                             </svg>
                         </span>
-                        <p>GOGETSSL® is a well-known and trusted brand on the market with more than 101,500 customers</p>
+                        <p>GOGETSSL® - известный и надежный бренд на рынке с более чем 101 500 клиентами.</p>
                     </span>
                     <span>
-                        from 180+ countries. We sell digital certificates from leading certificate authorities for more than 10 years. Our store is a great place to find the <a className='small-link' href="/ssl-certificates">cheapest SSL certificates</a> to protect any website, application and online transactions. Our certificates issued by leading providers like Digicert, Geotrust, RapidSSL, Thawte, and Sectigo.
+                    из 180 с лишним стран. Мы продаем цифровые сертификаты от ведущих центров сертификации уже более 10 лет. Наш магазин - это отличное место для поиска <a className='small-link' href="/ssl-certificates">самые дешевые SSL-сертификаты</a> для защиты любых веб-сайтов, приложений и онлайн-транзакций. Наши сертификаты выданы такими ведущими провайдерами, как Digicert, Geotrust, RapidSSL, Thawte и Sectigo.
                     </span>
                 </p>
-                <p className='about-offer-p'>We have domain validated, organization validation, extended validation, wildcard SSL certificates and of course multiple domains certificates available. Every certificate comes with the green lock in the address bar and website ranking improvement in Google Search engine. With EV certificates you get even more instant trust via green address bar with your verified company name.</p>
-                <p className='about-offer-p'>SSL protocol is one the most powerful way to protect your traffic against hackers and criminals. Remember, losing sensitive data of your customers means their losing trust!</p>
+                <p className='about-offer-p'>У нас есть SSL-сертификаты с проверкой домена, проверкой организации, расширенной проверкой, сертификаты wildcard и, конечно, сертификаты для нескольких доменов. Каждый сертификат поставляется с зеленым замком в адресной строке и улучшением рейтинга сайта в поисковой системе Google. С сертификатами EV вы получаете еще большее мгновенное доверие благодаря зеленой адресной строке с проверенным именем компании.</p>
+                <p className='about-offer-p'>Протокол SSL - один из самых мощных способов защиты вашего трафика от хакеров и злоумышленников. Помните, что потеря конфиденциальных данных ваших клиентов означает потерю их доверия!</p>
             </div>
             <div>
-                <a className='big-link big-link-1' href="/reseller-program">Become Reseller</a>
-                <p>Sell cheap SSL to customers using our automation platform. Switch to us and get better pricing, exclusive conditions with monthly invoicing. Sign up for <a className='small-link sm-link-1' href="/reseller-program">Premium Reseller </a>program with no setup fee, minimal annual commitment or contract requirements.</p>
-                <p>Featured WHMCS SSL addon, HostbillApp and API modules available for free. Comfortable web management control platform.</p>
-                <p>Customers of our partners are not our customers, that is why we keep system White Labeled as much as we can and never contact anyone directly.</p>
+                <a className='big-link big-link-1' href="/reseller-program">Стать реселлером</a>
+                <p>Продавайте дешевые SSL клиентам, используя нашу платформу автоматизации. Переходите к нам и получайте лучшие цены, эксклюзивные условия и ежемесячное выставление счетов. Зарегистрироваться <a className='small-link sm-link-1' href="/reseller-program">Премиум-реселлер </a>Программа без платы за установку, с минимальными ежегодными обязательствами или требованиями к контракту.</p>
+                <p>Аддоны WHMCS SSL, HostbillApp и модули API доступны бесплатно. Удобная платформа управления сайтом.</p>
+                <p>Клиенты наших партнеров - это не наши клиенты, поэтому мы держим систему White Labeled как можно дольше и никогда не связываемся с кем-либо напрямую.</p>
             </div>
             <div>
-                <a className='big-link big-link-2' href="/compare-dv-ssl">SSL Comparison</a>
-                <p>Our security experts spent weeks preparing a full and most detailed <a className='small-link sm-link-2' href="/compare-dv-ssl">comparison</a> tool available today. Compare digital certificates by price, validation type, warranty, mobile compatibility and end-user trust level. More than twenty-five different criteria available during the detailed comparison.</p>
-                <p>It is free and suitable for any user not familiar with the technology. Use it for quick and simple selection of the most suitable certificate for your needs.</p>
-                <p>Our sales team is happy to assist if you have any doubts during the selection of a proper SSL certificate.</p>
+                <a className='big-link big-link-2' href="/compare-dv-ssl">Сравнение SSL</a>
+                <p>Наши эксперты по безопасности потратили несколько недель на подготовку полного и самого подробного <a className='small-link sm-link-2' href="/compare-dv-ssl">сравнение</a> инструмент, доступный сегодня. Сравнивайте цифровые сертификаты по цене, типу проверки, гарантии, совместимости с мобильными устройствами и уровню доверия конечного пользователя. Более двадцати пяти различных критериев, доступных при детальном сравнении.</p>
+                <p>Она бесплатна и подходит для любого пользователя, не знакомого с технологией. Используйте его для быстрого и простого выбора наиболее подходящего сертификата для ваших нужд.</p>
+                <p>Наш отдел продаж будет рад помочь вам, если у вас возникнут сомнения при выборе подходящего SSL-сертификата.</p>
             </div>
         </div>
     )

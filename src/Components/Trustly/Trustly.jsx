@@ -30,9 +30,9 @@ export default function Trustly() {
                     </svg>
                 </div>
                 <div className='tt-part-1'>
-                    <h3>TrulyTrust™ Solutions</h3>
-                    <p>The new project of our company which was born years ago when we realized that it is a very hard task understanding if the website is safe to work with. The SSL is a good thing, it states that connection is protected and company identity verified but does that guarantee you will receive expected service or goods? Probably no. Customer reviews? Yes, mostly it helps but in some cases, you need to check 20-30 different reviews to build a positive or negative impression about the company.</p>
-                    <p>We decided to build a simple visual indicator helping you to save time on research, we would clearly tell you how safe and reliable is the website and business. TrulyTrust uses machine learning (ML) technologies based on different factors, like financial information, organization verification, checking if the website is safe and has no vulnerabilities to calculate the risk and trust score of each website.</p>
+                    <h3>Решения TrulyTrust™</h3>
+                    <p>Новый проект нашей компании, который родился несколько лет назад, когда мы поняли, что понять, безопасно ли работать с сайтом, - очень сложная задача. SSL - это хорошо, это означает, что соединение защищено и личность компании проверена, но гарантирует ли это, что вы получите ожидаемую услугу или товар? Скорее всего, нет. Отзывы клиентов? Да, в основном это помогает, но в некоторых случаях вам нужно проверить 20-30 различных отзывов, чтобы составить положительное или отрицательное впечатление о компании.</p>
+                    <p>Мы решили создать простой визуальный индикатор, который поможет вам сэкономить время на исследования, и наглядно расскажет вам, насколько безопасен и надежен тот или иной сайт и бизнес. TrulyTrust использует технологии машинного обучения (ML), основанные на различных факторах, таких как финансовая информация, проверка организации, проверка того, безопасен ли сайт и нет ли у него уязвимостей, чтобы рассчитать риск и балл доверия каждого сайта.</p>
                 </div>
             </div>
             <div className="trustly-part-2">
@@ -46,7 +46,7 @@ export default function Trustly() {
                         </path>
                     </svg>
                 </span>
-                <span>Real Trust solutions</span>
+                <span>Решения Real Trust</span>
             </div>
             <ul className='trustly-part-3'>
                 <li>
@@ -63,8 +63,8 @@ export default function Trustly() {
                         </span>
                     </div>
                     <div className='trustly-part-3-right'>
-                        <h3>TrulyTrust™ <b>Scanner</b></h3>
-                        <p>It is important to keep your website and web applications protected and safe, and checking for all kinds of vulnerabilities is no easy task even to advanced users. You should know how to set up your system to use correct SSL/TLS Ciphers, Security Headers, protect against Cross-site scripting and other possible security issues. Do you have time for that on a weekly/monthly basis? TrulyTrust Scanner would perform deep and professional checks of all your web applications providing a detailed report with exact steps on how to fix everything. Multi-Page Web Applications that use HTML, JSP, or others, Automated JavaScript Scans of applications on Angular, React, Vue, jQuery or similar, REST API Scans. TrulyTrust can Log in to your application via BasicAuth or with user credentials (user/password). Scheduled Scanning.</p>
+                        <h3>TrulyTrust™ <b>Сканер</b></h3>
+                        <p>Важно, чтобы ваш сайт и веб-приложения были защищены и безопасны, а проверка на всевозможные уязвимости - непростая задача даже для опытных пользователей. Вы должны знать, как настроить свою систему на использование правильных шифров SSL/TLS, заголовков безопасности, защиту от межсайтового скриптинга и других возможных проблем безопасности. Есть ли у вас время для этого на еженедельной/ежемесячной основе? TrulyTrust Scanner выполнит глубокую и профессиональную проверку всех ваших веб-приложений, предоставив подробный отчет с точными шагами по устранению всех проблем. Многостраничные веб-приложения, использующие HTML, JSP или другие, автоматизированные JavaScript-сканы приложений на Angular, React, Vue, jQuery или аналогичных, REST API-сканы. TrulyTrust может войти в ваше приложение через BasicAuth или с помощью учетных данных пользователя (пользователь/пароль). Сканирование по расписанию.</p>
                         <a href="/trulytrust-scanner">Check Offer</a>
                     </div>
                 </li>
@@ -85,8 +85,8 @@ export default function Trustly() {
                         </span>
                     </div>
                     <div className='trustly-part-3-right'>
-                        <h3>TrulyTrust™ <b>Seal</b></h3>
-                        <p>We are building the united site seal trust marker allowing any website user to check the website score based on multiple factors. It will be possible to equip the seal with detailed information about the issued SSL certificate, any vulnerabilities found, business information of the site owners, and many other things.</p>
+                        <h3>TrulyTrust™ <b>Уплотнение</b></h3>
+                        <p>Мы создаем единый маркер доверия "Печать сайта", позволяющий любому пользователю сайта проверить его оценку на основе множества факторов. Печать можно будет снабдить подробной информацией о выданном SSL-сертификате, найденных уязвимостях, деловой информации владельцев сайта и многом другом.</p>
                         <a href="/">Check Offer</a>
                     </div>
                 </li>
@@ -99,8 +99,8 @@ export default function Trustly() {
                         </span>
                     </div>
                     <div className='trustly-part-3-right'>
-                        <h3>TrulyTrust™ <b>Risk Score</b></h3>
-                        <p>The risk score is a beta-project we are running now. The aim is to create one simple criterion answering the only question you may have when visiting a website or service, "Is it safe to use it and order services or goods?". Regular customers should not spend time thinking about the credibility and it is our job to determinate the risks.</p>
+                        <h3>TrulyTrust™ <b>Балл риска</b></h3>
+                        <p>Оценка риска - это бета-проект, который мы сейчас запускаем. Цель - создать один простой критерий, отвечающий на единственный вопрос, который может возникнуть у вас при посещении сайта или сервиса: "Безопасно ли пользоваться им и заказывать услуги или товары?". Обычные клиенты не должны тратить время на размышления о надежности, а наша задача - определить риски.</p>
                         <a href="/">Check Offer</a>
                     </div>
                 </li>
@@ -118,8 +118,8 @@ export default function Trustly() {
                         </span>
                     </div>
                     <div className='trustly-part-3-right'>
-                        <h3>TrulyTrust™ <b>Validation</b></h3>
-                        <p>Validation as a service is a great option for all kinds of businesses, allowing verification of organization, employees, education certificates, and other documents. The service is provided in cooperation with a strategic partner running a certification authority.</p>
+                        <h3>TrulyTrust™ <b>Валидация</b></h3>
+                        <p>Удостоверение как услуга - отличный вариант для всех видов бизнеса, позволяющий проверить организацию, сотрудников, сертификаты об образовании и другие документы. Услуга предоставляется в сотрудничестве со стратегическим партнером, управляющим центром сертификации.</p>
                         <a href="/">Check Offer</a>
                     </div>
                 </li>

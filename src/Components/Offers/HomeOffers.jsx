@@ -6,11 +6,11 @@ export default function HomeOffers() {
         <div className='home-offers'>
             <div className='offer-box'>
                 <div className="offers offer-1">
-                    <p className='title-offer'>Domain</p>
+                    <p className='title-offer'>Домен</p>
                     <ul>
-                        <li>Secures domain/sub-domains</li>
-                        <li>No paperwork required</li>
-                        <li>Issued within 5 minutes</li>
+                        <li>Защита домена/поддоменов</li>
+                        <li>Никакой бумажной волокиты</li>
+                        <li>Выдается в течение 5 минут</li>
                     </ul>
                     <div className='offer-svg-link offer-svg-link-1'>
                         <div>
@@ -30,16 +30,16 @@ export default function HomeOffers() {
                                 </svg>
                             </span>
                         </div>
-                        <a className='offer-link offer-link-1' href="/dv-ssl">Buy Now</a>
+                        <a className='offer-link offer-link-1' href="/dv-ssl">Купить сейчас</a>
                     </div>
-                    <h6>Starting at  <span>$14.21</span></h6>
+                    <h6>Начиная с <span>$14.21</span></h6>
                 </div>
                 <div className="offers offer-1">
-                    <p className='title-offer'>Business</p>
+                    <p className='title-offer'>Бизнес</p>
                     <ul>
-                        <li>Secures domain/sub-domains</li>
-                        <li>Validates company</li>
-                        <li>Issued within 2-4 days</li>
+                        <li>Защита домена/поддоменов</li>
+                        <li>Проверяет компанию</li>
+                        <li>Выдается в течение 2-4 дней</li>
                     </ul>
                     <div className='offer-svg-link offer-svg-link-2'>
                         <div>
@@ -59,16 +59,16 @@ export default function HomeOffers() {
                                 </svg>
                             </span>
                         </div>
-                        <a className='offer-link offer-link-2' href="/dv-ssl">Buy Now</a>
+                        <a className='offer-link offer-link-2' href="/dv-ssl">Купить сейчас</a>
                     </div>
-                    <h6>Starting at  <span>$30.36</span></h6>
+                    <h6>Начиная с <span>$30.36</span></h6>
                 </div>
                 <div className="offers offer-1">
-                    <p className='title-offer'>Extended</p>
+                    <p className='title-offer'>Расширенный</p>
                     <ul>
-                        <li>Secures domain/sub-domains</li>
-                        <li>Green Site Seal</li>
-                        <li>Issued within 2-7 days</li>
+                        <li>Защита домена/поддоменов</li>
+                        <li>Зеленый знак сайта</li>
+                        <li>Выдается в течение 2-7 дней</li>
                     </ul>
                     <div className='offer-svg-link offer-svg-link-3'>
                         <div>
@@ -88,16 +88,16 @@ export default function HomeOffers() {
                                 </svg>
                             </span>
                         </div>
-                        <a className='offer-link offer-link-3' href="/dv-ssl">Buy Now</a>
+                        <a className='offer-link offer-link-3' href="/dv-ssl">Купить сейчас</a>
                     </div>
-                    <h6>Starting at <span>$74.97</span></h6>
+                    <h6>Начиная с <span>$74.97</span></h6>
                 </div>
                 <div className="offers offer-2">
                     <p className='title-offer'>Extended</p>
                     <ul>
-                        <li>Secures domain/sub-domains</li>
-                        <li>Green Site Seal</li>
-                        <li>Issued within 2-7 days</li>
+                        <li>Неограниченное количество поддоменов</li>
+                        <li>Неограниченное лицензирование серверов</li>
+                        <li>Выдается в течение 5 минут</li>
                     </ul>
                     <div className='offer-svg-link'>
                         <span>
@@ -105,26 +105,26 @@ export default function HomeOffers() {
                                 <path d="M25.382.05C22.09.05 18.485 1.895 16 4.663 13.515 1.895 9.91.05 6.618.05 3.449.05.094 1.895.094 7s3.355 6.95 6.524 6.95c3.293 0 6.897-1.845 9.382-4.613 2.485 2.768 6.09 4.613 9.382 4.613 3.169 0 6.524-1.845 6.524-6.95S28.551.05 25.382.05zM6.618 11.182c-2.423 0-3.604-1.414-3.604-4.182s1.18-4.182 3.604-4.182C9.29 2.818 12.334 4.54 14.26 7c-1.926 2.46-4.97 4.182-7.642 4.182zm18.764 0c-2.672 0-5.716-1.722-7.642-4.182 1.926-2.46 4.97-4.182 7.642-4.182 2.423 0 3.604 1.414 3.604 4.182 0 2.768-1.18 4.182-3.604 4.182z"></path>
                             </svg>
                         </span>
-                        <a className='offer-link offer-link-4' href="/wildcard-sll">Buy Now</a>
+                        <a className='offer-link offer-link-4' href="/wildcard-sll">Купить сейчас</a>
                     </div>
-                    <h6>Starting at <span>$72.00</span></h6>
+                    <h6>Начиная с <span>$72.00</span></h6>
                 </div>
                 <div className="offers offer-2">
-                    <p className='title-offer'>Multi-domain</p>
+                    <p className='title-offer'>Мультидомен</p>
                     <ul>
-                        <li>Secures up to 250 domains</li>
-                        <li>Compatible with MS Exchange</li>
-                        <li>Saves money and time</li>
+                        <li>Защищает до 250 доменов</li>
+                        <li>Совместимость с MS Exchange</li>
+                        <li>Экономия денег и времени</li>
                     </ul>
                     <div className='offer-svg-link'>
-                        <a className='offer-link offer-link-3' href="/wildcard-sll">Buy Now</a>
+                        <a className='offer-link offer-link-3' href="/wildcard-sll">Купить сейчас</a>
                         <span>
                             <svg className='san-svg' viewBox='0 0 32 32'>
                                 <path d="M13.575.548a8.324 8.324 0 0 0-3.513 2.14c.392.4.823.76 1.287 1.072A9.096 9.096 0 0 1 13.575.548zm0 0M16.515 10.802a9.22 9.22 0 0 1 3.579.918c.246-.882.387-1.79.419-2.706h-3.998v1.788zm0 0M7.704 7.985h2.755c.034-1.095.212-2.182.53-3.231a9.322 9.322 0 0 1-1.602-1.285 8.27 8.27 0 0 0-1.683 4.516zm0 0M21.941 2.69A8.323 8.323 0 0 0 18.426.548c.945.865 1.7 1.956 2.23 3.22A8.2 8.2 0 0 0 21.94 2.69zm0 0M16.515 7.985h3.998a11.526 11.526 0 0 0-.42-2.706 9.227 9.227 0 0 1-3.578.918v1.788zm0 0M21.016 4.763c.316 1.046.493 2.13.527 3.222h2.755a8.269 8.269 0 0 0-1.682-4.514c-.484.489-1.02.922-1.6 1.292zm0 0M16.515.41v4.756a8.213 8.213 0 0 0 3.242-.87C19.078 2.608 17.97 1.258 16.515.41zm0 0M16.515 11.832v4.759c1.454-.85 2.563-2.2 3.243-3.888a8.197 8.197 0 0 0-3.243-.87zm0 0M11.91 11.73a9.323 9.323 0 0 1 3.576-.926v-1.79h-3.998c.033.919.174 1.83.423 2.715zm0 0M11.349 13.239a8.296 8.296 0 0 0-1.287 1.072 8.325 8.325 0 0 0 3.513 2.14 9.1 9.1 0 0 1-2.226-3.212zm0 0M15.486 16.59v-4.755a8.3 8.3 0 0 0-3.239.877c.68 1.684 1.788 3.03 3.24 3.879zm0 0M12.247 4.288a8.281 8.281 0 0 0 3.24.876V.41c-1.452.848-2.56 2.195-3.24 3.879zm0 0M20.656 13.231c-.53 1.264-1.284 2.355-2.23 3.22a8.327 8.327 0 0 0 3.515-2.142 8.188 8.188 0 0 0-1.285-1.078zm0 0M11.488 7.985h3.998v-1.79a9.319 9.319 0 0 1-3.575-.925c-.249.885-.39 1.797-.423 2.715zm0 0M10.459 9.014H7.704a8.27 8.27 0 0 0 1.683 4.516 9.345 9.345 0 0 1 1.601-1.285 12.486 12.486 0 0 1-.53-3.23zm0 0M21.016 12.236c.58.37 1.116.803 1.6 1.292a8.266 8.266 0 0 0 1.681-4.514h-2.754a12.483 12.483 0 0 1-.527 3.222zm0 0"></path><path d="M28.48 7.062a2.02 2.02 0 0 0-.53.923h-3.267v1.03h3.266a2.033 2.033 0 1 0 .53-1.952zm0 0M28.156 12.908v.003c-.256.26-.444.578-.548.927h-.61v-2.586c0-.285-.259-.501-.543-.501h-1.9v1.029h1.414v2.566c0 .284.202.52.486.52h1.153c.097.347.28.663.53.92a2.037 2.037 0 0 0 2.884-2.878c-.792-.793-2.095-.793-2.866 0zm0 0M26.455 2.133c-.284 0-.486.237-.486.52V5.22h-1.415v1.029h1.901c.284 0 .543-.217.543-.501V3.162h.61c.097.348.279.666.53.926a2.032 2.032 0 1 0 0-2.875 2.145 2.145 0 0 0-.53.92h-1.153zm0 0M2.084 10.532a2.027 2.027 0 0 0 1.968-1.518h3.266V7.985H4.052a2.034 2.034 0 1 0-1.968 2.547zm0 0M5.003 11.252v2.586h-.61a2.165 2.165 0 0 0-.53-.927 2.03 2.03 0 1 0 0 2.876c.251-.258.434-.574.53-.92h1.153c.284 0 .486-.237.486-.521V11.78h1.415v-1.03h-1.9c-.285 0-.544.217-.544.502zm0 0M6.032 2.654c0-.285-.202-.521-.486-.521H4.393a2.146 2.146 0 0 0-.53-.92 2.034 2.034 0 1 0-1.446 3.473c.536 0 1.05-.214 1.429-.594v-.004c.255-.26.443-.577.547-.926h.61v2.586c0 .284.26.5.543.5h1.901V5.22H6.032V2.654zm0 0" fill="currentColor"></path>
                             </svg>
                         </span>
                     </div>
-                    <h6>Starting at <span>$72.00</span></h6>
+                    <h6>Начиная с <span>$72.00</span></h6>
                 </div>
             </div>
             <div className='offer-pics'>
@@ -355,15 +355,15 @@ export default function HomeOffers() {
                                 d="M71.5318957 151.7472057c.7315822-8.4915787 4.4051697-16.6225919 7.9899223-22.1303605.3501144 1.0555686.961508 2.4560259 1.9961742 3.908739-3.2816685 3.0935475-6.9866096 7.3105961-9.9860965 18.2216215zM70.6592227 155.8754194c2.2313256 2.6493725 4.122988 5.3980312 5.4241592 8.3713902.0783838-1.593804-.1881212-3.5743015-1.2332385-5.5077686-1.0137639-1.8759857-2.466477-3.8251296-4.0916346-5.6906641.0679327.93538.0313535 1.8864368-.0992861 2.8270425zM222.7447036 150.3415229c-.5382355-9.9704198-5.1263008-19.5802741-9.0089118-25.0305613-.4128214 1.3952317-1.5101947 3.9453181-2.0588813 4.8388935 3.5324968 3.51682 7.9428921 7.2008587 11.067793 20.1916678zM223.4815113 154.4958644c-2.314935 2.5762144-4.2902068 5.262166-5.6906641 8.1937203-.026128-1.5990296.303084-3.5638503 1.4109084-5.465964 1.0712454-1.844632 2.5918911-3.7467457 4.2745301-5.5600244-.0992861.93538-.0940605 1.8864369.0052256 2.8322681z"
                                 fill="#4d4d4d" />
                         </svg>
-                        <span className='txt-domian'>Domian</span>
-                        <span className='txt-business'>Business</span>
+                        <span className='txt-domian'>Домиан</span>
+                        <span className='txt-business'>Бизнес</span>
                     </div>
-                    <p>Need Suggestion?</p>
-                    <a className='offer-support' href="/support">Contact us</a>
+                    <p>Нужны предложения?</p>
+                    <a className='offer-support' href="/support">Свяжитесь с нами</a>
                 </div>
                 <div className='offer-bottom'>
-                    <p className='mln-txt'>Millions <b>+</b></p>
-                    <p className='mln-txt-1'>of People Trust SSL Solutions</p>
+                    <p className='mln-txt'>Миллионы<b>+</b></p>
+                    <p className='mln-txt-1'>людей доверяют SSL-решениям</p>
                     <div className='logos'>
                         <span className='logo-box logo-google'>
                             <svg viewBox='0 0 73 23'>

@@ -6,11 +6,11 @@ export default function Overview() {
         <div className='ts-overview'>
             <div className="ts-row-1">
                 <div>
-                    <h3>VULNERABILITY SCANNER WITHOUT COMPROMISES</h3>
-                    <p>Scale security with a vulnerability assessment tool that covers complex architectures and growing web app portfolios.</p>
+                    <h3>СКАНЕР УЯЗВИМОСТЕЙ БЕЗ КОМПРОМИССОВ</h3>
+                    <p>Масштабируйте систему безопасности с помощью инструмента оценки уязвимостей, который охватывает сложные архитектуры и растущие портфели веб-приложений.</p>
                     <ul>
-                        <li><p>Automate vulnerability scanning and embed it into your dev process</p></li>
-                        <li><p>Set it up in minutes and start scanning</p></li>
+                        <li><p>Автоматизируйте сканирование уязвимостей и внедрите его в процесс разработки.</p></li>
+                        <li><p>Установите его за несколько минут и начните сканирование</p></li>
                     </ul>
                 </div>
                 <div>
@@ -19,28 +19,28 @@ export default function Overview() {
             </div>
             <div className="ts-row-2">
                 <div>
-                    <h4>Fastest setup on the market</h4>
-                    <p>Set up and start scanning in minutes. Automate your scans and integrate them with ease in your development process and toolchain.</p>
+                    <h4>Самая быстрая настройка на рынке</h4>
+                    <p>Настройте и начните сканирование за считанные минуты. Автоматизируйте сканирование и легко интегрируйте его в процесс разработки и инструментарий.</p>
                 </div>
                 <div>
-                    <h4>Fast Security Assessment</h4>
-                    <p>Add immediate value to your team’s work with web app scans benchmarking against OWASP Top 10 and secure your security hygiene.</p>
+                    <h4>Быстрая оценка безопасности</h4>
+                    <p>Немедленно повысьте ценность работы своей команды, сравнив результаты сканирования веб-приложений с OWASP Top 10, и обеспечьте гигиену безопасности.</p>
                 </div>
                 <div>
-                    <h4>Focus On Great Output</h4>
-                    <p>Automated vulnerability scanning allows you to save time and focus on your work, delivering you information on your web application or API security risks that need fixing before pushing to Production.</p>
+                    <h4>Сосредоточьтесь на отличном результате</h4>
+                    <p>Автоматизированное сканирование уязвимостей позволяет вам сэкономить время и сосредоточиться на работе, предоставляя информацию о рисках безопасности веб-приложений или API, которые необходимо устранить до запуска в производство.</p>
                 </div>
                 <div>
-                    <h4>Enhance Scanning Confidence</h4>
-                    <p>Implement a vulnerability scanner in your build that you can trust – very low false positives and negatives. Get accurate reports with remediation advice.</p>
+                    <h4>Повышение уверенности при сканировании</h4>
+                    <p>Внедрите в свою сборку сканер уязвимостей, которому можно доверять - очень мало ложных срабатываний и отрицательных результатов. Получайте точные отчеты с рекомендациями по устранению.</p>
                 </div>
                 <div>
-                    <h4>Reduce The Risk Of Being Hacked</h4>
-                    <p>Spot security risk before hackers do. Prevent modern attacks and save big on possible exploited security issues.</p>
+                    <h4>Снизить риск взлома</h4>
+                    <p>Выявляйте риски безопасности раньше хакеров. Предотвращайте современные атаки и экономьте на возможных проблемах безопасности.</p>
                 </div>
                 <div>
-                    <h4>Vulnerability Reports For Everyone</h4>
-                    <p>Download useful scan reports in PDF, XML, and CSV and easily share them with team members, executives, and clients.</p>
+                    <h4>Отчеты об уязвимостях для всех</h4>
+                    <p>Загружайте полезные отчеты о сканировании в форматах PDF, XML и CSV и легко делитесь ими с членами команды, руководителями и клиентами.</p>
                 </div>
             </div>
             <h2 className='ts-ad-h2'>
@@ -49,7 +49,7 @@ export default function Overview() {
                         d="M31.905 3.353v9.63s-2.061.405-2.486.459c-.423.053-1.753.483-2.717-.444-1.486-1.425-6.767-6.677-6.767-6.677s-.911-.893-2.373-.12c-1.342.706-3.332 1.743-4.163 2.147-1.57.836-2.873-.49-2.873-1.501 0-.784.49-1.316 1.189-1.707 1.894-1.149 5.888-3.39 7.552-4.275 1.01-.537 1.74-.583 3.127.586C24.104 2.89 25.626 4.2 25.626 4.2s.496.414 1.287.247c1.944-.411 4.992-1.094 4.992-1.094zM10.884 19.67c.256-.657.17-1.392-.32-1.896-.44-.451-1.084-.57-1.697-.43.171-.608.076-1.256-.367-1.712-.441-.45-1.084-.572-1.697-.43.17-.607.076-1.255-.367-1.71-.694-.712-1.895-.682-2.684.07-.784.753-1.287 2.117-.586 2.92.699.798 1.502.312 2.114.173-.17.607-.68 1.172-.052 1.967.628.796 1.502.313 2.115.175-.171.605-.66 1.227-.055 1.964.61.74 1.609.346 2.269.14-.255.655-.8 1.361-.1 2.152.7.796 2.315.428 3.104-.325.787-.753.862-1.946.17-2.66-.478-.49-1.19-.604-1.847-.398zm14.399-5.01c-5.705-5.704-3.022-3.02-6.092-6.096 0 0-.922-.919-2.138-.385-.854.374-1.953.884-2.78 1.273-.908.476-1.562.624-1.87.622-1.756-.012-3.181-1.424-3.181-3.179a3.17 3.17 0 0 1 1.506-2.692c1.267-.877 4.185-2.429 4.185-2.429S14.024.647 12.077.647C10.13.647 6.063 3.31 6.063 3.31s-1.153.739-2.798.073L.095 2.281v11.018s.905.262 1.719.594c.183-.524.48-1.007.89-1.407 1.35-1.285 3.587-1.298 4.814-.034.37.384.628.842.76 1.349.494.153.942.423 1.303.794.37.382.628.843.76 1.347.494.153.942.424 1.303.795.407.42.678.927.805 1.476.516.15.983.43 1.359.814.737.758 1 1.786.84 2.778a24.176 24.176 0 0 0 .74.794 1.401 1.401 0 0 0 1.978 0 1.404 1.404 0 0 0 0-1.978c-.02-.019-1.963-2.05-1.806-2.209.155-.156 2.63 2.42 2.676 2.466.543.544 1.43.544 1.976 0a1.401 1.401 0 0 0 0-1.976 10.26 10.26 0 0 1-.18-.174s-2.453-2.186-2.266-2.373c.189-.188 3.237 2.656 3.242 2.656.548.494 1.392.49 1.919-.037.513-.513.524-1.324.069-1.87-.01-.03-2.323-2.447-2.142-2.63.183-.184 2.472 2.173 2.477 2.178.542.543 1.43.543 1.976 0a1.405 1.405 0 0 0 0-1.978l-.024-.015z">
                     </path>
                 </svg>
-                <span>Our Technology Partners</span>
+                <span>Наши технологические партнеры</span>
             </h2>
             <ul className='trustly-part-3'>
                 <li>
@@ -97,8 +97,8 @@ export default function Overview() {
                         </span>
                     </div>
                     <div className='trustly-part-3-right'>
-                        <h3>Crashtest Security</h3>
-                        <p>Our new German (DE) technolohy partner is the innovator within cyber security for web applications, Crashtest Security develops automated vulnerability assessment solutions that suit the needs of the agile developer or DevSecOps. The clear vulnerability insights provide transparency and actionable steps to enable efficient risk mitigation and particularly reducing the risk of getting hacked.</p>
+                        <h3>Краштест безопасности</h3>
+                        <p>Наш новый немецкий (DE) технолоический партнер - новатор в области кибербезопасности для веб-приложений, Crashtest Security разрабатывает автоматизированные решения по оценке уязвимостей, которые отвечают потребностям agile-разработчиков или DevSecOps. Четкая информация об уязвимостях обеспечивает прозрачность и практические шаги для эффективного снижения рисков и, в частности, уменьшения риска быть взломанным.</p>
                     </div>
                 </li>
                 <li>
@@ -113,7 +113,7 @@ export default function Overview() {
                     </div>
                     <div className='trustly-part-3-right'>
                         <h3>DigiCert CA</h3>
-                        <p>For the past years, GoGetSSL established strong strategic relations with DigiCert CA helping us running successful projects. The most experienced validation teams of DigiCert provide us with organization verification services to run the TrulyTrust Risk Score project.</p>
+                        <p>За последние годы компания GoGetSSL установила прочные стратегические отношения с компанией DigiCert CA, что помогает нам вести успешные проекты. Самые опытные команды валидации DigiCert предоставляют нам услуги по проверке организации для запуска проекта TrulyTrust Risk Score.</p>
                     </div>
                 </li>
             </ul>

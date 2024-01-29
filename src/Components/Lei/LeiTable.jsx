@@ -3,7 +3,7 @@ import React from 'react'
 export default function LeiTable() {
     return (
         <div className="lei-table">
-            <p>LEI code structure</p>
+            <p>Структура кода LEI</p>
             <table className="lei-table-code">
                 <thead>
                     <tr>
@@ -72,16 +72,16 @@ export default function LeiTable() {
                 <tbody>
                     <tr>
                         <td className='blue-one' colSpan='4'>
-                            <p>LOU Identifier</p>
+                            <p>Идентификатор LOU</p>
                         </td>
                         <td className='blue-two' colSpan='2'>
-                            <p>Reserver characters</p>
+                            <p>Персонажи-резервисты</p>
                         </td>
                         <td className='green-one' colSpan='12'>
-                            <p>Entity Identifier</p>
+                            <p>Идентификатор субъекта</p>
                         </td>
                         <td className="green-two" colSpan='2'>
-                            <p>Verification ID</p>
+                            <p>Идентификатор проверки</p>
                         </td>
                     </tr>
                     <tr className='td-line'>
@@ -89,16 +89,16 @@ export default function LeiTable() {
                     </tr>
                     <tr className='td-data'>
                         <td className='gray-one' colSpan='4'>
-                            <span>Four character prefix allocated uniquely to each LOU</span>
+                            <span>Четырехсимвольный префикс, уникальный для каждого LOU</span>
                         </td>
                         <td className="gray-two" colSpan='2'>
-                            <span>Two reserved characters set to zero</span>
+                            <span>Два зарезервированных символа, установленных на ноль</span>
                         </td>
                         <td className="gray-three" colSpan='12'>
-                            <span>Entity-specific part of the code generated and assigned by LOUs according to transparent, sound and robus allocation policies</span>
+                            <span>Часть кода, относящаяся к конкретной организации, генерируется и назначается LOU в соответствии с прозрачной, обоснованной и роботизированной политикой распределения</span>
                         </td>
                         <td className="gray-four" colSpan='2'>
-                            <span>Two check digits as described by ISO 17422</span>
+                            <span>Две контрольные цифры, как описано в стандарте ISO 17422</span>
                         </td>
                     </tr>
                 </tbody>
