@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ResellerForm from './ResellerForm'
 
 export default function Reseller() {
+    useEffect(()=>{
+        document.title = 'Лучший реселлер SSL-сертификатов'
+    },[])
     return (
         <div className='certificates'>
             <div className='cert-txt'>

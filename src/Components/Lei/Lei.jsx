@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import LeiTable from './LeiTable'
 import LeiPricing from './LeiPricing'
 
 export default function Lei() {
+    useEffect(()=>{
+        document.title = 'Коды LEI'
+    },[])
     return (
         <div className='certificates'>
             <div className="lei-main">

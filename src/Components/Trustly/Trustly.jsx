@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 export default function Trustly() {
+    useEffect(()=>{
+        document.title = 'Службы TrustlyTrust'
+    },[])
     return (
         <div className='certificates'>
             <div className='trustly-part-1'>

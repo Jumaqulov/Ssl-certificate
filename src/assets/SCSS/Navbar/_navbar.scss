@@ -11,7 +11,6 @@
     opacity: 1;
     border-radius: $nav_border_radius;
     height: $nav_height;
-    // width: 1150px;
     width: 100%;
 }
 
@@ -68,7 +67,7 @@
     position: absolute;
     display: flex;
     flex-wrap: wrap;
-    width: 680px;
+    width: 800px;
     top: 38px;
     background: $sect_one_backround;
     border-radius: 10px;
@@ -388,7 +387,7 @@
 
 .sect-three {
     position: absolute;
-    width: 680px;
+    width: 780px;
     top: 39px;
     left: -450px;
     display: flex;
@@ -428,11 +427,16 @@
     transition: 0.4s ease-in-out;
 }
 
+.sect-three svg {
+    width: 35px !important;
+    height: 35px !important;
+}
+
 // ========================================================================================
 
 .sect-four {
     position: absolute;
-    width: 680px;
+    width: 780px;
     top: 39px;
     left: -550px;
     display: flex;
@@ -470,6 +474,11 @@
 .sect-four li:hover {
     background-color: rgba(164, 164, 164, 0.195);
     transition: 0.4s ease-in-out;
+}
+
+.sect-four svg {
+    width: 35px !important;
+    height: 35px !important;
 }
 
 // ========================================================================================

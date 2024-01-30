@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import SolutionForm from './SolutionForm'
 
 export default function Solutions() {
+    useEffect(()=>{
+        document.title = 'Решения PKI'
+    },[])
     return (
         <div className='certificates'>
             <div className='trustly-part-1'>

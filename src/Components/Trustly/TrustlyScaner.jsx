@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Overview from './Overview';
 import Price from './Price';
 
@@ -17,6 +17,10 @@ export default function TrustlyScaner() {
           return null;
     }
   }
+
+  useEffect(()=>{
+    document.title = 'TrustlyTrust - Сканер уязвимостей'
+  },[])
 
   return (
     <div className='certificates'>

@@ -12,9 +12,8 @@ export default function Support() {
                             </svg>
                         </div>
                         <div className='text-box'>
-                            <span className="title">CSR Generator</span>
-                            <br />
-                            <p>Get your generated CSR code within seconds</p>
+                            <span className="title">Генератор CSR</span>
+                            <p>Получите сгенерированный код CSR в течение нескольких секунд</p>
                         </div>
                     </a>
                 </li>
@@ -26,9 +25,8 @@ export default function Support() {
                             </svg>
                         </div>
                         <div className='text-box'>
-                            <span className="title">Help Center</span>
-                            <br />
-                            <p>Send us e-mail or submit support ticket</p>
+                            <span className="title">Центр помощи</span>
+                            <p>Отправьте нам электронное письмо или отправьте заявку в службу поддержки</p>
                         </div>
                     </a>
                 </li>
@@ -40,9 +38,8 @@ export default function Support() {
                             </svg>
                         </div>
                         <div className='text-box'>
-                            <span className="title">CSR Decoder</span>
-                            <br />
-                            <p>Decode information from your generated CSR code</p>
+                            <span className="title">Декодер CSR</span>
+                            <p>Декодируйте информацию из сгенерированного вами кода CSR</p>
                         </div>
                     </a>
                 </li>
@@ -54,9 +51,8 @@ export default function Support() {
                             </svg>
                         </div>
                         <div className='text-box'>
-                            <span className="title">SSL Wiki / Manuals</span>
-                            <br />
-                            <p>CSR Generation. Installation. Errors and solutions</p>
+                            <span className="title">SSL Wiki / Руководства</span>
+                            <p>Генерация CSR . Установка. Ошибки и решения</p>
                         </div>
                     </a>
                 </li>
@@ -68,9 +64,8 @@ export default function Support() {
                             </svg>
                         </div>
                         <div className='text-box'>
-                            <span className="title">SSL Checker</span>
-                            <br />
-                            <p>SSL Certificate installation diagnostic tool</p>
+                            <span className="title">Проверка SSL</span>
+                            <p>Инструмент диагностики установки SSL-сертификата</p>
                         </div>
                     </a>
                 </li>
@@ -82,9 +77,8 @@ export default function Support() {
                             </svg>
                         </div>
                         <div className='text-box'>
-                            <span className="title">SSL Matcher Tool</span>
-                            <br />
-                            <p>Check if Private Key matches SSL certificate</p>
+                            <span className="title">Инструмент SSL Matcher</span>
+                            <p>Проверка соответствия закрытого ключа сертификату SSL</p>
                         </div>
                     </a>
                 </li>

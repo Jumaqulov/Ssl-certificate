@@ -1,0 +1,22 @@
+@media (max-width: 766px) {
+
+    .support-main {
+        display: block;
+        padding: 0;
+    }
+
+    .suport-m-left,
+    .suport-m-right {
+        width: 100%;
+        margin: 0;
+    }
+
+    .support-extra {
+        display: block;
+    }
+
+    .support-extra div {
+        width: 100%;
+        border: none !important;
+    }
+}

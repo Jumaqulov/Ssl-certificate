@@ -12,9 +12,8 @@ export default function Company() {
                             </svg>
                         </div>
                         <div className='text-box'>
-                            <span className="title">CSR Generator</span>
-                            <br />
-                            <p>Get your generated CSR <br /> code within seconds</p>
+                            <span className="title">Политика конфиденциальности</span>
+                            <p>Конфиденциальность - наш приоритет, процедуры безопасности</p>
                         </div>
                     </a>
                 </li>
@@ -26,9 +25,8 @@ export default function Company() {
                             </svg>
                         </div>
                         <div className='text-box'>
-                            <span className="title">Help Center</span>
-                            <br />
-                            <p>Send us e-mail or submit support ticket</p>
+                            <span className="title">Корпоративные новости</span>
+                            <p>Корпоративные новостиСобытия, Новые продукты, функции и планы на будущее</p>
                         </div>
                     </a>
                 </li>
@@ -40,9 +38,8 @@ export default function Company() {
                             </svg>
                         </div>
                         <div className='text-box'>
-                            <span className="title">CSR Decoder</span>
-                            <br />
-                            <p>Decode information from <br /> your generated CSR code</p>
+                            <span className="title">Условия и положения</span>
+                            <p>Правила, соглашения и политика возврата денег</p>
                         </div>
                     </a>
                 </li>
@@ -54,9 +51,8 @@ export default function Company() {
                             </svg>
                         </div>
                         <div className='text-box'>
-                            <span className="title">SSL Wiki / Manuals</span>
-                            <br />
-                            <p>CSR Generation. Installation. <br /> Errors and solutions</p>
+                            <span className="title">О нашей компании</span>
+                            <p>Краткий обзор, факты, история и партнеры</p>
                         </div>
                     </a>
                 </li>
@@ -68,9 +64,8 @@ export default function Company() {
                             </svg>
                         </div>
                         <div className='text-box'>
-                            <span className="title">SSL Checker</span>
-                            <br />
-                            <p>SSL Certificate installation diagnostic tool</p>
+                            <span className="title">Способы оплаты</span>
+                            <p>Доступные способы оплаты, комиссии</p>
                         </div>
                     </a>
                 </li>
@@ -83,9 +78,8 @@ export default function Company() {
                             </svg>
                         </div>
                         <div className='text-box'>
-                            <span className="title">SSL Matcher Tool</span>
-                            <br />
-                            <p>Check if Private Key matches SSL certificate</p>
+                            <span className="title">Контакты компании</span>
+                            <p>Информация для выставления счетов и официальные контакты</p>
                         </div>
                     </a>
                 </li>

@@ -13,9 +13,8 @@ export default function Certificates() {
                             <span className="symbol-d">D</span>
                         </div>
                         <div className='text-box'>
-                            <span className="title">Domain Validation</span>
-                            <br />
-                            <p>Issued within 2-3 minutes<br />Low trust level. No paperwork</p>
+                            <span className="title">Валидация домена</span>
+                            <p>Выдается в течение 2-3 минут<br />Низкий уровень доверия. Нет бумажной волокиты</p>
                         </div>
                     </a>
                 </li>
@@ -28,9 +27,8 @@ export default function Certificates() {
                             <span className="symbol-s">S</span>
                         </div>
                         <div className='text-box'>
-                            <span className="title">Multi-Domain (SAN)</span>
-                            <br />
-                            <p>Secure up to 250 domains with one SSL Certificate</p>
+                            <span className="title">Мультидомен (SAN)</span>
+                            <p>Защитите до 250 доменов с помощью одного SSL-сертификата</p>
                         </div>
                     </a>
                 </li>
@@ -43,9 +41,8 @@ export default function Certificates() {
                             <span className="symbol-b">B</span>
                         </div>
                         <div className='text-box'>
-                            <span className="title">Business Validation</span>
-                            <br />
-                            <p>Issued within 1-3 days<br />Advanced trust level</p>
+                            <span className="title">Удостоверение бизнеса</span>
+                            <p>Выдается в течение 1-3 дней<br />Повышенный уровень доверия</p>
                         </div>
                     </a>
                 </li>
@@ -58,9 +55,8 @@ export default function Certificates() {
                             <span className="symbol-w">W</span>
                         </div>
                         <div className='text-box'>
-                            <span className="title">Wildcard Certificates</span>
-                            <br />
-                            <p>Secure unlimited sub-domains<br />with one SSL Certificate</p>
+                            <span className="title">Сертификаты Wildcard</span>
+                            <p>Защитите неограниченное количество субдоменов<br /> одним SSL-сертификатом</p>
                         </div>
                     </a>
                 </li>
@@ -73,9 +69,8 @@ export default function Certificates() {
                             <span className="symbol-e">E</span>
                         </div>
                         <div className='text-box'>
-                            <span className="title">Extended Validation</span>
-                            <br />
-                            <p>Issued within 2-7 days<br />Highest trust level</p>
+                            <span className="title">Расширенная проверка</span>
+                            <p>Выдается в течение 2-7 дней<br />Высший уровень доверия</p>
                         </div>
                     </a>
                 </li>
@@ -88,9 +83,8 @@ export default function Certificates() {
                             <span className="symbol-a">@</span>
                         </div>
                         <div className='text-box'>
-                            <span className="title">Email & Document Signing</span>
-                            <br />
-                            <p>Designed for MS Exchange and OCS environments</p>
+                            <span className="title">Подписание электронной почты и документов</span>
+                            <p>Разработан для сред MS Exchange и OCS</p>
                         </div>
                     </a>
                 </li>
@@ -103,9 +97,9 @@ export default function Certificates() {
                             <span className="symbol-c">C</span>
                         </div>
                         <div className='text-box'>
-                            <span className="title">Code Signing Certificates</span>
+                            <span className="title">Сертификаты подписи кода</span>
                             <br />
-                            <p>Trust for software downloads<br />by verifying code integrity</p>
+                            <p>Доверие при загрузке программного обеспечения путем проверки целостности кода</p>
                         </div>
                     </a>
                 </li>
@@ -118,9 +112,9 @@ export default function Certificates() {
                             <span className="symbol-v">V</span>
                         </div>
                         <div className='text-box'>
-                            <span className="title">Code Signing Certificates</span>
+                            <span className="title">Сертификаты VMC</span>
                             <br />
-                            <p>Trust for software downloads<br />by verifying code integrity</p>
+                            <p>Отображение логотипа вашей компании в почтовых ящиках получателей.</p>
                         </div>
                     </a>
                 </li>
