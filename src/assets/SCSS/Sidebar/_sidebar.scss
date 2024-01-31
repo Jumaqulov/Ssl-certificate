@@ -137,10 +137,19 @@
     right: 10px;
 }
 
-.offer-bottom-sidebar .mln-txt{
+.offer-bottom-sidebar .mln-txt {
     font-size: 40px !important;
 }
 
 .offer-bottom-sidebar .mln-txt-1 {
     font-size: 17px !important;
+}
+
+.activeLink {
+    color: $main_color_1 !important;
+    border: 1px solid $main_color_1 !important;
+    & svg {
+        fill: $main_color_1 !important;
+
+    }
 }

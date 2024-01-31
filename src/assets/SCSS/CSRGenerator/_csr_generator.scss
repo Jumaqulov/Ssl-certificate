@@ -1,0 +1,306 @@
+.csr-svg {
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 4000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 4000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    fill: #78a22e !important;
+    color: #575757;
+    width: 130px;
+    height: 130px
+}
+
+.decoder-svg {
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 4000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 4000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    fill: #DC8510 !important;
+    color: #575757;
+    width: 130px;
+    height: 130px
+}
+
+.matcher-svg {
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 4000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 4000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    fill: #c63200 !important;
+    color: #575757;
+    width: 130px;
+    height: 130px
+}
+
+.sslcheck-svg {
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 4000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 4000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    fill: #23a095 !important;
+    color: #575757;
+    width: 130px;
+    height: 130px
+}
+
+.csr-title {
+    font-size: 36px;
+    font-weight: 100;
+    color: #cccccc;
+}
+
+.csr-main {
+    margin: 20px 0 0 0;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.csr-main p {
+    color: #9e9e9e;
+    font-size: 20px;
+    line-height: 145%;
+    margin: 15px 0;
+}
+
+.csr-main p a {
+    color: #78a22e;
+}
+
+.csr-main p a:hover {
+    text-decoration: none;
+}
+
+.csr-form {
+    margin: 50px 0 0 0;
+}
+
+.csr-form h4,
+.csr-form p {
+    text-align: center;
+}
+
+.csr-form h4 {
+    color: #78a22e;
+    font-size: 28px;
+    font-weight: 100;
+    margin: 10px 0;
+}
+
+.csr-form p {
+    color: #9e9e9e;
+    font-size: 20px;
+    line-height: 145%;
+}
+
+.csr-decoder {
+    color: $main_color_1 !important;
+}
+
+.decoder-textarea,
+.csr-checker textarea {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px dashed rgba(220, 133, 16, 0.9);
+    border-radius: 6px;
+    padding: 15px;
+    font-size: 17px;
+    overflow: hidden;
+    outline: none;
+    color: #9e9e9e;
+}
+
+.check-ssl {
+    margin: 30px 0 0 0;
+    text-align: center;
+}
+
+
+.check-ssl p {
+    margin: 20px 0;
+    font-size: 20px;
+    color: #9e9e9e;
+}
+
+.check-ssl a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid $main_color_1;
+    border-radius: 100px;
+    color: #9e9e9e;
+    font-size: 20px;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.check-ssl a:hover {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    background-color: $main_color_1;
+    color: #292929;
+}
+
+.csr-checker {
+    margin: 30px 0;
+}
+
+.selectors {
+    background: rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    border: 1px solid #3b3b3b
+}
+
+.selectors div {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative
+}
+
+.selectors {
+    color: #636363;
+    position: relative
+}
+
+.selectors input[type=radio] {
+    position: absolute;
+    visibility: hidden
+}
+
+.selectors label {
+    position: relative;
+    font-size: 20px !important;
+    padding: 7px 0 7px 40px !important;
+    z-index: 9;
+    cursor: pointer;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+
+.selectors div:hover label {
+    color: #adadad;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+
+.selectors div:hover .check {
+    border: 5px solid #adadad
+}
+
+.selectors .check {
+    display: block;
+    position: absolute;
+    border: 3px solid #666;
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;
+    top: 6px;
+    left: 5px;
+    z-index: 5;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+
+.selectors .check:before {
+    display: block;
+    position: absolute;
+    content: '';
+    border-radius: 100%;
+    height: 11px;
+    width: 11px;
+    top: 2px;
+    left: 2px;
+    margin: auto;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+
+.selectors input[type=radio]:checked~.check {
+    border: 5px solid #78a22e
+}
+
+.selectors input[type=radio]:checked~.check::before {
+    background: #78a22e
+}
+
+.selectors input[type=radio]:checked~label {
+    color: #78a22e
+}
+
+.csr-checker p {
+    color: $main_color_1;
+    font-size: 22px;
+    margin: 20px 0 10px 0;
+}
+
+.csr-checker div {
+    text-align: center;
+}
+
+.csr-checker textarea {
+    width: 50%;
+}
+
+@media(max-width:766px) {
+    .csr-main {
+        display: block;
+        text-align: center;
+    }
+
+    .csr-title {
+        text-align: center;
+    }
+
+    .csr-checker textarea {
+        width: 100%;
+    }
+}
