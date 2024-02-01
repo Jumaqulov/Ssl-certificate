@@ -11,6 +11,9 @@ import TrustlyScaner from "../Components/Trustly/TrustlyScaner";
 import SSLchecker from "../Components/CSR/SSLchecker";
 import SSLmatcher from "../Components/CSR/SSLmatcher";
 import Wiki from "../Components/Wiki/Wiki";
+import Terms from "../Components/Terms&Conditions/Terms";
+import Payment from "../Components/Payment/Payment";
+import PrivacyPolicy from "../Components/PrivacyPolicy/PrivacyPolicy";
 
 export const routes = [
   { path: `${process.env.PUBLIC_URL}/ssl-certificates`, Component: <Certificates /> },
@@ -26,4 +29,7 @@ export const routes = [
   { path: `${process.env.PUBLIC_URL}/check-ssl-installation`, Component: <SSLchecker /> },
   { path: `${process.env.PUBLIC_URL}/ssl-certificate-matcher-tool`, Component: <SSLmatcher /> },
   { path: `${process.env.PUBLIC_URL}/wiki`, Component: <Wiki /> },
+  { path: `${process.env.PUBLIC_URL}/terms-and-conditions`, Component: <Terms /> },
+  { path: `${process.env.PUBLIC_URL}/refund-policy`, Component: <Payment /> },
+  { path: `${process.env.PUBLIC_URL}/privacy-policy`, Component: <PrivacyPolicy /> },
 ]

@@ -1,0 +1,50 @@
+.terms-title {
+    font-size: 36px;
+    font-weight: 100;
+    margin: 0 0 15px 0;
+    color: #cccccc;
+}
+
+.terms-info svg {
+    display: inline-block;
+    width: 95px;
+    height: 102px;
+    margin: 15px;
+    fill: $main_color_1;
+}
+
+.terms-info {
+    display: flex;
+    font-size: 20px;
+    line-height: 145%;
+    color: #9e9e9e;
+    padding: 0 0 20px 0;
+}
+
+.term-title {
+    font-size: 30px;
+    font-weight: 100;
+    color: $main_color_1;
+    margin: 15px 0;
+}
+
+.term-info {
+    font-size: 20px;
+    line-height: 145%;
+    color: #9e9e9e;
+    padding: 10px 0 15px;
+}
+
+@media (max-width:766px) {
+    .terms-info,
+    .terms-info span {
+        display: block;
+    }
+
+    .terms-info span:nth-child(1) {
+        background: #252525;
+        border-radius: 10px;
+        text-align: center;
+        margin: 10px 0;
+    }
+}
