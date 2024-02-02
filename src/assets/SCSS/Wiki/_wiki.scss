@@ -1,0 +1,102 @@
+.wiki-path {
+    padding: 15px;
+    font-size: 20px;
+    background: #242322;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.wiki-path a {
+    color: #9e9e9e;
+}
+
+.wiki-path a:hover {
+    color: $main_color_1;
+}
+
+.wiki-path svg {
+    width: 9px;
+    height: 16px;
+    fill: #454545;
+}
+
+.next {
+    padding: 10px 6px;
+}
+
+.current {
+    color: $main_color_1;
+}
+
+.wiki-main {
+    padding: 25px;
+}
+
+.wiki-main h3 {
+    color: #cccccc;
+    font-size: 36px;
+    font-weight: 100;
+}
+
+.wiki-main .cert-txt-item {
+    margin-top: 10px;
+    color: #9e9e9e;
+    font-size: 20px;
+    line-height: 145%;
+}
+
+.wiki-menu {
+    margin-top: 25px;
+    display: flex;
+}
+
+.wiki-left,
+.wiki-right {
+    width: calc(100% / 2 - 20px);
+    margin: 0 10px;
+}
+
+.wiki-menu-box {
+    padding: 20px;
+    background: #ffffff0a;
+    border-radius: 12px;
+    box-shadow: inset 0 0 5px #00000066;
+    border: 1px dashed #454545;
+    margin: 0 0 10px 0;
+}
+
+.wiki-menu-box ul li {
+    margin: 10px 0;
+}
+
+.wiki-menu-box h5 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 100;
+}
+.wiki-menu-box h5 a {
+    color: $main_color_1;
+}
+
+.wiki-menu-box h5 a:hover {
+    text-decoration: none;
+}
+
+.wiki-arrow {
+    width: 9px;
+    height: 15px;
+    fill: #454545;
+}
+
+.wiki-link {
+    color: #9e9e9e;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.wiki-link:hover {
+    color: $main_color_1;
+    text-decoration: underline;
+}

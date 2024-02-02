@@ -14,6 +14,7 @@ import Wiki from "../Components/Wiki/Wiki";
 import Terms from "../Components/Terms&Conditions/Terms";
 import Payment from "../Components/Payment/Payment";
 import PrivacyPolicy from "../Components/PrivacyPolicy/PrivacyPolicy";
+import General from "../Components/Wiki/GeneralQuestion/General";
 
 export const routes = [
   { path: `${process.env.PUBLIC_URL}/ssl-certificates`, Component: <Certificates /> },
@@ -32,4 +33,6 @@ export const routes = [
   { path: `${process.env.PUBLIC_URL}/terms-and-conditions`, Component: <Terms /> },
   { path: `${process.env.PUBLIC_URL}/refund-policy`, Component: <Payment /> },
   { path: `${process.env.PUBLIC_URL}/privacy-policy`, Component: <PrivacyPolicy /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/general`, Component: <General /> },
+
 ]

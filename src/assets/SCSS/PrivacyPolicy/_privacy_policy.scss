@@ -105,6 +105,20 @@
     color: #00AEEC;
 }
 
+.privacy-link-1 {
+    color: #9e9e9e;
+}
+
+.privacy-link-1:hover {
+    text-decoration: none;
+}
+
+.webmoney-symbol {
+    width: 80px;
+    height: 80px;
+    fill: #ffffff33;
+}
+
 @media (max-width: 766px) {
     .privacy-table {
         display: none;
