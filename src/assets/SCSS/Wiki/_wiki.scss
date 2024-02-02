@@ -100,3 +100,14 @@
     color: $main_color_1;
     text-decoration: underline;
 }
+
+@media (max-width:766px) {
+    .wiki-menu {
+        display: block;
+    }
+    
+    .wiki-left,
+    .wiki-right {
+        width: 100%;
+    }
+}
