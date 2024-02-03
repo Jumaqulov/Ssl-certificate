@@ -3,21 +3,21 @@ import React from 'react'
 export default function Brands() {
 
     function handleClick(href) {
-        if (href == 'digicert') {
+        if (href === 'digicert') {
             window.location.href = '/digicert'
-        } else if (href == 'gogetssl') {
+        } else if (href === 'gogetssl') {
             window.location.href = '/gogetssl'
-        } else if (href == 'sectigo') {
+        } else if (href === 'sectigo') {
             window.location.href = '/sectigo'
-        } else if (href == 'geotrust') {
+        } else if (href === 'geotrust') {
             window.location.href = '/geotrust'
-        } else if (href == 'rapidssl') {
+        } else if (href === 'rapidssl') {
             window.location.href = '/rapidssl'
-        } else if (href == 'thawte') {
+        } else if (href === 'thawte') {
             window.location.href = '/thawte'
-        } else if (href == 'report-better-price') {
+        } else if (href === 'report-better-price') {
             window.location.href = '/report-better-price'
-        } else if (href == 'compare-dv-ssl') {
+        } else if (href === 'compare-dv-ssl') {
             window.location.href = '/compare-dv-ssl'
         }
     }
