@@ -1,8 +1,9 @@
 .pri-policy-lists {
-    list-style: disc;
+    list-style-type: disc;
     padding: 0 0 0 25px;
     color: #9e9e9e;
     font-size: 20px;
+    line-height: 145%;
 
     & span {
         display: block;

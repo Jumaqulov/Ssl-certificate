@@ -3168,7 +3168,7 @@ body {
   z-index: -1;
 }
 
-.radios > div label {
+.radios div label {
   border-radius: 100px;
   font-size: 20px;
   white-space: nowrap;

@@ -24,7 +24,7 @@ export default function Sidebar() {
             setLink((prevLink) => ({ ...prevLink, link2: !prevLink.link2 }));
         } else if (pageAddress === '/support') {
             setLink((prevLink) => ({ ...prevLink, link3: !prevLink.link3 }));
-        } else if (pageAddress === '/wiki') {
+        } else if (pageAddress == '/wiki') {
             setLink((prevLink) => ({ ...prevLink, link4: !prevLink.link4 }));
         } else if (pageAddress === '/news') {
             setLink((prevLink) => ({ ...prevLink, link5: !prevLink.link5 }));
@@ -40,7 +40,9 @@ export default function Sidebar() {
             setLink((prevLink) => ({ ...prevLink, link10: !prevLink.link10 }));
         } else if (pageAddress === '/check-ssl-installation') {
             setLink((prevLink) => ({ ...prevLink, link11: !prevLink.link11 }));
-        }  
+        } else if (pageAddress.startsWith('/wiki/')) {
+            setLink((prevLink) => ({ ...prevLink, link4: !prevLink.link4 }));
+        }
     }, []);
 
     return (

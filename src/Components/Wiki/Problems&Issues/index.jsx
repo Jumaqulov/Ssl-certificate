@@ -11,7 +11,7 @@ export default function Problems_IssuesMain() {
                         </path>
                     </svg>
                 </span>
-                <a href="/wiki/validation">Проблемы и вопросы</a>
+                <a href="/wiki/problems">Проблемы и вопросы</a>
             </h5>
             <ul>
                 <li>

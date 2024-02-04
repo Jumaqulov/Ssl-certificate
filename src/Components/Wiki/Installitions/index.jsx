@@ -11,7 +11,7 @@ export default function InstallitionsMain() {
                         </path>
                     </svg>
                 </span>
-                <a href="https://www.gogetssl.com/wiki/installation/">Руководства по установке</a>
+                <a href="/wiki/installation">Руководства по установке</a>
             </h5>
             <ul>
                 <li>
