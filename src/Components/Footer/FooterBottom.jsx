@@ -4,7 +4,7 @@ export default function FooterBottom() {
     return (
         <div className='footer-bottom gb-padding'>
             <div className="wrapper">
-                <p>© 2009-2023 Copyright Digicert Ireland Limited. Все права защищены</p>
+                <p>© 2023-2024 Copyright Digicert Uzbekistan Limited. Все права защищены</p>
             </div>
         </div>
     )

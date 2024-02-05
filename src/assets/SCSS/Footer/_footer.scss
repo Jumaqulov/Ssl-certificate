@@ -314,17 +314,14 @@
 
 .content {
     display: flex;
-    align-items: center;
     padding: 30px 0;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .middle-left,
 .middle-right {
     width: calc(100% / 2);
-}
-
-.middle-right {
-    display: flex;
 }
 
 .row-one,
@@ -377,14 +374,10 @@
     align-items: center;
 }
 
-.box {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.payment,
-.social {
-    width: calc(100% / 2);
+.payment {
+    width: 40%;
+    margin: 10px 0;
+    padding: 15px 10px;
 }
 
 .payment img {
