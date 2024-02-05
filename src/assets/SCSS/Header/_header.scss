@@ -28,9 +28,10 @@
     font-size: 18px;
 }
 
-.left-side svg {
-    width: 200px;
-    height: 60px;
+.left-side img {
+    width: 327px;
+    height: 126px;
+    object-fit: contain;
 }
 
 .right-side {
@@ -70,12 +71,14 @@
     fill: #ccc;
 }
 
-.right-side-link:hover span{
+.right-side-link:hover span {
     transition: 0.4s;
     color: #ccc;
 }
 
-.right-side-svg {
+.ri-shopping-cart,
+.ri-user-line,
+.sl-support {
     width: 25px;
     height: 25px;
     fill: #8c8c8c;

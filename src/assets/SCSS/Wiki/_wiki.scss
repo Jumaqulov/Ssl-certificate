@@ -73,7 +73,9 @@
 }
 
 .wiki-menu-box ul li {
-    margin: 10px 0;
+    padding: 2px 0;
+    display: flex;
+    align-items: center;
 }
 
 .wiki-menu-box h5 {

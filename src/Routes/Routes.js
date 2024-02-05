@@ -32,6 +32,7 @@ import MDF from "../Components/Wiki/GeneralQuestion/MDF";
 import CodeSigning from "../Components/Wiki/GeneralQuestion/CodeSigning";
 import OrderStuck from "../Components/Wiki/SslValidation/OrderStuck";
 import DomianValidation from "../Components/Wiki/SslValidation/DomianValidation";
+import Digicert from "../Components/Products/Digicert/Digicert";
 
 export const routes = [
   { path: `${process.env.PUBLIC_URL}/ssl-certificates`, Component: <Certificates /> },
@@ -68,4 +69,7 @@ export const routes = [
   { path: `${process.env.PUBLIC_URL}/wiki/general/code-signing-2023`, Component: <CodeSigning /> },
   { path: `${process.env.PUBLIC_URL}/wiki/validation/order-stuck-for-manual-check-brand-validation`, Component: <OrderStuck /> },
   { path: `${process.env.PUBLIC_URL}/wiki/validation/domain-validation-ssl-verification`, Component: <DomianValidation /> },
+
+  { path: `${process.env.PUBLIC_URL}/digicert`, Component: <Digicert /> },
+
 ]
