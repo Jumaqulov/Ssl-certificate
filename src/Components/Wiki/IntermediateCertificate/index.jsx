@@ -1,15 +1,12 @@
 import React from 'react'
+import { TbLockCog } from "react-icons/tb";
 
 export default function IntermediatMain() {
     return (
         <div className='wiki-menu-box'>
             <h5>
                 <span>
-                    <svg className='wm-server-lock' viewBox='0 0 28 32'>
-                        <path
-                            d="M21.901 11.363v-3.36c0-4.355-3.546-7.9-7.901-7.9s-7.901 3.545-7.901 7.9v3.36H.438V16.9h27.124v-5.537h-5.66zm-12.878 0v-3.36A4.992 4.992 0 0 1 14 3.026a4.992 4.992 0 0 1 4.977 4.977v3.36H9.023zm17.109 4.417h-3.733v-3.235h3.733v3.235zM.438 24.427h27.124V18.89H.438v5.537zm21.96-4.354h3.734v3.235h-3.733v-3.235zM.439 31.955h27.124v-5.537H.438v5.537zm21.96-4.417h3.734v3.297h-3.733v-3.297z">
-                        </path>
-                    </svg>
+                    <TbLockCog className='wm-server-lock' />
                 </span>
                 <a href="/wiki/intermediate-certificates">Промежуточные сертификаты</a>
             </h5>

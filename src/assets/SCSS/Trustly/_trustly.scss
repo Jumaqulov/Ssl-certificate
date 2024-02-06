@@ -104,7 +104,12 @@
     animation: pulse-animation-tt 1.6s infinite;
     background: rgba(255, 255, 255, 0.03);
     justify-content: center;
-    align-items: center
+    align-items: center;
+}
+
+.trustly-scan {
+    fill: #9d7040 !important;
+    color: #9d7040 !important;
 }
 
 .trustly-part-3-right h3 {
