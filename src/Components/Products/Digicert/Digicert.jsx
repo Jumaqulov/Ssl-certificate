@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import DigicertTabs from './DigicertTabs';
 import Allproducts from '../../../Requests/Allproducts';
+import Perproduct from '../../../Requests/Perproduct';
 
 
 export default function Digicert() {
     const [productList, setProductList] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [productDetails, setProductDetails] = useState([])
 
     async function products() {
         setLoading(true)
@@ -13,11 +15,35 @@ export default function Digicert() {
         setProductList(currentProducts)
         setLoading(false)
     }
-    console.log(productList);
+
+    const filteredProducts = productList.filter(digicert => {
+        return digicert.brand === "digicert"
+    });
+
+    const filterID = filteredProducts.map(prod => prod.id);
+
+    async function product() {
+        setLoading(true);
+        try {
+            const updatedProductDetails = []; 
+            for (const id of filterID) {
+                const response = await Perproduct.getPerProducts(id); 
+                updatedProductDetails.push(response);
+            }
+            setProductDetails(updatedProductDetails);
+        } catch (error) {
+            console.error('Error fetching products:', error);
+        } finally {
+            setLoading(false);
+        }
+    }
+    console.log(productDetails);
     useEffect(() => {
         document.title = 'Сертификаты SSL от DigiCert'
         products()
+        product()
     }, []);
+
     return (
         <div className='certificates'>
             <div className="cert-txt">
@@ -37,7 +63,7 @@ export default function Digicert() {
                         loading ?
                             <p>Loading</p>
                             :
-                            <DigicertTabs products={productList} />
+                            <DigicertTabs filteredProducts={filteredProducts} />
                     }
                 </div>
             </div>

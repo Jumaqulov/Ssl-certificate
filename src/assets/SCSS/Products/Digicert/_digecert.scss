@@ -93,11 +93,12 @@
 
 .product-list-details td:nth-child(1) {
     text-align: start;
+    font-size: 20px !important;
 }
 
 .product-list-details td{
     padding: 10px 5px;
-    font-size: 20px;
+    font-size: 17px;
     color: #9e9e9e;
     text-align: center;
 }
@@ -105,10 +106,9 @@
 .details-arrow-btn {
     display: inline-block;
     background: transparent;
-    padding: 10px 6px;
+    padding: 10px 5px;
     display: flex;
     align-items: center;
-    gap: 2px;
     font-size: 15px;
     color: #78a22e;
     border: 1px solid #6d6d6d;
