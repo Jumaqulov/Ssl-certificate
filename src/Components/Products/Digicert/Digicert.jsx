@@ -1,36 +1,30 @@
-// Digicert.js fayl
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import DigicertTabs from './DigicertTabs';
+import Allproducts from '../../../Requests/Allproducts';
+
 
 export default function Digicert() {
     const [productList, setProductList] = useState([]);
     const [loading, setLoading] = useState(true);
 
-    const filteredProducts = productList.filter(digicert => {
-        return digicert.name.startsWith('DigiCert')
-    });
-
-    console.log("filteredProducts =>", filteredProducts);
-
+    async function products() {
+        setLoading(true)
+        const currentProducts = await Allproducts.getProducts()
+        setProductList(currentProducts)
+        setLoading(false)
+    }
+    console.log(productList);
     useEffect(() => {
-        axios.get('http://localhost:5000/api/products?auth_key=3e317d975d4cd3206b13a56167d8bbeaac41a872')
-            .then(response => {
-                setProductList(response.data.products);
-                setLoading(false);
-            })
-            .catch(error => {
-                console.log(error);
-                setLoading(false);
-            });
+        document.title = 'Сертификаты SSL от DigiCert'
+        products()
     }, []);
-
     return (
         <div className='certificates'>
             <div className="cert-txt">
                 <h3>DigiCert SSL</h3>
                 <p className='cert-txt-item'>
                     <span>
-                        <svg viewBox="0 0 33 33">
+                        <svg viewBox="0 0 33 33" className='digicert-svg'>
                             <path
                                 d="M31.8090735 18.6542805c-.5074733-5.8866902-4.5672596-9.8449819-7.713594-14.1077575 1.3194305-1.9283985 4.2627756-1.3194305 6.3941634-.913452C27.7492871 1.7046727 24.5014581.5882314 21.0506397.2837475 14.453487.1822527 9.1757647 4.0390497 4.3040212 8.3018254c-2.9433451-.913452-.913452-4.0597864-.913452-6.2926688C.8532028 5.4599749.0412455 9.3167719.1427402 13.2750636c.1014946 3.552313 1.6239145 7.0031314 3.6538077 10.1494658l4.2627756 4.8717436c-1.4209252 2.3343771-4.2627756 1.3194305-6.3941635.9134519 3.4508184 2.5373664 7.3076154 3.3493237 11.265907 3.247829 3.5523131-.1014946 7.0031315-1.6239145 10.0479712-3.6538076l4.8717436-4.2627757c1.4209252 1.6239146 1.7254092 4.3642703.913452 6.3941635 2.4358717-3.4508184 3.3493236-7.713594 3.0448397-12.2808536zm-4.6687543.2029893c-1.2179359 1.5224199-2.7403558 3.3493237-2.7403558 3.3493237-1.5224198 1.7254092-2.8418504 2.5373664-3.4508183 3.0448397-2.0298932 1.52242-4.5672596 2.4358718-7.1046261 2.5373665h-.608968l-.1014946-.1014947-2.8418504-2.8418504c-.913452-1.1164412-1.7254092-1.6239145-2.9433451-3.3493237-1.5224199-2.1313878-2.4358718-4.5672596-2.5373665-7.104626V13.4780528l2.8418505-2.5373664c3.3493237-2.9433451 7.0031314-5.5822062 11.570391-5.5822062h.2029893l2.2328825 2.943345c2.1313878 2.9433451 4.9732382 5.7851956 5.3792168 9.8449819 0 0 .1014947.608968.1014947.7104626z">
                             </path>
@@ -38,16 +32,15 @@ export default function Digicert() {
                     </span>
                     <span>SSL-сертификаты защищают все конфиденциальные и частные данные, передаваемые через веб-сайты и онлайн-системы. SSL-сертификаты вызывают доверие у конечных покупателей и повышают продажи за счет увеличения конверсии. Сертификаты помогают занять более высокие позиции в рейтинге, поскольку Google добавил SSL-сертификаты в свой алгоритм. GoGetSSL предоставляет все возможные SSL-сертификаты, доступные на рынке, начиная с сертификатов с проверкой домена и заканчивая сертификатами с расширенной проверкой.</span>
                 </p>
+                <div className='tabs'>
+                    {
+                        loading ?
+                            <p>Loading</p>
+                            :
+                            <DigicertTabs products={productList} />
+                    }
+                </div>
             </div>
-        </div>
+        </div >
     );
 }
-// {loading ? (
-//     <p>Loading...</p>
-// ) : (
-//     <ul>
-//         {filteredProducts.map(product => (
-//             <li key={product.id}>{product.name}</li>
-//         ))}
-//     </ul>
-// )}
