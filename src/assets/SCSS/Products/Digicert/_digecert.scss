@@ -47,7 +47,7 @@
     margin: 15px 0 0 0;
 }
 
-.table-list tbody tr{
+.table-list tbody tr {
     background: #353634;
 }
 
@@ -56,7 +56,7 @@
     background: #353634;
 }
 
-.title-details th{
+.title-details th {
     padding: 10px 5px;
     text-align: start;
     font-size: 20px;
@@ -96,7 +96,7 @@
     font-size: 20px !important;
 }
 
-.product-list-details td{
+.product-list-details td {
     padding: 10px 5px;
     font-size: 17px;
     color: #9e9e9e;
@@ -122,6 +122,7 @@
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     border: 1px solid #78a22e;
+
     .arrow-link span:nth-child(1) {
         animation: animate-arrows-1 1s ease-in-out infinite;
     }
@@ -153,7 +154,7 @@
 }
 
 // ========================================================================
-                            // Details
+// Details
 // ========================================================================
 
 .title-certificate {
@@ -162,13 +163,21 @@
     color: #9e9e9e;
 }
 
+.form-left {
+    width: 60%;
+}
+
+.form-left input[type="radio"]:checked+.offer-year {
+    border: 1px solid #78a22e !important;
+}
+
 .form-left div {
     display: flex;
     width: 100%;
-    border: 1px solid #78a22e;
     border-radius: 15px;
     padding: 15px 5px;
     margin: 15px 0;
+    border: 1px solid #353634;
 }
 
 .form-left label {

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {useNavigate , Link} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { VscSettings } from "react-icons/vsc";
 import { GiGearHammer, GiPriceTag } from "react-icons/gi";
@@ -48,6 +48,12 @@ export default function DigicertTabs({ filteredProducts }) {
         )
     }
 
+    function send(items) {
+        navigate(`/digicert/${items.id}`, {
+            state: items
+        })
+    }
+
     return (
         <Tabs>
             <TabList className='tab-list'>
@@ -84,10 +90,10 @@ export default function DigicertTabs({ filteredProducts }) {
                                         <td>1-3 dasy</td>
                                         <td>{formatAndRoundNumber(product.prices[12] * 12400)} сум</td>
                                         <td className='details-btn'>
-                                            <a href={`/digicert/${product.id}`} className='details-arrow-btn'>
+                                            <button onClick={() => send(product)} className='details-arrow-btn'>
                                                 {arrow_link()}
                                                 <span>Подробности</span>
-                                            </a>
+                                            </button>
                                         </td>
                                     </tr>
                                 ))
