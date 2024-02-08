@@ -33,6 +33,7 @@ import CodeSigning from "../Components/Wiki/GeneralQuestion/CodeSigning";
 import OrderStuck from "../Components/Wiki/SslValidation/OrderStuck";
 import DomianValidation from "../Components/Wiki/SslValidation/DomianValidation";
 import Digicert from "../Components/Products/Digicert/Digicert";
+import DDetail from "../Components/Products/Digicert/DDetail";
 
 export const routes = [
   { path: `${process.env.PUBLIC_URL}/ssl-certificates`, Component: <Certificates /> },
@@ -71,5 +72,6 @@ export const routes = [
   { path: `${process.env.PUBLIC_URL}/wiki/validation/domain-validation-ssl-verification`, Component: <DomianValidation /> },
 
   { path: `${process.env.PUBLIC_URL}/digicert`, Component: <Digicert /> },
+  { path: `${process.env.PUBLIC_URL}/digicert/:id`, Component: <DDetail /> },
 
 ]

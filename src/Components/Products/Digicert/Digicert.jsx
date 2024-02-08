@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import DigicertTabs from './DigicertTabs';
 import Allproducts from '../../../Requests/Allproducts';
-import Perproduct from '../../../Requests/Perproduct';
 
 
 export default function Digicert() {
     const [productList, setProductList] = useState([]);
     const [loading, setLoading] = useState(true);
-    const [productDetails, setProductDetails] = useState([])
 
     async function products() {
         setLoading(true)
@@ -19,9 +17,8 @@ export default function Digicert() {
     const filteredProducts = productList.length > 0 ? productList.filter(digicert => {
         return digicert.brand === "digicert";
     }) : [];
-
+    console.log(productList);
     
-    console.log(productDetails);
     useEffect(() => {
         document.title = 'Сертификаты SSL от DigiCert'
         products()

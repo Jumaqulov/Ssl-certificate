@@ -151,3 +151,42 @@
     display: flex;
     justify-content: center;
 }
+
+// ========================================================================
+                            // Details
+// ========================================================================
+
+.title-certificate {
+    font-size: 30px !important;
+    font-weight: 100 !important;
+    color: #9e9e9e;
+}
+
+.form-left div {
+    display: flex;
+    width: 100%;
+    border: 1px solid #78a22e;
+    border-radius: 15px;
+    padding: 15px 5px;
+    margin: 15px 0;
+}
+
+.form-left label {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
+    color: #9e9e9e;
+}
+
+.span-year {
+    margin-left: 15px;
+}
+
+.span-price {
+    color: #78a22e;
+}
+
+.span-txt {
+    color: #575757;
+}
