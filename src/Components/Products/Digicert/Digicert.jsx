@@ -16,32 +16,15 @@ export default function Digicert() {
         setLoading(false)
     }
 
-    const filteredProducts = productList.filter(digicert => {
-        return digicert.brand === "digicert"
-    });
+    const filteredProducts = productList.length > 0 ? productList.filter(digicert => {
+        return digicert.brand === "digicert";
+    }) : [];
 
-    const filterID = filteredProducts.map(prod => prod.id);
-
-    async function product() {
-        setLoading(true);
-        try {
-            const updatedProductDetails = []; 
-            for (const id of filterID) {
-                const response = await Perproduct.getPerProducts(id); 
-                updatedProductDetails.push(response);
-            }
-            setProductDetails(updatedProductDetails);
-        } catch (error) {
-            console.error('Error fetching products:', error);
-        } finally {
-            setLoading(false);
-        }
-    }
+    
     console.log(productDetails);
     useEffect(() => {
         document.title = 'Сертификаты SSL от DigiCert'
         products()
-        product()
     }, []);
 
     return (
@@ -60,10 +43,11 @@ export default function Digicert() {
                 </p>
                 <div className='tabs'>
                     {
-                        loading ?
+                        loading ? (
                             <p>Loading</p>
-                            :
-                            <DigicertTabs filteredProducts={filteredProducts} />
+                        ) : (
+                            filteredProducts.length > 0 && <DigicertTabs filteredProducts={filteredProducts} />
+                        )
                     }
                 </div>
             </div>
