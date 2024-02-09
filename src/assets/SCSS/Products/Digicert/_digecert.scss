@@ -164,14 +164,10 @@
 }
 
 .form-left {
-    width: 60%;
+    width: 50%;
 }
 
-.form-left input[type="radio"]:checked+.offer-year {
-    border: 1px solid #78a22e !important;
-}
-
-.form-left div {
+.form-left .offer-price {
     display: flex;
     width: 100%;
     border-radius: 15px;

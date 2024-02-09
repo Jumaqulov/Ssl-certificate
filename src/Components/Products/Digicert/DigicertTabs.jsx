@@ -7,29 +7,7 @@ import Perproduct from '../../../Requests/Perproduct';
 
 
 export default function DigicertTabs({ filteredProducts }) {
-    const [product, setProduct] = useState([])
     const navigate = useNavigate()
-
-    const filterID = filteredProducts.length > 0 ? filteredProducts.map(id => { return id.id }) : []
-
-    async function perProd() {
-        const items = [];
-        if (filterID.length > 0) {
-            await Promise.all(filterID.map(async i => {
-                const current = await Perproduct.getPerProduct(i);
-                items.push(current);
-            }));
-        } else {
-            console.log('sorov jonatilmadi');
-        }
-        setProduct(items);
-    }
-
-    function formatAndRoundNumber(number) {
-        const roundedNumber = Math.round(number);
-        const formattedNumber = new Intl.NumberFormat('en-US').format(roundedNumber);
-        return formattedNumber.replace(/,/g, ' ');
-    }
 
     function validation(product_type) {
         if (product_type === "business_validation") {
@@ -85,147 +63,38 @@ export default function DigicertTabs({ filteredProducts }) {
         return result.trim();
     }
 
-    const combinedArray = filteredProducts.map((item, index) => [item, product[index]]);
-
-    const mappedArray = combinedArray.map((item, index) => {
-        return {
-            value1: item[0],
-            value2: item[1]
-        };
-    });
-
-    console.log(mappedArray);
-    console.log(product);
-
-    useEffect(() => {
-        perProd()
-    }, [])
-
     return (
-        <Tabs>
-            <TabList className='tab-list'>
-                <Tab className='tab-list-items'>
-                    <VscSettings />
-                    <span>Основные свойства</span>
-                </Tab>
-                <Tab className='tab-list-items'>
-                    <GiGearHammer />
-                    <span>Технические</span>
-                </Tab>
-                <Tab className='tab-list-items'>
-                    <GiPriceTag />
-                    <span>Гарантия/Срок</span>
-                </Tab>
-            </TabList>
-            <TabPanel>
-                <table className='table-list'>
-                    <thead>
-                        <tr className='title-details'>
-                            <th className='digicert-product-title'>Название продукта</th>
-                            <th>Выпуск</th>
-                            <th>Цена/год</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {
-                            mappedArray.length > 0 ?
-                                mappedArray.map((item, index) => {
-                                    console.log(item.value1.product);
-                                    return (
-                                        <tr key={index} className='product-list-details'>
-                                            <td className='product-name'>{item.value1.product}</td>
-                                            <td>{item.value2.estimate}</td>
-                                            <td>{item.value1.prices[12]}$</td>
-                                            <td className='details-btn'>
-                                                <button onClick={() => send(product)} className='details-arrow-btn'>
-                                                    {arrow_link()}
-                                                    <span>Подробности</span>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                    )
-                                })
-                                :
-                                <tr>
-                                    <td colSpan={4}>There is no product</td>
+        <table className='table-list'>
+            <thead>
+                <tr className='title-details'>
+                    <th className='digicert-product-title'>Название продукта</th>
+                    <th>Цена/год</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {
+                    filteredProducts.length > 0 ?
+                        filteredProducts.map((item, index) => {
+                            return (
+                                <tr key={index} className='product-list-details'>
+                                    <td className='product-name'>{item.product}</td>
+                                    <td>{item.prices[12]} $</td>
+                                    <td className='details-btn'>
+                                        <a href={`/digicert/${item.id}`} className='details-arrow-btn'>
+                                            {arrow_link()}
+                                            <span>Подробности</span>
+                                        </a>
+                                    </td>
                                 </tr>
-                        }
-                    </tbody>
-                </table>
-            </TabPanel>
-            <TabPanel>
-                <table className='table-list'>
-                    <thead>
-                        <tr className='title-details'>
-                            <th className='digicert-product-title'>Название продукта</th>
-                            <th>Печать сайта</th>
-                            <th></th>
+                            )
+                        })
+                        :
+                        <tr>
+                            <td colSpan={4}>There is no product</td>
                         </tr>
-                    </thead>
-                    <tbody>
-                        {
-                            mappedArray.length > 0 ?
-                                mappedArray.map((item, index) => {
-                                    console.log(item.value1.product);
-                                    return (
-                                        <tr key={index} className='product-list-details'>
-                                            <td className='product-name'>{item.value1.product}</td>
-                                            <td>{item.value2.site_seal}</td>
-                                            <td className='details-btn'>
-                                                <button onClick={() => send(product)} className='details-arrow-btn'>
-                                                    {arrow_link()}
-                                                    <span>Подробности</span>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                    )
-                                })
-                                :
-                                <tr>
-                                    <td colSpan={4}>There is no product</td>
-                                </tr>
-                        }
-                    </tbody>
-                </table>
-            </TabPanel>
-            <TabPanel>
-                <table className='table-list'>
-                    <thead>
-                        <tr className='title-details'>
-                            <th className='digicert-product-title'>Название продукта</th>
-                            <th>Гарантия</th>
-                            <th>Срок</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {
-                            mappedArray.length > 0 ?
-                                mappedArray.map((item, index) => {
-                                    console.log(item.value1.product);
-                                    return (
-                                        <tr key={index} className='product-list-details'>
-                                            <td className='product-name'>{item.value1.product}</td>
-                                            <td>{item.value2.ssl_warranty}</td>
-                                            <td>{calculatePeriodInYears(item.value2.terms)}</td>
-                                            <td className='details-btn'>
-                                                <button onClick={() => send(product)} className='details-arrow-btn'>
-                                                    {arrow_link()}
-                                                    <span>Подробности</span>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                    )
-                                })
-                                :
-                                <tr>
-                                    <td colSpan={4}>There is no product</td>
-                                </tr>
-                        }
-                    </tbody>
-                </table>
-            </TabPanel>
-        </Tabs>
+                }
+            </tbody>
+        </table>
     )
 }
