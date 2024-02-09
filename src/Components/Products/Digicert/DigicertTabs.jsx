@@ -1,14 +1,29 @@
-import React, { useState } from 'react'
-import {Link, useNavigate} from 'react-router-dom'
+import React, { useEffect, useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { VscSettings } from "react-icons/vsc";
 import { GiGearHammer, GiPriceTag } from "react-icons/gi";
-
+import Perproduct from '../../../Requests/Perproduct';
 
 
 export default function DigicertTabs({ filteredProducts }) {
+    const [product, setProduct] = useState([])
     const navigate = useNavigate()
-    console.log("filteredProducts =>", filteredProducts);
+
+    const filterID = filteredProducts.length > 0 ? filteredProducts.map(id => { return id.id }) : []
+
+    async function perProd() {
+        const items = [];
+        if (filterID.length > 0) {
+            await Promise.all(filterID.map(async i => {
+                const current = await Perproduct.getPerProduct(i);
+                items.push(current);
+            }));
+        } else {
+            console.log('sorov jonatilmadi');
+        }
+        setProduct(items);
+    }
 
     function formatAndRoundNumber(number) {
         const roundedNumber = Math.round(number);
@@ -54,6 +69,38 @@ export default function DigicertTabs({ filteredProducts }) {
         })
     }
 
+    function calculatePeriodInYears(months) {
+        const years = Math.floor(months / 12);
+        const remainingMonths = months % 12;
+        let result = '';
+
+        if (years > 0) {
+            result += years + (years === 1 ? ' год ' : ' года ');
+        }
+
+        if (remainingMonths > 0) {
+            result += remainingMonths + (remainingMonths === 1 ? ' месяц' : ' месяца');
+        }
+
+        return result.trim();
+    }
+
+    const combinedArray = filteredProducts.map((item, index) => [item, product[index]]);
+
+    const mappedArray = combinedArray.map((item, index) => {
+        return {
+            value1: item[0],
+            value2: item[1]
+        };
+    });
+
+    console.log(mappedArray);
+    console.log(product);
+
+    useEffect(() => {
+        perProd()
+    }, [])
+
     return (
         <Tabs>
             <TabList className='tab-list'>
@@ -75,28 +122,30 @@ export default function DigicertTabs({ filteredProducts }) {
                     <thead>
                         <tr className='title-details'>
                             <th className='digicert-product-title'>Название продукта</th>
-                            <th>Валидация</th>
                             <th>Выпуск</th>
                             <th>Цена/год</th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody>
                         {
-                            filteredProducts.length > 0 ?
-                                filteredProducts.map(product => (
-                                    <tr key={product.id} className='product-list-details'>
-                                        <td className='product-name'>{product.product}</td>
-                                        <td>{validation(product.product_type)}</td>
-                                        <td>1-3 dasy</td>
-                                        <td>{formatAndRoundNumber(product.prices[12] * 12400)} сум</td>
-                                        <td className='details-btn'>
-                                            <button onClick={() => send(product)} className='details-arrow-btn'>
-                                                {arrow_link()}
-                                                <span>Подробности</span>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                ))
+                            mappedArray.length > 0 ?
+                                mappedArray.map((item, index) => {
+                                    console.log(item.value1.product);
+                                    return (
+                                        <tr key={index} className='product-list-details'>
+                                            <td className='product-name'>{item.value1.product}</td>
+                                            <td>{item.value2.estimate}</td>
+                                            <td>{item.value1.prices[12]}$</td>
+                                            <td className='details-btn'>
+                                                <button onClick={() => send(product)} className='details-arrow-btn'>
+                                                    {arrow_link()}
+                                                    <span>Подробности</span>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    )
+                                })
                                 :
                                 <tr>
                                     <td colSpan={4}>There is no product</td>
@@ -110,26 +159,32 @@ export default function DigicertTabs({ filteredProducts }) {
                     <thead>
                         <tr className='title-details'>
                             <th className='digicert-product-title'>Название продукта</th>
-                            <th>Валидация</th>
-                            <th>Выпуск</th>
-                            <th>Цена/год</th>
+                            <th>Печать сайта</th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody>
                         {
-                            filteredProducts.map(product => (
-                                <tr key={product.id} className='product-list-details'>
-                                    <td className='product-name'>{product.product}</td>
-                                    <td>{validation(product.product_type)}</td>
-                                    <td>{formatAndRoundNumber(product.prices[12] * 12400)} сум</td>
-                                    <td className='details-btn'>
-                                        <a href='/' className='details-arrow-btn'>
-                                            {arrow_link()}
-                                            <span>Подробности</span>
-                                        </a>
-                                    </td>
+                            mappedArray.length > 0 ?
+                                mappedArray.map((item, index) => {
+                                    console.log(item.value1.product);
+                                    return (
+                                        <tr key={index} className='product-list-details'>
+                                            <td className='product-name'>{item.value1.product}</td>
+                                            <td>{item.value2.site_seal}</td>
+                                            <td className='details-btn'>
+                                                <button onClick={() => send(product)} className='details-arrow-btn'>
+                                                    {arrow_link()}
+                                                    <span>Подробности</span>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    )
+                                })
+                                :
+                                <tr>
+                                    <td colSpan={4}>There is no product</td>
                                 </tr>
-                            ))
                         }
                     </tbody>
                 </table>
@@ -139,26 +194,34 @@ export default function DigicertTabs({ filteredProducts }) {
                     <thead>
                         <tr className='title-details'>
                             <th className='digicert-product-title'>Название продукта</th>
-                            <th>Валидация</th>
-                            <th>Выпуск</th>
-                            <th>Цена/год</th>
+                            <th>Гарантия</th>
+                            <th>Срок</th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody>
                         {
-                            filteredProducts.map(product => (
-                                <tr key={product.id} className='product-list-details'>
-                                    <td className='product-name'>{product.product}</td>
-                                    <td>{validation(product.product_type)}</td>
-                                    <td>{formatAndRoundNumber(product.prices[12] * 12400)} сум</td>
-                                    <td className='details-btn'>
-                                        <a href='/' className='details-arrow-btn'>
-                                            {arrow_link()}
-                                            <span>Подробности</span>
-                                        </a>
-                                    </td>
+                            mappedArray.length > 0 ?
+                                mappedArray.map((item, index) => {
+                                    console.log(item.value1.product);
+                                    return (
+                                        <tr key={index} className='product-list-details'>
+                                            <td className='product-name'>{item.value1.product}</td>
+                                            <td>{item.value2.ssl_warranty}</td>
+                                            <td>{calculatePeriodInYears(item.value2.terms)}</td>
+                                            <td className='details-btn'>
+                                                <button onClick={() => send(product)} className='details-arrow-btn'>
+                                                    {arrow_link()}
+                                                    <span>Подробности</span>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    )
+                                })
+                                :
+                                <tr>
+                                    <td colSpan={4}>There is no product</td>
                                 </tr>
-                            ))
                         }
                     </tbody>
                 </table>

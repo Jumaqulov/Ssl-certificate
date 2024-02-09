@@ -15,7 +15,7 @@ export default function DDetail() {
 
     const handleRadioChange = (event) => {
         setSelectedRadio(event.target.id);
-      };
+    };
 
     // console.log(state);
     // console.log(item);
