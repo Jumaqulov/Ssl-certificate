@@ -1,3 +1,10 @@
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 0 0;
+}
+
 .digicert-svg {
     fill: #0274c4;
     width: 110px;
@@ -115,7 +122,7 @@
     border-radius: 100px;
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-    text-decoration: none;
+    cursor: pointer;
 }
 
 .details-arrow-btn:hover {
@@ -167,13 +174,23 @@
     width: 50%;
 }
 
-.form-left .offer-price {
-    display: flex;
-    width: 100%;
+.offer-year {
     border-radius: 15px;
     padding: 15px 5px;
     margin: 15px 0;
     border: 1px solid #353634;
+}
+
+.offer-price-active {
+    border: 1px solid #78a22e;
+    border-radius: 15px;
+    padding: 15px 5px;
+    margin: 15px 0;
+}
+
+.offer-price {
+    width: 100%;
+    display: flex;
 }
 
 .form-left label {
@@ -194,4 +211,12 @@
 
 .span-txt {
     color: #575757;
+}
+
+.san-price-block {
+    display: block;
+}
+
+.san-price-none {
+    display: none;
 }

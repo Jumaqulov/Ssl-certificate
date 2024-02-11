@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import { Circles } from 'react-loader-spinner'
 import DigicertTabs from './DigicertTabs';
 import Allproducts from '../../../Requests/Allproducts';
-import Perproduct from '../../../Requests/Perproduct';
 
 
 export default function Digicert() {
@@ -18,7 +18,7 @@ export default function Digicert() {
     const filteredProducts = productList.length > 0 ? productList.filter(digicert => {
         return digicert.brand === "digicert";
     }) : [];
-    // console.log(filteredProducts);
+
     useEffect(() => {
         document.title = 'Сертификаты SSL от DigiCert'
         products()
@@ -41,7 +41,9 @@ export default function Digicert() {
                 <div className='tabs'>
                     {
                         loading ? (
-                            <p>Loading</p>
+                            <div className="loader">
+                                <Circles height="80" width="80" color="#4fa94d" ariaLabel="circles-loading" wrapperStyle={{}} wrapperClass="" visible={true} />
+                            </div>
                         ) : (
                             filteredProducts.length > 0 && <DigicertTabs filteredProducts={filteredProducts} />
                         )
