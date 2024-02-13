@@ -34,4 +34,15 @@
     .product-price {
         font-size: 25px !important;
     }
+
+    .san-yes,
+    .san-no {
+        width: calc(100% / 2 - 10px);
+        margin: 5px;
+        border-radius: 8px;
+    }
+    
+    .san-prices {
+        display: block;
+    }
 }
