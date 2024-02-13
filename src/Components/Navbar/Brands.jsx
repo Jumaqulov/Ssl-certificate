@@ -6,7 +6,7 @@ export default function Brands() {
         if (href === 'digicert') {
             window.location.href = '/digicert'
         } else if (href === 'gogetssl') {
-            window.location.href = '/gogetssl'
+            window.location.href = '/ssl-certs'
         } else if (href === 'sectigo') {
             window.location.href = '/sectigo'
         } else if (href === 'geotrust') {

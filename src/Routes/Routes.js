@@ -33,7 +33,12 @@ import CodeSigning from "../Components/Wiki/GeneralQuestion/CodeSigning";
 import OrderStuck from "../Components/Wiki/SslValidation/OrderStuck";
 import DomianValidation from "../Components/Wiki/SslValidation/DomianValidation";
 import Digicert from "../Components/Products/Digicert/Digicert";
-import DDetail from "../Components/Products/Digicert/DDetail";
+import Detail from "../Components/Products/Digicert/Detail";
+import GeoTrust from "../Components/Products/GeoTrust/GeoTrust";
+import GoGetSSL from "../Components/Products/GoGetSSL/GoGetSSL";
+import Sectigo from "../Components/Products/Sectigo/Sectigo";
+import RapidSSL from "../Components/Products/RapidSSL/RapidSSL";
+import Thawte from "../Components/Products/Thawte/Thawte";
 
 export const routes = [
   { path: `${process.env.PUBLIC_URL}/ssl-certificates`, Component: <Certificates /> },
@@ -71,7 +76,12 @@ export const routes = [
   { path: `${process.env.PUBLIC_URL}/wiki/validation/order-stuck-for-manual-check-brand-validation`, Component: <OrderStuck /> },
   { path: `${process.env.PUBLIC_URL}/wiki/validation/domain-validation-ssl-verification`, Component: <DomianValidation /> },
 
+  { path: `${process.env.PUBLIC_URL}/product/:id`, Component: <Detail /> },
   { path: `${process.env.PUBLIC_URL}/digicert`, Component: <Digicert /> },
-  { path: `${process.env.PUBLIC_URL}/digicert/:id`, Component: <DDetail /> },
+  { path: `${process.env.PUBLIC_URL}/geotrust`, Component: <GeoTrust /> },
+  { path: `${process.env.PUBLIC_URL}/ssl-certs`, Component: <GoGetSSL /> },
+  { path: `${process.env.PUBLIC_URL}/sectigo`, Component: <Sectigo /> },
+  { path: `${process.env.PUBLIC_URL}/rapidssl`, Component: <RapidSSL /> },
+  { path: `${process.env.PUBLIC_URL}/thawte`, Component: <Thawte /> },
 
 ]

@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { IoIosArrowForward } from "react-icons/io";
 
-export default function DigicertTabs({ filteredProducts }) {
+export default function SectigoTab({ filteredProducts }) {
     const navigate = useNavigate();
 
     const arrow_link = () => {
@@ -30,7 +30,7 @@ export default function DigicertTabs({ filteredProducts }) {
                 return response.json();
             })
             .then(data => {
-                navigate(`/roduct/${item.id}`, {
+                navigate(`/product/${item.id}`, {
                     state: { productDetails: data, item }
                 });
             })
@@ -43,18 +43,17 @@ export default function DigicertTabs({ filteredProducts }) {
         let remainingWords = words.slice(1).join(' ');
         let highlightedProductName = (
             <>
-                <span style={{ color: '#0274c4' }}>{firstWord}</span>
+                <span style={{ color: '#00b073' }}>{firstWord}</span>
                 <span style={{ color: '#9e9e9e' }}> {remainingWords}</span>
             </>
         );
         return highlightedProductName;
     }
-
     return (
         <table className='table-list'>
             <thead>
                 <tr className='title-details'>
-                    <th className='digicert-product-title'>Название продукта</th>
+                    <th className='sectigo-product-title' >Название продукта</th>
                     <th>Цена/год</th>
                     <th></th>
                 </tr>
