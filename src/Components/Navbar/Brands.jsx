@@ -91,7 +91,7 @@ export default function Brands() {
                         digicert.length > 0 ?
                             digicert.map((link, index) => {
                                 return (
-                                    <Link key={index} onClick={() => send(link)}>{removeFirsttWord(link.product)}</Link>
+                                    <a className='product-link' key={index} onClick={() => send(link)}>{removeFirsttWord(link.product)}</a>
                                 )
                             })
                             : <p>Loading</p>
@@ -103,7 +103,7 @@ export default function Brands() {
                         gogetssl.length > 0 ?
                             gogetssl.map((link, index) => {
                                 return (
-                                    <Link key={index} onClick={() => send(link)}>{removeFirsttWord(link.product)}</Link>
+                                    <a className='product-link' key={index} onClick={() => send(link)}>{removeFirsttWord(link.product)}</a>
                                 )
                             })
                             : <p>Loading</p>
@@ -115,7 +115,7 @@ export default function Brands() {
                         (sectigo.length > 0 && sectigo.length > 11) ?
                             <>
                                 {sectigo.slice(0, 11).map((link, index) => (
-                                    <Link key={index} to={`/product/${link.id}`}>{link.product}</Link>
+                                    <a className='product-link' key={index} onClick={() => send(link)}>{removeFirsttWord(link.product)}</a>
                                 ))}
                                 <Link className='view-all' to="/sectigo">Смотреть все</Link>
                             </>
@@ -128,7 +128,7 @@ export default function Brands() {
                         geotrust.length > 0 ?
                             geotrust.map((link, index) => {
                                 return (
-                                    <Link key={index} onClick={() => send(link)}>{removeFirsttWord(link.product)}</Link>
+                                    <a className='product-link' key={index} onClick={() => send(link)}>{removeFirsttWord(link.product)}</a>
                                 )
                             })
                             : <p>Loading</p>
@@ -138,7 +138,7 @@ export default function Brands() {
                         rapidssl.length > 0 ?
                             rapidssl.map((link, index) => {
                                 return (
-                                    <Link key={index} onClick={() => send(link)}>{removeFirsttWord(link.product)}</Link>
+                                    <a className='product-link' key={index} onClick={() => send(link)}>{removeFirsttWord(link.product)}</a>
                                 )
                             })
                             : <p>Loading</p>
@@ -150,7 +150,7 @@ export default function Brands() {
                         thawte.length > 0 ?
                             thawte.map((link, index) => {
                                 return (
-                                    <Link key={index} onClick={() => send(link)}>{removeFirsttWord(link.product)}</Link>
+                                    <a className='product-link' key={index} onClick={() => send(link)}>{removeFirsttWord(link.product)}</a>
                                 )
                             })
                             : <p>Loading</p>
