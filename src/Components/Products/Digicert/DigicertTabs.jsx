@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { IoIosArrowForward } from "react-icons/io";
 
 export default function DigicertTabs({ filteredProducts }) {
@@ -30,7 +30,7 @@ export default function DigicertTabs({ filteredProducts }) {
                 return response.json();
             })
             .then(data => {
-                navigate(`/roduct/${item.id}`, {
+                navigate(`/product/${item.id}`, {
                     state: { productDetails: data, item }
                 });
             })

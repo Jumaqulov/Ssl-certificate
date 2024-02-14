@@ -8,7 +8,7 @@ export default function Footer() {
     <div className='footer'>
       <FooterTop />
       <FooterMiddle />
-      <FooterBottom/>
+      <FooterBottom />
     </div>
   )
 }

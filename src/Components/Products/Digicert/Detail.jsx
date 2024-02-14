@@ -135,7 +135,7 @@ export default function DDetail() {
                                 <span>{product.product_san_prices ? product.product_san_prices[0].price : '0'}$</span>
                                 <span>Дополнительный SAN</span>
                             </p>
-                            <p className='benefits-2'>
+                            <p className='benefits-2 benefits-2_1'>
                                 <span>{product.product_multidomains_maximum}</span>
                                 <span>Максимальный</span>
                             </p>

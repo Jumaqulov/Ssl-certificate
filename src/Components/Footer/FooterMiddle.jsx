@@ -23,7 +23,7 @@ export default function FooterMiddle() {
                             <li>
                                 <Link className='title-link' to="/ssl-certificates">Поставщики</Link>
                                 <Link className='box-link-item' to="/digicert">DigiCert</Link>
-                                <Link className='box-link-item' to="/sslcerts">GoGetSSL</Link>
+                                <Link className='box-link-item' to="/ssl-certs">GoGetSSL</Link>
                                 <Link className='box-link-item' to="/geotrust">GeoTrust</Link>
                                 <Link className='box-link-item' to="/rapidssl">RapidSSL</Link>
                                 <Link className='box-link-item' to="/sectigo">Sectigo</Link>
