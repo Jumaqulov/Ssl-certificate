@@ -50,17 +50,18 @@
     }
 
     .title-link {
+        display: inline-block;
         text-decoration: none;
         color: #575757;
         background: rgba(255, 255, 255, 0.03);
         border: 1px solid #525252;
         border-radius: 100px;
         padding: 8px 15px 8px 15px;
-        margin: 0 0 15px;
+        margin: 0 0 5px 0;
     }
 
     .link-box li {
-        padding: 30px 0;
+        padding: 10px 0;
     }
 
     .content {
@@ -69,10 +70,13 @@
     }
 
     .middle-left,
-    .middle-right,
+    .middle-right {
+        width: 100%;
+    }
+
     .payment,
     .social {
-        width: 100%;
+        width: 60%;
     }
 
     .link-box {
@@ -82,8 +86,9 @@
     }
 
     .box {
-        display: block;
-        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         width: 100%;
     }
 
@@ -93,11 +98,11 @@
     }
 
     .payment {
-        display: flex;
-        justify-content: center;
+        display: flex !important;
+        justify-content: center !important;
     }
 
     .payment img {
-        width: 50%;
+        width: 60%;
     }
 }

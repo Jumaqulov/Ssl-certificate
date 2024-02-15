@@ -7,7 +7,7 @@ export default function Certificates() {
         <div className='main-sect main-sect-res'>
             <ul className='sect-one sect-res'>
                 <li className='sect-one-1'>
-                    <Link to="/dv-ssl/" className="dv nav-link-box">
+                    <Link to="/dv-ssl" className="dv nav-link-box">
                         <div className='img-text-icon'>
                             <LiaShieldAltSolid className='lia-shield-alt-solid shield-d' />
                             <span className="symbol-letter symbol-d">D</span>
@@ -19,7 +19,7 @@ export default function Certificates() {
                     </Link>
                 </li>
                 <li className='sect-one-2'>
-                    <Link to="/multi-domain-ssl/" className="dv nav-link-box">
+                    <Link to="/multi-domain-ssl" className="dv nav-link-box">
                         <div className='img-text-icon'>
                             <LiaShieldAltSolid className='lia-shield-alt-solid shield-s' />
                             <span className="symbol-letter symbol-s">S</span>
@@ -31,19 +31,19 @@ export default function Certificates() {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/ov-ssl/" className="dv nav-link-box">
+                    <Link to="/ov-ssl" className="dv nav-link-box">
                         <div className='img-text-icon'>
                             <LiaShieldAltSolid className='lia-shield-alt-solid shield-b' />
                             <span className="symbol-letter symbol-b">B</span>
                         </div>
                         <div className='text-box'>
-                            <span className="title">Удостоверение бизнеса</span>
+                            <span className="title">Проверка бизнеса</span>
                             <p>Выдается в течение 1-3 дней<br />Повышенный уровень доверия</p>
                         </div>
                     </Link>
                 </li>
                 <li>
-                    <Link to="/wildcard-ssl/" className="dv nav-link-box">
+                    <Link to="/wildcard-ssl" className="dv nav-link-box">
                         <div className='img-text-icon'>
                             <LiaShieldAltSolid className='lia-shield-alt-solid shield-w' />
                             <span className="symbol-w">W</span>
@@ -55,7 +55,7 @@ export default function Certificates() {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/ev-ssl/" className="dv nav-link-box">
+                    <Link to="/ev-ssl" className="dv nav-link-box">
                         <div className='img-text-icon'>
                             <LiaShieldAltSolid className='lia-shield-alt-solid shield-e' />
                             <span className="symbol-e symbol-letter">E</span>
@@ -67,7 +67,7 @@ export default function Certificates() {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/smime-ssl/" className="dv nav-link-box">
+                    <Link to="/smime-ssl" className="dv nav-link-box">
                         <div className='img-text-icon'>
                             <LiaShieldAltSolid className='lia-shield-alt-solid shield-a' />
                             <span className="symbol-a symbol-letter">@</span>
@@ -79,7 +79,7 @@ export default function Certificates() {
                     </Link>
                 </li>
                 <li className='sect-one-3'>
-                    <Link to="/code-signing-ssl/" className="dv nav-link-box">
+                    <Link to="/code-signing-ssl" className="dv nav-link-box">
                         <div className='img-text-icon'>
                             <LiaShieldAltSolid className='lia-shield-alt-solid shield-c' />
                             <span className="symbol-c symbol-letter">C</span>
@@ -91,7 +91,7 @@ export default function Certificates() {
                     </Link>
                 </li>
                 <li className='sect-one-4'>
-                    <Link to="/digicert/vmc-certificates/" className="dv nav-link-box">
+                    <Link to="/digicert/vmc-certificates" className="dv nav-link-box">
                         <div className='img-text-icon'>
                             <LiaShieldAltSolid className='lia-shield-alt-solid shield-v' />
                             <span className="symbol-v symbol-letter">V</span>

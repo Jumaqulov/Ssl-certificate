@@ -51,11 +51,10 @@ export default function DDetail() {
     const roundToTwoDecimalPlaces = (number) => {
         return Math.round(number * 100) / 100;
     }
-
     useEffect(() => {
         document.title = `${product.product_name}`
         setSelectedRadio('radio-1');
-    }, []);
+    }, [product.product_id]);
 
     return (
         product.length !== 0 ?

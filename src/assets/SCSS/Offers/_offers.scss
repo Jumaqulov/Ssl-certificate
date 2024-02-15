@@ -1,5 +1,5 @@
 .home-offers {
-    margin: 40px 0;
+    margin: 10px 0;
     display: flex;
     flex-wrap: wrap;
 }
@@ -7,7 +7,6 @@
 .offer-box {
     display: flex;
     flex-wrap: wrap;
-    // width: 75%;
     width: 100%;
 }
 
@@ -176,7 +175,7 @@
 }
 
 .offer-pics div {
-   text-align: center;
+    text-align: center;
 }
 
 .offer-support {
@@ -193,7 +192,7 @@
 }
 
 .offer-support:hover {
-    color: white;   
+    color: white;
 }
 
 .svg-txt {
@@ -267,13 +266,13 @@
     justify-content: center;
 }
 
-.logo-google svg{
+.logo-google svg {
     width: 73px;
     height: 23px;
     fill: #696969;
 }
 
-.logo-paypal svg{
+.logo-paypal svg {
     width: 71px;
     height: 23px;
     fill: #696969;
@@ -291,7 +290,7 @@
     fill: #696969;
 }
 
-.logo-ibm svg{
+.logo-ibm svg {
     width: 60px;
     height: 25px;
     fill: #696969;
@@ -333,20 +332,18 @@
 }
 
 .about-offer div:first-child {
-    width: 50% !important;
+    width: 60% !important;
 }
 
-.about-offer div:nth-child(2),
-.about-offer div:nth-child(3) {
-    width: 25% !important;
+.about-offer div:nth-child(2){
+    width: 40% !important;
 }
 
 .about-offer div {
     padding: 10px 20px;
 }
 
-.about-offer div:nth-child(1),
-.about-offer div:nth-child(2) {
+.about-offer div:nth-child(1) {
     border-right: 1px dashed #8c8c8c;
 }
 

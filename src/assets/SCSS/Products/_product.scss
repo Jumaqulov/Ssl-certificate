@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px 0 0 0;
+    height: 700px;
 }
 
 .digicert-svg {
@@ -136,6 +136,26 @@
     color: #d2143ce6 !important;
 }
 
+.domian-product-title {
+    color: #23a095 !important;
+}
+
+.business-product-title {
+    color: $main_color_1 !important;
+}
+
+.extended-product-title {
+    color: #78a22e !important;
+}
+
+.multi-product-title {
+    color: #d2143ce6 !important;
+}
+
+.wild-product-title {
+    color: #9d7040 !important;
+}
+
 .product-list-details {
     background-color: #282a29;
 }
@@ -200,6 +220,58 @@
 .details-btn {
     display: flex;
     justify-content: center;
+}
+
+.other-brands {
+    font-size: 30px;
+    color: #cccccc;
+    font-weight: 100;
+}
+
+.validation-icon-box {
+    position: relative;
+}
+
+.icon-navshield {
+    width: 180px !important;
+    height: 180px !important;
+}
+
+.mt-navshield {
+    fill: #d2143ce6;
+}
+
+.icon-box {
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.icon-box-d {
+    color: #23a095;
+}
+
+.icon-box-b {
+    color: $main_color_1;
+}
+
+.icon-box-e {
+    color: #78a22e;
+}
+
+.icon-box-s {
+    color: #d2143ce6;
+}
+
+.icon-box-w {
+    position: absolute;
+    top: 70px;
+    left: 60px;
+    font-size: 60px;
+    font-weight: bold;
+    color: #9d7040;
 }
 
 // ========================================================================

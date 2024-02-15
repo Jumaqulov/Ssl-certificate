@@ -39,6 +39,11 @@ import GoGetSSL from "../Components/Products/GoGetSSL/GoGetSSL";
 import Sectigo from "../Components/Products/Sectigo/Sectigo";
 import RapidSSL from "../Components/Products/RapidSSL/RapidSSL";
 import Thawte from "../Components/Products/Thawte/Thawte";
+import DVSSL from "../Components/Products/DV-SSL/DVSSL";
+import OVSSL from "../Components/Products/OV-SSL/OVSSL";
+import EVSSL from "../Components/Products/EV-SSL/EVSSL";
+import MDSSL from "../Components/Products/Multi-Domian/MDSSL";
+import WSSL from "../Components/Products/Wildcard-SSL/WSSL";
 
 export const routes = [
   { path: `${process.env.PUBLIC_URL}/ssl-certificates`, Component: <Certificates /> },
@@ -83,5 +88,10 @@ export const routes = [
   { path: `${process.env.PUBLIC_URL}/sectigo`, Component: <Sectigo /> },
   { path: `${process.env.PUBLIC_URL}/rapidssl`, Component: <RapidSSL /> },
   { path: `${process.env.PUBLIC_URL}/thawte`, Component: <Thawte /> },
+  { path: `${process.env.PUBLIC_URL}/dv-ssl`, Component: <DVSSL /> },
+  { path: `${process.env.PUBLIC_URL}/ov-ssl`, Component: <OVSSL /> },
+  { path: `${process.env.PUBLIC_URL}/ev-ssl`, Component: <EVSSL /> },
+  { path: `${process.env.PUBLIC_URL}/multi-domain-ssl`, Component: <MDSSL /> },
+  { path: `${process.env.PUBLIC_URL}/wildcard-ssl`, Component: <WSSL /> },
 
 ]
