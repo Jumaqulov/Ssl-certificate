@@ -19,7 +19,7 @@ export default function Certificates() {
                     </Link>
                 </li>
                 <li className='sect-one-2'>
-                    <Link to="/multi-domain-ssl" className="dv nav-link-box">
+                    <Link to="/multi-domian-ssl" className="dv nav-link-box">
                         <div className='img-text-icon'>
                             <LiaShieldAltSolid className='lia-shield-alt-solid shield-s' />
                             <span className="symbol-letter symbol-s">S</span>

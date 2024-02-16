@@ -44,6 +44,8 @@ import OVSSL from "../Components/Products/OV-SSL/OVSSL";
 import EVSSL from "../Components/Products/EV-SSL/EVSSL";
 import MDSSL from "../Components/Products/Multi-Domian/MDSSL";
 import WSSL from "../Components/Products/Wildcard-SSL/WSSL";
+import BusinessValidation from "../Components/Wiki/SslValidation/BusinessValidation";
+import ExtendedValidation from "../Components/Wiki/SslValidation/ExtendedValidation";
 
 export const routes = [
   { path: `${process.env.PUBLIC_URL}/ssl-certificates`, Component: <Certificates /> },
@@ -80,6 +82,8 @@ export const routes = [
   { path: `${process.env.PUBLIC_URL}/wiki/general/code-signing-2023`, Component: <CodeSigning /> },
   { path: `${process.env.PUBLIC_URL}/wiki/validation/order-stuck-for-manual-check-brand-validation`, Component: <OrderStuck /> },
   { path: `${process.env.PUBLIC_URL}/wiki/validation/domain-validation-ssl-verification`, Component: <DomianValidation /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/validation/business-validation-ssl-verification`, Component: <BusinessValidation /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/validation/extended-validation-ssl-verification`, Component: <ExtendedValidation /> },
 
   { path: `${process.env.PUBLIC_URL}/product/:id`, Component: <Detail /> },
   { path: `${process.env.PUBLIC_URL}/digicert`, Component: <Digicert /> },
@@ -91,7 +95,7 @@ export const routes = [
   { path: `${process.env.PUBLIC_URL}/dv-ssl`, Component: <DVSSL /> },
   { path: `${process.env.PUBLIC_URL}/ov-ssl`, Component: <OVSSL /> },
   { path: `${process.env.PUBLIC_URL}/ev-ssl`, Component: <EVSSL /> },
-  { path: `${process.env.PUBLIC_URL}/multi-domain-ssl`, Component: <MDSSL /> },
+  { path: `${process.env.PUBLIC_URL}/multi-domian-ssl`, Component: <MDSSL /> },
   { path: `${process.env.PUBLIC_URL}/wildcard-ssl`, Component: <WSSL /> },
 
 ]
