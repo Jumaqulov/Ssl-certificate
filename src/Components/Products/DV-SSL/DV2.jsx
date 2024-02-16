@@ -4,7 +4,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { LiaShieldAltSolid } from "react-icons/lia";
 
 
-export default function DV2({ dv }) {
+export default function DV2({ dv, productList }) {
     const navigate = useNavigate();
 
     const arrow_link = () => {
@@ -22,7 +22,7 @@ export default function DV2({ dv }) {
             </span>
         )
     }
-
+    console.log("results=>", productList);
     const firstTextColor = (text) => {
         let words = text.split(' ');
         let firstWord = words[0];
@@ -36,20 +36,23 @@ export default function DV2({ dv }) {
         return highlightedProductName;
     }
 
-    const send = (item) => {
-        navigate(`/product/${item.id}`, {
-            state: { productDetails: item }
-        });
+    const send = (data) => {
+        const item = productList.filter(id => id.id === data.product_id)
+        setTimeout(() => {
+            navigate(`/product/${data.product_id}`, {
+                state: { productDetails: data, item }
+            });
+        }, 1000);
     }
 
     return (
         <div className='cert-txt'>
             <h3>SSL-сертификаты с проверкой домена</h3>
             <p className='cert-txt-item'>
-                <div className='validation-icon-box'>
+                <span className='validation-icon-box'>
                     <LiaShieldAltSolid className='dv-navshield icon-navshield' />
-                    <span className='icon-box-d'>D</span>
-                </div>
+                    <span className='icon-box-d icon-box'>D</span>
+                </span>
                 <span>SSL-сертификаты Domain Validation доступны всем физическим лицам, индивидуальным предпринимателям, предприятиям, организациям и государственным структурам. Не нужно предоставлять никаких документов или обрабатывать обратные вызовы. Все, что вам нужно, - пройти проверку владения доменом одним из доступных способов. Вы можете защитить как личные сайты, так и порталы компаний и проекты электронной коммерции. <br /> <br /> Даже дешевые SSL-сертификаты предоставляют логотип Static Site Seal, неограниченное количество бесплатных перевыпусков, неограниченное количество лицензий для серверов, Google Rank booster и 30-дневную гарантию возврата денег. Мы рекомендуем их для небольших сайтов и проектов, которым не требуется повышенный уровень доверия со стороны конечных клиентов.</span>
             </p>
             <br /><br /><br /><br />

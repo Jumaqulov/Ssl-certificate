@@ -8,7 +8,7 @@ export default function DDetail() {
 
     const data = useLocation()
     const product = data.state.productDetails
-    const productDetails = data.state.item
+    const productDetails = data.state.item[0] || data.state.item
 
     const handleRadioChange = (event) => {
         setSelectedRadio(event.target.id);

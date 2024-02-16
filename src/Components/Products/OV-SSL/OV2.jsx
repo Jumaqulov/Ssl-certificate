@@ -4,7 +4,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { LiaShieldAltSolid } from "react-icons/lia";
 
 
-export default function OV2({ dv }) {
+export default function OV2({ dv, productList }) {
     const navigate = useNavigate();
 
     const arrow_link = () => {
@@ -36,11 +36,13 @@ export default function OV2({ dv }) {
         return highlightedProductName;
     }
 
-    const send = (item) => {
-        navigate(`/product/${item.id}`, {
-            state: { productDetails: item }
+    const send = (data) => {
+        const item = productList.filter(id => id.id === data.product_id)
+        navigate(`/product/${data.product_id}`, {
+            state: { productDetails: data, item }
         });
     }
+
 
     return (
         <div className='cert-txt'>

@@ -4,7 +4,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { LiaShieldAltSolid } from "react-icons/lia";
 
 
-export default function MD2({ dv }) {
+export default function MD2({ md, productList }) {
     const navigate = useNavigate();
 
     const arrow_link = () => {
@@ -36,9 +36,10 @@ export default function MD2({ dv }) {
         return highlightedProductName;
     }
 
-    const send = (item) => {
-        navigate(`/product/${item.id}`, {
-            state: { productDetails: item }
+    const send = (data) => {
+        const item = productList.filter(id => id.id === data.product_id)
+        navigate(`/product/${data.product_id}`, {
+            state: { productDetails: data, item }
         });
     }
 
@@ -63,7 +64,7 @@ export default function MD2({ dv }) {
                 </thead>
                 <tbody>
                     {
-                        dv.map((item, index) => {
+                        md.map((item, index) => {
                             return (
                                 <tr key={index} className='product-list-details'>
                                     <td className='product-name'>{firstTextColor(item.product_name)}</td>

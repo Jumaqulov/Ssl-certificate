@@ -12,8 +12,8 @@ import { RiExchangeDollarLine } from "react-icons/ri";
 
 
 export default function SanRow({ product, productDetails }) {
-    // console.log(product);
-    // console.log(productDetails);
+    console.log(product);
+    console.log(productDetails);
 
     const validationDay = () => {
         if (product.estimate === "5 minutes") {
@@ -152,7 +152,7 @@ export default function SanRow({ product, productDetails }) {
     }
 
     const greenBar = () => {
-        if (productDetails.trust_logo === 0) {
+        if (productDetails.trust_logo == 0) {
             return (
                 <div className="san-yes">
                     <TbLockCheck className='www-svg'/>
