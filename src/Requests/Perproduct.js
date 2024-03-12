@@ -1,12 +1,12 @@
 import axios from 'axios'
 
-const baseUrl = 'https://my.gogetssl.com/api'
-const token = '3e317d975d4cd3206b13a56167d8bbeaac41a872'
+const Url = 'https://my.gogetssl.com/api'
+const token = 'de3c2204dfbbddf09998894d39aa712746c12023'
 
 class PerProduct {
     getPerProduct(id) {
         const endPoint = `/products/details/${id}?auth_key=`
-        const product = axios.get(baseUrl + endPoint + token)
+        const product = axios.get(`https://cors.eu.org/${Url + endPoint + token}`)
             .then(ress => {
                 return ress.data
             })

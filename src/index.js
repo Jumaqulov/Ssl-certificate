@@ -7,12 +7,13 @@ import NotFound from './Components/404Page/NotFound';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename={'/'}>
     <Routes>
       <Route path={'/'} element={<LayoutHome />} />
-      <Route path='/*' element={<LayoutOther />}>
-        <Route path='/*' element={<Router />} />
+      <Route path='' element={<LayoutOther />}>
+        <Route path={`/*`} element={<Router />} />
       </Route>
+      <Route path='' element={<NotFound />} />
     </Routes>
   </BrowserRouter>
 );

@@ -47,7 +47,7 @@ export default function GeoTrust() {
                     {
                         loading ? (
                             <div className="loader">
-                                <Circles height="80" width="80" color="#4fa94d" ariaLabel="circles-loading" wrapperStyle={{}} wrapperClass="" visible={true} />
+                                <Circles height="80" width="80" color="#dc8510" ariaLabel="circles-loading" wrapperStyle={{}} wrapperClass="" visible={true} />
                             </div>
                         ) : (
                             filteredProducts.length > 0 && <GeoTrustTabs filteredProducts={filteredProducts} />

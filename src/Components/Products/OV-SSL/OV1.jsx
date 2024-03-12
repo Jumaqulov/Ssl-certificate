@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Oval } from 'react-loader-spinner';
+import { Circles } from 'react-loader-spinner';
 import OV2 from './OV2';
 
 export default function OV1({ productList }) {
@@ -12,7 +12,7 @@ export default function OV1({ productList }) {
             setLoading(true);
             try {
                 const requests = productList.map(product =>
-                    axios.get(`https://my.gogetssl.com/api/products/details/${product.id}?auth_key=3e317d975d4cd3206b13a56167d8bbeaac41a872`)
+                    axios.get(`https://cors.eu.org/https://my.gogetssl.com/api/products/details/${product.id}?auth_key=de3c2204dfbbddf09998894d39aa712746c12023`)
                 );
                 const responses = await Promise.all(requests);
                 const fetchedResults = responses.map(response => response.data);
@@ -32,7 +32,7 @@ export default function OV1({ productList }) {
 
     return loading ? (
         <div className="loader">
-            <Oval height="80" width="80" color="#4fa94d" ariaLabel="circles-loading" wrapperStyle={{}} wrapperClass="" visible={true} />
+            <Circles height="80" width="80" color="#dc8510" ariaLabel="circles-loading" wrapperStyle={{}} wrapperClass="" visible={true} />
         </div>
     ) : (
         <OV2 dv={dv} productList={productList} />

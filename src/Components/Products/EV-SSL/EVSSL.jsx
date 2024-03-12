@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Oval } from 'react-loader-spinner'
+import { Circles } from 'react-loader-spinner'
 import Allproducts from '../../../Requests/Allproducts'
 import EV1 from './EV1';
 
@@ -23,7 +23,7 @@ export default function EVSSL() {
             {
                 loading ? (
                     <div className="loader">
-                        <Oval height="80" width="80" color="#4fa94d" ariaLabel="circles-loading" wrapperStyle={{}} wrapperClass="" visible={true} />
+                        <Circles height="80" width="80" color="#dc8510" ariaLabel="circles-loading" wrapperStyle={{}} wrapperClass="" visible={true} />
                     </div>
                 ) : (
                     <EV1 productList={productList} />

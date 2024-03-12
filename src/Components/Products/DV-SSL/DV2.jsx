@@ -22,7 +22,7 @@ export default function DV2({ dv, productList }) {
             </span>
         )
     }
-    // console.log("results=>", productList);
+    console.log("results=>", productList);
     const firstTextColor = (text) => {
         let words = text.split(' ');
         let firstWord = words[0];
