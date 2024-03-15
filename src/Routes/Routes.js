@@ -46,6 +46,7 @@ import MDSSL from "../Components/Products/Multi-Domian/MDSSL";
 import WSSL from "../Components/Products/Wildcard-SSL/WSSL";
 import BusinessValidation from "../Components/Wiki/SslValidation/BusinessValidation";
 import ExtendedValidation from "../Components/Wiki/SslValidation/ExtendedValidation";
+import ReportPrice from "../Components/ReportPrice/ReportPrice";
 
 export const routes = [
   { path: `${process.env.PUBLIC_URL}/ssl-certificates`, Component: <Certificates /> },
@@ -56,6 +57,7 @@ export const routes = [
   { path: `${process.env.PUBLIC_URL}/solutions`, Component: <Solutions /> },
   { path: `${process.env.PUBLIC_URL}/support`, Component: <Support /> },
   { path: `${process.env.PUBLIC_URL}/company`, Component: <Company /> },
+  { path: `${process.env.PUBLIC_URL}/report-better-price`, Component: <ReportPrice /> },
   { path: `${process.env.PUBLIC_URL}/online-csr-generator`, Component: <CSRgenerator /> },
   { path: `${process.env.PUBLIC_URL}/online-csr-decoder`, Component: <CSRdecoder /> },
   { path: `${process.env.PUBLIC_URL}/check-ssl-installation`, Component: <SSLchecker /> },

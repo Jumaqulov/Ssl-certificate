@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import Allproducts from '../../Requests/Allproducts'
-
+import { corsUrl } from '../../Requests/request'
 
 export default function Brands() {
     const [productList, setProductList] = useState([])
@@ -63,7 +63,7 @@ export default function Brands() {
     }) : [];
 
     const send = (item) => {
-        fetch(`https://my.gogetssl.com/api/products/details/${item.id}?auth_key=3e317d975d4cd3206b13a56167d8bbeaac41a872`)
+        fetch(`${corsUrl}/https://my.gogetssl.com/api/products/details/${item.id}?auth_key=de3c2204dfbbddf09998894d39aa712746c12023`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Failed to fetch product details');

@@ -11,7 +11,7 @@ import { RiExchangeDollarLine } from "react-icons/ri";
 
 
 
-export default function SanRow({ product, productDetails }) {
+export default function SanRow({ product, product2 }) {
     // console.log(product);
     // console.log(productDetails);
 
@@ -44,21 +44,21 @@ export default function SanRow({ product, productDetails }) {
     }
 
     const validation = () => {
-        if (productDetails.product_type === "extended_validation") {
+        if (product2.product_type === "extended_validation") {
             return (
                 <div className="san-yes">
                     <LiaFileContractSolid />
                     <p>Расширенная проверка</p>
                 </div>
             )
-        } else if (productDetails.product_type === "business_validation") {
+        } else if (product2.product_type === "business_validation") {
             return (
                 <div className="san-yes">
                     <LiaFileContractSolid />
                     <p>Проверка бизнеса</p>
                 </div>
             )
-        } else if (productDetails.product_type === "domain_validation") {
+        } else if (product2.product_type === "domain_validation") {
             return (
                 <div className="san-yes">
                     <LiaFileContractSolid />
@@ -152,7 +152,7 @@ export default function SanRow({ product, productDetails }) {
     }
 
     const greenBar = () => {
-        if (productDetails.trust_logo == 0) {
+        if (product2.trust_logo == 0) {
             return (
                 <div className="san-yes">
                     <TbLockCheck className='www-svg'/>

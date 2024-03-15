@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { IoIosArrowForward } from "react-icons/io";
+import { USD, corsUrl } from '../../../Requests/request'
 
 export default function DigicertTabs({ filteredProducts }) {
-    const navigate = useNavigate();
-
     const arrow_link = () => {
         return (
             <span className='arrow-link'>
@@ -21,20 +19,8 @@ export default function DigicertTabs({ filteredProducts }) {
         )
     }
 
-    const send = (item) => {
-        fetch(`https://cors.eu.org/https://my.gogetssl.com/api/products/details/${item.id}?auth_key=de3c2204dfbbddf09998894d39aa712746c12023`)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Failed to fetch product details');
-                }
-                return response.json();
-            })
-            .then(data => {
-                navigate(`/product/${item.id}`, {
-                    state: { productDetails: data, item }
-                });
-            })
-            .catch(error => console.error('Error fetching product details:', error));
+    function formatNumber(number) {
+        return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
     }
 
     const firstTextColor = (text) => {
@@ -66,12 +52,12 @@ export default function DigicertTabs({ filteredProducts }) {
                             return (
                                 <tr key={index} className='product-list-details'>
                                     <td className='product-name'>{firstTextColor(item.product)}</td>
-                                    <td className='product-price'>{item.prices[12]} $</td>
+                                    <td className='product-price'>{formatNumber(item.prices[12] * USD + (item.prices[12] * USD * 0.12))} UZS</td>
                                     <td className='details-btn'>
-                                        <button onClick={() => send(item)} className='details-arrow-btn'>
+                                        <a href={`/product/${item.id}`} className='details-arrow-btn'>
                                             {arrow_link()}
                                             <span>Подробности</span>
-                                        </button>
+                                        </a>
                                     </td>
                                 </tr>
                             )

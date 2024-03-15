@@ -1,12 +1,10 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom';
 import { IoIosArrowForward } from "react-icons/io";
 import { LiaShieldAltSolid } from "react-icons/lia";
 
 
 export default function DV2({ dv, productList }) {
-    const navigate = useNavigate();
-
+    
     const arrow_link = () => {
         return (
             <span className='arrow-link'>
@@ -22,7 +20,7 @@ export default function DV2({ dv, productList }) {
             </span>
         )
     }
-    console.log("results=>", productList);
+    console.log("results=>", dv);
     const firstTextColor = (text) => {
         let words = text.split(' ');
         let firstWord = words[0];
@@ -34,15 +32,6 @@ export default function DV2({ dv, productList }) {
             </>
         );
         return highlightedProductName;
-    }
-
-    const send = (data) => {
-        const item = productList.filter(id => id.id === data.product_id)
-        setTimeout(() => {
-            navigate(`/product/${data.product_id}`, {
-                state: { productDetails: data, item }
-            });
-        }, 1000);
     }
 
     return (
@@ -67,15 +56,16 @@ export default function DV2({ dv, productList }) {
                 <tbody>
                     {
                         dv.map((item, index) => {
+                            console.log(item.id);
                             return (
                                 <tr key={index} className='product-list-details'>
                                     <td className='product-name'>{firstTextColor(item.product_name)}</td>
                                     <td className='product-price'>{item.product_prices[0].price} $</td>
                                     <td className='details-btn'>
-                                        <button onClick={() => send(item)} className='details-arrow-btn'>
+                                        <a href={`/product/${item.product_id}`} className='details-arrow-btn'>
                                             {arrow_link()}
                                             <span>Подробности</span>
-                                        </button>
+                                        </a>
                                     </td>
                                 </tr>
                             )
