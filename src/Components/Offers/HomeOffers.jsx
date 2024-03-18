@@ -77,7 +77,7 @@ export default function HomeOffers() {
                     <h6>Начиная с <span>$74.97</span></h6>
                 </div>
                 <div className="offers offer-2">
-                    <p className='title-offer'>Extended</p>
+                    <p className='title-offer'>Wildcard SSL</p>
                     <ul>
                         <li>Неограниченное количество поддоменов</li>
                         <li>Неограниченное лицензирование серверов</li>

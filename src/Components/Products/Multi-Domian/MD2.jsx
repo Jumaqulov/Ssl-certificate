@@ -2,6 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import { IoIosArrowForward } from "react-icons/io";
 import { LiaShieldAltSolid } from "react-icons/lia";
+import { USD } from '../../../Requests/request';
 
 
 export default function MD2({ md, productList }) {
@@ -36,13 +37,13 @@ export default function MD2({ md, productList }) {
         return highlightedProductName;
     }
 
-    const send = (data) => {
-        const item = productList.filter(id => id.id === data.product_id)
-        navigate(`/product/${data.product_id}`, {
-            state: { productDetails: data, item }
-        });
+    function formatNumber(number) {
+        return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
     }
 
+    const roundToTwoDecimalPlaces = (number) => {
+        return Math.round(number * 100) / 100;
+    }
     return (
         <div className='cert-txt'>
             <h3>Многодоменный SSL</h3>
@@ -68,12 +69,12 @@ export default function MD2({ md, productList }) {
                             return (
                                 <tr key={index} className='product-list-details'>
                                     <td className='product-name'>{firstTextColor(item.product_name)}</td>
-                                    <td className='product-price'>{item.product_prices[0].price} $</td>
+                                    <td className='product-price'>{formatNumber(roundToTwoDecimalPlaces(item.product_prices[0].price * USD + item.product_prices[0].price * USD * 0.12))} UZS</td>
                                     <td className='details-btn'>
-                                        <button onClick={() => send(item)} className='details-arrow-btn'>
+                                        <a href={`/product/${item.id}`} className='details-arrow-btn'>
                                             {arrow_link()}
                                             <span>Подробности</span>
-                                        </button>
+                                        </a>
                                     </td>
                                 </tr>
                             )

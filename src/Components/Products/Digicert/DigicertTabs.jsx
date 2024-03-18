@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { IoIosArrowForward } from "react-icons/io";
-import { USD, corsUrl } from '../../../Requests/request'
+import { USD } from '../../../Requests/request'
 
 export default function DigicertTabs({ filteredProducts }) {
     const arrow_link = () => {
@@ -21,6 +21,10 @@ export default function DigicertTabs({ filteredProducts }) {
 
     function formatNumber(number) {
         return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+    }
+
+    const roundToTwoDecimalPlaces = (number) => {
+        return Math.round(number * 100) / 100;
     }
 
     const firstTextColor = (text) => {
@@ -52,7 +56,7 @@ export default function DigicertTabs({ filteredProducts }) {
                             return (
                                 <tr key={index} className='product-list-details'>
                                     <td className='product-name'>{firstTextColor(item.product)}</td>
-                                    <td className='product-price'>{formatNumber(item.prices[12] * USD + (item.prices[12] * USD * 0.12))} UZS</td>
+                                    <td className='product-price'>{roundToTwoDecimalPlaces(formatNumber(item.prices[12] * USD + (item.prices[12] * USD * 0.12)))} UZS</td>
                                     <td className='details-btn'>
                                         <a href={`/product/${item.id}`} className='details-arrow-btn'>
                                             {arrow_link()}

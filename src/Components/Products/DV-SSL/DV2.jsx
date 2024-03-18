@@ -1,10 +1,11 @@
 import React from 'react'
 import { IoIosArrowForward } from "react-icons/io";
 import { LiaShieldAltSolid } from "react-icons/lia";
+import { USD } from '../../../Requests/request';
 
 
-export default function DV2({ dv, productList }) {
-    
+export default function DV2({ dv }) {
+
     const arrow_link = () => {
         return (
             <span className='arrow-link'>
@@ -20,7 +21,7 @@ export default function DV2({ dv, productList }) {
             </span>
         )
     }
-    console.log("results=>", dv);
+
     const firstTextColor = (text) => {
         let words = text.split(' ');
         let firstWord = words[0];
@@ -32,6 +33,14 @@ export default function DV2({ dv, productList }) {
             </>
         );
         return highlightedProductName;
+    }
+
+    function formatNumber(number) {
+        return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+    }
+
+    const roundToTwoDecimalPlaces = (number) => {
+        return Math.round(number * 100) / 100;
     }
 
     return (
@@ -56,11 +65,10 @@ export default function DV2({ dv, productList }) {
                 <tbody>
                     {
                         dv.map((item, index) => {
-                            console.log(item.id);
                             return (
                                 <tr key={index} className='product-list-details'>
                                     <td className='product-name'>{firstTextColor(item.product_name)}</td>
-                                    <td className='product-price'>{item.product_prices[0].price} $</td>
+                                    <td className='product-price'>{formatNumber(roundToTwoDecimalPlaces(item.product_prices[0].price * USD + item.product_prices[0].price * USD * 0.12))} UZS</td>
                                     <td className='details-btn'>
                                         <a href={`/product/${item.product_id}`} className='details-arrow-btn'>
                                             {arrow_link()}

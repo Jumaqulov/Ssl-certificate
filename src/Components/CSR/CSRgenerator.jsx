@@ -4,17 +4,13 @@ import Country from '../../Requests/Country';
 
 export default function CSRgenerator() {
     const [formData, setFormData] = useState({
-        email: '',
-        firstName: '',
-        lastName: '',
-        phoneNumber: '',
-        companyName: '',
-        registrationNumber: '',
-        taxVATINN: '',
+        pathName: '',
+        organization: '',
+        department: '',
         city: '',
-        street: '',
-        state: '',
-        country: '',
+        stateOrRegion: '',
+        email: '',
+        country: ''
     });
 
     const handleInputChange = (e) => {
@@ -48,14 +44,14 @@ export default function CSRgenerator() {
             </div>
             <div className="csr-form">
                 <h4>Вставьте свой CSR, чтобы расшифровать его</h4>
-                <p>Пожалуйста, добавьте "*." перед общим именем, чтобы <br /> сгенерировать Wildcard CSR. Пример: https://*.gogetssl.uz</p>
+                <p>Пожалуйста, добавьте "*." перед общим именем, чтобы <br /> сгенерировать Wildcard CSR. Пример: https://*.sslcertificate.uz</p>
                 <div className='reseller-form' id='fill-form'>
-                    <form onSubmit={handleSubmit} action="" method=''>   {/* metod post */}
+                    <form onSubmit={handleSubmit} action="" method=''>
                         <input onChange={handleInputChange} type="text" name="pathName" placeholder='Общее имя, без HTTPS://' required />
                         <input onChange={handleInputChange} type="text" name='organization' placeholder='Организация' required />
                         <input onChange={handleInputChange} type="text" name='department' placeholder='Департамент (например: IT Dept)' required />
                         <input onChange={handleInputChange} type="text" name='city' placeholder='Город (например, Нью-Йорк)' required />
-                        <input onChange={handleInputChange} type="text" name="state/region" placeholder='Штат/регион (например: Алабама/нет)' required />
+                        <input onChange={handleInputChange} type="text" name="stateOrRegion" placeholder='Штат/регион (например: Алабама/нет)' required />
                         <input onChange={handleInputChange} type="email" name="email" placeholder='Электронная почта' required />
                         <Country onChange={handleInputChange} required />
                         <div className='form-submit'>

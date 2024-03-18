@@ -47,6 +47,12 @@ import WSSL from "../Components/Products/Wildcard-SSL/WSSL";
 import BusinessValidation from "../Components/Wiki/SslValidation/BusinessValidation";
 import ExtendedValidation from "../Components/Wiki/SslValidation/ExtendedValidation";
 import ReportPrice from "../Components/ReportPrice/ReportPrice";
+import SectigoDcv from "../Components/Wiki/SslValidation/SectigoDcv";
+import CaaRecord from "../Components/Wiki/Problems&Issues/CaaRecord";
+import FixModules from "../Components/Wiki/Problems&Issues/FixModules";
+import ErrCert from "../Components/Wiki/Problems&Issues/ErrCert";
+import ErrSsl from "../Components/Wiki/Problems&Issues/ErrSsl";
+import ErrProtocol from "../Components/Wiki/Problems&Issues/ErrProtocol";
 
 export const routes = [
   { path: `${process.env.PUBLIC_URL}/ssl-certificates`, Component: <Certificates /> },
@@ -66,6 +72,7 @@ export const routes = [
   { path: `${process.env.PUBLIC_URL}/terms-and-conditions`, Component: <Terms /> },
   { path: `${process.env.PUBLIC_URL}/refund-policy`, Component: <Payment /> },
   { path: `${process.env.PUBLIC_URL}/privacy-policy`, Component: <PrivacyPolicy /> },
+
   { path: `${process.env.PUBLIC_URL}/wiki/general`, Component: <General /> },
   { path: `${process.env.PUBLIC_URL}/wiki/validation`, Component: <SslValidation /> },
   { path: `${process.env.PUBLIC_URL}/wiki/problems`, Component: <Problems_Issues /> },
@@ -86,6 +93,12 @@ export const routes = [
   { path: `${process.env.PUBLIC_URL}/wiki/validation/domain-validation-ssl-verification`, Component: <DomianValidation /> },
   { path: `${process.env.PUBLIC_URL}/wiki/validation/business-validation-ssl-verification`, Component: <BusinessValidation /> },
   { path: `${process.env.PUBLIC_URL}/wiki/validation/extended-validation-ssl-verification`, Component: <ExtendedValidation /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/validation/sectigo-dcv-methods`, Component: <SectigoDcv /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/problems/caa-record`, Component: <CaaRecord /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/problems/how-to-fix-modulus-missmatch-error`, Component: <FixModules /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/problems/err_cert_common_name_invalid`, Component: <ErrCert /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/problems/err_ssl_version_or_cipher_mismatch`, Component: <ErrSsl /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/problems/err_ssl_protocol_error`, Component: <ErrProtocol /> },
 
   { path: `${process.env.PUBLIC_URL}/product/:id`, Component: <Detail /> },
   { path: `${process.env.PUBLIC_URL}/digicert`, Component: <Digicert /> },

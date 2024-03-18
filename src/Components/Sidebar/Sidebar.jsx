@@ -58,12 +58,12 @@ export default function Sidebar() {
         <div className='side-bar-main'>
             <div className="list-link">
                 <ul>
-                    <li>
+                    {/* <li>
                         <a className={`${link.link1 ? 'activeLink' : ''}`} href="/reseller-program">
                             <FaHandshake className='side-bar-svg' />
                             <span>Программа для реселлеров SSL</span>
                         </a>
-                    </li>
+                    </li> */}
                     <li>
                         <a className={`${link.link2 ? 'activeLink' : ''}`} href="/refund-policy">
                             <GiPriceTag className='side-bar-svg' />
@@ -100,12 +100,12 @@ export default function Sidebar() {
                             <span>Конфиденциальности</span>
                         </a>
                     </li>
-                    <li>
+                    {/* <li>
                         <a className={`${link.link8 ? 'activeLink' : ''}`} href="/terms-and-conditions">
                             <LiaFileContractSolid className='side-bar-svg' />
                             <span>Программа для реселлеров SSL</span>
                         </a>
-                    </li>
+                    </li> */}
                 </ul>
             </div>
             <div className='list-link list-link-2'>

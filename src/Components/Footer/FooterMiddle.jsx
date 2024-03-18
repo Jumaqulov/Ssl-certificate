@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import click from '../../assets/svg/click-up.svg'
 import payme from '../../assets/Images/payme_05.svg'
 
@@ -11,33 +10,32 @@ export default function FooterMiddle() {
                     <div className='middle-left'>
                         <ul className='link-box'>
                             <li>
-                                <Link className='title-link' to="/company">Компания</Link>
-                                <Link className='box-link-item' to="/">Главная страница</Link>
-                                <Link className='box-link-item' to="/reseller-program">Программа для реселлеров</Link>
-                                <Link className='box-link-item' to="/refund-policy">Платежи/Возвраты</Link>
-                                <Link className='box-link-item' to="/news">Корпоративные новости</Link>
-                                <Link className='box-link-item' to="/terms-and-conditions">Условия и положения</Link>
-                                <Link className='box-link-item' to="/support">Контакты компании</Link>
-                                <Link className='box-link-item' to="/sitemap">Карта сайта</Link>
+                                <a className='title-link' href="/company">Компания</a>
+                                <a className='box-link-item' href="/">Главная страница</a>
+                                <a className='box-link-item' href="/refund-policy">Платежи/Возвраты</a>
+                                <a className='box-link-item' href="/news">Корпоративные новости</a>
+                                <a className='box-link-item' href="/terms-and-conditions">Условия и положения</a>
+                                <a className='box-link-item' href="/support">Контакты компании</a>
+                                <a className='box-link-item' href="/sitemap">Карта сайта</a>
                             </li>
                             <li>
-                                <Link className='title-link' to="/ssl-certificates">Поставщики</Link>
-                                <Link className='box-link-item' to="/digicert">DigiCert</Link>
-                                <Link className='box-link-item' to="/ssl-certs">GoGetSSL</Link>
-                                <Link className='box-link-item' to="/geotrust">GeoTrust</Link>
-                                <Link className='box-link-item' to="/rapidssl">RapidSSL</Link>
-                                <Link className='box-link-item' to="/sectigo">Sectigo</Link>
-                                <Link className='box-link-item' to="/thawte">Thawte</Link>
+                                <a className='title-link' href="/ssl-certificates">Поставщики</a>
+                                <a className='box-link-item' href="/digicert">DigiCert</a>
+                                <a className='box-link-item' href="/ssl-certs">GoGetSSL</a>
+                                <a className='box-link-item' href="/geotrust">GeoTrust</a>
+                                <a className='box-link-item' href="/rapidssl">RapidSSL</a>
+                                <a className='box-link-item' href="/sectigo">Sectigo</a>
+                                <a className='box-link-item' href="/thawte">Thawte</a>
                             </li>
                             <li>
-                                <Link className='title-link' to='/dv-ssl'>Категории</Link>
-                                <Link className='box-link-item' to='/dv-ssl'>Валидация домена</Link>
-                                <Link className='box-link-item' to='/ov-ssl'>Валидация бизнеса</Link>
-                                <Link className='box-link-item' to='/ev-ssl'>Расширенная проверка</Link>
-                                <Link className='box-link-item' to='/wildcard-ssl'>Wildcard SSL</Link>
-                                <Link className='box-link-item' to='/multi-domian-ssl'>Сертификаты UCC/SAN</Link>
-                                <Link className='box-link-item' to='/code-signing-ssl'>CodeSigning SSL</Link>
-                                <Link className='box-link-item' to='/vcm-certificates'>Сертификаты VMC</Link>
+                                <a className='title-link' href='/dv-ssl'>Категории</a>
+                                <a className='box-link-item' href='/dv-ssl'>Валидация домена</a>
+                                <a className='box-link-item' href='/ov-ssl'>Валидация бизнеса</a>
+                                <a className='box-link-item' href='/ev-ssl'>Расширенная проверка</a>
+                                <a className='box-link-item' href='/wildcard-ssl'>Wildcard SSL</a>
+                                <a className='box-link-item' href='/multi-domian-ssl'>Сертификаты UCC/SAN</a>
+                                <a className='box-link-item' href='/code-signing-ssl'>CodeSigning SSL</a>
+                                <a className='box-link-item' href='/vcm-certificates'>Сертификаты VMC</a>
                             </li>
                         </ul>
                     </div>

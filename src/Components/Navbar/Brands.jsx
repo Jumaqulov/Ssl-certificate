@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Allproducts from '../../Requests/Allproducts'
 import { corsUrl } from '../../Requests/request'
 
 export default function Brands() {
     const [productList, setProductList] = useState([])
-    const navigate = useNavigate();
 
     function handleClick(href) {
         if (href === 'digicert') {
@@ -62,22 +61,6 @@ export default function Brands() {
         return thawte.brand === "thawte";
     }) : [];
 
-    const send = (item) => {
-        fetch(`${corsUrl}/https://my.gogetssl.com/api/products/details/${item.id}?auth_key=de3c2204dfbbddf09998894d39aa712746c12023`)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Failed to fetch product details');
-                }
-                return response.json();
-            })
-            .then(data => {
-                navigate(`/product/${item.id}`, {
-                    state: { productDetails: data, item }
-                });
-            })
-            .catch(error => console.error('Error fetching product details:', error));
-    }
-
     useEffect(() => {
         products()
     }, [])
@@ -91,7 +74,7 @@ export default function Brands() {
                         digicert.length > 0 ?
                             digicert.map((link, index) => {
                                 return (
-                                    <a className='product-link' key={index} onClick={() => send(link)}>{removeFirsttWord(link.product)}</a>
+                                    <a className='product-link' key={index} href={`/product/${link.id}`}>{removeFirsttWord(link.product)}</a>
                                 )
                             })
                             : <p>Loading</p>
@@ -103,7 +86,7 @@ export default function Brands() {
                         gogetssl.length > 0 ?
                             gogetssl.map((link, index) => {
                                 return (
-                                    <a className='product-link' key={index} onClick={() => send(link)}>{removeFirsttWord(link.product)}</a>
+                                    <a className='product-link' key={index} href={`/product/${link.id}`}>{removeFirsttWord(link.product)}</a>
                                 )
                             })
                             : <p>Loading</p>
@@ -115,7 +98,7 @@ export default function Brands() {
                         (sectigo.length > 0 && sectigo.length > 11) ?
                             <>
                                 {sectigo.slice(0, 11).map((link, index) => (
-                                    <a className='product-link' key={index} onClick={() => send(link)}>{removeFirsttWord(link.product)}</a>
+                                    <a className='product-link' key={index} href={`/product/${link.id}`}>{removeFirsttWord(link.product)}</a>
                                 ))}
                                 <Link className='view-all' to="/sectigo">Смотреть все</Link>
                             </>
@@ -128,7 +111,7 @@ export default function Brands() {
                         geotrust.length > 0 ?
                             geotrust.map((link, index) => {
                                 return (
-                                    <a className='product-link' key={index} onClick={() => send(link)}>{removeFirsttWord(link.product)}</a>
+                                    <a className='product-link' key={index} href={`/product/${link.id}`}>{removeFirsttWord(link.product)}</a>
                                 )
                             })
                             : <p>Loading</p>
@@ -138,7 +121,7 @@ export default function Brands() {
                         rapidssl.length > 0 ?
                             rapidssl.map((link, index) => {
                                 return (
-                                    <a className='product-link' key={index} onClick={() => send(link)}>{removeFirsttWord(link.product)}</a>
+                                    <a className='product-link' key={index} href={`/product/${link.id}`}>{removeFirsttWord(link.product)}</a>
                                 )
                             })
                             : <p>Loading</p>
@@ -150,7 +133,7 @@ export default function Brands() {
                         thawte.length > 0 ?
                             thawte.map((link, index) => {
                                 return (
-                                    <a className='product-link' key={index} onClick={() => send(link)}>{removeFirsttWord(link.product)}</a>
+                                    <a className='product-link' key={index} href={`/product/${link.id}`}>{removeFirsttWord(link.product)}</a>
                                 )
                             })
                             : <p>Loading</p>

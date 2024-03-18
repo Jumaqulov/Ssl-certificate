@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { FaArrowsToCircle } from "react-icons/fa6";
-import { useLocation, useParams } from 'react-router-dom';
-import SanRow from './SanRow';
-import { corsUrl, token, Url, USD } from '../../../Requests/request';
 import axios from 'axios'
+import { FaArrowsToCircle } from "react-icons/fa6";
+import { Circles } from 'react-loader-spinner';
+import { useParams } from 'react-router-dom';
+import { corsUrl, token, Url, USD } from '../../../Requests/request';
+import SanRow from './SanRow';
 
 
 export default function DDetail() {
@@ -123,7 +124,7 @@ export default function DDetail() {
                                             </label>
                                         </div>
                                         <div className={`san-price ${selectedRadio === 'radio-3' ? 'san-price-block' : 'san-price-none'}`}>
-                                            {product.product_san_prices ? formatNumber(roundToTwoDecimalPlaces(product.product_san_prices[2].price * USD) + roundToTwoDecimalPlaces(product.product_san_prices[2].price * USD *0.12)) : '0'} UZS Дополнительный домен (SAN)
+                                            {product.product_san_prices ? formatNumber(roundToTwoDecimalPlaces(product.product_san_prices[2].price * USD) + roundToTwoDecimalPlaces(product.product_san_prices[2].price * USD * 0.12)) : '0'} UZS Дополнительный домен (SAN)
                                         </div>
                                     </div>
                                 </div>
@@ -166,6 +167,8 @@ export default function DDetail() {
                 </div>
             </div>
             :
-            <p>Продукт не доступен</p>
+            <div className="loader">
+                <Circles height="80" width="80" color="#dc8510" ariaLabel="circles-loading" wrapperStyle={{}} wrapperClass="" visible={true} />
+            </div>
     );
 }
