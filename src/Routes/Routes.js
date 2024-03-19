@@ -53,6 +53,16 @@ import FixModules from "../Components/Wiki/Problems&Issues/FixModules";
 import ErrCert from "../Components/Wiki/Problems&Issues/ErrCert";
 import ErrSsl from "../Components/Wiki/Problems&Issues/ErrSsl";
 import ErrProtocol from "../Components/Wiki/Problems&Issues/ErrProtocol";
+import ErrPinnedKey from "../Components/Wiki/Problems&Issues/ErrPinnedKey";
+import ErrErxRecord from "../Components/Wiki/Problems&Issues/ErrErxRecord";
+import ErrTransparancy from "../Components/Wiki/Problems&Issues/ErrTransparancy";
+import ErrDateInvalid from "../Components/Wiki/Problems&Issues/ErrDateInvalid";
+import SecError from "../Components/Wiki/Problems&Issues/SecError";
+import ErrUnknown from "../Components/Wiki/Problems&Issues/ErrUnknown";
+import WindowDoesNot from "../Components/Wiki/Problems&Issues/WindowDoesNot";
+import LostPrivateKey from "../Components/Wiki/Problems&Issues/LostPrivateKey";
+import CommonName from "../Components/Wiki/Problems&Issues/CommonName";
+import NoPadlock from "../Components/Wiki/Problems&Issues/NoPadlock";
 
 export const routes = [
   { path: `${process.env.PUBLIC_URL}/ssl-certificates`, Component: <Certificates /> },
@@ -99,6 +109,16 @@ export const routes = [
   { path: `${process.env.PUBLIC_URL}/wiki/problems/err_cert_common_name_invalid`, Component: <ErrCert /> },
   { path: `${process.env.PUBLIC_URL}/wiki/problems/err_ssl_version_or_cipher_mismatch`, Component: <ErrSsl /> },
   { path: `${process.env.PUBLIC_URL}/wiki/problems/err_ssl_protocol_error`, Component: <ErrProtocol /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/problems/err_ssl_pinned_key_not_in_cert_chain`, Component: <ErrPinnedKey /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/problems/ssl_error_rx_record_too_long`, Component: <ErrErxRecord /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/problems/err_certificate_transparency_required`, Component: <ErrTransparancy /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/problems/err_cert_date_invalid`, Component: <ErrDateInvalid /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/problems/sec_error_expired_certificate`, Component: <SecError /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/problems/sec_error_unknown_issuer`, Component: <ErrUnknown /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/problems/windows-does-not-have-enough-information-to-verify-certificate`, Component: <WindowDoesNot /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/problems/lost-private-key`, Component: <LostPrivateKey /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/problems/common-name-missmatch-error`, Component: <CommonName /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/problems/why-no-padlock`, Component: <NoPadlock /> },
 
   { path: `${process.env.PUBLIC_URL}/product/:id`, Component: <Detail /> },
   { path: `${process.env.PUBLIC_URL}/digicert`, Component: <Digicert /> },

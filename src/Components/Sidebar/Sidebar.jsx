@@ -100,12 +100,12 @@ export default function Sidebar() {
                             <span>Конфиденциальности</span>
                         </a>
                     </li>
-                    {/* <li>
+                    <li>
                         <a className={`${link.link8 ? 'activeLink' : ''}`} href="/terms-and-conditions">
                             <LiaFileContractSolid className='side-bar-svg' />
-                            <span>Программа для реселлеров SSL</span>
+                            <span>Условия и положения</span>
                         </a>
-                    </li> */}
+                    </li>
                 </ul>
             </div>
             <div className='list-link list-link-2'>

@@ -67,7 +67,7 @@ export default function WS2({ ws }) {
                                     <td className='product-name'>{firstTextColor(item.product_name)}</td>
                                     <td className='product-price'>{formatNumber(roundToTwoDecimalPlaces(item.product_prices[0].price * USD + item.product_prices[0].price * USD * 0.12))} UZS</td>
                                     <td className='details-btn'>
-                                        <a href={`/product/${item.id}`} className='details-arrow-btn'>
+                                        <a href={`/product/${item.product_id}`} className='details-arrow-btn'>
                                             {arrow_link()}
                                             <span>Подробности</span>
                                         </a>

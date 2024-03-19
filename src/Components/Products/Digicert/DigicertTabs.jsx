@@ -39,7 +39,6 @@ export default function DigicertTabs({ filteredProducts }) {
         );
         return highlightedProductName;
     }
-
     return (
         <table className='table-list'>
             <thead>
@@ -50,13 +49,13 @@ export default function DigicertTabs({ filteredProducts }) {
                 </tr>
             </thead>
             <tbody>
-                {
+                { 
                     filteredProducts.length > 0 ?
                         filteredProducts.map((item, index) => {
                             return (
                                 <tr key={index} className='product-list-details'>
                                     <td className='product-name'>{firstTextColor(item.product)}</td>
-                                    <td className='product-price'>{roundToTwoDecimalPlaces(formatNumber(item.prices[12] * USD + (item.prices[12] * USD * 0.12)))} UZS</td>
+                                    <td className='product-price'>{formatNumber(roundToTwoDecimalPlaces(item.prices[12] * USD + (item.prices[12] * USD * 0.12)))} UZS</td>
                                     <td className='details-btn'>
                                         <a href={`/product/${item.id}`} className='details-arrow-btn'>
                                             {arrow_link()}

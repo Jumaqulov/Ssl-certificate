@@ -4,6 +4,17 @@
     fill: $main_color_1;
 }
 
+.wiki-guide {
+    li {
+        p {
+            a {
+                display: inline-block;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
 .ssl-validation-txt {
     color: #78a22e !important;
 }

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { PiGearSix } from "react-icons/pi";
 import Country from '../../Requests/Country';
+import GetCsr from '../../Requests/CSRgenerator'
 
 export default function CSRgenerator() {
     const [formData, setFormData] = useState({
@@ -12,7 +13,7 @@ export default function CSRgenerator() {
         email: '',
         country: ''
     });
-
+    const [csrList, setCsrList] = useState([])
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         setFormData({
@@ -21,9 +22,14 @@ export default function CSRgenerator() {
         });
     };
 
+    async function csr(params) {
+        const csrPost = await GetCsr.csrCode(params)
+        setCsrList(csrPost)
+    }
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(formData);
+        csr(formData)
     };
 
     useEffect(() => {
@@ -46,7 +52,7 @@ export default function CSRgenerator() {
                 <h4>Вставьте свой CSR, чтобы расшифровать его</h4>
                 <p>Пожалуйста, добавьте "*." перед общим именем, чтобы <br /> сгенерировать Wildcard CSR. Пример: https://*.sslcertificate.uz</p>
                 <div className='reseller-form' id='fill-form'>
-                    <form onSubmit={handleSubmit} action="" method=''>
+                    <form onSubmit={handleSubmit}>
                         <input onChange={handleInputChange} type="text" name="pathName" placeholder='Общее имя, без HTTPS://' required />
                         <input onChange={handleInputChange} type="text" name='organization' placeholder='Организация' required />
                         <input onChange={handleInputChange} type="text" name='department' placeholder='Департамент (например: IT Dept)' required />
@@ -58,6 +64,9 @@ export default function CSRgenerator() {
                             <button type='submit'>Генерировать CSR</button>
                         </div>
                     </form>
+                    <div className="csr-response">
+
+                    </div>
                 </div>
             </div>
         </div>
