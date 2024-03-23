@@ -5,7 +5,7 @@ import {FaHandshake} from 'react-icons/fa'
 
 export default function Company() {
     useEffect(() => {
-        document.title = 'Обзор о GoGetSSL uz'
+        document.title = 'Обзор о SSL Certificate.uz'
     })
     return (
         <div className='certificates'>
