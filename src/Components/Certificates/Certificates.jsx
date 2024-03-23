@@ -2,7 +2,7 @@ import React from 'react'
 import { CiLock } from "react-icons/ci";
 import { LiaShieldAltSolid } from "react-icons/lia";
 import { IoIosArrowForward } from 'react-icons/io'
-
+import { USD } from '../../Requests/request';
 
 export default function Certificates() {
 
@@ -20,6 +20,10 @@ export default function Certificates() {
                 </span>
             </span>
         )
+    }
+
+    function formatNumber(number) {
+        return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
     }
 
     return (
@@ -97,7 +101,7 @@ export default function Certificates() {
                                     </div>
                                     <span>Просмотр SSL-сертификатов</span>
                                 </a>
-                                <span className='cert-price'>Начиная с <b className='dv-price'>$14.21</b> в год</span>
+                                <span className='cert-price'>Начиная с <b className='dv-price'>{formatNumber(14.21 * USD)} UZS</b> в год</span>
                             </div>
                         </div>
                     </li>
@@ -116,7 +120,7 @@ export default function Certificates() {
                                     </div>
                                     <span>Просмотр SSL-сертификатов</span>
                                 </a>
-                                <span className='cert-price'>Начиная с <b className='ov-price'>$30.36</b> в год</span>
+                                <span className='cert-price'>Начиная с <b className='ov-price'>{formatNumber(30.36 * USD)} UZS</b> в год</span>
                             </div>
                         </div>
                     </li>
@@ -135,7 +139,7 @@ export default function Certificates() {
                                     </div>
                                     <span>Просмотр SSL-сертификатов</span>
                                 </a>
-                                <span className='cert-price'>Начиная с <b className='ev-price'>$74.97</b> в год</span>
+                                <span className='cert-price'>Начиная с <b className='ev-price'>{formatNumber(74.97 * USD)} UZS</b> в год</span>
                             </div>
                         </div>
                     </li>
@@ -154,7 +158,7 @@ export default function Certificates() {
                                     </div>
                                     <span>Просмотр SSL-сертификатов</span>
                                 </a>
-                                <span className='cert-price'>Начиная с <b className='wild-price'>$72.00</b> в год</span>
+                                <span className='cert-price'>Начиная с <b className='wild-price'>{formatNumber(72 * USD)} UZS</b> в год</span>
                             </div>
                         </div>
                     </li>
@@ -173,7 +177,7 @@ export default function Certificates() {
                                     </div>
                                     <span>Просмотр SSL-сертификатов</span>
                                 </a>
-                                <span className='cert-price'>Начиная с <b className='md-price'>$72.00</b> в год</span>
+                                <span className='cert-price'>Начиная с <b className='md-price'>{formatNumber(72 * USD)} UZS</b> в год</span>
                             </div>
                         </div>
                     </li>
@@ -192,7 +196,7 @@ export default function Certificates() {
                                     </div>
                                     <span>Просмотр SSL-сертификатов</span>
                                 </a>
-                                <span className='cert-price'>Начиная с <b className='cs-price'>$72.00</b> в год</span>
+                                <span className='cert-price'>Начиная с <b className='cs-price'>{formatNumber(72 * USD)}</b> в год</span>
                             </div>
                         </div>
                     </li>
@@ -211,7 +215,7 @@ export default function Certificates() {
                                     </div>
                                     <span>Просмотр SSL-сертификатов</span>
                                 </a>
-                                <span className='cert-price'>Начиная с <b className='sm-price'>$11.95</b> в год</span>
+                                <span className='cert-price'>Начиная с <b className='sm-price'>{formatNumber(11.95 * USD)} UZS</b> в год</span>
                             </div>
                         </div>
                     </li>
