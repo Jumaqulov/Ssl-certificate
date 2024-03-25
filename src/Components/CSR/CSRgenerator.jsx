@@ -38,7 +38,7 @@ export default function CSRgenerator() {
 
     return (
         <div className='certificates'>
-            <h3 className='csr-title'>Онлайн-генератор CSR</h3>
+            <h1 title='about this page' className='csr-title'>Онлайн-генератор CSR</h1>
             <div className="csr-main">
                 <div>
                     <PiGearSix className='csr-svg' />

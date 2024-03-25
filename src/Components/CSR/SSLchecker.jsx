@@ -9,7 +9,7 @@ export default function SSLchecker() {
 
     return (
         <div className='certificates'>
-            <h3 className='csr-title'>Онлайновая проверка SSL</h3>
+            <h1 title='about this page' className='csr-title'>Онлайновая проверка SSL</h1>
             <div className="csr-main">
                 <div>
                     <GiBigGear className='sslcheck-svg'/>

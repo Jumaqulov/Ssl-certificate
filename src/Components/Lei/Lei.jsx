@@ -14,8 +14,8 @@ export default function Lei() {
     }, [])
     return (
         <div className='certificates'>
-            <div className="lei-main">
-                <h3>Коды LEI. Знайте своего клиента</h3>
+            <div className="cert-txt">
+                <h1 title='about this page'>Коды LEI. Знайте своего клиента</h1>
                 <div className='lei-header'>
                     <div>
                         <svg className='getlie-svg' viewBox="0 0 26 32">

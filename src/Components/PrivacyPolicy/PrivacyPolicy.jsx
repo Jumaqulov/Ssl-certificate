@@ -14,7 +14,7 @@ export default function PrivacyPolicy() {
     return (
         <div className='certificates'>
             <div className="cert-txt">
-                <h3>Политика конфиденциальности</h3>
+                <h1 title='about this page'>Политика конфиденциальности</h1>
                 <p className='cert-txt-item'>
                     <span>
                         <LiaCertificateSolid className='cert-txt-svg'/>

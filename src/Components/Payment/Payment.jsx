@@ -11,7 +11,7 @@ export default function Payment() {
     return (
         <div className='certificates'>
             <div className="cert-txt">
-                <h3>Способы оплаты и возврат средств</h3>
+                <h1 title='about this page'>Способы оплаты и возврат средств</h1>
                 <p className='cert-txt-item'>
                     <span>
                         <GiPriceTag className='cert-txt-svg'/>

@@ -13,7 +13,7 @@ export default function SSLmatcher() {
     }, [])
     return (
         <div className='certificates'>
-            <h3 className='csr-title'>Инструмент сопоставления SSL</h3>
+            <h1 title='about this page' className='csr-title'>Инструмент сопоставления SSL</h1>
             <div className="csr-main">
                 <div>
                     <VscSettingsGear className='matcher-svg' />

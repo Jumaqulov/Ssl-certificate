@@ -3,7 +3,7 @@ import { LiaFileContractSolid } from "react-icons/lia";
 
 export default function Terms() {
     useEffect(()=>{
-        document.title = 'Условия и положения | GoGetSSL®'
+        document.title = 'Условия и положения'
     },[])
     return (
         <div className='certificates'>

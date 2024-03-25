@@ -17,7 +17,7 @@ export default function CSRdecoder() {
 
     return (
         <div className='certificates'>
-            <h3 className='csr-title'>Онлайн-декодер CSR</h3>
+            <h1 title='about this page' className='csr-title'>Онлайн-декодер CSR</h1>
             <div className="csr-main">
                 <div>
                     <BsGearWideConnected className='decoder-svg'/>

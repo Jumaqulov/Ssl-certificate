@@ -5,7 +5,7 @@ export default function NotFound() {
     return (
         <div className='certificates'>
             <div className="not-found">
-                <h3>Извините, страница не найдена</h3>
+                <h1 title='about this page'>Извините, страница не найдена</h1>
                 <p>
                     <a href="/">Главная страница</a>
                 </p>

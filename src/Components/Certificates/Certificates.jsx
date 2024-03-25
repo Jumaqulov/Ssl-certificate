@@ -37,7 +37,7 @@ export default function Certificates() {
             </Helmet>
             <div className='certificates'>
                 <div className='cert-txt'>
-                    <h1>SSL-сертификаты</h1>
+                    <h1 title='about this page'>SSL-сертификаты</h1>
                     <p className='cert-txt-item'>
                         <span>
                             <CiLock className='cert-txt-svg' />

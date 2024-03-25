@@ -5,7 +5,7 @@ export default function ReportPrice() {
     return (
         <div className='certificates'>
             <div className="cert-txt">
-                <h3>Сообщить о лучшей цене</h3>
+                <h1 title='about this page'>Сообщить о лучшей цене</h1>
                 <p className='cert-txt-item'>
                     <span>
                         <PiTarget className='cert-txt-svg' />

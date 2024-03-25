@@ -13,8 +13,8 @@ export default function Company() {
                 <meta name="author" content="Starlab" />
             </Helmet>
             <div className='certificates'>
-                <div className='company-main'>
-                    <h2>О нашей компании SSL</h2>
+                <div className='cert-txt'>
+                    <h1 title='about this page'>О нашей компании SSL</h1>
                     <p className='cert-txt-item'>
                         <span>
                             <CiLock className='cert-txt-svg' />
