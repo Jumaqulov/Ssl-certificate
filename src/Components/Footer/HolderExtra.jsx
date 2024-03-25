@@ -1,6 +1,10 @@
 import React from 'react'
+import { USD } from '../../Requests/request'
 
 export default function HolderExtra() {
+    function formatNumber(number) {
+        return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+    }
     return (
         <div className='holder-extra'>
             <div className="left">
@@ -19,7 +23,7 @@ export default function HolderExtra() {
             </div>
             <div className="right">
                 <div className="block-one">
-                    <p>$62.00</p>
+                    <p>{formatNumber(62 * USD)} UZS</p>
                     <a href="/lei">Регистрация LEI</a>
                 </div>
                 <div className="block-two">

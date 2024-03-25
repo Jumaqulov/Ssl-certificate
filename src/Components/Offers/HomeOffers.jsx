@@ -2,8 +2,12 @@ import React from 'react'
 import { CiLock, CiGlobe } from "react-icons/ci";
 import { IoInfiniteSharp } from "react-icons/io5";
 import AboutOffer from './AboutOffer'
+import { USD } from '../../Requests/request';
 
 export default function HomeOffers() {
+    function formatNumber(number) {
+        return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+    }
     return (
         <div className='home-offers'>
             <div className='offer-box'>
@@ -16,19 +20,13 @@ export default function HomeOffers() {
                     </ul>
                     <div className='offer-svg-link offer-svg-link-1'>
                         <div>
-                            <span>
-                                <CiLock />
-                            </span>
-                            <span>
-                                <CiLock />
-                            </span>
-                            <span>
-                                <CiLock />
-                            </span>
+                            <span><CiLock /></span>
+                            <span><CiLock /></span>
+                            <span><CiLock /></span>
                         </div>
                         <a className='offer-link offer-link-1' href="/dv-ssl">Купить сейчас</a>
                     </div>
-                    <h6>Начиная с <span>$14.21</span></h6>
+                    <h6>Начиная с <span>{formatNumber(14.21 * USD)} UZS</span></h6>
                 </div>
                 <div className="offers offer-1">
                     <p className='title-offer'>Бизнес</p>
@@ -51,7 +49,7 @@ export default function HomeOffers() {
                         </div>
                         <a className='offer-link offer-link-2' href="/ov-ssl">Купить сейчас</a>
                     </div>
-                    <h6>Начиная с <span>$30.36</span></h6>
+                    <h6>Начиная с <span>{formatNumber(30.36 * USD)} UZS</span></h6>
                 </div>
                 <div className="offers offer-1">
                     <p className='title-offer'>Расширенный</p>
@@ -74,7 +72,7 @@ export default function HomeOffers() {
                         </div>
                         <a className='offer-link offer-link-3' href="/ev-ssl">Купить сейчас</a>
                     </div>
-                    <h6>Начиная с <span>$74.97</span></h6>
+                    <h6>Начиная с <span>{formatNumber(74.97 * USD)} UZS</span></h6>
                 </div>
                 <div className="offers offer-2">
                     <p className='title-offer'>Wildcard SSL</p>
@@ -89,7 +87,7 @@ export default function HomeOffers() {
                         </span>
                         <a className='offer-link offer-link-4' href="/wildcard-ssl">Купить сейчас</a>
                     </div>
-                    <h6>Начиная с <span>$72.00</span></h6>
+                    <h6>Начиная с <span>{formatNumber(72 * USD)} UZS</span></h6>
                 </div>
                 <div className="offers offer-2">
                     <p className='title-offer'>Мультидомен</p>
@@ -99,12 +97,12 @@ export default function HomeOffers() {
                         <li>Экономия денег и времени</li>
                     </ul>
                     <div className='offer-svg-link'>
-                        <a className='offer-link offer-link-3' href="/multi-domain-ssl">Купить сейчас</a>
+                        <a className='offer-link offer-link-3' href="/multi-domian-ssl">Купить сейчас</a>
                         <span>
                             <CiGlobe className='san-svg' />
                         </span>
                     </div>
-                    <h6>Начиная с <span>$72.00</span></h6>
+                    <h6>Начиная с <span>{formatNumber(72 * USD)} UZS</span></h6>
                 </div>
             </div>
             <AboutOffer />

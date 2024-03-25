@@ -1,8 +1,12 @@
 import React from 'react'
 import { MdOutlineDoneOutline } from "react-icons/md";
+import { USD } from '../../Requests/request';
 
 
 export default function LeiPricing() {
+    function formatNumber(number) {
+        return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+    }
     return (
         <div className="lei-pricing">
             <p className='lei-pricing-title'>LEI Ценообразование/Планы</p>
@@ -22,15 +26,15 @@ export default function LeiPricing() {
                     <tr>
                         <td className='desktop'>План ценообразования</td>
                         <td className='lie-price'>
-                            <span>$62.00</span>
+                            <span>{formatNumber(62 * USD)} UZS</span>
                             <span>годовой счет</span>
                         </td>
                         <td className='lie-price'>
-                            <span>$62.00</span>
+                            <span>{formatNumber(62 * USD)} UZS</span>
                             <span>годовой счет</span>
                         </td>
                         <td className='lie-price'>
-                            <span>$155.00</span>
+                            <span>{formatNumber(155 * USD)} UZS</span>
                             <span>годовой счет</span>
                         </td>
                     </tr>

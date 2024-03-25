@@ -1,5 +1,6 @@
 import React from 'react'
 import { MdOutlineDoneOutline } from "react-icons/md";
+import { USD } from '../../Requests/request';
 
 
 export default function Price() {
@@ -100,6 +101,9 @@ export default function Price() {
     )
   }
 
+  function formatNumber(number) {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  }
   return (
     <div className='ts-price-table'>
       <div className="ts-desktop-table">
@@ -206,38 +210,38 @@ export default function Price() {
             <tr>
               <td className='ts-brown-1'>1 год</td>
               <td className='ts-brown-2 ts-td-center'>
-                <span>$15.00</span>
+                <span>{formatNumber(15 * USD)} UZS</span>
               </td>
               <td className='ts-brown-2 ts-td-center'>
-                <span>$150.00</span>
+                <span>{formatNumber(150 * USD)} UZS</span>
               </td>
               <td className='ts-brown-3 ts-td-center'>
-                <span>$48.00</span>
+                <span>{formatNumber(48 * USD)} UZS</span>
               </td>
               <td className='ts-brown-3 ts-td-center'>
-                <span>$480.00</span>
+                <span>{formatNumber(480 * USD)} UZS</span>
               </td>
             </tr>
             <tr>
               <td className='ts-brown-1'>2 года</td>
               <td className='ts-brown-2'></td>
               <td className='ts-brown-2 ts-td-center'>
-                <span>$262.50</span>
+                <span>{formatNumber(262.5 * USD)} UZS</span>
               </td>
               <td className='ts-brown-3'></td>
               <td className='ts-brown-3 ts-td-center'>
-                <span>$840.00</span>
+                <span>{formatNumber(840 * USD)} UZS</span>
               </td>
             </tr>
             <tr>
               <td className='ts-brown-1'>3 года</td>
               <td className='ts-brown-2'></td>
               <td className='ts-brown-2 ts-td-center'>
-                <span>$375.00</span>
+                <span>{formatNumber(375 * USD)} UZS</span>
               </td>
               <td className='ts-brown-3'></td>
               <td className='ts-brown-3 ts-td-center'>
-                <span>$1,200.00</span>
+                <span>{formatNumber(1200 * USD)} UZS</span>
               </td>
             </tr>
             <tr>
@@ -386,30 +390,30 @@ export default function Price() {
             </tr>
             {MobileTitle1('1 год')}
             <tr>
-              {MobileSpan1('$15.00')}
-              {MobileSpan1('$150.00')}
+              {MobileSpan1(`${formatNumber(15 * USD)} UZS`)}
+              {MobileSpan1(`${formatNumber(150 * USD)} UZS`)}
             </tr>
             <tr>
-              {MobileSpan2('$48.00')}
-              {MobileSpan2('$480.00')}
+              {MobileSpan2(`${formatNumber(48 * USD)} UZS`)}
+              {MobileSpan2(`${formatNumber(480 * USD)} UZS`)}
             </tr>
             {MobileTitle1('2 года')}
             <tr>
               {MobileSpan1('')}
-              {MobileSpan1('$262.50')}
+              {MobileSpan1(`${formatNumber(262.5 * USD)} UZS`)}
             </tr>
             <tr>
               {MobileSpan2('')}
-              {MobileSpan2('$840.00')}
+              {MobileSpan2(`${formatNumber(840 * USD)} UZS`)}
             </tr>
             {MobileTitle1('3 года')}
             <tr>
               {MobileSpan1('')}
-              {MobileSpan1('$375.00')}
+              {MobileSpan1(`${formatNumber(375 * USD)} UZS`)}
             </tr>
             <tr>
               {MobileSpan2('')}
-              {MobileSpan2('$1,200.00')}
+              {MobileSpan2(`${formatNumber(1200 * USD)} UZS`)}
             </tr>
             <tr>
               <td className='ts-brown-2'>
