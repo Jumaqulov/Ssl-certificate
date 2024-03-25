@@ -47,7 +47,9 @@
     fill: $main_color_1;
 }
 
-.cert-txt h3 {
+.cert-txt h3, 
+.cert-txt h1,
+.cert-txt h2{
     color: #ccc;
     font-size: 36px;
 }

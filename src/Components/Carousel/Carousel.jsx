@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { USD } from '../../Requests/request'
 
 export default function Carousel() {
     const [show, setShow] = useState(false);
@@ -41,6 +42,10 @@ export default function Carousel() {
         )
     }
 
+    function formatNumber(number) {
+        return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+    }
+
     useEffect(() => {
         setShow(true);
         setSliderSettings(prevSettings => ({
@@ -66,7 +71,7 @@ export default function Carousel() {
                             </div>
                             <div className={`fade-up ${show ? 'show' : ''}`}>
                                 <h3>НАДЕЖНЫЙ И СОВРЕМЕННЫЙ СПОСОБ ИДЕНТИФИКАЦИИ КОМПАНИИ</h3>
-                                <h2>49.00$</h2>
+                                <h2>{formatNumber(49 * USD)} UZS</h2>
                                 <a href="/lei">Проверить предложение</a>
                             </div>
                             <div className={`fade-right ${show ? 'show' : ''} slide-txt-box`}>
@@ -98,7 +103,7 @@ export default function Carousel() {
                         <div className='slide-txt-2 slide-txt'>
                             <div className={`fade-left ${show ? 'show' : ''}`}>
                                 <h3>ДОСТУПНА НОВАЯ ФУНКЦИЯ FLEX SSL</h3>
-                                <h2>44.00$</h2>
+                                <h2>{formatNumber(44 * USD)} UZS</h2>
                                 <a href="/multi-domian-ssl">Проверить предложение</a>
                             </div>
                             <div className={`fade-up ${show ? 'show' : ''} slide-txt-box`}>
@@ -149,7 +154,7 @@ export default function Carousel() {
                             </div>
                             <div className={`fade-up ${show ? 'show' : ''}`}>
                                 <h3>СКАНЕР УЯЗВИМОСТЕЙ БЕЗ КОМПРОМИССОВ</h3>
-                                <h2>15.00$</h2>
+                                <h2>{formatNumber(15 * USD)} UZS</h2>
                                 <a href="/multi-domian-ssl">Проверить предложение</a>
                             </div>
                             <div className={`fade-up ${show ? 'show' : ''} slide-txt-box`}>
@@ -173,7 +178,7 @@ export default function Carousel() {
                         </div>
                     </div>
                 </Slider>
-            </div >
-        </div >
+            </div>
+        </div>
     )
 }
