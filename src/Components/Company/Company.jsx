@@ -9,7 +9,8 @@ export default function Company() {
         <>
             <Helmet>
                 <title>Обзор о SSL Certificate.uz</title>
-                <meta name="description" content="" />
+                <meta name="description" content="SSL Certificate.uz - надежные SSL-сертификаты для вашего веб-сайта. Узнайте больше о безопасности онлайн и защитите свой сайт прямо сейчас!" />
+                <meta name='keywords' content='Starlab Ssl, starlab ssl, ssl sertificate, сертификаты ssl'/>
                 <meta name="author" content="Starlab" />
             </Helmet>
             <div className='certificates'>
