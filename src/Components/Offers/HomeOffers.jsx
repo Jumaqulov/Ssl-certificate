@@ -12,7 +12,7 @@ export default function HomeOffers() {
         <div className='home-offers'>
             <div className='offer-box'>
                 <div className="offers offer-1">
-                    <p className='title-offer'>Домен</p>
+                    <h4 className='title-offer'>Домен</h4>
                     <ul>
                         <li>Защита домена/поддоменов</li>
                         <li>Никакой бумажной волокиты</li>
@@ -29,7 +29,7 @@ export default function HomeOffers() {
                     <h6>Начиная с <span>{formatNumber(14.21 * USD)} UZS</span></h6>
                 </div>
                 <div className="offers offer-1">
-                    <p className='title-offer'>Бизнес</p>
+                    <h4 className='title-offer'>Бизнес</h4>
                     <ul>
                         <li>Защита домена/поддоменов</li>
                         <li>Проверяет компанию</li>
@@ -52,7 +52,7 @@ export default function HomeOffers() {
                     <h6>Начиная с <span>{formatNumber(30.36 * USD)} UZS</span></h6>
                 </div>
                 <div className="offers offer-1">
-                    <p className='title-offer'>Расширенный</p>
+                    <h4 className='title-offer'>Расширенный</h4>
                     <ul>
                         <li>Защита домена/поддоменов</li>
                         <li>Зеленый знак сайта</li>
@@ -75,7 +75,7 @@ export default function HomeOffers() {
                     <h6>Начиная с <span>{formatNumber(74.97 * USD)} UZS</span></h6>
                 </div>
                 <div className="offers offer-2">
-                    <p className='title-offer'>Wildcard SSL</p>
+                    <h4 className='title-offer'>Wildcard SSL</h4>
                     <ul>
                         <li>Неограниченное количество поддоменов</li>
                         <li>Неограниченное лицензирование серверов</li>
@@ -90,7 +90,7 @@ export default function HomeOffers() {
                     <h6>Начиная с <span>{formatNumber(72 * USD)} UZS</span></h6>
                 </div>
                 <div className="offers offer-2">
-                    <p className='title-offer'>Мультидомен</p>
+                    <h4 className='title-offer'>Мультидомен</h4>
                     <ul>
                         <li>Защищает до 250 доменов</li>
                         <li>Совместимость с MS Exchange</li>

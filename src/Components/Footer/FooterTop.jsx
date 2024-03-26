@@ -3,7 +3,6 @@ import { SiOpera } from "react-icons/si";
 import { FaInternetExplorer } from "react-icons/fa";
 import { FaFirefoxBrowser, FaChrome } from "react-icons/fa";
 import { ImSafari } from "react-icons/im";
-import { TbBrandChrome } from "react-icons/tb";
 
 export default function FooterTop() {
     return (

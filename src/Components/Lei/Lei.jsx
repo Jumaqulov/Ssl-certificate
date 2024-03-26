@@ -8,14 +8,15 @@ import { HiBuildingOffice2 } from "react-icons/hi2";
 import { TbApi, TbArrowsExchange2 } from "react-icons/tb";
 import LeiTable from './LeiTable'
 import LeiPricing from './LeiPricing'
+import { USD } from '../../Requests/request';
 
 export default function Lei() {
     return (
         <>
             <Helmet>
                 <title>Коды LEI</title>
-                <meta name="description" content="SSL Certificate.uz - надежные SSL-сертификаты для вашего веб-сайта. Узнайте больше о безопасности онлайн и защитите свой сайт прямо сейчас!" />
-                <meta name='keywords' content='Starlab Ssl, starlab ssl, ssl sertificate, сертификаты ssl' />
+                <meta name="description" content={`Стоимость кодов LEI начинается от ${62 * USD} UZS в год. Надежный и современный способ идентификации любой международной компании, участвующей в финансовых операциях`} />
+                <meta name='keywords' content='Starlab Ssl, starlab ssl, ssl sertificate, сертификаты ssl, get lei, lei certificate , сертификаты Lei, lei ,Lei buy' />
                 <meta name="author" content="Starlab" />
             </Helmet>
             <div className='certificates'>
