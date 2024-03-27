@@ -37,6 +37,10 @@ export default function Brands() {
         return remainingWords;
     }
 
+    const normalizeProductName = (productName) => {
+        return productName.split(' ').map(word => word.toLowerCase()).join('-');
+    };
+
     const digicert = productList.length > 0 ? productList.filter(digicert => {
         return digicert.brand === "digicert";
     }) : [];
@@ -74,7 +78,7 @@ export default function Brands() {
                         digicert.length > 0 ?
                             digicert.map((link, index) => {
                                 return (
-                                    <a className='product-link' key={index} href={`/product/${link.id}`}>{removeFirsttWord(link.product)}</a>
+                                    <a className='product-link' key={index} href={`/product/${normalizeProductName(link.product)}`}>{removeFirsttWord(link.product)}</a>
                                 )
                             })
                             : <p>Loading</p>
@@ -86,7 +90,7 @@ export default function Brands() {
                         gogetssl.length > 0 ?
                             gogetssl.map((link, index) => {
                                 return (
-                                    <a className='product-link' key={index} href={`/product/${link.id}`}>{removeFirsttWord(link.product)}</a>
+                                    <a className='product-link' key={index} href={`/product/${normalizeProductName(link.product)}`}>{removeFirsttWord(link.product)}</a>
                                 )
                             })
                             : <p>Loading</p>
@@ -98,7 +102,7 @@ export default function Brands() {
                         (sectigo.length > 0 && sectigo.length > 11) ?
                             <>
                                 {sectigo.slice(0, 11).map((link, index) => (
-                                    <a className='product-link' key={index} href={`/product/${link.id}`}>{removeFirsttWord(link.product)}</a>
+                                    <a className='product-link' key={index} href={`/product/${normalizeProductName(link.product)}`}>{removeFirsttWord(link.product)}</a>
                                 ))}
                                 <Link className='view-all' to="/sectigo">Смотреть все</Link>
                             </>
@@ -111,7 +115,7 @@ export default function Brands() {
                         geotrust.length > 0 ?
                             geotrust.map((link, index) => {
                                 return (
-                                    <a className='product-link' key={index} href={`/product/${link.id}`}>{removeFirsttWord(link.product)}</a>
+                                    <a className='product-link' key={index} href={`/product/${normalizeProductName(link.product)}`}>{removeFirsttWord(link.product)}</a>
                                 )
                             })
                             : <p>Loading</p>
@@ -121,7 +125,7 @@ export default function Brands() {
                         rapidssl.length > 0 ?
                             rapidssl.map((link, index) => {
                                 return (
-                                    <a className='product-link' key={index} href={`/product/${link.id}`}>{removeFirsttWord(link.product)}</a>
+                                    <a className='product-link' key={index} href={`/product/${normalizeProductName(link.product)}`}>{removeFirsttWord(link.product)}</a>
                                 )
                             })
                             : <p>Loading</p>
@@ -133,7 +137,7 @@ export default function Brands() {
                         thawte.length > 0 ?
                             thawte.map((link, index) => {
                                 return (
-                                    <a className='product-link' key={index} href={`/product/${link.id}`}>{removeFirsttWord(link.product)}</a>
+                                    <a className='product-link' key={index} href={`/product/${normalizeProductName(link.product)}`}>{removeFirsttWord(link.product)}</a>
                                 )
                             })
                             : <p>Loading</p>

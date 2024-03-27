@@ -1,7 +1,7 @@
 import React from 'react'
 import { CiWarning } from 'react-icons/ci'
-import example1 from '../../../assets/Images/Wiki-Img/err_cert_common_name_invalid (1).png'
-import example2 from '../../../assets/Images/Wiki-Img/err_ssl_version_or_cipher_mismatch2 (1).png'
+import example1 from '../../../assets/Images/Wiki-Img/err_cert_common_name_invalid.png'
+import example2 from '../../../assets/Images/Wiki-Img/err_ssl_version_or_cipher_mismatch2.png'
 
 export default function CommonName() {
     return (

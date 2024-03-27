@@ -2,7 +2,7 @@ import React from 'react'
 import { CiWarning } from 'react-icons/ci'
 import example1 from '../../../assets/Images/Wiki-Img/err_ssl_protocol_error.png'
 import example2 from '../../../assets/Images/Wiki-Img/err_ssl_protocol_error2.png'
-import example3 from '../../../assets/Images/Wiki-Img/ssl_error_err_cert_common_name_invalid2 (1).png'
+import example3 from '../../../assets/Images/Wiki-Img/ssl_error_err_cert_common_name_invalid2.png'
 import example4 from '../../../assets/Images/Wiki-Img/err_ssl_protocol_error3.png'
 import example5 from '../../../assets/Images/Wiki-Img/err_ssl_protocol_error4.png'
 
