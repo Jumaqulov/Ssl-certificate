@@ -63,6 +63,7 @@ import WindowDoesNot from "../Components/Wiki/Problems&Issues/WindowDoesNot";
 import LostPrivateKey from "../Components/Wiki/Problems&Issues/LostPrivateKey";
 import CommonName from "../Components/Wiki/Problems&Issues/CommonName";
 import NoPadlock from "../Components/Wiki/Problems&Issues/NoPadlock";
+import Sitemap from "../Components/Sitemap/Sitemap";
 
 export const routes = [
   { path: `${process.env.PUBLIC_URL}/ssl-certificates`, Component: <Certificates /> },
@@ -82,6 +83,7 @@ export const routes = [
   { path: `${process.env.PUBLIC_URL}/terms-and-conditions`, Component: <Terms /> },
   { path: `${process.env.PUBLIC_URL}/refund-policy`, Component: <Payment /> },
   { path: `${process.env.PUBLIC_URL}/privacy-policy`, Component: <PrivacyPolicy /> },
+  { path: `${process.env.PUBLIC_URL}/sitemap`, Component: <Sitemap /> },
 
   { path: `${process.env.PUBLIC_URL}/wiki/general`, Component: <General /> },
   { path: `${process.env.PUBLIC_URL}/wiki/validation`, Component: <SslValidation /> },

@@ -4,6 +4,7 @@ import './styles.scss'
 import { LayoutHome, LayoutOther } from './Layout';
 import NotFound from './Components/404Page/NotFound';
 import { routes } from './Routes/Routes';
+import Sitemap from './Components/Sitemap/Sitemap';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
