@@ -43,9 +43,13 @@ export default function DV2({ dv }) {
         return Math.round(number * 100) / 100;
     }
 
+    const normalizeProductName = (productName) => {
+        return productName.split(' ').map(word => word.toLowerCase()).join('-');
+    };
+
     return (
         <div className='cert-txt'>
-            <h3>SSL-сертификаты с проверкой домена</h3>
+            <h1 title='SSL-сертификаты с проверкой домена'>SSL-сертификаты с проверкой домена</h1>
             <p className='cert-txt-item'>
                 <span className='validation-icon-box'>
                     <LiaShieldAltSolid className='dv-navshield icon-navshield' />
@@ -70,7 +74,7 @@ export default function DV2({ dv }) {
                                     <td className='product-name'>{firstTextColor(item.product_name)}</td>
                                     <td className='product-price'>{formatNumber(roundToTwoDecimalPlaces(item.product_prices[0].price * USD + item.product_prices[0].price * USD * 0.12))} UZS</td>
                                     <td className='details-btn'>
-                                        <a href={`/product/${item.product_id}`} className='details-arrow-btn'>
+                                        <a href={`/product/${normalizeProductName(item.product_name)}`} className='details-arrow-btn'>
                                             {arrow_link()}
                                             <span>Подробности</span>
                                         </a>

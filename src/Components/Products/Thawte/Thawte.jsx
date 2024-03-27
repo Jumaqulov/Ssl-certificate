@@ -26,7 +26,7 @@ export default function Thawte() {
     return (
         <div className='certificates'>
             <div className="cert-txt">
-                <h3>SSL-сертификаты Thawte</h3>
+                <h1 title='SSL-сертификаты Thawte'>SSL-сертификаты Thawte</h1>
                 <p className='cert-txt-item'>
                     <span>
                         <svg className='thawte-svg' viewBox='0 0 32 32'>

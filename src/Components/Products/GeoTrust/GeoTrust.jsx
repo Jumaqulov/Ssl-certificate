@@ -26,7 +26,7 @@ export default function GeoTrust() {
     return (
         <div className='certificates'>
             <div className="cert-txt">
-                <h3>SSL-сертификаты GeoTrust</h3>
+                <h1 title='SSL-сертификаты GeoTrust'>SSL-сертификаты GeoTrust</h1>
                 <p className='cert-txt-item'>
                     <span>
                         <svg viewBox="0 0 33 33" className='geotrust-svg'>

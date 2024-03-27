@@ -26,7 +26,7 @@ export default function Sectigo() {
     return (
         <div className='certificates'>
             <div className="cert-txt">
-                <h3>SSL-сертификаты Sectigo</h3>
+                <h1 title='SSL-сертификаты Sectigo'>SSL-сертификаты Sectigo</h1>
                 <p className='cert-txt-item'>
                     <span>
                         <svg className='sectigo-svg' viewBox='0 0 25 32'>

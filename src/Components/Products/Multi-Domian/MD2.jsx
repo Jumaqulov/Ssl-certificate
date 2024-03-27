@@ -5,8 +5,7 @@ import { LiaShieldAltSolid } from "react-icons/lia";
 import { USD } from '../../../Requests/request';
 
 
-export default function MD2({ md, productList }) {
-    const navigate = useNavigate();
+export default function MD2({ md }) {
 
     const arrow_link = () => {
         return (
@@ -44,9 +43,13 @@ export default function MD2({ md, productList }) {
     const roundToTwoDecimalPlaces = (number) => {
         return Math.round(number * 100) / 100;
     }
+
+    const normalizeProductName = (productName) => {
+        return productName.split(' ').map(word => word.toLowerCase()).join('-');
+    };
     return (
         <div className='cert-txt'>
-            <h3>Многодоменный SSL</h3>
+            <h1 title='Многодоменный SSL'>Многодоменный SSL</h1>
             <p className='cert-txt-item'>
                 <span className='validation-icon-box'>
                     <LiaShieldAltSolid className='mt-navshield icon-navshield' />
@@ -71,7 +74,7 @@ export default function MD2({ md, productList }) {
                                     <td className='product-name'>{firstTextColor(item.product_name)}</td>
                                     <td className='product-price'>{formatNumber(roundToTwoDecimalPlaces(item.product_prices[0].price * USD + item.product_prices[0].price * USD * 0.12))} UZS</td>
                                     <td className='details-btn'>
-                                        <a href={`/product/${item.product_id}`} className='details-arrow-btn'>
+                                        <a href={`/product/${normalizeProductName(item.product_name)}`} className='details-arrow-btn'>
                                             {arrow_link()}
                                             <span>Подробности</span>
                                         </a>

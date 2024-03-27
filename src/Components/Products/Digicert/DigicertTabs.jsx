@@ -27,6 +27,10 @@ export default function DigicertTabs({ filteredProducts }) {
         return Math.round(number * 100) / 100;
     }
 
+    const normalizeProductName = (productName) => {
+        return productName.split(' ').map(word => word.toLowerCase()).join('-');
+    };
+
     const firstTextColor = (text) => {
         let words = text.split(' ');
         let firstWord = words[0];
@@ -57,7 +61,7 @@ export default function DigicertTabs({ filteredProducts }) {
                                     <td className='product-name'>{firstTextColor(item.product)}</td>
                                     <td className='product-price'>{formatNumber(roundToTwoDecimalPlaces(item.prices[12] * USD + (item.prices[12] * USD * 0.12)))} UZS</td>
                                     <td className='details-btn'>
-                                        <a href={`/product/${item.id}`} className='details-arrow-btn'>
+                                        <a href={`/product/${normalizeProductName(item.product)}`} className='details-arrow-btn'>
                                             {arrow_link()}
                                             <span>Подробности</span>
                                         </a>

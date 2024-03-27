@@ -27,7 +27,7 @@ export default function Digicert() {
     return (
         <div className='certificates'>
             <div className="cert-txt">
-                <h3>DigiCert SSL</h3>
+                <h1 title='DigiCert SSL'>DigiCert SSL</h1>
                 <p className='cert-txt-item'>
                     <span>
                         <svg viewBox="0 0 33 33" className='digicert-svg'>

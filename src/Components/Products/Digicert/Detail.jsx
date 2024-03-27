@@ -5,9 +5,11 @@ import { Circles } from 'react-loader-spinner';
 import { useParams } from 'react-router-dom';
 import { corsUrl, token, Url, USD } from '../../../Requests/request';
 import SanRow from './SanRow';
+import Allproducts from '../../../Requests/Allproducts';
 
 
 export default function DDetail() {
+    const [list, setList] = useState([])
     const [product, setProduct] = useState()
     const [product2, setProduct2] = useState()
     const [selectedRadio, setSelectedRadio] = useState('radio-1');
@@ -58,32 +60,47 @@ export default function DDetail() {
     const roundToTwoDecimalPlaces = (number) => {
         return Math.round(number * 100) / 100;
     }
+
+    const normalizeProductName = (productName) => {
+        return productName.split(' ').map(word => word.toLowerCase()).join('-');
+    };
+
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const [response1, response2] = await Promise.all([
-                    axios(`${corsUrl}/${Url}/products/details/${id}?auth_key=${token}`),
-                    axios(`${corsUrl}/${Url}/products/ssl/${id}?auth_key=${token}`)
-                ]);
-                const api1 = response1.data
-                const api2 = response2.data.product
-                setProduct(api1);
-                setProduct2(api2);
-                document.title = `${product.product_name}`;
+                const prodList = await Allproducts.getProducts();
+                setList(prodList);
+
+                const findID = prodList.find(prodName => normalizeProductName(prodName.product) === id);
+
+                if (findID) {
+                    const [response1, response2] = await Promise.all([
+                        axios(`${corsUrl}/${Url}/products/details/${findID.id}?auth_key=${token}`),
+                        axios(`${corsUrl}/${Url}/products/ssl/${findID.id}?auth_key=${token}`)
+                    ]);
+
+                    const api1 = response1.data;
+                    const api2 = response2.data.product;
+
+                    setProduct(api1);
+                    setProduct2(api2);
+                    document.title = api1.product_name;
+                    setSelectedRadio('radio-1');
+                } else {
+                    console.error('ID topilmadi');
+                }
             } catch (error) {
-                console.error('Error fetching product details:', error);
+                console.error('Xatolik yuz berdi:', error);
             }
         };
         fetchData();
-        setSelectedRadio('radio-1');
     }, [id]);
-
-
+    console.log();
     return (
         product ?
             <div className='certificates'>
                 <div className="crt-txt">
-                    <h3 className='title-certificate'>{product.product_name}</h3>
+                    <h1 title={product.product_name} className='title-certificate'>{product.product_name}</h1>
                     <form action="" className='pro-pricing'>
                         {
                             product.product_prices.length > 2 ?

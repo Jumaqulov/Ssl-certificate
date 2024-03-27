@@ -27,7 +27,7 @@ export default function GoGetSSL() {
     return (
         <div className='certificates'>
             <div className="cert-txt">
-                <h3>GoGetSSL®</h3>
+                <h1 title='GoGetSSL®'>GoGetSSL®</h1>
                 <p className='cert-txt-item'>
                     <span>
                         <RiLock2Line className='gogetssl-svg'/>

@@ -27,7 +27,7 @@ export default function RapidSSL() {
     return (
         <div className='certificates'>
             <div className="cert-txt">
-                <h3>Сертификаты RapidSSL</h3>
+                <h1 title='Сертификаты RapidSSL'>Сертификаты RapidSSL</h1>
                 <p className='cert-txt-item'>
                     <span>
                         <TbLetterR className='rapidssl-svg' />
