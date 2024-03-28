@@ -27,7 +27,7 @@ export default function DDetail() {
                     <p className='total-price-txt'>ОБЩАЯ ЦЕНА</p>
                     <div className='selling-area'>
                         <a className='buying-ssl buy-ssl' href={`https://my-ssl-certificate.vercel.app/product/ssl/${product.product_id}`}>Купить SSL</a>
-                        <a className='buying-ssl renew-ssl' href={`https://my-ssl-certificate.vercel.app/product/ssl/${product.product_id}`}>Обновить SSL</a>
+                        {/* <a className='buying-ssl renew-ssl' href={`https://my-ssl-certificate.vercel.app/product/ssl/${product.product_id}`}>Обновить SSL</a> */}
                     </div>
                 </>;
             case 'radio-2':
@@ -36,8 +36,8 @@ export default function DDetail() {
                     <p className='total-price-txt'>ОБЩАЯ ЦЕНА</p>
                     <div className='selling-area'>
                         <a className='buying-ssl buy-ssl' href={`https://my-ssl-certificate.vercel.app/product/ssl/${product.product_id}`}>Купить SSL</a>
-                        <a className='buying-ssl renew-ssl' href={`https://my-ssl-certificate.vercel.app/product/ssl/${product.product_id}`}>Обновить SSL</a>
-                        <a className='buying-ssl check-multi-year' href="/wiki/general/multi-year-subscription-ssl">Проверьте многолетние правила!</a>
+                        {/* <a className='buying-ssl renew-ssl' href={`https://my-ssl-certificate.vercel.app/product/ssl/${product.product_id}`}>Обновить SSL</a> */}
+                        {/* <a className='buying-ssl check-multi-year' href="/wiki/general/multi-year-subscription-ssl">Проверьте многолетние правила!</a> */}
                     </div>
                 </>;
             case 'radio-3':
@@ -46,8 +46,8 @@ export default function DDetail() {
                     <p className='total-price-txt'>ОБЩАЯ ЦЕНА</p>
                     <div className='selling-area'>
                         <a className='buying-ssl buy-ssl' href={`https://my-ssl-certificate.vercel.app/product/ssl/${product.product_id}`}>Купить SSL</a>
-                        <a className='buying-ssl renew-ssl' href={`https://my-ssl-certificate.vercel.app/product/ssl/${product.product_id}`}>Обновить SSL</a>
-                        <a className='buying-ssl check-multi-year' href="/wiki/general/multi-year-subscription-ssl">Проверьте многолетние правила!</a>
+                        {/* <a className='buying-ssl renew-ssl' href={`https://my-ssl-certificate.vercel.app/product/ssl/${product.product_id}`}>Обновить SSL</a> */}
+                        {/* <a className='buying-ssl check-multi-year' href="/wiki/general/multi-year-subscription-ssl">Проверьте многолетние правила!</a> */}
                     </div>
                 </>;
         }
@@ -95,7 +95,6 @@ export default function DDetail() {
         };
         fetchData();
     }, [id]);
-    console.log();
     return (
         product ?
             <div className='certificates'>

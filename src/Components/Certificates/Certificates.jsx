@@ -29,7 +29,7 @@ export default function Certificates() {
     return (
         <>
             <Helmet>
-                <meta name="keywords" content="DigiCert SSL, RapidSSL SSL, Sectigo SSL, Thawte SSL, GeoTrust SSL, SSL sotib olish, купить SSL, сертификаты SSL, узбекистан, Ташкент" />
+                <meta name="keywords" content="DigiCert SSL, RapidSSL SSL, Sectigo SSL, Thawte SSL, GeoTrust SSL, SSL sotib olish, купить SSL, сертификаты SSL, узбекистан, Ташкент, сертификат безопасности https, услуга ssl, сколько стоит ssl" />
                 <meta name="description" content="Мы предлагаем широкий выбор SSL-сертификатов от Sectigo, RapidSSL, Thawte, GeoTrust и DigiCert по самым низким ценам." />
                 <meta property="og:description" content="Мы предлагаем широкий выбор SSL-сертификатов от Sectigo, RapidSSL, Thawte, GeoTrust и DigiCert по самым низким ценам." />
                 <meta property="og:locale" content="ru_RU" />

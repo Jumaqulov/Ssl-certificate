@@ -1,10 +1,8 @@
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import './styles.scss'
 import { LayoutHome, LayoutOther } from './Layout';
-import NotFound from './Components/404Page/NotFound';
 import { routes } from './Routes/Routes';
-import Sitemap from './Components/Sitemap/Sitemap';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,7 +10,7 @@ root.render(
     <Routes>
       <Route path={'/'} element={<LayoutHome />} />
       <Route exact element={<LayoutOther />}>
-        <Route path='/*' element={<NotFound />} />
+        <Route path='*' element={<Navigate to="/404" replace />} />
         {routes.map(({ path, Component }, i) => (
           <Route key={i} path={path} element={Component} />
         ))}

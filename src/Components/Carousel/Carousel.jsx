@@ -102,7 +102,7 @@ export default function Carousel() {
                         </div>
                         <div className='slide-txt-2 slide-txt'>
                             <div className={`fade-left ${show ? 'show' : ''}`}>
-                                <h1 title='ДОСТУПНА НОВАЯ ФУНКЦИЯ FLEX SSL'>ДОСТУПНА НОВАЯ ФУНКЦИЯ FLEX SSL</h1>
+                                <h3 title='ДОСТУПНА НОВАЯ ФУНКЦИЯ FLEX SSL'>ДОСТУПНА НОВАЯ ФУНКЦИЯ FLEX SSL</h3>
                                 <h2>{formatNumber(44 * USD)} UZS</h2>
                                 <a href="/multi-domian-ssl">Проверить предложение</a>
                             </div>
@@ -153,7 +153,7 @@ export default function Carousel() {
                                 </svg>
                             </div>
                             <div className={`fade-up ${show ? 'show' : ''}`}>
-                                <h1 title='СКАНЕР УЯЗВИМОСТЕЙ БЕЗ КОМПРОМИССОВ'>СКАНЕР УЯЗВИМОСТЕЙ БЕЗ КОМПРОМИССОВ</h1>
+                                <h3 title='СКАНЕР УЯЗВИМОСТЕЙ БЕЗ КОМПРОМИССОВ'>СКАНЕР УЯЗВИМОСТЕЙ БЕЗ КОМПРОМИССОВ</h3>
                                 <h2>{formatNumber(15 * USD)} UZS</h2>
                                 <a href="/multi-domian-ssl">Проверить предложение</a>
                             </div>
