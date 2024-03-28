@@ -1,3 +1,17 @@
+@media (max-width:850px) {
+    .wrapper {
+        max-width: 850px;
+        padding: 0 10px;
+    }
+    .nav {
+        max-width: 850px;
+        .nav-item-link {
+            font-size: 15px;
+            padding: 10px;
+        }
+    }
+}
+
 @media (max-width:766px) {
     .wrapper {
         max-width: 766px;

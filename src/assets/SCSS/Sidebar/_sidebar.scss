@@ -148,7 +148,34 @@
 .activeLink {
     color: $main_color_1 !important;
     border: 1px solid $main_color_1 !important;
+
     & svg {
         fill: $main_color_1 !important;
+    }
+}
+
+@media (max-width:950px) {
+    .list-link {
+        ul {
+            li {
+                a {
+                    font-size: 15px;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:766px) {
+    .list-link {
+        ul {
+            li {
+                a {
+                    font-size: 18px;
+                    padding: 11px 15px;
+                }
+            }
+        }
     }
 }

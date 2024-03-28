@@ -58,12 +58,6 @@ export default function Sidebar() {
         <div className='side-bar-main'>
             <div className="list-link">
                 <ul>
-                    {/* <li>
-                        <a className={`${link.link1 ? 'activeLink' : ''}`} href="/reseller-program">
-                            <FaHandshake className='side-bar-svg' />
-                            <span>Программа для реселлеров SSL</span>
-                        </a>
-                    </li> */}
                     <li>
                         <a className={`${link.link2 ? 'activeLink' : ''}`} href="/refund-policy">
                             <GiPriceTag className='side-bar-svg' />

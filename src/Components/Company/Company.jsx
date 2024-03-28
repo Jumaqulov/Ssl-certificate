@@ -8,10 +8,15 @@ export default function Company() {
     return (
         <>
             <Helmet>
-                <title>Обзор о SSL Certificate.uz</title>
                 <meta name="description" content="SSL Certificate.uz - надежные SSL-сертификаты для вашего веб-сайта. Узнайте больше о безопасности онлайн и защитите свой сайт прямо сейчас!" />
                 <meta name='keywords' content='Starlab Ssl, starlab ssl, ssl sertificate, сертификаты ssl'/>
-                <meta name="author" content="Starlab" />
+                <meta property="og:description" content="SSL Certificate.uz - надежные SSL-сертификаты для вашего веб-сайта. Узнайте больше о безопасности онлайн и защитите свой сайт прямо сейчас!" />
+                <meta property="og:locale" content="ru_RU" />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Обзор о SSL Certificate.uz" />
+                <meta property="og:site_name" content="SSL Certificate" />
+                <meta property="og:url" content="https://sslcertificate.uz" />
+                <title>Обзор о SSL Certificate.uz</title>
             </Helmet>
             <div className='certificates'>
                 <div className='cert-txt'>

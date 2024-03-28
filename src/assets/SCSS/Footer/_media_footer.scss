@@ -1,7 +1,27 @@
-@media (max-width:766px) {
+@media (max-width:970px) {
     .holder-promos {
         display: block;
     }
+
+    .promo2,
+    .promo3,
+    .promo4 {
+        margin-top: 15px;
+    }
+
+    .content {
+        .middle-left,
+        .middle-right {
+            width: auto;
+        }
+    }
+
+    .payment {
+        width: 50%;
+    }
+}
+
+@media (max-width:766px) {
 
     .promo2,
     .promo3,

@@ -1,25 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { FaSitemap } from "react-icons/fa";
-import { brand, corporate } from './SitemapLinks';
+import { brand, categories, corporate, otherService, tools, wiki } from './SitemapLinks';
 
 export default function Sitemap() {
-    // const generateSitemap = () => {
-    //     const sitemapXML = `<?xml version="1.0" encoding="UTF-8"?>
-    //         <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    //             ${pages.map(page => `<url><loc>${window.location.origin}${page.url}</loc></url>`).join('')}
-    //         </urlset>`;
-
-    //     const blob = new Blob([sitemapXML], { type: 'text/xml' });
-    //     const url = URL.createObjectURL(blob);
-
-    //     const link = document.createElement('a');
-    //     link.href = url;
-    //     link.download = 'sitemap.xml';
-    //     link.click();
-
-    //     URL.revokeObjectURL(url);
-    // };
     return (
         <div className='certificates'>
             <div className="cert-txt">
@@ -48,8 +32,41 @@ export default function Sitemap() {
                                 </li>
                             ))}
                         </ul>
+                        <h2 className='sitemap-title st-mt'>Wiki и руководства</h2>
+                        <ul>
+                            {wiki.map(page => (
+                                <li key={page.url}>
+                                    <Link to={page.url}>{page.title}</Link>
+                                </li>
+                            ))}
+                        </ul>
                     </div>
-                    <div className="sitemap-right"></div>
+                    <div className="sitemap-right">
+                        <h2 className='sitemap-title'>Категории SSL</h2>
+                        <ul>
+                            {categories.map(page => (
+                                <li key={page.url}>
+                                    <Link to={page.url}>{page.title}</Link>
+                                </li>
+                            ))}
+                        </ul>
+                        <h2 className='sitemap-title st-mt'>Другие услуги</h2>
+                        <ul>
+                            {otherService.map(page => (
+                                <li key={page.url}>
+                                    <Link to={page.url}>{page.title}</Link>
+                                </li>
+                            ))}
+                        </ul>
+                        <h2 className='sitemap-title st-mt'>Инструменты и функции</h2>
+                        <ul>
+                            {tools.map(page => (
+                                <li key={page.url}>
+                                    <Link to={page.url}>{page.title}</Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

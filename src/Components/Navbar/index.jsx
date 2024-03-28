@@ -27,9 +27,6 @@ export default function Navbar() {
                         <a href="/" aria-haspopup="true" className='nav-item-link'>Бренды Ca</a>
                         <Brands />
                     </li>
-                    {/* <li className='nav-item-li'>
-                        <a href="/reseller-program" aria-haspopup="true" className='nav-item-link'>Программа реселлеров</a>
-                    </li> */}
                     <li className='nav-item-li'>
                         <a href="/lei/" aria-haspopup="true" className='nav-item-link'>Коды LEI</a>
                     </li>

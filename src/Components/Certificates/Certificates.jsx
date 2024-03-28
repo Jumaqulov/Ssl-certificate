@@ -29,10 +29,15 @@ export default function Certificates() {
     return (
         <>
             <Helmet>
-                <title>Дешевые SSL-сертификаты</title>
+                <meta name="keywords" content="DigiCert SSL, RapidSSL SSL, Sectigo SSL, Thawte SSL, GeoTrust SSL, SSL sotib olish, купить SSL, сертификаты SSL, узбекистан, Ташкент" />
                 <meta name="description" content="Мы предлагаем широкий выбор SSL-сертификатов от Sectigo, RapidSSL, Thawte, GeoTrust и DigiCert по самым низким ценам." />
-                <meta name="keywords" content="DigiCert SSL, digicert ssl, RapidSSL SSL, rapid ssl, Sectigo SSL, sectigo ssl, Thawte SSL , thawte ssl, GeoTrust SSL, geotrust ssl, ssl sotib olish, купить SSL, купить ssl, сертификаты ssl" />
-                <meta name="author" content="Starlab" />
+                <meta property="og:description" content="Мы предлагаем широкий выбор SSL-сертификатов от Sectigo, RapidSSL, Thawte, GeoTrust и DigiCert по самым низким ценам." />
+                <meta property="og:locale" content="ru_RU" />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Дешевые SSL-сертификаты" />
+                <meta property="og:site_name" content="SSL Certificate" />
+                <meta property="og:url" content="https://sslcertificate.uz" />
+                <title>Дешевые SSL-сертификаты</title>
             </Helmet>
             <div className='certificates'>
                 <div className='cert-txt'>

@@ -14,10 +14,15 @@ export default function Lei() {
     return (
         <>
             <Helmet>
-                <title>Коды LEI</title>
                 <meta name="description" content={`Стоимость кодов LEI начинается от ${62 * USD} UZS в год. Надежный и современный способ идентификации любой международной компании, участвующей в финансовых операциях`} />
                 <meta name='keywords' content='Starlab Ssl, starlab ssl, ssl sertificate, сертификаты ssl, get lei, lei certificate , сертификаты Lei, lei ,Lei buy' />
-                <meta name="author" content="Starlab" />
+                <meta property="og:description" content={`Стоимость кодов LEI начинается от ${62 * USD} UZS в год. Надежный и современный способ идентификации любой международной компании, участвующей в финансовых операциях`} />
+                <meta property="og:locale" content="ru_RU" />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Коды LEI" />
+                <meta property="og:site_name" content="SSL Certificate" />
+                <meta property="og:url" content="https://sslcertificate.uz" />
+                <title>Коды LEI</title>
             </Helmet>
             <div className='certificates'>
                 <div className="cert-txt">
