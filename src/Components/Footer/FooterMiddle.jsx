@@ -1,4 +1,5 @@
 import React from 'react'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import click from '../../assets/svg/click-up.svg'
 import payme from '../../assets/Images/payme_05.svg'
 
@@ -42,10 +43,10 @@ export default function FooterMiddle() {
                     <div className='middle-right'>
                         <div className="box">
                             <div className="payment">
-                                <img width={'153px'} height={'62px'} src={click} alt="click up" />
+                                <LazyLoadImage width={153} height={62} src={click} title='Click up' alt="Click up"/>
                             </div>
                             <div className="payment">
-                                <img width={'153px'} height={'44px'} src={payme} alt="payme" />
+                                <LazyLoadImage width={153} height={44} src={payme} title='Payme' alt="Payme"/>
                             </div>
                         </div>
                     </div>

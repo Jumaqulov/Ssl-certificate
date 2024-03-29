@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import './styles.scss'
 import { LayoutHome, LayoutOther } from './Layout';
 import { routes } from './Routes/Routes';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
