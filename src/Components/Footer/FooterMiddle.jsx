@@ -42,10 +42,10 @@ export default function FooterMiddle() {
                     <div className='middle-right'>
                         <div className="box">
                             <div className="payment">
-                                <img src={click} alt="click up" />
+                                <img width={'153px'} height={'62px'} src={click} alt="click up" />
                             </div>
                             <div className="payment">
-                                <img src={payme} alt="payme" />
+                                <img width={'153px'} height={'44px'} src={payme} alt="payme" />
                             </div>
                         </div>
                     </div>

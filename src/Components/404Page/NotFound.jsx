@@ -4,9 +4,7 @@ import { useLocation, Navigate } from 'react-router-dom';
 
 export default function NotFound() {
     const location = useLocation();
-
     document.title = 'Страница не найдена';
-
     return (
         <div className='certificates'>
             <div className="not-found">
@@ -14,9 +12,7 @@ export default function NotFound() {
                 <p>
                     <a href="/">Главная страница</a>
                 </p>
-                <div>
-                    <TbError404 />
-                </div>
+                <div><TbError404 /></div>
                 {location.pathname !== "/404" && <Navigate to="/404" replace />}
             </div>
         </div>
