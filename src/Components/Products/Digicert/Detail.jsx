@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios'
 import { FaArrowsToCircle } from "react-icons/fa6";
 import { Circles } from 'react-loader-spinner';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { corsUrl, token, Url, USD } from '../../../Requests/request';
 import SanRow from './SanRow';
 import Allproducts from '../../../Requests/Allproducts';
@@ -12,49 +12,71 @@ export default function DDetail() {
     const [list, setList] = useState([])
     const [product, setProduct] = useState()
     const [product2, setProduct2] = useState()
-    const [selectedRadio, setSelectedRadio] = useState('radio-1');
+    const [selectedRadio, setSelectedRadio] = useState('1 год');
     const { id } = useParams()
+    const navigate = useNavigate()
 
     const handleRadioChange = (event) => {
         setSelectedRadio(event.target.id);
     };
 
+    const send = () => {
+        let a
+        if (selectedRadio === '1 год') {
+            a = product.product_prices[0].price
+        } else if (selectedRadio === '2 год') {
+            a = product.product_prices[1].price
+        } else if (selectedRadio === '3 год') {
+            a = product.product_prices[2].price
+        }
+
+        navigate(`/order/product/${normalizeProductName(product.product_name)}`, {
+            state: {
+                name: product.product_name,
+                price: a,
+                period: selectedRadio
+            }
+        });
+    }
+
     const getResult = () => {
         switch (selectedRadio) {
-            case 'radio-1':
+            case '1 год':
                 return <>
                     <h3 className='total-price'>{formatNumber(roundToTwoDecimalPlaces(product.product_prices[0].price * USD) + roundToTwoDecimalPlaces(product.product_prices[0].price * USD * 0.12))} UZS</h3>
                     <p className='total-price-txt'>ОБЩАЯ ЦЕНА</p>
                     <div className='selling-area'>
-                        <a className='buying-ssl buy-ssl' href={`https://my-ssl-certificate.vercel.app/product/ssl/${product.product_id}`}>Купить SSL</a>
-                        {/* <a className='buying-ssl renew-ssl' href={`https://my-ssl-certificate.vercel.app/product/ssl/${product.product_id}`}>Обновить SSL</a> */}
+                        <button className='buying-ssl buy-ssl' onClick={send}>Купить SSL</button>
                     </div>
                 </>;
-            case 'radio-2':
+            case '2 год':
                 return <>
                     <h3 className='total-price'>{formatNumber(roundToTwoDecimalPlaces(product.product_prices[1].price * USD) + roundToTwoDecimalPlaces(product.product_prices[1].price * USD * 0.12))} UZS</h3>
                     <p className='total-price-txt'>ОБЩАЯ ЦЕНА</p>
                     <div className='selling-area'>
-                        <a className='buying-ssl buy-ssl' href={`https://my-ssl-certificate.vercel.app/product/ssl/${product.product_id}`}>Купить SSL</a>
-                        {/* <a className='buying-ssl renew-ssl' href={`https://my-ssl-certificate.vercel.app/product/ssl/${product.product_id}`}>Обновить SSL</a> */}
-                        {/* <a className='buying-ssl check-multi-year' href="/wiki/general/multi-year-subscription-ssl">Проверьте многолетние правила!</a> */}
+                        <button className='buying-ssl buy-ssl' onClick={send}>Купить SSL</button>
                     </div>
                 </>;
-            case 'radio-3':
+            case '3 год':
                 return <>
                     <h3 className='total-price'>{formatNumber(roundToTwoDecimalPlaces(product.product_prices[2].price * USD) + roundToTwoDecimalPlaces(product.product_prices[2].price * USD * 0.12))} UZS</h3>
                     <p className='total-price-txt'>ОБЩАЯ ЦЕНА</p>
                     <div className='selling-area'>
-                        <a className='buying-ssl buy-ssl' href={`https://my-ssl-certificate.vercel.app/product/ssl/${product.product_id}`}>Купить SSL</a>
-                        {/* <a className='buying-ssl renew-ssl' href={`https://my-ssl-certificate.vercel.app/product/ssl/${product.product_id}`}>Обновить SSL</a> */}
-                        {/* <a className='buying-ssl check-multi-year' href="/wiki/general/multi-year-subscription-ssl">Проверьте многолетние правила!</a> */}
+                        <button className='buying-ssl buy-ssl' onClick={send}>Купить SSL</button>
                     </div>
                 </>;
         }
     };
 
     function formatNumber(number) {
-        return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+        let alphaNumber = number.toString().split('.');
+        alphaNumber[0] = alphaNumber[0].replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+        if (alphaNumber.length > 1) {
+            alphaNumber[1] = alphaNumber[1].padEnd(2, '0').substring(0, 2);
+        } else {
+            alphaNumber.push('00');
+        }
+        return alphaNumber.join('.');
     }
 
     const roundToTwoDecimalPlaces = (number) => {
@@ -85,7 +107,7 @@ export default function DDetail() {
                     setProduct(api1);
                     setProduct2(api2);
                     document.title = api1.product_name;
-                    setSelectedRadio('radio-1');
+                    setSelectedRadio('1 год');
                 } else {
                     console.error('ID topilmadi');
                 }
@@ -100,59 +122,58 @@ export default function DDetail() {
             <div className='certificates'>
                 <div className="crt-txt">
                     <h1 title={product.product_name} className='title-certificate'>{product.product_name}</h1>
-                    <form action="" className='pro-pricing'>
+                    <form className='pro-pricing'>
                         {
                             product.product_prices.length > 2 ?
                                 <div className='form-left'>
-                                    <div className={`offer-year ${selectedRadio === 'radio-1' ? 'offer-price-active' : ''}`}>
+                                    <div className={`offer-year ${selectedRadio === '1 год' ? 'offer-price-active' : ''}`}>
                                         <div className='offer-price'>
-                                            <input type="radio" id={`radio-1`} name='year' checked={selectedRadio === 'radio-1'} onChange={handleRadioChange} />
-                                            <label htmlFor={`radio-1`}>
+                                            <input type="radio" id={`1 год`} name='year' checked={selectedRadio === '1 год'} onChange={handleRadioChange} />
+                                            <label htmlFor={`1 год`}>
                                                 <span className='span-year'>1 год</span>
-                                                <span className={`span-price-1 ${selectedRadio === 'radio-1' ? 'span-price-2' : ''}`}>{formatNumber(roundToTwoDecimalPlaces(product.product_prices[0].price * USD) + roundToTwoDecimalPlaces(product.product_prices[0].price * USD * 0.12))} UZS</span>
+                                                <span className={`span-price-1 ${selectedRadio === '1 год' ? 'span-price-2' : ''}`}>{formatNumber(roundToTwoDecimalPlaces(product.product_prices[0].price * USD) + roundToTwoDecimalPlaces(product.product_prices[0].price * USD * 0.12))} UZS</span>
                                                 <span className='span-txt'>В ГОД</span>
                                             </label>
                                         </div>
-                                        <div className={`san-price ${selectedRadio === 'radio-1' ? 'san-price-block' : 'san-price-none'}`}>
+                                        <div className={`san-price ${selectedRadio === '1 год' ? 'san-price-block' : 'san-price-none'}`}>
                                             {product.product_san_prices ? formatNumber(roundToTwoDecimalPlaces(product.product_san_prices[0].price * USD) + roundToTwoDecimalPlaces(product.product_san_prices[0].price * USD * 0.12)) : '0'} UZS Дополнительный домен (SAN)
                                         </div>
                                     </div>
-                                    <div className={`offer-year ${selectedRadio === 'radio-2' ? 'offer-price-active' : ''}`}>
+                                    <div className={`offer-year ${selectedRadio === '2 год' ? 'offer-price-active' : ''}`}>
                                         <div className='offer-price'>
-                                            <input type="radio" id={`radio-2`} name='year' checked={selectedRadio === 'radio-2'} onChange={handleRadioChange} />
-                                            <label htmlFor={`radio-2`}>
+                                            <input type="radio" id={`2 год`} name='year' checked={selectedRadio === '2 год'} onChange={handleRadioChange} />
+                                            <label htmlFor={`2 год`}>
                                                 <span className='span-year'>2 год </span>
-                                                <span className={`span-price-1 ${selectedRadio === 'radio-2' ? 'span-price-2' : ''}`}>{formatNumber(roundToTwoDecimalPlaces(product.product_prices[1].price / 2 * USD) + roundToTwoDecimalPlaces(product.product_prices[1].price / 2 * USD * 0.12))} UZS</span>
+                                                <span className={`span-price-1 ${selectedRadio === '2 год' ? 'span-price-2' : ''}`}>{formatNumber(roundToTwoDecimalPlaces(product.product_prices[1].price / 2 * USD) + roundToTwoDecimalPlaces(product.product_prices[1].price / 2 * USD * 0.12))} UZS</span>
                                                 <span className='span-txt'>В ГОД</span>
                                             </label>
                                         </div>
-                                        <div className={`san-price ${selectedRadio === 'radio-2' ? 'san-price-block' : 'san-price-none'}`}>
+                                        <div className={`san-price ${selectedRadio === '2 год' ? 'san-price-block' : 'san-price-none'}`}>
                                             {product.product_san_prices ? formatNumber(roundToTwoDecimalPlaces(product.product_san_prices[1].price * USD) + roundToTwoDecimalPlaces(product.product_san_prices[1].price * USD * 0.12)) : '0'} UZS Дополнительный домен (SAN)
                                         </div>
                                     </div>
-                                    <div className={`offer-year ${selectedRadio === 'radio-3' ? 'offer-price-active' : ''}`}>
+                                    <div className={`offer-year ${selectedRadio === '3 год' ? 'offer-price-active' : ''}`}>
                                         <div className='offer-price'>
-                                            <input type="radio" id={`radio-3`} name='year' checked={selectedRadio === 'radio-3'} onChange={handleRadioChange} />
-                                            <label htmlFor={`radio-3`}>
+                                            <input type="radio" id={`3 год`} name='year' checked={selectedRadio === '3 год'} onChange={handleRadioChange} />
+                                            <label htmlFor={`3 год`}>
                                                 <span className='span-year'>3 год </span>
-                                                <span className={`span-price-1 ${selectedRadio === 'radio-3' ? 'span-price-2' : ''}`}>{formatNumber(roundToTwoDecimalPlaces(product.product_prices[2].price / 3 * USD) + roundToTwoDecimalPlaces(product.product_prices[2].price / 3 * USD * 0.12))} UZS</span>
+                                                <span className={`span-price-1 ${selectedRadio === '3 год' ? 'span-price-2' : ''}`}>{formatNumber(roundToTwoDecimalPlaces(product.product_prices[2].price / 3 * USD) + roundToTwoDecimalPlaces(product.product_prices[2].price / 3 * USD * 0.12))} UZS</span>
                                                 <span className='span-txt'>В ГОД</span>
                                             </label>
                                         </div>
-                                        <div className={`san-price ${selectedRadio === 'radio-3' ? 'san-price-block' : 'san-price-none'}`}>
+                                        <div className={`san-price ${selectedRadio === '3 год' ? 'san-price-block' : 'san-price-none'}`}>
                                             {product.product_san_prices ? formatNumber(roundToTwoDecimalPlaces(product.product_san_prices[2].price * USD) + roundToTwoDecimalPlaces(product.product_san_prices[2].price * USD * 0.12)) : '0'} UZS Дополнительный домен (SAN)
                                         </div>
                                     </div>
                                 </div>
                                 :
                                 <div className='form-left'>
-                                    <div className={`offer-year ${selectedRadio === 'radio-1' ? 'offer-price-active' : ''}`}>
+                                    <div className={`offer-year ${selectedRadio === '1 год' ? 'offer-price-active' : ''}`}>
                                         <div className='offer-price'>
-                                            <input type="radio" id={`radio-1`} name='year' checked={selectedRadio === 'radio-1'} onChange={handleRadioChange} />
-                                            <label htmlFor={`radio-1`}>
+                                            <input type="radio" id={`1 год`} name='year' checked={selectedRadio === '1 год'} onChange={handleRadioChange} />
+                                            <label htmlFor={`1 год`}>
                                                 <span className='span-year'>{product.terms} Месяцы </span>
-                                                <span className={`span-price-1 ${selectedRadio === 'radio-1' ? 'span-price-2' : ''}`}>{formatNumber(roundToTwoDecimalPlaces(product.product_prices[0].price * USD) + roundToTwoDecimalPlaces(product.product_prices[0].price * USD * 0.12))} UZS</span>
-                                                {/* <span className='span-txt'>В Месяцы</span> */}
+                                                <span className={`span-price-1 ${selectedRadio === '1 год' ? 'span-price-2' : ''}`}>{formatNumber(roundToTwoDecimalPlaces(product.product_prices[0].price * USD) + roundToTwoDecimalPlaces(product.product_prices[0].price * USD * 0.12))} UZS</span>
                                             </label>
                                         </div>
                                     </div>
@@ -188,3 +209,6 @@ export default function DDetail() {
             </div>
     );
 }
+{/* <a className='buying-ssl buy-ssl' href={`/order/product/${product.product_id}`}>Купить SSL</a> */ }
+{/* <a className='buying-ssl renew-ssl' href={`https://my-ssl-certificate.vercel.app/product/ssl/${product.product_id}`}>Обновить SSL</a> */ }
+{/* <a className='buying-ssl check-multi-year' href="/wiki/general/multi-year-subscription-ssl">Проверьте многолетние правила!</a> */ }
