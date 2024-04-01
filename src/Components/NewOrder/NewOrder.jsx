@@ -40,7 +40,7 @@ export default function NewOrder() {
     const handleSubmit = (e) => {
         e.preventDefault();
         const { firstName, lastName, email, phoneNumber } = formData;
-        const mailtoLink = `mailto:avazbekjumoquloff@gmail.com?subject=Reseller%20Form&body=First%20Name:%20${firstName}%0D%0ALast%20Name:%20${lastName}%0D%0AEmail:%20${email}%0D%0APhone%20Number:%20${phoneNumber}`;
+        const mailtoLink = `mailto:avazbekjumoquloff@gmail.com?subject&body=First%20Name:%20${firstName}%0D%0ALast%20Name:%20${lastName}%0D%0AEmail:%20${email}%0D%0APhone%20Number:%20${phoneNumber}`;
 
         window.open(mailtoLink);
     };

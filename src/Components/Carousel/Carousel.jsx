@@ -71,7 +71,7 @@ export default function Carousel() {
                             </div>
                             <div className={`fade-up ${show ? 'show' : ''}`}>
                                 <h1 title='НАДЕЖНЫЙ И СОВРЕМЕННЫЙ СПОСОБ ИДЕНТИФИКАЦИИ КОМПАНИИ'>НАДЕЖНЫЙ И СОВРЕМЕННЫЙ СПОСОБ ИДЕНТИФИКАЦИИ КОМПАНИИ</h1>
-                                <h2>{formatNumber(49 * USD)} UZS</h2>
+                                <h2>{formatNumber(62 * USD)} UZS</h2>
                                 <a href="/lei">Проверить предложение</a>
                             </div>
                             <div className={`fade-right ${show ? 'show' : ''} slide-txt-box`}>
