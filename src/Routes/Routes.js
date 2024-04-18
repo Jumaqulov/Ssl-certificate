@@ -66,6 +66,14 @@ import NoPadlock from "../Components/Wiki/Problems&Issues/NoPadlock";
 import Sitemap from "../Components/Sitemap/Sitemap";
 import NotFound from "../Components/404Page/NotFound";
 import NewOrder from "../Components/NewOrder/NewOrder";
+import MoreSanItems from "../Components/Wiki/Reissue/MoreSanItems";
+import ReissueSSL from "../Components/Wiki/Reissue/ReissueSSL";
+import RenewSSL from "../Components/Wiki/Reissue/RenewSSL";
+import Gogetssl from "../Components/Wiki/IntermediateCertificate/Gogetssl";
+import Sectigossl from "../Components/Wiki/IntermediateCertificate/Sectigossl";
+import Rapidssl from "../Components/Wiki/IntermediateCertificate/Rapidssl";
+import Thawtessl from "../Components/Wiki/IntermediateCertificate/Thawtessl";
+import Geotrustssl from "../Components/Wiki/IntermediateCertificate/Geotrustssl";
 
 export const routes = [
   { path: `${process.env.PUBLIC_URL}/ssl-certificates`, Component: <Certificates /> },
@@ -125,6 +133,14 @@ export const routes = [
   { path: `${process.env.PUBLIC_URL}/wiki/problems/lost-private-key`, Component: <LostPrivateKey /> },
   { path: `${process.env.PUBLIC_URL}/wiki/problems/common-name-missmatch-error`, Component: <CommonName /> },
   { path: `${process.env.PUBLIC_URL}/wiki/problems/why-no-padlock`, Component: <NoPadlock /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/intermediate-certificates/gogetssl-intermediate-root-certificates` , Component: <Gogetssl/> },
+  { path: `${process.env.PUBLIC_URL}/wiki/intermediate-certificates/sectigo-intermediate-root-certificates` , Component: <Sectigossl/> },
+  { path: `${process.env.PUBLIC_URL}/wiki/intermediate-certificates/rapidssl-intermediate-root-certificates` , Component: <Rapidssl/> },
+  { path: `${process.env.PUBLIC_URL}/wiki/intermediate-certificates/thawte-intermediate-root-certificates` , Component: <Thawtessl/> },
+  { path: `${process.env.PUBLIC_URL}/wiki/intermediate-certificates/geotrust-intermediate-root-certificates` , Component: <Geotrustssl/> },
+  { path: `${process.env.PUBLIC_URL}/wiki/ssl-reissue-renewal/how-to-reissue-ssl`, Component: <ReissueSSL /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/ssl-reissue-renewal/ssl-renewal-process`, Component: <RenewSSL /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/ssl-reissue-renewal/buy-more-san-items`, Component: <MoreSanItems /> },
 
   { path: `${process.env.PUBLIC_URL}/product/:id`, Component: <Detail /> },
   { path: `${process.env.PUBLIC_URL}/digicert`, Component: <Digicert /> },
@@ -138,5 +154,4 @@ export const routes = [
   { path: `${process.env.PUBLIC_URL}/ev-ssl`, Component: <EVSSL /> },
   { path: `${process.env.PUBLIC_URL}/multi-domian-ssl`, Component: <MDSSL /> },
   { path: `${process.env.PUBLIC_URL}/wildcard-ssl`, Component: <WSSL /> },
-
 ]

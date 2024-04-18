@@ -207,6 +207,29 @@
     transition: all .2s ease-in-out
 }
 
+.file-title {
+    font-size: 22px !important;
+    color: #cccccc !important;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    svg {
+        position: relative;
+        font-size: 30px;
+        top: 5px;
+        color: #757575 !important;
+    }
+}
+
+.download-file {
+    font-size: 18px;
+    padding: 0 0 0 30px !important;
+    a {
+        font-size: 16px !important;
+        color: #757575 !important;
+    }
+}
+
 @media (max-width:766px) {
 
     .wiki-menu,

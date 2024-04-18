@@ -34,16 +34,23 @@ export default function NewOrder() {
     }
 
     const roundToTwoDecimalPlaces = (number) => {
-        return Math.round(number * 100) / 100;
+        let roundedNumber = Math.ceil(number);
+        let result = (Math.ceil(roundedNumber / 100) * 100).toFixed(2);
+        return result;
     }
 
     const handleSubmit = (e) => {
         e.preventDefault();
         const { firstName, lastName, email, phoneNumber } = formData;
-        const mailtoLink = `mailto:avazbekjumoquloff@gmail.com?subject&body=First%20Name:%20${firstName}%0D%0ALast%20Name:%20${lastName}%0D%0AEmail:%20${email}%0D%0APhone%20Number:%20${phoneNumber}`;
+        const { name, period, price } = state;
+
+        const totalPrice = price * USD + price * USD * 0.12;
+
+        const mailtoLink = `mailto:avazbekjumoquloff@gmail.com?subject=Новый заказ&body=Имя:%20${firstName}%0D%0AФамилия:%20${lastName}%0D%0AEmail:%20${email}%0D%0AНомер%20телефона:%20${phoneNumber}%0D%0AНазвание%20сертификата:%20${name}%0D%0AПериод:%20${period}%0D%0AЦена:%20${formatNumber(roundToTwoDecimalPlaces(totalPrice))}%20UZS`;
 
         window.open(mailtoLink);
     };
+
     return (
         <div className='certificates'>
             <div className="cert-txt">

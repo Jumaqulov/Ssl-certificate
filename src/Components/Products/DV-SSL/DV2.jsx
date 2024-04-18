@@ -40,7 +40,9 @@ export default function DV2({ dv }) {
     }
 
     const roundToTwoDecimalPlaces = (number) => {
-        return Math.round(number * 100) / 100;
+        let roundedNumber = Math.ceil(number);
+        let result = (Math.ceil(roundedNumber / 100) * 100).toFixed(2);
+        return result;
     }
 
     const normalizeProductName = (productName) => {

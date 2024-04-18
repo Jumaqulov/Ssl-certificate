@@ -2,8 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { FaSitemap } from "react-icons/fa";
 import { brand, categories, corporate, otherService, tools, wiki } from './SitemapLinks';
+import { useEffect } from 'react';
 
 export default function Sitemap() {
+    useEffect(()=> {
+        document.title = 'Карта сайта'
+    })
     return (
         <div className='certificates'>
             <div className="cert-txt">

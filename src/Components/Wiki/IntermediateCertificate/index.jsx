@@ -1,12 +1,12 @@
 import React from 'react'
-import { TbLockCog } from "react-icons/tb";
+import { FaExpeditedssl } from 'react-icons/fa'
 
 export default function IntermediatMain() {
     return (
         <div className='wiki-menu-box'>
             <h5>
                 <span>
-                    <TbLockCog className='wm-server-lock' />
+                    <FaExpeditedssl className='wm-server-lock' />
                 </span>
                 <a href="/wiki/intermediate-certificates">Промежуточные сертификаты</a>
             </h5>

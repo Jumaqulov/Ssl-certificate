@@ -5,6 +5,12 @@ export default function HolderExtra() {
     function formatNumber(number) {
         return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
     }
+
+    const roundToTwoDecimalPlaces = (number) => {
+        let roundedNumber = Math.ceil(number);
+        let result = (Math.ceil(roundedNumber / 100) * 100).toFixed(2);
+        return result;
+    }
     return (
         <div className='holder-extra'>
             <div className="left">
@@ -23,7 +29,7 @@ export default function HolderExtra() {
             </div>
             <div className="right">
                 <div className="block-one">
-                    <p>{formatNumber(62 * USD)} UZS</p>
+                    <p>{formatNumber(roundToTwoDecimalPlaces(62 * USD))} UZS</p>
                     <a href="/lei">Регистрация LEI</a>
                 </div>
                 <div className="block-two">

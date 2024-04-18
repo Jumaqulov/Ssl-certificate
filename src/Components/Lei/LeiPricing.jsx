@@ -7,6 +7,11 @@ export default function LeiPricing() {
     function formatNumber(number) {
         return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
     }
+    const roundToTwoDecimalPlaces = (number) => {
+        let roundedNumber = Math.ceil(number);
+        let result = (Math.ceil(roundedNumber / 100) * 100).toFixed(2);
+        return result;
+    }
     return (
         <div className="lei-pricing">
             <p className='lei-pricing-title'>LEI Ценообразование/Планы</p>
@@ -26,15 +31,15 @@ export default function LeiPricing() {
                     <tr>
                         <td className='desktop'>План ценообразования</td>
                         <td className='lie-price'>
-                            <span>{formatNumber(62 * USD)} UZS</span>
+                            <span>{formatNumber(roundToTwoDecimalPlaces(62 * USD))} UZS</span>
                             <span>годовой счет</span>
                         </td>
                         <td className='lie-price'>
-                            <span>{formatNumber(62 * USD)} UZS</span>
+                            <span>{formatNumber(roundToTwoDecimalPlaces(62 * USD))} UZS</span>
                             <span>годовой счет</span>
                         </td>
                         <td className='lie-price'>
-                            <span>{formatNumber(155 * USD)} UZS</span>
+                            <span>{formatNumber(roundToTwoDecimalPlaces(155 * USD))} UZS</span>
                             <span>годовой счет</span>
                         </td>
                     </tr>

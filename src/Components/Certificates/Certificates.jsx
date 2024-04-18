@@ -26,6 +26,12 @@ export default function Certificates() {
     function formatNumber(number) {
         return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
     }
+
+    const roundToTwoDecimalPlaces = (number) => {
+        let roundedNumber = Math.ceil(number);
+        let result = (Math.ceil(roundedNumber / 100) * 100).toFixed(2);
+        return result;
+    }
     return (
         <>
             <Helmet>
@@ -105,7 +111,7 @@ export default function Certificates() {
                             </div>
                             <div className='cert-info-txt'>
                                 <h3>SSL с проверкой домена</h3>
-                                <p>SSL-сертификаты с проверкой домена - это основные продукты, которые мы предлагаем. Они не требуют проверки бизнеса/организации и бумажной волокиты, любой человек, индивидуальный предприниматель может получить их за считанные минуты по цене всего {formatNumber(14.21 * USD)} UZS в год. Используйте DV-сертификаты для защиты небольших сайтов и некоммерческих платформ. Для всех сертификатов включена функция Google booster.</p>
+                                <p>SSL-сертификаты с проверкой домена - это основные продукты, которые мы предлагаем. Они не требуют проверки бизнеса/организации и бумажной волокиты, любой человек, индивидуальный предприниматель может получить их за считанные минуты по цене всего {formatNumber(roundToTwoDecimalPlaces(14.21 * USD))} UZS в год. Используйте DV-сертификаты для защиты небольших сайтов и некоммерческих платформ. Для всех сертификатов включена функция Google booster.</p>
                                 <div className="cert-pricing">
                                     <a className='go-dv-ssl' href="/dv-ssl">
                                         <div className='arrows-link'>
@@ -113,7 +119,7 @@ export default function Certificates() {
                                         </div>
                                         <span>Просмотр SSL-сертификатов</span>
                                     </a>
-                                    <span className='cert-price'>Начиная с <b className='dv-price'>{formatNumber(14.21 * USD)} UZS</b> в год</span>
+                                    <span className='cert-price'>Начиная с <b className='dv-price'>{formatNumber(roundToTwoDecimalPlaces(14.21 * USD))} UZS</b> в год</span>
                                 </div>
                             </div>
                         </li>
@@ -132,7 +138,7 @@ export default function Certificates() {
                                         </div>
                                         <span>Просмотр SSL-сертификатов</span>
                                     </a>
-                                    <span className='cert-price'>Начиная с <b className='ov-price'>{formatNumber(30.36 * USD)} UZS</b> в год</span>
+                                    <span className='cert-price'>Начиная с <b className='ov-price'>{formatNumber(roundToTwoDecimalPlaces(30.36 * USD))} UZS</b> в год</span>
                                 </div>
                             </div>
                         </li>
@@ -151,7 +157,7 @@ export default function Certificates() {
                                         </div>
                                         <span>Просмотр SSL-сертификатов</span>
                                     </a>
-                                    <span className='cert-price'>Начиная с <b className='ev-price'>{formatNumber(74.97 * USD)} UZS</b> в год</span>
+                                    <span className='cert-price'>Начиная с <b className='ev-price'>{formatNumber(roundToTwoDecimalPlaces(74.97 * USD))} UZS</b> в год</span>
                                 </div>
                             </div>
                         </li>
@@ -170,7 +176,7 @@ export default function Certificates() {
                                         </div>
                                         <span>Просмотр SSL-сертификатов</span>
                                     </a>
-                                    <span className='cert-price'>Начиная с <b className='wild-price'>{formatNumber(72 * USD)} UZS</b> в год</span>
+                                    <span className='cert-price'>Начиная с <b className='wild-price'>{formatNumber(roundToTwoDecimalPlaces(72 * USD))} UZS</b> в год</span>
                                 </div>
                             </div>
                         </li>
@@ -189,7 +195,7 @@ export default function Certificates() {
                                         </div>
                                         <span>Просмотр SSL-сертификатов</span>
                                     </a>
-                                    <span className='cert-price'>Начиная с <b className='md-price'>{formatNumber(72 * USD)} UZS</b> в год</span>
+                                    <span className='cert-price'>Начиная с <b className='md-price'>{formatNumber(roundToTwoDecimalPlaces(72 * USD))} UZS</b> в год</span>
                                 </div>
                             </div>
                         </li>
@@ -208,7 +214,7 @@ export default function Certificates() {
                                         </div>
                                         <span>Просмотр SSL-сертификатов</span>
                                     </a>
-                                    <span className='cert-price'>Начиная с <b className='cs-price'>{formatNumber(72 * USD)}</b> в год</span>
+                                    <span className='cert-price'>Начиная с <b className='cs-price'>{formatNumber(roundToTwoDecimalPlaces(72 * USD))}</b> в год</span>
                                 </div>
                             </div>
                         </li>
@@ -227,7 +233,7 @@ export default function Certificates() {
                                         </div>
                                         <span>Просмотр SSL-сертификатов</span>
                                     </a>
-                                    <span className='cert-price'>Начиная с <b className='sm-price'>{formatNumber(11.95 * USD)} UZS</b> в год</span>
+                                    <span className='cert-price'>Начиная с <b className='sm-price'>{formatNumber(roundToTwoDecimalPlaces(11.95 * USD))} UZS</b> в год</span>
                                 </div>
                             </div>
                         </li>

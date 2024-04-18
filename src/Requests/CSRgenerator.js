@@ -25,7 +25,7 @@ class GetCSR {
         };
 
         try {
-            const response = await axios.post(`${corsUrl}/${Url}${endPoint}${token}`, urlencoded, requestOptions);
+            const response = await axios.post(`${corsUrl}/${Url}${endPoint}${token}`, requestOptions);
             return response.data;
         } catch (error) {
             console.error('Error:', error);

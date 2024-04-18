@@ -43,7 +43,7 @@ export default function DDetail() {
         switch (selectedRadio) {
             case '1 год':
                 return <>
-                    <h3 className='total-price'>{formatNumber(roundToTwoDecimalPlaces(product.product_prices[0].price * USD) + roundToTwoDecimalPlaces(product.product_prices[0].price * USD * 0.12))} UZS</h3>
+                    <h3 className='total-price'>{formatNumber(roundToTwoDecimalPlaces(product.product_prices[0].price * USD + product.product_prices[0].price * USD * 0.12))} UZS</h3>
                     <p className='total-price-txt'>ОБЩАЯ ЦЕНА</p>
                     <div className='selling-area'>
                         <button className='buying-ssl buy-ssl' onClick={send}>Купить SSL</button>
@@ -51,7 +51,7 @@ export default function DDetail() {
                 </>;
             case '2 год':
                 return <>
-                    <h3 className='total-price'>{formatNumber(roundToTwoDecimalPlaces(product.product_prices[1].price * USD) + roundToTwoDecimalPlaces(product.product_prices[1].price * USD * 0.12))} UZS</h3>
+                    <h3 className='total-price'>{formatNumber(roundToTwoDecimalPlaces(product.product_prices[1].price * USD + product.product_prices[1].price * USD * 0.12))} UZS</h3>
                     <p className='total-price-txt'>ОБЩАЯ ЦЕНА</p>
                     <div className='selling-area'>
                         <button className='buying-ssl buy-ssl' onClick={send}>Купить SSL</button>
@@ -59,7 +59,7 @@ export default function DDetail() {
                 </>;
             case '3 год':
                 return <>
-                    <h3 className='total-price'>{formatNumber(roundToTwoDecimalPlaces(product.product_prices[2].price * USD) + roundToTwoDecimalPlaces(product.product_prices[2].price * USD * 0.12))} UZS</h3>
+                    <h3 className='total-price'>{formatNumber(roundToTwoDecimalPlaces(product.product_prices[2].price * USD + product.product_prices[2].price * USD * 0.12))} UZS</h3>
                     <p className='total-price-txt'>ОБЩАЯ ЦЕНА</p>
                     <div className='selling-area'>
                         <button className='buying-ssl buy-ssl' onClick={send}>Купить SSL</button>
@@ -80,7 +80,9 @@ export default function DDetail() {
     }
 
     const roundToTwoDecimalPlaces = (number) => {
-        return Math.round(number * 100) / 100;
+        let roundedNumber = Math.ceil(number);
+        let result = (Math.ceil(roundedNumber / 100) * 100).toFixed(2);
+        return result;
     }
 
     const normalizeProductName = (productName) => {
@@ -131,12 +133,12 @@ export default function DDetail() {
                                             <input type="radio" id={`1 год`} name='year' checked={selectedRadio === '1 год'} onChange={handleRadioChange} />
                                             <label htmlFor={`1 год`}>
                                                 <span className='span-year'>1 год</span>
-                                                <span className={`span-price-1 ${selectedRadio === '1 год' ? 'span-price-2' : ''}`}>{formatNumber(roundToTwoDecimalPlaces(product.product_prices[0].price * USD) + roundToTwoDecimalPlaces(product.product_prices[0].price * USD * 0.12))} UZS</span>
+                                                <span className={`span-price-1 ${selectedRadio === '1 год' ? 'span-price-2' : ''}`}>{formatNumber(roundToTwoDecimalPlaces(product.product_prices[0].price * USD + product.product_prices[0].price * USD * 0.12))} UZS</span>
                                                 <span className='span-txt'>В ГОД</span>
                                             </label>
                                         </div>
                                         <div className={`san-price ${selectedRadio === '1 год' ? 'san-price-block' : 'san-price-none'}`}>
-                                            {product.product_san_prices ? formatNumber(roundToTwoDecimalPlaces(product.product_san_prices[0].price * USD) + roundToTwoDecimalPlaces(product.product_san_prices[0].price * USD * 0.12)) : '0'} UZS Дополнительный домен (SAN)
+                                            {product.product_san_prices ? formatNumber(roundToTwoDecimalPlaces(product.product_san_prices[0].price * USD + product.product_san_prices[0].price * USD * 0.12)) : '0'} UZS Дополнительный домен (SAN)
                                         </div>
                                     </div>
                                     <div className={`offer-year ${selectedRadio === '2 год' ? 'offer-price-active' : ''}`}>
@@ -144,12 +146,12 @@ export default function DDetail() {
                                             <input type="radio" id={`2 год`} name='year' checked={selectedRadio === '2 год'} onChange={handleRadioChange} />
                                             <label htmlFor={`2 год`}>
                                                 <span className='span-year'>2 год </span>
-                                                <span className={`span-price-1 ${selectedRadio === '2 год' ? 'span-price-2' : ''}`}>{formatNumber(roundToTwoDecimalPlaces(product.product_prices[1].price / 2 * USD) + roundToTwoDecimalPlaces(product.product_prices[1].price / 2 * USD * 0.12))} UZS</span>
+                                                <span className={`span-price-1 ${selectedRadio === '2 год' ? 'span-price-2' : ''}`}>{formatNumber(roundToTwoDecimalPlaces(product.product_prices[1].price / 2 * USD + product.product_prices[1].price / 2 * USD * 0.12))} UZS</span>
                                                 <span className='span-txt'>В ГОД</span>
                                             </label>
                                         </div>
                                         <div className={`san-price ${selectedRadio === '2 год' ? 'san-price-block' : 'san-price-none'}`}>
-                                            {product.product_san_prices ? formatNumber(roundToTwoDecimalPlaces(product.product_san_prices[1].price * USD) + roundToTwoDecimalPlaces(product.product_san_prices[1].price * USD * 0.12)) : '0'} UZS Дополнительный домен (SAN)
+                                            {product.product_san_prices ? formatNumber(roundToTwoDecimalPlaces(product.product_san_prices[1].price * USD + product.product_san_prices[1].price * USD * 0.12)) : '0'} UZS Дополнительный домен (SAN)
                                         </div>
                                     </div>
                                     <div className={`offer-year ${selectedRadio === '3 год' ? 'offer-price-active' : ''}`}>
@@ -157,12 +159,12 @@ export default function DDetail() {
                                             <input type="radio" id={`3 год`} name='year' checked={selectedRadio === '3 год'} onChange={handleRadioChange} />
                                             <label htmlFor={`3 год`}>
                                                 <span className='span-year'>3 год </span>
-                                                <span className={`span-price-1 ${selectedRadio === '3 год' ? 'span-price-2' : ''}`}>{formatNumber(roundToTwoDecimalPlaces(product.product_prices[2].price / 3 * USD) + roundToTwoDecimalPlaces(product.product_prices[2].price / 3 * USD * 0.12))} UZS</span>
+                                                <span className={`span-price-1 ${selectedRadio === '3 год' ? 'span-price-2' : ''}`}>{formatNumber(roundToTwoDecimalPlaces(product.product_prices[2].price / 3 * USD + product.product_prices[2].price / 3 * USD * 0.12))} UZS</span>
                                                 <span className='span-txt'>В ГОД</span>
                                             </label>
                                         </div>
                                         <div className={`san-price ${selectedRadio === '3 год' ? 'san-price-block' : 'san-price-none'}`}>
-                                            {product.product_san_prices ? formatNumber(roundToTwoDecimalPlaces(product.product_san_prices[2].price * USD) + roundToTwoDecimalPlaces(product.product_san_prices[2].price * USD * 0.12)) : '0'} UZS Дополнительный домен (SAN)
+                                            {product.product_san_prices ? formatNumber(roundToTwoDecimalPlaces(product.product_san_prices[2].price * USD + product.product_san_prices[2].price * USD * 0.12)) : '0'} UZS Дополнительный домен (SAN)
                                         </div>
                                     </div>
                                 </div>
@@ -173,7 +175,7 @@ export default function DDetail() {
                                             <input type="radio" id={`1 год`} name='year' checked={selectedRadio === '1 год'} onChange={handleRadioChange} />
                                             <label htmlFor={`1 год`}>
                                                 <span className='span-year'>{product.terms} Месяцы </span>
-                                                <span className={`span-price-1 ${selectedRadio === '1 год' ? 'span-price-2' : ''}`}>{formatNumber(roundToTwoDecimalPlaces(product.product_prices[0].price * USD) + roundToTwoDecimalPlaces(product.product_prices[0].price * USD * 0.12))} UZS</span>
+                                                <span className={`span-price-1 ${selectedRadio === '1 год' ? 'span-price-2' : ''}`}>{formatNumber(roundToTwoDecimalPlaces(product.product_prices[0].price * USD + product.product_prices[0].price * USD * 0.12))} UZS</span>
                                             </label>
                                         </div>
                                     </div>
@@ -191,7 +193,7 @@ export default function DDetail() {
                                 <span>В комплекте</span>
                             </p>
                             <p className='benefits-2'>
-                                <span>{product.product_san_prices ? formatNumber(roundToTwoDecimalPlaces(product.product_san_prices[0].price * USD) + roundToTwoDecimalPlaces(product.product_san_prices[0].price * USD * 0.12)) : '0'} UZS</span>
+                                <span>{product.product_san_prices ? formatNumber(roundToTwoDecimalPlaces(product.product_san_prices[0].price * USD + product.product_san_prices[0].price * USD * 0.12)) : '0'} UZS</span>
                                 <span>Дополнительный SAN</span>
                             </p>
                             <p className='benefits-2 benefits-2_1'>

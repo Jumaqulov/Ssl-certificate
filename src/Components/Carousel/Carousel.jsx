@@ -46,6 +46,12 @@ export default function Carousel() {
         return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
     }
 
+    const roundToTwoDecimalPlaces = (number) => {
+        let roundedNumber = Math.ceil(number);
+        let result = (Math.ceil(roundedNumber / 100) * 100).toFixed(2);
+        return result;
+    }
+
     useEffect(() => {
         setShow(true);
         setSliderSettings(prevSettings => ({
@@ -71,7 +77,7 @@ export default function Carousel() {
                             </div>
                             <div className={`fade-up ${show ? 'show' : ''}`}>
                                 <h1 title='НАДЕЖНЫЙ И СОВРЕМЕННЫЙ СПОСОБ ИДЕНТИФИКАЦИИ КОМПАНИИ'>НАДЕЖНЫЙ И СОВРЕМЕННЫЙ СПОСОБ ИДЕНТИФИКАЦИИ КОМПАНИИ</h1>
-                                <h2>{formatNumber(62 * USD)} UZS</h2>
+                                <h2>{formatNumber(roundToTwoDecimalPlaces(62 * USD))} UZS</h2>
                                 <a href="/lei">Проверить предложение</a>
                             </div>
                             <div className={`fade-right ${show ? 'show' : ''} slide-txt-box`}>
@@ -103,7 +109,7 @@ export default function Carousel() {
                         <div aria-hidden="true" className='slide-txt-2 slide-txt'>
                             <div className={`fade-left ${show ? 'show' : ''}`}>
                                 <h3 title='ДОСТУПНА НОВАЯ ФУНКЦИЯ FLEX SSL'>ДОСТУПНА НОВАЯ ФУНКЦИЯ FLEX SSL</h3>
-                                <h2>{formatNumber(44 * USD)} UZS</h2>
+                                <h2>{formatNumber(roundToTwoDecimalPlaces(44 * USD))} UZS</h2>
                                 <a aria-hidden='true' href="/multi-domian-ssl">Проверить предложение</a>
                             </div>
                             <div className={`fade-up ${show ? 'show' : ''} slide-txt-box`}>
@@ -154,7 +160,7 @@ export default function Carousel() {
                             </div>
                             <div className={`fade-up ${show ? 'show' : ''}`}>
                                 <h3 title='СКАНЕР УЯЗВИМОСТЕЙ БЕЗ КОМПРОМИССОВ'>СКАНЕР УЯЗВИМОСТЕЙ БЕЗ КОМПРОМИССОВ</h3>
-                                <h2>{formatNumber(15 * USD)} UZS</h2>
+                                <h2>{formatNumber(roundToTwoDecimalPlaces(15 * USD))} UZS</h2>
                                 <a href="/multi-domian-ssl">Проверить предложение</a>
                             </div>
                             <div className={`fade-up ${show ? 'show' : ''} slide-txt-box`}>

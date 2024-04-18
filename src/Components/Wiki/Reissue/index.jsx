@@ -1,12 +1,13 @@
 import React from 'react'
-import { IoReloadSharp } from "react-icons/io5";
+import { IoMdRefresh } from "react-icons/io";
+
 
 export default function Reissue_RenewalMain() {
     return (
         <div className='wiki-menu-box'>
             <h5>
                 <span>
-                    <IoReloadSharp className='wm-valid-check'/>
+                    <IoMdRefresh className='wm-valid-check'/>
                 </span>
                 <a href="/wiki/ssl-reissue-renewal">Перевыпуск и возобновление SSL</a>
             </h5>
