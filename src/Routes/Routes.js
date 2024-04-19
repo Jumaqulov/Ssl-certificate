@@ -74,6 +74,14 @@ import Sectigossl from "../Components/Wiki/IntermediateCertificate/Sectigossl";
 import Rapidssl from "../Components/Wiki/IntermediateCertificate/Rapidssl";
 import Thawtessl from "../Components/Wiki/IntermediateCertificate/Thawtessl";
 import Geotrustssl from "../Components/Wiki/IntermediateCertificate/Geotrustssl";
+import Digicertssl from "../Components/Wiki/IntermediateCertificate/Digicertssl";
+import SectigoAddTrust from "../Components/Wiki/IntermediateCertificate/SectigoAddTrust";
+import SslTsl from "../Components/Wiki/BasicFaq/SslTsl";
+import DomianValidations from "../Components/Wiki/BasicFaq/DomianValidations";
+import BussinessValidations from "../Components/Wiki/BasicFaq/Bussinessvalidations";
+import ExtendedValidations from "../Components/Wiki/BasicFaq/ExtendedValidations";
+import Wildcardssl from "../Components/Wiki/BasicFaq/Wildcardssl";
+import MultiDomianSsl from "../Components/Wiki/BasicFaq/MultiDomianSsl";
 
 export const routes = [
   { path: `${process.env.PUBLIC_URL}/ssl-certificates`, Component: <Certificates /> },
@@ -133,15 +141,24 @@ export const routes = [
   { path: `${process.env.PUBLIC_URL}/wiki/problems/lost-private-key`, Component: <LostPrivateKey /> },
   { path: `${process.env.PUBLIC_URL}/wiki/problems/common-name-missmatch-error`, Component: <CommonName /> },
   { path: `${process.env.PUBLIC_URL}/wiki/problems/why-no-padlock`, Component: <NoPadlock /> },
-  { path: `${process.env.PUBLIC_URL}/wiki/intermediate-certificates/gogetssl-intermediate-root-certificates` , Component: <Gogetssl/> },
-  { path: `${process.env.PUBLIC_URL}/wiki/intermediate-certificates/sectigo-intermediate-root-certificates` , Component: <Sectigossl/> },
-  { path: `${process.env.PUBLIC_URL}/wiki/intermediate-certificates/rapidssl-intermediate-root-certificates` , Component: <Rapidssl/> },
-  { path: `${process.env.PUBLIC_URL}/wiki/intermediate-certificates/thawte-intermediate-root-certificates` , Component: <Thawtessl/> },
-  { path: `${process.env.PUBLIC_URL}/wiki/intermediate-certificates/geotrust-intermediate-root-certificates` , Component: <Geotrustssl/> },
+  { path: `${process.env.PUBLIC_URL}/wiki/intermediate-certificates/gogetssl-intermediate-root-certificates`, Component: <Gogetssl /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/intermediate-certificates/sectigo-intermediate-root-certificates`, Component: <Sectigossl /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/intermediate-certificates/rapidssl-intermediate-root-certificates`, Component: <Rapidssl /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/intermediate-certificates/thawte-intermediate-root-certificates`, Component: <Thawtessl /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/intermediate-certificates/geotrust-intermediate-root-certificates`, Component: <Geotrustssl /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/intermediate-certificates/digicert-intermediate-root-certificates`, Component: <Digicertssl /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/intermediate-certificates/sectio-addtrust-external-ca-root-expires`, Component: <SectigoAddTrust /> },
   { path: `${process.env.PUBLIC_URL}/wiki/ssl-reissue-renewal/how-to-reissue-ssl`, Component: <ReissueSSL /> },
   { path: `${process.env.PUBLIC_URL}/wiki/ssl-reissue-renewal/ssl-renewal-process`, Component: <RenewSSL /> },
   { path: `${process.env.PUBLIC_URL}/wiki/ssl-reissue-renewal/buy-more-san-items`, Component: <MoreSanItems /> },
-
+  { path: `${process.env.PUBLIC_URL}/wiki/ssl-reissue-renewal/buy-more-san-items`, Component: <MoreSanItems /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/ssl-basics/what-is-ssl-tls`, Component: <SslTsl /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/ssl-basics/dv-certs`, Component: <DomianValidations /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/ssl-basics/ov-certs`, Component: <BussinessValidations /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/ssl-basics/ev-certs`, Component: <ExtendedValidations /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/ssl-basics/wildcard-certs`, Component: <Wildcardssl /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/ssl-basics/san-certs`, Component: <MultiDomianSsl /> },
+  
   { path: `${process.env.PUBLIC_URL}/product/:id`, Component: <Detail /> },
   { path: `${process.env.PUBLIC_URL}/digicert`, Component: <Digicert /> },
   { path: `${process.env.PUBLIC_URL}/geotrust`, Component: <GeoTrust /> },

@@ -37,7 +37,7 @@ export default function Certificates() {
                             <span className="symbol-letter symbol-b">B</span>
                         </div>
                         <div className='text-box'>
-                            <span className="title">Проверка бизнеса</span>
+                            <span className="title">Валидация   бизнеса</span>
                             <p>Выдается в течение 1-3 дней<br />Повышенный уровень доверия</p>
                         </div>
                     </Link>

@@ -39,7 +39,7 @@ export default function Basic_FaqMain() {
                             </path>
                         </svg>
                     </span>
-                    <a className='wiki-link' href="/wiki/ssl-basics/ov-certs">Удостоверение бизнеса SSL</a>
+                    <a className='wiki-link' href="/wiki/ssl-basics/ov-certs">Валидация бизнеса SSL</a>
                 </li>
                 <li>
                     <span className='next'>
