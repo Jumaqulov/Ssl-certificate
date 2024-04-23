@@ -4,7 +4,7 @@ import { TbCircleLetterW } from 'react-icons/tb'
 export default function Wildcardssl() {
     useEffect(() => {
         document.title = 'Сертификаты Wildcard SSL'
-    })
+    },[])
     return (
         <>
             <div className="wiki-path">

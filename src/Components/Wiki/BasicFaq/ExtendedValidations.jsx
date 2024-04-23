@@ -4,7 +4,7 @@ import { TbCircleLetterE } from 'react-icons/tb'
 export default function ExtendedValidations() {
     useEffect(() => {
         document.title = 'SSL-сертификаты с расширенной валидацией'
-    })
+    },[])
     return (
         <>
             <div className="wiki-path">

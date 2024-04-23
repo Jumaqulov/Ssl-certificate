@@ -82,6 +82,15 @@ import BussinessValidations from "../Components/Wiki/BasicFaq/Bussinessvalidatio
 import ExtendedValidations from "../Components/Wiki/BasicFaq/ExtendedValidations";
 import Wildcardssl from "../Components/Wiki/BasicFaq/Wildcardssl";
 import MultiDomianSsl from "../Components/Wiki/BasicFaq/MultiDomianSsl";
+import CodeSigningSsl from '../Components/Wiki/BasicFaq/CodeSigning';
+import FlexSSL from "../Components/Wiki/BasicFaq/FlexSSL";
+import EccandSha from "../Components/Wiki/BasicFaq/EccandSha";
+import SslWaranty from "../Components/Wiki/BasicFaq/SslWaranty";
+import SEObooster from "../Components/Wiki/BasicFaq/SEObooster";
+import SupportDevice from "../Components/Wiki/BasicFaq/SupportDevice";
+import InternationalDomian from "../Components/Wiki/BasicFaq/InternationalDomian";
+import SiteSealLogo from "../Components/Wiki/BasicFaq/SiteSealLogo";
+import HowToCheck from "../Components/Wiki/BasicFaq/HowToCheck";
 
 export const routes = [
   { path: `${process.env.PUBLIC_URL}/ssl-certificates`, Component: <Certificates /> },
@@ -158,6 +167,15 @@ export const routes = [
   { path: `${process.env.PUBLIC_URL}/wiki/ssl-basics/ev-certs`, Component: <ExtendedValidations /> },
   { path: `${process.env.PUBLIC_URL}/wiki/ssl-basics/wildcard-certs`, Component: <Wildcardssl /> },
   { path: `${process.env.PUBLIC_URL}/wiki/ssl-basics/san-certs`, Component: <MultiDomianSsl /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/ssl-basics/code-certs`, Component: <CodeSigningSsl /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/ssl-basics/flex-ssl`, Component: <FlexSSL /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/ssl-basics/ecc-sha-ssl`, Component: <EccandSha /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/ssl-basics/ssl-warranty`, Component: <SslWaranty /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/ssl-basics/google-seo-booster`, Component: <SEObooster /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/ssl-basics/supported-devices`, Component: <SupportDevice /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/ssl-basics/idn-ssl`, Component: <InternationalDomian /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/ssl-basics/site-seal-logo`, Component: <SiteSealLogo /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/ssl-basics/how-to-check-ssl-details-in-browser`, Component: <HowToCheck /> },
   
   { path: `${process.env.PUBLIC_URL}/product/:id`, Component: <Detail /> },
   { path: `${process.env.PUBLIC_URL}/digicert`, Component: <Digicert /> },

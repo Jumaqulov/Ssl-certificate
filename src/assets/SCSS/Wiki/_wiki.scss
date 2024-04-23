@@ -213,6 +213,7 @@
     display: flex;
     align-items: center;
     gap: 5px;
+
     svg {
         position: relative;
         font-size: 30px;
@@ -224,10 +225,65 @@
 .download-file {
     font-size: 18px;
     padding: 0 0 0 30px !important;
+
     a {
         font-size: 16px !important;
         color: #757575 !important;
     }
+}
+
+.faq-view-ssl {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    margin: 0;
+
+    .faq-ssl-title {
+        span {
+            color: #2e3030 !important;
+            padding: 10px 5px;
+            border-radius: 5px;
+        }
+    }
+
+    a {
+        display: inline-block;
+        text-decoration: none !important;
+        color: #757575;
+    }
+
+    .goggetssl {
+        span {
+            background: #dc8510 !important;
+            font-weight: bolder;
+        }
+    }
+
+    .geotrust {
+        span {
+            background: #23a095;
+            font-weight: bolder;
+        }
+    }
+
+    .thawte {
+        span {
+            background-color: #d2143ce6;
+            font-weight: bolder;
+        }
+    }
+
+    .digicert {
+        span {
+            background: #0274c4;
+            font-weight: bolder;
+        }
+    }
+}
+
+.od-raw {
+    background: #00000026;
+    border-radius: 5px;
 }
 
 @media (max-width:766px) {

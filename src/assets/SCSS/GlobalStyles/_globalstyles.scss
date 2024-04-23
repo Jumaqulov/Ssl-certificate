@@ -80,3 +80,13 @@ body {
 .text-danger {
     color: #c63200 !important;
 }
+
+.flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}

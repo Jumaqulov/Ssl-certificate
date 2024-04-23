@@ -5,7 +5,7 @@ import image from '../../../assets/Images/Wiki-Img/whatisssl.png'
 export default function SslTsl() {
     useEffect(() => {
         document.title = 'Что такое сертификат SSL/TLS'
-    })
+    },[])
     return (
         <>
             <div className="wiki-path">

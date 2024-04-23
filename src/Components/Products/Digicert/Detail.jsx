@@ -34,7 +34,8 @@ export default function DDetail() {
             state: {
                 name: product.product_name,
                 price: a,
-                period: selectedRadio
+                period: selectedRadio,
+                id: product.product_id
             }
         });
     }

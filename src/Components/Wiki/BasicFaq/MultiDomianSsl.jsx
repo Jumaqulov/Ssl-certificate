@@ -4,7 +4,7 @@ import { TbCircleLetterS } from 'react-icons/tb'
 export default function MultiDomianSsl() {
     useEffect(() => {
         document.title = 'SSL с несколькими доменами (SAN)'
-    })
+    },[])
     return (
         <>
             <div className="wiki-path">

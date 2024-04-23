@@ -5,7 +5,7 @@ import { TbCircleLetterD } from "react-icons/tb";
 export default function DomianValidations() {
     useEffect(() => {
         document.title = 'SSL-сертификаты с проверкой домена'
-    })
+    },[])
     return (
         <>
             <div className="wiki-path">

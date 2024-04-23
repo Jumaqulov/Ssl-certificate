@@ -4,7 +4,7 @@ import { TbCircleLetterO } from 'react-icons/tb'
 export default function BussinessValidations() {
     useEffect(()=>{
         document.title = 'SSL-сертификаты с проверкой бизнеса'
-    })
+    },[])
     return (
         <>
             <div className="wiki-path">
