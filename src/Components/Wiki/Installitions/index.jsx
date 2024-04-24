@@ -31,7 +31,7 @@ export default function InstallitionsMain() {
                     </span>
                     <a className='wiki-link' href="/wiki/installation/redirect-http-to-https-in-nginx-apache">Как перенаправить HTTP на HTTPS в Nginx и Apache</a>
                 </li>
-                <li>
+                {/* <li>
                     <span className='next'>
                         <svg className='wiki-arrow' viewBox='0 0 19 32'>
                             <path
@@ -40,7 +40,7 @@ export default function InstallitionsMain() {
                         </svg>
                     </span>
                     <a className='wiki-link' href="/wiki/installation/gogetssl-site-seal-installation">Установка печати сайта GoGetSSL</a>
-                </li>
+                </li> */}
             </ul>
         </div>
     )

@@ -51,7 +51,7 @@ export default function CsrGeneration() {
                             <p>Данное руководство по генерации CSR поможет вам сгенерировать запрос на подписание сертификата (CSR) без обязательного общего имени (CN) с помощью Nginx (OpenSSL). CSR без CN является обязательным правилом для генерации GoGetSSL™ Public IP SAN...</p>
                         </div>
                     </li>
-                    <li>
+                    {/* <li>
                         <div className='wiki-guide-num'>
                             <span>2</span>
                         </div>
@@ -59,7 +59,7 @@ export default function CsrGeneration() {
                             <a href="/wiki/csr-generation/generate-ecc-apache">Как сгенерировать ECC CSR на Apache</a>
                             <p>Скоро будет...</p>
                         </div>
-                    </li>
+                    </li> */}
                     <li>
                         <div className='wiki-guide-num'>
                             <span>3</span>

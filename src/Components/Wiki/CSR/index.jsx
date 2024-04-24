@@ -21,7 +21,7 @@ export default function CSR_SSlmain() {
                     </span>
                     <a className='wiki-link' href="/wiki/csr-generation/generate-csr-without-cn">Как сгенерировать CSR без общего имени</a>
                 </li>
-                <li>
+                {/* <li>
                     <span className='next'>
                         <svg className='wiki-arrow' viewBox='0 0 19 32'>
                             <path
@@ -30,7 +30,7 @@ export default function CSR_SSlmain() {
                         </svg>
                     </span>
                     <a className='wiki-link' href="/wiki/csr-generation/generate-ecc-apache">Как сгенерировать ECC CSR/KEY с помощью Apache</a>
-                </li>
+                </li> */}
                 <li>
                     <span className='next'>
                         <svg className='wiki-arrow' viewBox='0 0 19 32'>

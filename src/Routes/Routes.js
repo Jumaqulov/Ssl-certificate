@@ -91,6 +91,13 @@ import SupportDevice from "../Components/Wiki/BasicFaq/SupportDevice";
 import InternationalDomian from "../Components/Wiki/BasicFaq/InternationalDomian";
 import SiteSealLogo from "../Components/Wiki/BasicFaq/SiteSealLogo";
 import HowToCheck from "../Components/Wiki/BasicFaq/HowToCheck";
+import SSLlocalhost from "../Components/Wiki/BasicFaq/SSLlocalhost";
+import DoINeedSsl from "../Components/Wiki/BasicFaq/DoINeedSsl";
+import HowToCSR from "../Components/Wiki/CSR/HowToCSR";
+import HowToIIS7_8 from "../Components/Wiki/CSR/HowToIIS7_8";
+import HowToIIS10 from "../Components/Wiki/CSR/HowToIIS10";
+import OfficialIstalition from "../Components/Wiki/Installitions/OfficialIstalition";
+import HttpToHttps from "../Components/Wiki/Installitions/HttpToHttps";
 
 export const routes = [
   { path: `${process.env.PUBLIC_URL}/ssl-certificates`, Component: <Certificates /> },
@@ -176,6 +183,13 @@ export const routes = [
   { path: `${process.env.PUBLIC_URL}/wiki/ssl-basics/idn-ssl`, Component: <InternationalDomian /> },
   { path: `${process.env.PUBLIC_URL}/wiki/ssl-basics/site-seal-logo`, Component: <SiteSealLogo /> },
   { path: `${process.env.PUBLIC_URL}/wiki/ssl-basics/how-to-check-ssl-details-in-browser`, Component: <HowToCheck /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/ssl-basics/ssl-for-localhost`, Component: <SSLlocalhost /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/ssl-basics/do-i-need-ssl-for-content-website`, Component: <DoINeedSsl /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/csr-generation/generate-csr-without-cn`, Component: <HowToCSR /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/csr-generation/generate-csr-iis-7`, Component: <HowToIIS7_8 /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/csr-generation/generate-csr-iis-10`, Component: <HowToIIS10 /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/installation/digicert-sectigo-ssl-installation`, Component: <OfficialIstalition /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/installation/redirect-http-to-https-in-nginx-apache`, Component: <HttpToHttps /> },
   
   { path: `${process.env.PUBLIC_URL}/product/:id`, Component: <Detail /> },
   { path: `${process.env.PUBLIC_URL}/digicert`, Component: <Digicert /> },

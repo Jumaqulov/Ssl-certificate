@@ -75,6 +75,16 @@ body {
   color: #c63200 !important;
 }
 
+.flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-box p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 .nav-main {
   display: flex;
   justify-content: center;
@@ -5044,6 +5054,7 @@ body {
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4);
   border: 1px dashed #454545;
   margin: 0 0 10px 0;
+  overflow-x: scroll;
 }
 
 .wiki-menu-box ul li {
@@ -5200,6 +5211,76 @@ body {
 .download-file a {
   font-size: 16px !important;
   color: #757575 !important;
+}
+
+.faq-view-ssl {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+  margin: 0;
+}
+.faq-view-ssl .faq-ssl-title span {
+  color: #2e3030 !important;
+  padding: 10px 5px;
+  border-radius: 5px;
+}
+.faq-view-ssl a {
+  display: inline-block;
+  text-decoration: none !important;
+  color: #757575;
+}
+.faq-view-ssl .goggetssl span {
+  background: #dc8510 !important;
+  font-weight: bolder;
+}
+.faq-view-ssl .geotrust span {
+  background: #23a095;
+  font-weight: bolder;
+}
+.faq-view-ssl .thawte span {
+  background-color: rgba(210, 20, 60, 0.9019607843);
+  font-weight: bolder;
+}
+.faq-view-ssl .digicert span {
+  background: #0274c4;
+  font-weight: bolder;
+}
+
+.manuals-ssl {
+  background: rgba(255, 255, 255, 0.0392156863);
+  border-radius: 6px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4);
+  border: 1px dashed #454545;
+  padding: 20px 10px 20px 20px;
+  margin: 0 0 10px 0;
+}
+.manuals-ssl h2 {
+  color: #696969;
+  font-weight: 100;
+  font-size: 26px;
+}
+.manuals-ssl a {
+  display: inline-flex;
+  flex-grow: 1;
+  font-size: 18px;
+  background: rgba(0, 0, 0, 0.1490196078);
+  border-radius: 100px;
+  border: 1px solid #454545;
+  padding: 10px 15px;
+  margin: 7px 7px 0 0;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  color: #9e9e9e;
+}
+.manuals-ssl a:hover {
+  transition: all 0.2s ease-in-out;
+  color: #DC8510;
+  border: 1px solid #DC8510;
+}
+
+.od-raw {
+  background: rgba(0, 0, 0, 0.1490196078);
+  border-radius: 5px;
 }
 
 @media (max-width: 766px) {

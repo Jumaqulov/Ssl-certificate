@@ -29,7 +29,7 @@ export default function Company() {
                     </p>
                     <p>С 2018 года мы продаем сертификаты GoGetSSL® под собственным брендом по всему миру. Мы имеем большие объемы и получаем значительные скидки от поставщиков, что дает нам возможность передавать скидки вам и предлагать самые низкие цены из возможных.</p>
                     <p>Мы продали более 1 700 000 SSL-сертификатов 98 500 клиентам и 9 000+ реселлерам по всему миру. Мы благодарны всем, кто выбрал нашу компанию, и будем продолжать улучшать качество наших услуг.</p>
-                    <div className="info-block">
+                    {/* <div className="info-block">
                         <div>
                             <span>1,700,000+</span>
                             <span>Выданные сертификаты</span>
@@ -42,8 +42,8 @@ export default function Company() {
                             <span>9,000+</span>
                             <span>Партнеры по всему миру</span>
                         </div>
-                    </div>
-                    <h2 className='be-partner'>
+                    </div> */}
+                    {/* <h2 className='be-partner'>
                         <a className='be-partner-1'>
                             <FaHandshake />
                             <span>Наши основные партнеры</span>
@@ -51,7 +51,7 @@ export default function Company() {
                         <a className='be-partner-2'>
                             <span>Наши основные партнеры</span>
                         </a>
-                    </h2>
+                    </h2> */}
                     <div className='company-extra'>
                         <div>
                             <p>RapidLEI</p>
