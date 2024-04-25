@@ -52,8 +52,6 @@ export default function SslWaranty() {
         products();
     }, []);
 
-    console.log(results);
-
     useEffect(() => {
         if (product.length > 0) {
             fetchData();

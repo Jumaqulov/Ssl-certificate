@@ -67,10 +67,10 @@ export default function NewOrder() {
                 {
                     state !== null ?
                         <form className='reseller-form' onSubmit={handleSubmit} method='post' action='mailto:avazbekjumoquloff@gmail.com' encType="text/plain">
-                            <input type="text" name="firstName" placeholder='Имя' value={formData.firstName} onChange={handleChange} />
-                            <input type="text" name="lastName" placeholder='Фамилия' value={formData.lastName} onChange={handleChange} />
-                            <input type="email" name="email" placeholder='Электронная почта' value={formData.email} onChange={handleChange} />
-                            <input type="number" name="phoneNumber" placeholder='Номер телефона' value={formData.phoneNumber} onChange={handleChange} />
+                            <input type="text" name="firstName" placeholder='Имя' value={formData.firstName} onChange={handleChange} autoComplete='on' required/>
+                            <input type="text" name="lastName" placeholder='Фамилия' value={formData.lastName} onChange={handleChange} autoComplete='on' required/>
+                            <input type="email" name="email" placeholder='Электронная почта' value={formData.email} onChange={handleChange} autoComplete='on' required/>
+                            <input type="number" name="phoneNumber" placeholder='Номер телефона' value={formData.phoneNumber} onChange={handleChange} autoComplete='on' required/>
                             <div className='form-submit'>
                                 <button type='submit'>Отправить</button>
                             </div>

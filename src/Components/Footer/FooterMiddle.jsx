@@ -1,5 +1,7 @@
 import React from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { FaInstagram, FaFacebook, FaYoutube, FaTelegram } from "react-icons/fa";
+import { TfiEmail } from "react-icons/tfi";
 import click from '../../assets/svg/click-up.svg'
 import payme from '../../assets/Images/payme_05.svg'
 
@@ -43,10 +45,31 @@ export default function FooterMiddle() {
                     <div className='middle-right'>
                         <div className="box">
                             <div className="payment">
-                                <LazyLoadImage width={153} height={62} src={click} title='Click up' alt="Click up"/>
+                                <LazyLoadImage width={153} height={62} src={click} title='Click up' alt="Click up" />
                             </div>
                             <div className="payment">
-                                <LazyLoadImage width={153} height={44} src={payme} title='Payme' alt="Payme"/>
+                                <LazyLoadImage width={153} height={44} src={payme} title='Payme' alt="Payme" />
+                            </div>
+                            <div className="social-links">
+                                <div className="social-row">
+                                    <a href="https://www.instagram.com/starlab.uz" target='_blank' className='instagram' title='Instagram' rel='noopener'>
+                                        <FaInstagram />
+                                    </a>
+                                    <a href="https://www.facebook.com/starlab.uz" target='_blank' className='facebook' title='Facebook' rel='noopener'>
+                                        <FaFacebook />
+                                    </a>
+                                    <a href="https://www.youtube.com/channel/UCqshldoZsm4jd9DScHqZhdQ" target='_blank' className='youtube' rel='noopener'>
+                                        <FaYoutube />
+                                    </a>
+                                </div>
+                                <div className="social-row">
+                                    <a href="https://t.me/starlabuz" target='_blank' title='Telegram' className='telegram' rel='noopener'>
+                                        <FaTelegram />
+                                    </a>
+                                    <a href="mailto:info@starlab.uz" target='_blank' title='Email' className='email' rel='noopener'>
+                                        <TfiEmail />
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>

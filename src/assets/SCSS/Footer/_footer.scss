@@ -54,10 +54,10 @@
 
 .promo1-text a {
     color: #8c8c8c;
-}   
+}
 
 .promo2-text a {
-    color:$main_color_1;
+    color: $main_color_1;
 }
 
 .promo3-text a {
@@ -374,6 +374,7 @@
     align-items: center;
     margin: 10px;
     padding: 15px 10px;
+
     img {
         object-fit: contain;
     }
@@ -383,10 +384,72 @@
     width: 100%;
 }
 
-.row-one,
-.row-two {
+.box {
     display: flex;
-    justify-content: center
+    align-items: center;
+}
+
+.social-links {
+    a {
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        width: 55px;
+        height: 55px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 5px 0 5px;
+        border-radius: 100px;
+        position: relative;
+        border: 1px solid #4f4f4f;
+    }
+
+    a svg {
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        fill: #4f4f4f;
+        width: 30px;
+        height: 30px;
+    }
+
+    a:hover {
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+    }
+
+    a:hover svg {
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        fill: #1c1c1c;
+    }
+
+    .social-row {
+        text-align: center;
+        .instagram:hover {
+            background: #e0245e;
+            border: 2px solid #e0245e;
+        }
+
+        .facebook:hover {
+            background: #5391B2;
+            border: 2px solid #5391B2;
+        }
+
+        .youtube:hover {
+            background: #ff0000;
+            border: 2px solid #ff0000;
+        }
+
+        .telegram:hover {
+            background: #0088cc;
+            border: 2px solid #0088cc;
+        }
+
+        .email:hover {
+            background: #ffffff;
+            border: 2px solid #ffffff;
+        }
+    }
 }
 
 .footer-bottom {
