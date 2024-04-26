@@ -1,9 +1,14 @@
-import React from 'react';
-import { useLocation, Navigate } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { TbError404 } from "react-icons/tb";
 
 export default function NotFound() {
-    const location = useLocation();
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        // 404 status kodi bilan qaytaring
+        navigate('/404', { state: { status: 404 } });
+    }, [navigate]);
     document.title = 'Страница не найдена';
 
     return (
