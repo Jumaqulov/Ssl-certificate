@@ -55,7 +55,7 @@ export default function DigicertTabs({ filteredProducts }) {
                 </tr>
             </thead>
             <tbody>
-                { 
+                {
                     filteredProducts.length > 0 ?
                         filteredProducts.map((item, index) => {
                             return (

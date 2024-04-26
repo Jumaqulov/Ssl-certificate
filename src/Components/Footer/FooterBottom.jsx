@@ -4,7 +4,7 @@ export default function FooterBottom() {
     return (
         <div className='footer-bottom gb-padding'>
             <div className="wrapper">
-                <p>sslcerificate.uz © 2024. Starlab все права защищены</p>
+                <p className='d-flex justify-between'><span>sslcerificate.uz © 2024.</span> <span>Starlab все права защищены.</span></p>
             </div>
         </div>
     )
