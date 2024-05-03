@@ -1,8 +1,5 @@
 import React from 'react'
 import { TfiTimer } from "react-icons/tfi";
-import { PiTargetBold } from "react-icons/pi";
-import { BsShieldLockFill } from "react-icons/bs";
-import { FaMoneyBillTransfer } from "react-icons/fa6";
 
 export default function HolderPromos() {
   return (
@@ -24,7 +21,9 @@ export default function HolderPromos() {
       <div className='promos promo2'>
         <h3>
           <span>
-            <PiTargetBold className='target-svg' />
+            <svg viewBox='0 0 32 32' className='target-svg'>
+              <use xlinkHref='/skin.svg#target'></use>
+            </svg>
           </span>
           <span>
             <b>Соответствие цен</b>
@@ -38,7 +37,9 @@ export default function HolderPromos() {
       <div className='promos promo3'>
         <h3>
           <span>
-            <BsShieldLockFill className='shield-svg' />
+            <svg className='shield-svg' viewBox="0 0 28 32">
+              <use xlinkHref='/skin.svg#shield-lock'></use>
+            </svg>
           </span>
           <span>
             <b>Бесплатный SSL</b>
@@ -47,20 +48,6 @@ export default function HolderPromos() {
         </h3>
         <p className='promo3-text promos-text'>
           <a href="/product/gogetssl-90-day-trial-ssl">Попробуйте 90-дневную пробную версию</a> SSL-сертификат перед реальной покупкой для проверки работоспособности сертификата. Поддержка 99,9% браузеров и мобильных устройств. Бесплатные повторные выпуски.
-        </p>
-      </div>
-      <div className='promos promo4'>
-        <h3>
-          <span>
-            <FaMoneyBillTransfer className='money-back-svg' />
-          </span>
-          <span>
-            <b>Возврат денег</b>
-            <p>30-дневная гарантия</p>
-          </span>
-        </h3>
-        <p className='promo4-text promos-text'>
-          Удовлетворение потребностей клиентов - наша главная задача. <a href="/refund-policy">Получите полный возврат</a> в течение 30 дней на любую покупку SSL-сертификатов со 100% гарантией.
         </p>
       </div>
     </div>

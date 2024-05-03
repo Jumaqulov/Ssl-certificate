@@ -46,7 +46,7 @@ export default function HomeOffers() {
                             </div>
                             <a className='offer-link offer-link-1' href="/dv-ssl">Купить сейчас</a>
                         </div>
-                        <h6>Начиная с <span>{formatNumber(roundToTwoDecimalPlaces(14.21 * USD))} UZS</span></h6>
+                        <h6>Начиная с <span>{formatNumber(255600)} UZS</span></h6>
                     </div>
                     <div className="offers offer-1">
                         <h4 className='title-offer'>Бизнес</h4>
@@ -69,7 +69,7 @@ export default function HomeOffers() {
                             </div>
                             <a className='offer-link offer-link-2' href="/ov-ssl">Купить сейчас</a>
                         </div>
-                        <h6>Начиная с <span>{formatNumber(roundToTwoDecimalPlaces(30.36 * USD))} UZS</span></h6>
+                        <h6>Начиная с <span>{formatNumber(540400)} UZS</span></h6>
                     </div>
                     <div className="offers offer-1">
                         <h4 className='title-offer'>Расширенный</h4>
@@ -92,7 +92,7 @@ export default function HomeOffers() {
                             </div>
                             <a className='offer-link offer-link-3' href="/ev-ssl">Купить сейчас</a>
                         </div>
-                        <h6>Начиная с <span>{formatNumber(roundToTwoDecimalPlaces(74.97 * USD))} UZS</span></h6>
+                        <h6>Начиная с <span>{formatNumber(1334400)} UZS</span></h6>
                     </div>
                     <div className="offers offer-2">
                         <h4 className='title-offer'>Wildcard SSL</h4>
@@ -107,7 +107,7 @@ export default function HomeOffers() {
                             </span>
                             <a className='offer-link offer-link-4' href="/wildcard-ssl">Купить сейчас</a>
                         </div>
-                        <h6>Начиная с <span>{formatNumber(roundToTwoDecimalPlaces(72 * USD))} UZS</span></h6>
+                        <h6>Начиная с <span>{formatNumber(1281600)} UZS</span></h6>
                     </div>
                     <div className="offers offer-2">
                         <h4 className='title-offer'>Мультидомен</h4>
@@ -122,7 +122,7 @@ export default function HomeOffers() {
                                 <CiGlobe className='san-svg' />
                             </span>
                         </div>
-                        <h6>Начиная с <span>{formatNumber(roundToTwoDecimalPlaces(72 * USD))} UZS</span></h6>
+                        <h6>Начиная с <span>{formatNumber(778100)} UZS</span></h6>
                     </div>
                 </div>
                 <AboutOffer />
