@@ -46,9 +46,16 @@ export default function NewOrder() {
 
         const totalPrice = price * USD + price * USD * 0.12;
 
-        const mailtoLink = `mailto:avazbekjumoquloff@gmail.com?subject=Новый%20заказ&body=Имя:%20${firstName}%0D%0AФамилия:%20${lastName}%0D%0AEmail:%20${email}%0D%0AНомер%20телефона:%20${phoneNumber}%0D%0AНазвание%20сертификата:%20${name}%0D%0AПериод:%20${period}%0D%0AЦена:%20${formatNumber(roundToTwoDecimalPlaces(totalPrice))}%20UZS%0D%0AКод%20продукта:%20${id}`;
+        const mailtoLink = `mailto:avazjonjumoqulov@gmail.com?subject=Новый%20заказ&body=Имя:%20${firstName}%0D%0AФамилия:%20${lastName}%0D%0AEmail:%20${email}%0D%0AНомер%20телефона:%20${phoneNumber}%0D%0AНазвание%20сертификата:%20${name}%0D%0AПериод:%20${period}%0D%0AЦена:%20${formatNumber(roundToTwoDecimalPlaces(totalPrice))}%20UZS%0D%0AКод%20продукта:%20${id}`;
 
         window.open(mailtoLink);
+
+        setFormData({
+            firstName: '',
+            lastName: '',
+            email: '',
+            phoneNumber: ''
+        });
     };
 
     return (
@@ -66,11 +73,11 @@ export default function NewOrder() {
                 </div>
                 {
                     state !== null ?
-                        <form className='reseller-form' onSubmit={handleSubmit} method='post' action='mailto:avazbekjumoquloff@gmail.com' encType="text/plain">
-                            <input type="text" name="firstName" placeholder='Имя' value={formData.firstName} onChange={handleChange} autoComplete='on' required/>
-                            <input type="text" name="lastName" placeholder='Фамилия' value={formData.lastName} onChange={handleChange} autoComplete='on' required/>
-                            <input type="email" name="email" placeholder='Электронная почта' value={formData.email} onChange={handleChange} autoComplete='on' required/>
-                            <input type="number" name="phoneNumber" placeholder='Номер телефона' value={formData.phoneNumber} onChange={handleChange} autoComplete='on' required/>
+                        <form className='reseller-form' onSubmit={handleSubmit} method='post'>
+                            <input type="text" name="firstName" placeholder='Имя' value={formData.firstName} onChange={handleChange} autoComplete='on' required />
+                            <input type="text" name="lastName" placeholder='Фамилия' value={formData.lastName} onChange={handleChange} autoComplete='on' required />
+                            <input type="email" name="email" placeholder='Электронная почта' value={formData.email} onChange={handleChange} autoComplete='on' required />
+                            <input type="number" name="phoneNumber" placeholder='Номер телефона' value={formData.phoneNumber} onChange={handleChange} autoComplete='on' required />
                             <div className='form-submit'>
                                 <button type='submit'>Отправить</button>
                             </div>
