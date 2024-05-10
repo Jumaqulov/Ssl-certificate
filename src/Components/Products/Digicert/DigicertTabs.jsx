@@ -30,7 +30,8 @@ export default function DigicertTabs({ filteredProducts }) {
     }
 
     const normalizeProductName = (productName) => {
-        return productName.split(' ').map(word => word.toLowerCase()).join('-');
+        console.log("productName =>", productName);
+        // return productName.split(' ').map(word => word.toLowerCase()).join('-');
     };
 
     const firstTextColor = (text) => {
@@ -60,10 +61,10 @@ export default function DigicertTabs({ filteredProducts }) {
                         filteredProducts.map((item, index) => {
                             return (
                                 <tr key={index} className='product-list-details'>
-                                    <td className='product-name'>{firstTextColor(item.product)}</td>
+                                    <td className='product-name'>{firstTextColor(item.name)}</td>
                                     <td className='product-price'>{formatNumber(roundToTwoDecimalPlaces(item.prices[12] * USD + (item.prices[12] * USD * 0.12)))} UZS</td>
                                     <td className='details-btn'>
-                                        <a href={`/product/${normalizeProductName(item.product)}`} className='details-arrow-btn'>
+                                        <a href={`/product/${normalizeProductName(item.name)}`} className='details-arrow-btn'>
                                             {arrow_link()}
                                             <span>Подробности</span>
                                         </a>

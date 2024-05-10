@@ -97,6 +97,7 @@ import HowToIIS7_8 from "../Components/Wiki/CSR/HowToIIS7_8";
 import HowToIIS10 from "../Components/Wiki/CSR/HowToIIS10";
 import OfficialIstalition from "../Components/Wiki/Installitions/OfficialIstalition";
 import HttpToHttps from "../Components/Wiki/Installitions/HttpToHttps";
+import CodeSign from "../Components/Products/CodeSigning/CodeSign";
 
 export const routes = [
   { path: `${process.env.PUBLIC_URL}/ssl-certificates`, Component: <Certificates /> },
@@ -201,4 +202,5 @@ export const routes = [
   { path: `${process.env.PUBLIC_URL}/ev-ssl`, Component: <EVSSL /> },
   { path: `${process.env.PUBLIC_URL}/multi-domian-ssl`, Component: <MDSSL /> },
   { path: `${process.env.PUBLIC_URL}/wildcard-ssl`, Component: <WSSL /> },
+  { path: `${process.env.PUBLIC_URL}/code-signing-ssl`, Component: <CodeSign /> },
 ]

@@ -96,12 +96,12 @@ export default function DDetail() {
                 const prodList = await Allproducts.getProducts();
                 setList(prodList);
 
-                const findID = prodList.find(prodName => normalizeProductName(prodName.product) === id);
+                const findID = prodList.find(prodName => normalizeProductName(prodName.name) === id);
 
                 if (findID) {
                     const [response1, response2] = await Promise.all([
-                        axios(`${corsUrl}/${Url}/products/details/${findID.id}?auth_key=${token}`),
-                        axios(`${corsUrl}/${Url}/products/ssl/${findID.id}?auth_key=${token}`)
+                        axios(`http://192.168.0.19:8000/products/details/${findID.id}`),
+                        axios(`http://192.168.0.19:8000/products/ssl/${findID.id}`)
                     ]);
 
                     const api1 = response1.data;

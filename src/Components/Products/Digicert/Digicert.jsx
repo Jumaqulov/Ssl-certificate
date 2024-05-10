@@ -17,9 +17,9 @@ export default function Digicert() {
     }
 
     const filteredProducts = productList.length > 0 ? productList.filter(digicert => {
-        return digicert.brand === "digicert";
+        return digicert.product_brand === "digicert";
     }) : [];
-
+    // console.log(filteredProducts);
     useEffect(() => {
         products()
     }, []);

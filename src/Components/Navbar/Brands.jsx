@@ -30,7 +30,7 @@ export default function Brands() {
         const currentProducts = await Allproducts.getProducts()
         setProductList(currentProducts)
     }
-
+    // console.log(productList);
     const removeFirsttWord = (text) => {
         let words = text.split(' ');
         let remainingWords = words.slice(1).join(' ');
@@ -42,27 +42,27 @@ export default function Brands() {
     };
 
     const digicert = productList.length > 0 ? productList.filter(digicert => {
-        return digicert.brand === "digicert";
+        return digicert.product_brand === "digicert";
     }) : [];
 
     const gogetssl = productList.length > 0 ? productList.filter(gogetssl => {
-        return gogetssl.brand === "comodo_ggssl";
+        return gogetssl.product_brand === "comodo_ggssl";
     }) : [];
 
     const sectigo = productList.length > 0 ? productList.filter(sectigo => {
-        return sectigo.brand === "comodo";
+        return sectigo.product_brand === "comodo";
     }) : [];
 
     const geotrust = productList.length > 0 ? productList.filter(geotrust => {
-        return geotrust.brand === "geotrust";
+        return geotrust.product_brand === "geotrust";
     }) : [];
 
     const rapidssl = productList.length > 0 ? productList.filter(rapidssl => {
-        return rapidssl.brand === "rapidssl";
+        return rapidssl.product_brand === "rapidssl";
     }) : [];
 
     const thawte = productList.length > 0 ? productList.filter(thawte => {
-        return thawte.brand === "thawte";
+        return thawte.product_brand === "thawte";
     }) : [];
 
     useEffect(() => {
@@ -78,7 +78,7 @@ export default function Brands() {
                         digicert.length > 0 ?
                             digicert.map((link, index) => {
                                 return (
-                                    <a className='product-link' key={index} href={`/product/${normalizeProductName(link.product)}`}>{removeFirsttWord(link.product)}</a>
+                                    <a className='product-link' key={index} href={`/product/${normalizeProductName(link.name)}`}>{removeFirsttWord(link.name)}</a>
                                 )
                             })
                             : <p>Loading</p>
@@ -90,7 +90,7 @@ export default function Brands() {
                         gogetssl.length > 0 ?
                             gogetssl.map((link, index) => {
                                 return (
-                                    <a className='product-link' key={index} href={`/product/${normalizeProductName(link.product)}`}>{removeFirsttWord(link.product)}</a>
+                                    <a className='product-link' key={index} href={`/product/${normalizeProductName(link.name)}`}>{removeFirsttWord(link.name)}</a>
                                 )
                             })
                             : <p>Loading</p>
@@ -101,8 +101,8 @@ export default function Brands() {
                     {
                         (sectigo.length > 0 && sectigo.length > 11) ?
                             <>
-                                {sectigo.slice(0, 11).map((link, index) => (
-                                    <a className='product-link' key={index} href={`/product/${normalizeProductName(link.product)}`}>{removeFirsttWord(link.product)}</a>
+                                {sectigo.slice(0, 13).map((link, index) => (
+                                    <a className='product-link' key={index} href={`/product/${normalizeProductName(link.name)}`}>{removeFirsttWord(link.name)}</a>
                                 ))}
                                 <Link className='view-all' to="/sectigo">Смотреть все</Link>
                             </>
@@ -115,7 +115,7 @@ export default function Brands() {
                         geotrust.length > 0 ?
                             geotrust.map((link, index) => {
                                 return (
-                                    <a className='product-link' key={index} href={`/product/${normalizeProductName(link.product)}`}>{removeFirsttWord(link.product)}</a>
+                                    <a className='product-link' key={index} href={`/product/${normalizeProductName(link.name)}`}>{removeFirsttWord(link.name)}</a>
                                 )
                             })
                             : <p>Loading</p>
@@ -125,7 +125,7 @@ export default function Brands() {
                         rapidssl.length > 0 ?
                             rapidssl.map((link, index) => {
                                 return (
-                                    <a className='product-link' key={index} href={`/product/${normalizeProductName(link.product)}`}>{removeFirsttWord(link.product)}</a>
+                                    <a className='product-link' key={index} href={`/product/${normalizeProductName(link.name)}`}>{removeFirsttWord(link.name)}</a>
                                 )
                             })
                             : <p>Loading</p>
@@ -137,7 +137,7 @@ export default function Brands() {
                         thawte.length > 0 ?
                             thawte.map((link, index) => {
                                 return (
-                                    <a className='product-link' key={index} href={`/product/${normalizeProductName(link.product)}`}>{removeFirsttWord(link.product)}</a>
+                                    <a className='product-link' key={index} href={`/product/${normalizeProductName(link.name)}`}>{removeFirsttWord(link.name)}</a>
                                 )
                             })
                             : <p>Loading</p>
