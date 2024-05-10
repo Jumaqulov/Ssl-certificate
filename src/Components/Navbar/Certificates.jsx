@@ -54,7 +54,7 @@ export default function Certificates() {
                         </div>
                     </Link>
                 </li>
-                <li>
+                <li className='sect-one-3'>
                     <Link to="/ev-ssl" className="dv nav-link-box">
                         <div className='img-text-icon'>
                             <LiaShieldAltSolid className='lia-shield-alt-solid shield-e' />
@@ -66,7 +66,7 @@ export default function Certificates() {
                         </div>
                     </Link>
                 </li>
-                <li>
+                {/* <li>
                     <Link to="/smime-ssl" className="dv nav-link-box">
                         <div className='img-text-icon'>
                             <LiaShieldAltSolid className='lia-shield-alt-solid shield-a' />
@@ -77,8 +77,8 @@ export default function Certificates() {
                             <p>Разработан для сред MS Exchange и OCS</p>
                         </div>
                     </Link>
-                </li>
-                <li className='sect-one-3'>
+                </li> */}
+                <li className='sect-one-4'> {/*sect-one-3 */}
                     <Link to="/code-signing-ssl" className="dv nav-link-box">
                         <div className='img-text-icon'>
                             <LiaShieldAltSolid className='lia-shield-alt-solid shield-c' />
@@ -90,7 +90,7 @@ export default function Certificates() {
                         </div>
                     </Link>
                 </li>
-                <li className='sect-one-4'>
+                {/* <li className='sect-one-4'>
                     <Link to="/digicert/vmc-certificates" className="dv nav-link-box">
                         <div className='img-text-icon'>
                             <LiaShieldAltSolid className='lia-shield-alt-solid shield-v' />
@@ -101,7 +101,7 @@ export default function Certificates() {
                             <p>Отображение логотипа вашей компании в почтовых ящиках получателей.</p>
                         </div>
                     </Link>
-                </li>
+                </li> */}
             </ul>
         </div>
     )
