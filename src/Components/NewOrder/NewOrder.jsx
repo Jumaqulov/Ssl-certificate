@@ -23,19 +23,12 @@ export default function NewOrder() {
     };
 
     function formatNumber(number) {
-        let alphaNumber = number.toString().split('.');
-        alphaNumber[0] = alphaNumber[0].replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
-        if (alphaNumber.length > 1) {
-            alphaNumber[1] = alphaNumber[1].padEnd(2, '0').substring(0, 2);
-        } else {
-            alphaNumber.push('00');
-        }
-        return alphaNumber.join('.');
+        return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
     }
 
     const roundToTwoDecimalPlaces = (number) => {
         let roundedNumber = Math.ceil(number);
-        let result = (Math.ceil(roundedNumber / 100) * 100).toFixed(2);
+        let result = (Math.ceil(roundedNumber / 100) * 100);
         return result;
     }
 

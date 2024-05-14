@@ -1,4 +1,8 @@
 export const Url = 'https://my.gogetssl.com/api'
 export const corsUrl = 'https://cors.eu.org'
-export const USD = '12713.54'
+export const USD = '12699.66'
 export const token = 'de3c2204dfbbddf09998894d39aa712746c12023'
+
+
+export const SSLdetail = 'http://192.168.0.19:8000/products/ssl/'
+export const SSLproductDetail = 'http://192.168.0.19:8000/products/details/'

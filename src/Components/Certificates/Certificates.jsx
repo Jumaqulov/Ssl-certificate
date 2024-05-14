@@ -218,7 +218,7 @@ export default function Certificates() {
                                 </div>
                             </div>
                         </li>
-                        <li className='cert-info-item'>
+                        {/* <li className='cert-info-item'>
                             <div className='cert-svg-box'>
                                 <LiaShieldAltSolid className='sm-navshield navshield' />
                                 <span className='cert-symbol cert-symbol-a'>@</span>
@@ -236,7 +236,7 @@ export default function Certificates() {
                                     <span className='cert-price'>Начиная с <b className='sm-price'>{formatNumber(roundToTwoDecimalPlaces(11.95 * USD))} UZS</b> в год</span>
                                 </div>
                             </div>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
             </div>

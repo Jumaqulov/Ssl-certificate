@@ -25,15 +25,14 @@ export default function DigicertTabs({ filteredProducts }) {
 
     const roundToTwoDecimalPlaces = (number) => {
         let roundedNumber = Math.ceil(number);
-        let result = (Math.ceil(roundedNumber / 100) * 100).toFixed(2);
+        let result = (Math.ceil(roundedNumber / 100) * 100);
         return result;
     }
 
     const normalizeProductName = (productName) => {
-        console.log("productName =>", productName);
-        // return productName.split(' ').map(word => word.toLowerCase()).join('-');
+        return productName.split(' ').map(word => word.toLowerCase()).join('-');
     };
-
+    console.log(filteredProducts);
     const firstTextColor = (text) => {
         let words = text.split(' ');
         let firstWord = words[0];
@@ -61,10 +60,10 @@ export default function DigicertTabs({ filteredProducts }) {
                         filteredProducts.map((item, index) => {
                             return (
                                 <tr key={index} className='product-list-details'>
-                                    <td className='product-name'>{firstTextColor(item.name)}</td>
+                                    <td className='product-name'>{firstTextColor(item.product)}</td>
                                     <td className='product-price'>{formatNumber(roundToTwoDecimalPlaces(item.prices[12] * USD + (item.prices[12] * USD * 0.12)))} UZS</td>
                                     <td className='details-btn'>
-                                        <a href={`/product/${normalizeProductName(item.name)}`} className='details-arrow-btn'>
+                                        <a href={`/product/${normalizeProductName(item.product)}`} className='details-arrow-btn'>
                                             {arrow_link()}
                                             <span>Подробности</span>
                                         </a>

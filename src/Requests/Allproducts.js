@@ -7,7 +7,8 @@ const token = 'de3c2204dfbbddf09998894d39aa712746c12023'
 
 class AllProducts {
     async getProducts() {
-        const products = await axios.get(`${corsUrl}/${Url + token}`)
+        // const products = await axios.get(Url)
+        const products = await axios.get(corsUrl + "/"+  Url + token)
             .then(ress => {
                 return ress.data.products
             })

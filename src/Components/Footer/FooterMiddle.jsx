@@ -38,7 +38,6 @@ export default function FooterMiddle() {
                                 <a className='box-link-item' href='/wildcard-ssl'>Wildcard SSL</a>
                                 <a className='box-link-item' href='/multi-domian-ssl'>Сертификаты UCC/SAN</a>
                                 <a className='box-link-item' href='/code-signing-ssl'>CodeSigning SSL</a>
-                                <a className='box-link-item' href='/vcm-certificates'>Сертификаты VMC</a>
                             </li>
                         </ul>
                     </div>

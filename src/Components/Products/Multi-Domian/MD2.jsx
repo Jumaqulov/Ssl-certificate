@@ -42,7 +42,7 @@ export default function MD2({ md }) {
 
     const roundToTwoDecimalPlaces = (number) => {
         let roundedNumber = Math.ceil(number);
-        let result = (Math.ceil(roundedNumber / 100) * 100).toFixed(2);
+        let result = (Math.ceil(roundedNumber / 100) * 100);
         return result;
     }
 

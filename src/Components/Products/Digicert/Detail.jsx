@@ -3,7 +3,7 @@ import axios from 'axios'
 import { FaArrowsToCircle } from "react-icons/fa6";
 import { Circles } from 'react-loader-spinner';
 import { useNavigate, useParams } from 'react-router-dom';
-import { corsUrl, token, Url, USD } from '../../../Requests/request';
+import { corsUrl, SSLdetail, SSLproductDetail, token, Url, USD } from '../../../Requests/request';
 import SanRow from './SanRow';
 import Allproducts from '../../../Requests/Allproducts';
 
@@ -70,14 +70,7 @@ export default function DDetail() {
     };
 
     function formatNumber(number) {
-        let alphaNumber = number.toString().split('.');
-        alphaNumber[0] = alphaNumber[0].replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
-        if (alphaNumber.length > 1) {
-            alphaNumber[1] = alphaNumber[1].padEnd(2, '0').substring(0, 2);
-        } else {
-            alphaNumber.push('00');
-        }
-        return alphaNumber.join('.');
+        return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
     }
 
     const roundToTwoDecimalPlaces = (number) => {
@@ -96,12 +89,14 @@ export default function DDetail() {
                 const prodList = await Allproducts.getProducts();
                 setList(prodList);
 
-                const findID = prodList.find(prodName => normalizeProductName(prodName.name) === id);
+                const findID = prodList.find(prodName => normalizeProductName(prodName.product) === id);
 
                 if (findID) {
                     const [response1, response2] = await Promise.all([
-                        axios(`http://192.168.0.19:8000/products/details/${findID.id}`),
-                        axios(`http://192.168.0.19:8000/products/ssl/${findID.id}`)
+                        // axios(SSLproductDetail + findID.id),
+                        // axios(SSLdetail + findID.id)
+                        axios(`${corsUrl}/${Url}/products/details/${findID.id}?auth_key=${token}`),
+                        axios(`${corsUrl}/${Url}/products/ssl/${findID.id}?auth_key=${token}`)
                     ]);
 
                     const api1 = response1.data;
@@ -115,7 +110,7 @@ export default function DDetail() {
                     console.error('ID topilmadi');
                 }
             } catch (error) {
-                console.error('Xatolik yuz berdi:', error);
+                console.error(error);
             }
         };
         fetchData();
