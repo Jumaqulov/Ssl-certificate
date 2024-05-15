@@ -1,17 +1,23 @@
 import React, { useState } from 'react'
 import { useLocation } from 'react-router-dom';
 import { USD } from '../../Requests/request';
-
+import emailjs from '@emailjs/browser';
 
 export default function NewOrder() {
     document.title = 'Новый заказ'
     const { state } = useLocation()
-
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
         email: '',
         phoneNumber: ''
+    });
+
+    const [state1, setState1] = useState({
+        name: state.name || '',
+        period: state.period || '',
+        price: state.price || 0,
+        id: state.id || ''
     });
 
     const handleChange = (e) => {
@@ -39,9 +45,28 @@ export default function NewOrder() {
 
         const totalPrice = price * USD + price * USD * 0.12;
 
-        const mailtoLink = `mailto:avazjonjumoqulov@gmail.com?subject=Новый%20заказ&body=Имя:%20${firstName}%0D%0AФамилия:%20${lastName}%0D%0AEmail:%20${email}%0D%0AНомер%20телефона:%20${phoneNumber}%0D%0AНазвание%20сертификата:%20${name}%0D%0AПериод:%20${period}%0D%0AЦена:%20${formatNumber(roundToTwoDecimalPlaces(totalPrice))}%20UZS%0D%0AКод%20продукта:%20${id}`;
-
-        window.open(mailtoLink);
+        const templateParams = {
+            firstName,
+            lastName,
+            email,
+            phoneNumber,
+            name,
+            period,
+            totalPrice: totalPrice,
+            id
+        };
+        emailjs
+            .send('service_hmh8i6i', 'template_n9f7f6w', templateParams, 'E0E8_JB3iZI-3FCpG')
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                }
+            );
+        // const mailtoLink = `mailto:avazjonjumoqulov@gmail.com?subject=Новый%20заказ&body=Имя:%20${firstName}%0D%0AФамилия:%20${lastName}%0D%0AEmail:%20${email}%0D%0AНомер%20телефона:%20${phoneNumber}%0D%0AНазвание%20сертификата:%20${name}%0D%0AПериод:%20${period}%0D%0AЦена:%20${formatNumber(roundToTwoDecimalPlaces(totalPrice))}%20UZS%0D%0AКод%20продукта:%20${id}`;
+        // window.open(mailtoLink);
 
         setFormData({
             firstName: '',

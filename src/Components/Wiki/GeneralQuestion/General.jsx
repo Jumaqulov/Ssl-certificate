@@ -41,40 +41,13 @@ export default function General() {
                             <span>1</span>
                         </div>
                         <div>
-                            <a href="/wiki/general/order-cancellation-and-refund-rules">Правила отмены заказа и возврата денег</a>
-                            <p>Мы продаем и предоставляем продукцию, которая должна удовлетворить большинство клиентов на 100%, однако, мы можем предложить полный возврат, если по какой-то причине вы не довольны или не удовлетворены обслуживанием...</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div className='wiki-guide-num'>
-                            <span>2</span>
-                        </div>
-                        <div>
-                            <a href="/wiki/general/monthly-billing">Ежемесячное выставление счетов</a>
-                            <p>Для крупных клиентов и реселлеров со значительным количеством заказов мы предлагаем ежемесячное биллинговое обслуживание с кредитной линией до 150 000$. Это значит, что больше никаких депозитов и предоплат, все заказы будут обрабатываться автоматически днем и ночью...</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div className='wiki-guide-num'>
-                            <span>3</span>
-                        </div>
-                        <div>
-                            <a href="/wiki/general/monthly-billing">Запрещенные доменные имена / регионы</a>
+                            <a href="/wiki/general/disalowed-domains">Запрещенные доменные имена / регионы</a>
                             <p>У каждого центра сертификации (ЦС) есть свои правила и список запрещенных доменных имен или запрещенных регионов/стран. На эти правила также влияют правила эмбарго страны, в которой находится штаб-квартира центра сертификации...</p>
                         </div>
                     </li>
                     <li>
                         <div className='wiki-guide-num'>
-                            <span>4</span>
-                        </div>
-                        <div>
-                            <a href="/wiki/general/tax-vat-rules">Правила налогообложения/НДС</a>
-                            <p>Мы являемся компанией Латвийской Республики (LV), работающей в соответствии с правилами Европейского Союза (ЕС) и уважаем уплату налогов, если мы обязаны это делать. Вы получите стандартный счет-фактуру ЕС со всеми реквизитами для каждой покупки через нашу компанию...</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div className='wiki-guide-num'>
-                            <span>5</span>
+                            <span>2</span>
                         </div>
                         <div>
                             <a href="/wiki/general/comodo-is-now-sectigo">Comodo теперь Sectigo</a>
@@ -83,7 +56,7 @@ export default function General() {
                     </li>
                     <li>
                         <div className='wiki-guide-num'>
-                            <span>6</span>
+                            <span>3</span>
                         </div>
                         <div>
                             <a href="/wiki/general/multi-year-subscription-ssl">Многолетняя подписка SSL</a>
@@ -92,16 +65,7 @@ export default function General() {
                     </li>
                     <li>
                         <div className='wiki-guide-num'>
-                            <span>7</span>
-                        </div>
-                        <div>
-                            <a href="/wiki/general/mdf">Партнерская программа MDF</a>
-                            <p>Фонды развития рынка (MDF) доступны всем партнерам GoGetSSL. Объем MDF зависит от каждого конкретного случая, и более высокие суммы доступны для хостинговых, доменных и других технологических компаний...</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div className='wiki-guide-num'>
-                            <span>8</span>
+                            <span>4</span>
                         </div>
                         <div>
                             <a href="/wiki/general/code-signing-2023">Новые стандарты подписания кодов (2023)</a>

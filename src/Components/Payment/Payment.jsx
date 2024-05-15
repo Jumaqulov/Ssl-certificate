@@ -16,14 +16,14 @@ export default function Payment() {
                 <meta property="og:description" content="Оплатите SSL с помощью PayPal, кредитной карты, Skrill или webmoney с 30-дневной гарантией возврата денег" />
                 <meta property="og:locale" content="ru_RU" />
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content="Способы оплаты и возврат средств" />
+                <meta property="og:title" content="Способы оплаты" />
                 <meta property="og:site_name" content="SSL Certificate" />
                 <meta property="og:url" content="https://sslcertificate.uz" />
-                <title>Способы оплаты и возврат средств</title>
+                <title>Способы оплаты</title>
             </Helmet>
             <div className='certificates'>
                 <div className="cert-txt">
-                    <h1 title='about this page'>Способы оплаты и возврат средств</h1>
+                    <h1 title='Способы оплаты'>Способы оплаты</h1>
                     <p className='cert-txt-item'>
                         <span>
                             <GiPriceTag className='cert-txt-svg' />

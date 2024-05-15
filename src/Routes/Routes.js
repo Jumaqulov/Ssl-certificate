@@ -21,13 +21,9 @@ import Reissue from "../Components/Wiki/Reissue/Reissue";
 import Basic from "../Components/Wiki/BasicFaq/Basic";
 import CsrGeneration from "../Components/Wiki/CSR/CsrGeneration";
 import Installitions from "../Components/Wiki/Installitions/Installitions";
-import OrderCancelation from "../Components/Wiki/GeneralQuestion/OrderCancelation";
-import MothlyBilling from "../Components/Wiki/GeneralQuestion/MothlyBilling";
 import DisAllowedDomian from "../Components/Wiki/GeneralQuestion/DisAllowedDomian";
-import TaxVat from "../Components/Wiki/GeneralQuestion/TaxVat";
 import ComodoSectigo from "../Components/Wiki/GeneralQuestion/ComodoSectigo";
 import MultiYearSsl from "../Components/Wiki/GeneralQuestion/MultiYearSsl";
-import MDF from "../Components/Wiki/GeneralQuestion/MDF";
 import CodeSigning from "../Components/Wiki/GeneralQuestion/CodeSigning";
 import OrderStuck from "../Components/Wiki/SslValidation/OrderStuck";
 import DomianValidation from "../Components/Wiki/SslValidation/DomianValidation";
@@ -128,13 +124,9 @@ export const routes = [
   { path: `${process.env.PUBLIC_URL}/wiki/ssl-basics`, Component: <Basic /> },
   { path: `${process.env.PUBLIC_URL}/wiki/csr-generation`, Component: <CsrGeneration /> },
   { path: `${process.env.PUBLIC_URL}/wiki/installation`, Component: <Installitions /> },
-  { path: `${process.env.PUBLIC_URL}/wiki/general/order-cancellation-and-refund-rules`, Component: <OrderCancelation /> },
-  { path: `${process.env.PUBLIC_URL}/wiki/general/monthly-billing`, Component: <MothlyBilling /> },
   { path: `${process.env.PUBLIC_URL}/wiki/general/disalowed-domains`, Component: <DisAllowedDomian /> },
-  { path: `${process.env.PUBLIC_URL}/wiki/general/tax-vat-rules`, Component: <TaxVat /> },
   { path: `${process.env.PUBLIC_URL}/wiki/general/comodo-is-now-sectigo`, Component: <ComodoSectigo /> },
   { path: `${process.env.PUBLIC_URL}/wiki/general/multi-year-subscription-ssl`, Component: <MultiYearSsl /> },
-  { path: `${process.env.PUBLIC_URL}/wiki/general/mdf`, Component: <MDF /> },
   { path: `${process.env.PUBLIC_URL}/wiki/general/code-signing-2023`, Component: <CodeSigning /> },
   { path: `${process.env.PUBLIC_URL}/wiki/validation/order-stuck-for-manual-check-brand-validation`, Component: <OrderStuck /> },
   { path: `${process.env.PUBLIC_URL}/wiki/validation/domain-validation-ssl-verification`, Component: <DomianValidation /> },

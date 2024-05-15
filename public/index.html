@@ -10,11 +10,46 @@
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico">
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
   <title>SSL</title>
+  <script src="//code.jivo.ru/widget/ymK5JbVNP7" async></script>
 </head>
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
+  <script type="text/javascript">
+    (function (d, w, c) {
+      (w[c] = w[c] || []).push(function () {
+        try {
+          w.yaCounter47699911 = new Ya.Metrika({
+            id: 47699911,
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true,
+            ecommerce: "dataLayer"
+          });
+        } catch (e) { }
+      });
+
+      var n = d.getElementsByTagName("script")[0],
+        x = "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/watch.js",
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+      for (var i = 0; i < document.scripts.length; i++) {
+        if (document.scripts[i].src === x) { return; }
+      }
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = x;
+
+      if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/47699911" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
 </body>
 
 </html>

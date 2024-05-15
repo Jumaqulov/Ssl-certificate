@@ -4,6 +4,11 @@ html {
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: #00000000;
     height: 100%;
+
+    ::selection {
+        background: transparent;
+        color: transparent;
+    }
 }
 
 body {
@@ -85,6 +90,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     p {
         margin: 0 !important;
         padding: 0 !important;

@@ -15,8 +15,8 @@ export default function FooterMiddle() {
                             <li>
                                 <a className='title-link' href="/company">Компания</a>
                                 <a className='box-link-item' href="/">Главная страница</a>
-                                <a className='box-link-item' href="/refund-policy">Платежи/Возвраты</a>
-                                <a className='box-link-item' href="/news">Корпоративные новости</a>
+                                <a className='box-link-item' href="/refund-policy">Платежи</a>
+                                {/* <a className='box-link-item' href="/news">Корпоративные новости</a> */}
                                 <a className='box-link-item' href="/terms-and-conditions">Условия и положения</a>
                                 <a className='box-link-item' href="/support">Контакты компании</a>
                                 <a className='box-link-item' href="/sitemap">Карта сайта</a>

@@ -75,7 +75,7 @@ export default function DDetail() {
 
     const roundToTwoDecimalPlaces = (number) => {
         let roundedNumber = Math.ceil(number);
-        let result = (Math.ceil(roundedNumber / 100) * 100).toFixed(2);
+        let result = (Math.ceil(roundedNumber / 100) * 100); 
         return result;
     }
 
@@ -93,12 +93,11 @@ export default function DDetail() {
 
                 if (findID) {
                     const [response1, response2] = await Promise.all([
-                        // axios(SSLproductDetail + findID.id),
-                        // axios(SSLdetail + findID.id)
-                        axios(`${corsUrl}/${Url}/products/details/${findID.id}?auth_key=${token}`),
-                        axios(`${corsUrl}/${Url}/products/ssl/${findID.id}?auth_key=${token}`)
+                        axios(SSLproductDetail + findID.id),
+                        axios(SSLdetail + findID.id)
+                        // axios(`${corsUrl}/${Url}/products/details/${findID.id}?auth_key=${token}`),
+                        // axios(`${corsUrl}/${Url}/products/ssl/${findID.id}?auth_key=${token}`)
                     ]);
-
                     const api1 = response1.data;
                     const api2 = response2.data.product;
 
@@ -115,6 +114,7 @@ export default function DDetail() {
         };
         fetchData();
     }, [id]);
+    console.log(product);
     return (
         product ?
             <div className='certificates'>
@@ -134,7 +134,7 @@ export default function DDetail() {
                                             </label>
                                         </div>
                                         <div className={`san-price ${selectedRadio === '1 год' ? 'san-price-block' : 'san-price-none'}`}>
-                                            {product.product_san_prices ? formatNumber(roundToTwoDecimalPlaces(product.product_san_prices[0].price * USD + product.product_san_prices[0].price * USD * 0.12)) : '0'} UZS Дополнительный домен (SAN)
+                                            {(product.product_san_prices && product.product_san_prices.length > 0) ? formatNumber(roundToTwoDecimalPlaces(product.product_san_prices[0].price * USD + product.product_san_prices[0].price * USD * 0.12)) : '0'} UZS Дополнительный домен (SAN)
                                         </div>
                                     </div>
                                     <div className={`offer-year ${selectedRadio === '2 год' ? 'offer-price-active' : ''}`}>
@@ -147,7 +147,7 @@ export default function DDetail() {
                                             </label>
                                         </div>
                                         <div className={`san-price ${selectedRadio === '2 год' ? 'san-price-block' : 'san-price-none'}`}>
-                                            {product.product_san_prices ? formatNumber(roundToTwoDecimalPlaces(product.product_san_prices[1].price * USD + product.product_san_prices[1].price * USD * 0.12)) : '0'} UZS Дополнительный домен (SAN)
+                                            {(product.product_san_prices && product.product_san_prices.length > 0) ? formatNumber(roundToTwoDecimalPlaces(product.product_san_prices[1].price * USD + product.product_san_prices[1].price * USD * 0.12)) : '0'} UZS Дополнительный домен (SAN)
                                         </div>
                                     </div>
                                     <div className={`offer-year ${selectedRadio === '3 год' ? 'offer-price-active' : ''}`}>
@@ -160,7 +160,7 @@ export default function DDetail() {
                                             </label>
                                         </div>
                                         <div className={`san-price ${selectedRadio === '3 год' ? 'san-price-block' : 'san-price-none'}`}>
-                                            {product.product_san_prices ? formatNumber(roundToTwoDecimalPlaces(product.product_san_prices[2].price * USD + product.product_san_prices[2].price * USD * 0.12)) : '0'} UZS Дополнительный домен (SAN)
+                                            {(product.product_san_prices && product.product_san_prices.length > 0) ? formatNumber(roundToTwoDecimalPlaces(product.product_san_prices[2].price * USD + product.product_san_prices[2].price * USD * 0.12)) : '0'} UZS Дополнительный домен (SAN)
                                         </div>
                                     </div>
                                 </div>
@@ -189,7 +189,7 @@ export default function DDetail() {
                                 <span>В комплекте</span>
                             </p>
                             <p className='benefits-2'>
-                                <span>{product.product_san_prices ? formatNumber(roundToTwoDecimalPlaces(product.product_san_prices[0].price * USD + product.product_san_prices[0].price * USD * 0.12)) : '0'} UZS</span>
+                                <span>{(product.product_san_prices && product.product_san_prices.length > 0) ? formatNumber(roundToTwoDecimalPlaces(product.product_san_prices[0].price * USD + product.product_san_prices[0].price * USD * 0.12)) : '0'} UZS</span>
                                 <span>Дополнительный SAN</span>
                             </p>
                             <p className='benefits-2 benefits-2_1'>
