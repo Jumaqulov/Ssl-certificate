@@ -5,6 +5,14 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   height: 100%;
 }
+html ::-moz-selection {
+  background: transparent;
+  color: transparent;
+}
+html ::selection {
+  background: transparent;
+  color: transparent;
+}
 
 body {
   background-image: url("../../Images/bg-main.jpg");
@@ -966,6 +974,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  justify-content: center;
 }
 
 .promos span b {
