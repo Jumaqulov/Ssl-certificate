@@ -114,7 +114,7 @@ export default function DDetail() {
         };
         fetchData();
     }, [id]);
-    console.log(product);
+    // console.log(product);
     return (
         product ?
             <div className='certificates'>

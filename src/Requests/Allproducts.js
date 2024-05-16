@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { corsUrl } from './request'
 
-const Url = 'http://192.168.0.19:8000/products/ssl/'
+const Url = 'http://127.0.0.1/products/ssl/'
 // const Url = 'https://my.gogetssl.com/api/products/ssl?auth_key='
 // const token = 'de3c2204dfbbddf09998894d39aa712746c12023'
 
