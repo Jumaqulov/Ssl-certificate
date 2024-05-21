@@ -1,6 +1,7 @@
 import React from 'react';
 import { IoIosArrowForward } from "react-icons/io";
 import { USD } from '../../../Requests/request';
+import { Link } from 'react-router-dom';
 
 export default function GoGetSslTabs({ filteredProducts }) {
     const arrow_link = () => {
@@ -63,10 +64,10 @@ export default function GoGetSslTabs({ filteredProducts }) {
                                     <td className='product-name'>{firstTextColor(item.product)}</td>
                                     <td className='product-price'>{item.max_period >= 12 ? formatNumber(roundToTwoDecimalPlaces(item.prices[12] * USD + item.prices[12] * USD * 0.12)) : formatNumber(roundToTwoDecimalPlaces(item.prices[item.max_period] * USD + item.prices[item.max_period] * USD * 0.12))} UZS</td>
                                     <td className='details-btn'>
-                                        <a href={`/product/${normalizeProductName(item.product)}`} className='details-arrow-btn'>
+                                        <Link to={`/product/${normalizeProductName(item.product)}`} className='details-arrow-btn'>
                                             {arrow_link()}
                                             <span>Подробности</span>
-                                        </a>
+                                        </Link>
                                     </td>
                                 </tr>
                             )

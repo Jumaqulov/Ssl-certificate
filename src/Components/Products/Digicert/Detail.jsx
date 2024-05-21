@@ -3,7 +3,7 @@ import axios from 'axios'
 import { FaArrowsToCircle } from "react-icons/fa6";
 import { Circles } from 'react-loader-spinner';
 import { useNavigate, useParams } from 'react-router-dom';
-import { corsUrl, SSLdetail, SSLproductDetail, token, Url, USD } from '../../../Requests/request';
+import { SSLdetail, SSLproductDetail, USD } from '../../../Requests/request';
 import SanRow from './SanRow';
 import Allproducts from '../../../Requests/Allproducts';
 
@@ -95,8 +95,6 @@ export default function DDetail() {
                     const [response1, response2] = await Promise.all([
                         axios(SSLproductDetail + findID.id),
                         axios(SSLdetail + findID.id)
-                        // axios(`${corsUrl}/${Url}/products/details/${findID.id}?auth_key=${token}`),
-                        // axios(`${corsUrl}/${Url}/products/ssl/${findID.id}?auth_key=${token}`)
                     ]);
                     const api1 = response1.data;
                     const api2 = response2.data.product;

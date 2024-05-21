@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { corsUrl, Url, token } from './request';
 
 class GetCSR {
     async csrCode(params) {
@@ -25,7 +24,7 @@ class GetCSR {
         };
 
         try {
-            const response = await axios.post(`${corsUrl}/${Url}${endPoint}${token}`, requestOptions);
+            const response = await axios.post(`/`, requestOptions);
             return response.data;
         } catch (error) {
             console.error('Error:', error);

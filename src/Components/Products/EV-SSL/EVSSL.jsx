@@ -1,23 +1,43 @@
-import React, { useEffect, useState } from 'react'
-import { Circles } from 'react-loader-spinner'
-import Allproducts from '../../../Requests/Allproducts'
+import React, { useEffect, useState } from 'react';
+import { Circles } from 'react-loader-spinner';
+import Allproducts from '../../../Requests/Allproducts';
 import EV1 from './EV1';
 import { Helmet } from 'react-helmet';
+import { CACHE_DURATION } from '../../../Requests/request.js';
 
 export default function EVSSL() {
     const [productList, setProductList] = useState([]);
     const [loading, setLoading] = useState(true);
 
-    async function products() {
-        setLoading(true)
-        const currentProducts = await Allproducts.getProducts()
-        setProductList(currentProducts)
-        setLoading(false)
-    }
+    const fetchProducts = async () => {
+        setLoading(true);
+        const currentProducts = await Allproducts.getProducts();
+        setProductList(currentProducts);
+        localStorage.setItem('productList', JSON.stringify(currentProducts));
+        localStorage.setItem('lastFetchTime', Date.now());
+        setLoading(false);
+    };
 
     useEffect(() => {
-        products()
+        const loadProducts = async () => {
+            const cachedProducts = localStorage.getItem('productList');
+            const cachedTime = localStorage.getItem('lastFetchTime');
+
+            if (cachedProducts && cachedTime && (Date.now() - cachedTime < CACHE_DURATION)) {
+                setProductList(JSON.parse(cachedProducts));
+                setLoading(false);
+            } else {
+                await fetchProducts();
+            }
+        };
+        loadProducts();
+        const interval = setInterval(async () => {
+            await fetchProducts();
+        }, CACHE_DURATION);
+
+        return () => clearInterval(interval);
     }, []);
+
     return (
         <>
             <Helmet>
@@ -43,5 +63,5 @@ export default function EVSSL() {
                 }
             </div>
         </>
-    )
+    );
 }

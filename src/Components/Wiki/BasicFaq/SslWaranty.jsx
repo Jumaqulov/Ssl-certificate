@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { FaQuestionCircle } from 'react-icons/fa'
 import Allproducts from '../../../Requests/Allproducts';
 import axios from 'axios';
-import { Url, corsUrl, token } from '../../../Requests/request';
+import { Url } from '../../../Requests/request';
 import { Circles } from 'react-loader-spinner';
 
 export default function SslWaranty() {
@@ -21,7 +21,7 @@ export default function SslWaranty() {
         setLoading(true);
         try {
             const requests = product.map(product =>
-                axios.get(`${corsUrl}/${Url}/products/details/${product.id}?auth_key=${token}`)
+                axios.get(`${Url}/products/details/${product.id}`)
             );
             const responses = await Promise.all(requests);
             const fetchedResults = responses.map(response => response.data);

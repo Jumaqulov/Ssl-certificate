@@ -1,104 +1,104 @@
-import CSRgenerator from "../Components/CSR/CSRgenerator";
-import CSRdecoder from "../Components/CSR/CSRdecoder";
-import Certificates from "../Components/Certificates/Certificates";
-import Company from "../Components/Company/Company";
-import Lei from "../Components/Lei/Lei";
-import Solutions from "../Components/Solutions/Solutions";
-import Support from "../Components/Support/Support";
-import Trustly from "../Components/Trustly/Trustly";
-import TrustlyScaner from "../Components/Trustly/TrustlyScaner";
-import SSLchecker from "../Components/CSR/SSLchecker";
-import SSLmatcher from "../Components/CSR/SSLmatcher";
-import Wiki from "../Components/Wiki/Wiki";
-import Terms from "../Components/Terms&Conditions/Terms";
-import Payment from "../Components/Payment/Payment";
-import PrivacyPolicy from "../Components/PrivacyPolicy/PrivacyPolicy";
-import General from "../Components/Wiki/GeneralQuestion/General";
-import SslValidation from "../Components/Wiki/SslValidation/SslValidation";
-import Problems_Issues from "../Components/Wiki/Problems&Issues/Problems_Issues";
-import Intermediate from "../Components/Wiki/IntermediateCertificate/Intermediate";
-import Reissue from "../Components/Wiki/Reissue/Reissue";
-import Basic from "../Components/Wiki/BasicFaq/Basic";
-import CsrGeneration from "../Components/Wiki/CSR/CsrGeneration";
-import Installitions from "../Components/Wiki/Installitions/Installitions";
-import DisAllowedDomian from "../Components/Wiki/GeneralQuestion/DisAllowedDomian";
-import ComodoSectigo from "../Components/Wiki/GeneralQuestion/ComodoSectigo";
-import MultiYearSsl from "../Components/Wiki/GeneralQuestion/MultiYearSsl";
-import CodeSigning from "../Components/Wiki/GeneralQuestion/CodeSigning";
-import OrderStuck from "../Components/Wiki/SslValidation/OrderStuck";
-import DomianValidation from "../Components/Wiki/SslValidation/DomianValidation";
-import Digicert from "../Components/Products/Digicert/Digicert";
-import Detail from "../Components/Products/Digicert/Detail";
-import GeoTrust from "../Components/Products/GeoTrust/GeoTrust";
-import GoGetSSL from "../Components/Products/GoGetSSL/GoGetSSL";
-import Sectigo from "../Components/Products/Sectigo/Sectigo";
-import RapidSSL from "../Components/Products/RapidSSL/RapidSSL";
-import Thawte from "../Components/Products/Thawte/Thawte";
-import DVSSL from "../Components/Products/DV-SSL/DVSSL";
-import OVSSL from "../Components/Products/OV-SSL/OVSSL";
-import EVSSL from "../Components/Products/EV-SSL/EVSSL";
-import MDSSL from "../Components/Products/Multi-Domian/MDSSL";
-import WSSL from "../Components/Products/Wildcard-SSL/WSSL";
-import BusinessValidation from "../Components/Wiki/SslValidation/BusinessValidation";
-import ExtendedValidation from "../Components/Wiki/SslValidation/ExtendedValidation";
-import ReportPrice from "../Components/ReportPrice/ReportPrice";
-import SectigoDcv from "../Components/Wiki/SslValidation/SectigoDcv";
-import CaaRecord from "../Components/Wiki/Problems&Issues/CaaRecord";
-import FixModules from "../Components/Wiki/Problems&Issues/FixModules";
-import ErrCert from "../Components/Wiki/Problems&Issues/ErrCert";
-import ErrSsl from "../Components/Wiki/Problems&Issues/ErrSsl";
-import ErrProtocol from "../Components/Wiki/Problems&Issues/ErrProtocol";
-import ErrPinnedKey from "../Components/Wiki/Problems&Issues/ErrPinnedKey";
-import ErrErxRecord from "../Components/Wiki/Problems&Issues/ErrErxRecord";
-import ErrTransparancy from "../Components/Wiki/Problems&Issues/ErrTransparancy";
-import ErrDateInvalid from "../Components/Wiki/Problems&Issues/ErrDateInvalid";
-import SecError from "../Components/Wiki/Problems&Issues/SecError";
-import ErrUnknown from "../Components/Wiki/Problems&Issues/ErrUnknown";
-import WindowDoesNot from "../Components/Wiki/Problems&Issues/WindowDoesNot";
-import LostPrivateKey from "../Components/Wiki/Problems&Issues/LostPrivateKey";
-import CommonName from "../Components/Wiki/Problems&Issues/CommonName";
-import NoPadlock from "../Components/Wiki/Problems&Issues/NoPadlock";
-import Sitemap from "../Components/Sitemap/Sitemap";
-import NotFound from "../Components/404Page/NotFound";
-import NewOrder from "../Components/NewOrder/NewOrder";
-import MoreSanItems from "../Components/Wiki/Reissue/MoreSanItems";
-import ReissueSSL from "../Components/Wiki/Reissue/ReissueSSL";
-import RenewSSL from "../Components/Wiki/Reissue/RenewSSL";
-import Gogetssl from "../Components/Wiki/IntermediateCertificate/Gogetssl";
-import Sectigossl from "../Components/Wiki/IntermediateCertificate/Sectigossl";
-import Rapidssl from "../Components/Wiki/IntermediateCertificate/Rapidssl";
-import Thawtessl from "../Components/Wiki/IntermediateCertificate/Thawtessl";
-import Geotrustssl from "../Components/Wiki/IntermediateCertificate/Geotrustssl";
-import Digicertssl from "../Components/Wiki/IntermediateCertificate/Digicertssl";
-import SectigoAddTrust from "../Components/Wiki/IntermediateCertificate/SectigoAddTrust";
-import SslTsl from "../Components/Wiki/BasicFaq/SslTsl";
-import DomianValidations from "../Components/Wiki/BasicFaq/DomianValidations";
-import BussinessValidations from "../Components/Wiki/BasicFaq/Bussinessvalidations";
-import ExtendedValidations from "../Components/Wiki/BasicFaq/ExtendedValidations";
-import Wildcardssl from "../Components/Wiki/BasicFaq/Wildcardssl";
-import MultiDomianSsl from "../Components/Wiki/BasicFaq/MultiDomianSsl";
-import CodeSigningSsl from '../Components/Wiki/BasicFaq/CodeSigning';
-import FlexSSL from "../Components/Wiki/BasicFaq/FlexSSL";
-import EccandSha from "../Components/Wiki/BasicFaq/EccandSha";
-import SslWaranty from "../Components/Wiki/BasicFaq/SslWaranty";
-import SEObooster from "../Components/Wiki/BasicFaq/SEObooster";
-import SupportDevice from "../Components/Wiki/BasicFaq/SupportDevice";
-import InternationalDomian from "../Components/Wiki/BasicFaq/InternationalDomian";
-import SiteSealLogo from "../Components/Wiki/BasicFaq/SiteSealLogo";
-import HowToCheck from "../Components/Wiki/BasicFaq/HowToCheck";
-import SSLlocalhost from "../Components/Wiki/BasicFaq/SSLlocalhost";
-import DoINeedSsl from "../Components/Wiki/BasicFaq/DoINeedSsl";
-import HowToCSR from "../Components/Wiki/CSR/HowToCSR";
-import HowToIIS7_8 from "../Components/Wiki/CSR/HowToIIS7_8";
-import HowToIIS10 from "../Components/Wiki/CSR/HowToIIS10";
-import OfficialIstalition from "../Components/Wiki/Installitions/OfficialIstalition";
-import HttpToHttps from "../Components/Wiki/Installitions/HttpToHttps";
-import CodeSign from "../Components/Products/CodeSigning/CodeSign";
+import CSRgenerator from "../Components/CSR/CSRgenerator.jsx";
+import CSRdecoder from "../Components/CSR/CSRdecoder.jsx";
+import Certificates from "../Components/Certificates/Certificates.jsx";
+import Company from "../Components/Company/Company.jsx";
+import Lei from "../Components/Lei/Lei.jsx";
+import Solutions from "../Components/Solutions/Solutions.jsx";
+import Support from "../Components/Support/Support.jsx";
+import Trustly from "../Components/Trustly/Trustly.jsx";
+import TrustlyScaner from "../Components/Trustly/TrustlyScaner.jsx";
+import SSLchecker from "../Components/CSR/SSLchecker.jsx";
+import SSLmatcher from "../Components/CSR/SSLmatcher.jsx";
+import Wiki from "../Components/Wiki/Wiki.jsx";
+import Terms from "../Components/Terms&Conditions/Terms.jsx";
+import Payment from "../Components/Payment/Payment.jsx";
+import PrivacyPolicy from "../Components/PrivacyPolicy/PrivacyPolicy.jsx";
+import General from "../Components/Wiki/GeneralQuestion/General.jsx";
+import SslValidation from "../Components/Wiki/SslValidation/SslValidation.jsx";
+import Problems_Issues from "../Components/Wiki/Problems&Issues/Problems_Issues.jsx";
+import Intermediate from "../Components/Wiki/IntermediateCertificate/Intermediate.jsx";
+import Reissue from "../Components/Wiki/Reissue/Reissue.jsx";
+import Basic from "../Components/Wiki/BasicFaq/Basic.jsx";
+import CsrGeneration from "../Components/Wiki/CSR/CsrGeneration.jsx";
+import Installitions from "../Components/Wiki/Installitions/Installitions.jsx";
+import DisAllowedDomian from "../Components/Wiki/GeneralQuestion/DisAllowedDomian.jsx";
+import ComodoSectigo from "../Components/Wiki/GeneralQuestion/ComodoSectigo.jsx";
+import MultiYearSsl from "../Components/Wiki/GeneralQuestion/MultiYearSsl.jsx";
+import CodeSigning from "../Components/Wiki/GeneralQuestion/CodeSigning.jsx";
+import OrderStuck from "../Components/Wiki/SslValidation/OrderStuck.jsx";
+import DomianValidation from "../Components/Wiki/SslValidation/DomianValidation.jsx";
+import Digicert from "../Components/Products/Digicert/Digicert.jsx";
+import Detail from "../Components/Products/Digicert/Detail.jsx";
+import GeoTrust from "../Components/Products/GeoTrust/GeoTrust.jsx";
+import GoGetSSL from "../Components/Products/GoGetSSL/GoGetSSL.jsx";
+import Sectigo from "../Components/Products/Sectigo/Sectigo.jsx";
+import RapidSSL from "../Components/Products/RapidSSL/RapidSSL.jsx";
+import Thawte from "../Components/Products/Thawte/Thawte.jsx";
+import DVSSL from "../Components/Products/DV-SSL/DVSSL.jsx";
+import OVSSL from "../Components/Products/OV-SSL/OVSSL.jsx";
+import EVSSL from "../Components/Products/EV-SSL/EVSSL.jsx";
+import MDSSL from "../Components/Products/Multi-Domian/MDSSL.jsx";
+import WSSL from "../Components/Products/Wildcard-SSL/WSSL.jsx";
+import BusinessValidation from "../Components/Wiki/SslValidation/BusinessValidation.jsx";
+import ExtendedValidation from "../Components/Wiki/SslValidation/ExtendedValidation.jsx";
+import ReportPrice from "../Components/ReportPrice/ReportPrice.jsx";
+import SectigoDcv from "../Components/Wiki/SslValidation/SectigoDcv.jsx";
+import CaaRecord from "../Components/Wiki/Problems&Issues/CaaRecord.jsx";
+import FixModules from "../Components/Wiki/Problems&Issues/FixModules.jsx";
+import ErrCert from "../Components/Wiki/Problems&Issues/ErrCert.jsx";
+import ErrSsl from "../Components/Wiki/Problems&Issues/ErrSsl.jsx";
+import ErrProtocol from "../Components/Wiki/Problems&Issues/ErrProtocol.jsx";
+import ErrPinnedKey from "../Components/Wiki/Problems&Issues/ErrPinnedKey.jsx";
+import ErrErxRecord from "../Components/Wiki/Problems&Issues/ErrErxRecord.jsx";
+import ErrTransparancy from "../Components/Wiki/Problems&Issues/ErrTransparancy.jsx";
+import ErrDateInvalid from "../Components/Wiki/Problems&Issues/ErrDateInvalid.jsx";
+import SecError from "../Components/Wiki/Problems&Issues/SecError.jsx";
+import ErrUnknown from "../Components/Wiki/Problems&Issues/ErrUnknown.jsx";
+import WindowDoesNot from "../Components/Wiki/Problems&Issues/WindowDoesNot.jsx";
+import LostPrivateKey from "../Components/Wiki/Problems&Issues/LostPrivateKey.jsx";
+import CommonName from "../Components/Wiki/Problems&Issues/CommonName.jsx";
+import NoPadlock from "../Components/Wiki/Problems&Issues/NoPadlock.jsx";
+import Sitemap from "../Components/Sitemap/Sitemap.jsx";
+import NotFound from "../Components/404Page/NotFound.jsx";
+import NewOrder from "../Components/NewOrder/NewOrder.jsx";
+import MoreSanItems from "../Components/Wiki/Reissue/MoreSanItems.jsx";
+import ReissueSSL from "../Components/Wiki/Reissue/ReissueSSL.jsx";
+import RenewSSL from "../Components/Wiki/Reissue/RenewSSL.jsx";
+import Gogetssl from "../Components/Wiki/IntermediateCertificate/Gogetssl.jsx";
+import Sectigossl from "../Components/Wiki/IntermediateCertificate/Sectigossl.jsx";
+import Rapidssl from "../Components/Wiki/IntermediateCertificate/Rapidssl.jsx";
+import Thawtessl from "../Components/Wiki/IntermediateCertificate/Thawtessl.jsx";
+import Geotrustssl from "../Components/Wiki/IntermediateCertificate/Geotrustssl.jsx";
+import Digicertssl from "../Components/Wiki/IntermediateCertificate/Digicertssl.jsx";
+import SectigoAddTrust from "../Components/Wiki/IntermediateCertificate/SectigoAddTrust.jsx";
+import SslTsl from "../Components/Wiki/BasicFaq/SslTsl.jsx";
+import DomianValidations from "../Components/Wiki/BasicFaq/DomianValidations.jsx";
+import BusinessValidationFaq from "../Components/Wiki/BasicFaq/Bussinessvalidations.jsx";
+import ExtendedValidations from "../Components/Wiki/BasicFaq/ExtendedValidations.jsx";
+import Wildcardssl from "../Components/Wiki/BasicFaq/Wildcardssl.jsx";
+import MultiDomianSsl from "../Components/Wiki/BasicFaq/MultiDomianSsl.jsx";
+import CodeSigningSsl from '../Components/Wiki/BasicFaq/CodeSigning.jsx';
+import FlexSSL from "../Components/Wiki/BasicFaq/FlexSSL.jsx";
+import EccandSha from "../Components/Wiki/BasicFaq/EccandSha.jsx";
+import SslWaranty from "../Components/Wiki/BasicFaq/SslWaranty.jsx";
+import SEObooster from "../Components/Wiki/BasicFaq/SEObooster.jsx";
+import SupportDevice from "../Components/Wiki/BasicFaq/SupportDevice.jsx";
+import InternationalDomian from "../Components/Wiki/BasicFaq/InternationalDomian.jsx";
+import SiteSealLogo from "../Components/Wiki/BasicFaq/SiteSealLogo.jsx";
+import HowToCheck from "../Components/Wiki/BasicFaq/HowToCheck.jsx";
+import SSLlocalhost from "../Components/Wiki/BasicFaq/SSLlocalhost.jsx";
+import DoINeedSsl from "../Components/Wiki/BasicFaq/DoINeedSsl.jsx";
+import HowToCSR from "../Components/Wiki/CSR/HowToCSR.jsx";
+import HowToIIS7_8 from "../Components/Wiki/CSR/HowToIIS7_8.jsx";
+import HowToIIS10 from "../Components/Wiki/CSR/HowToIIS10.jsx";
+import OfficialIstalition from "../Components/Wiki/Installitions/OfficialIstalition.jsx";
+import HttpToHttps from "../Components/Wiki/Installitions/HttpToHttps.jsx";
+import CodeSign from "../Components/Products/CodeSigning/CodeSign.jsx";
 
 export const routes = [
   { path: `${process.env.PUBLIC_URL}/ssl-certificates`, Component: <Certificates /> },
-  { path: `${process.env.PUBLIC_URL}/lei`, Component: < Lei /> },
-  { path: `${process.env.PUBLIC_URL}/trulytrust`, Component: < Trustly /> },
+  { path: `${process.env.PUBLIC_URL}/lei`, Component: <Lei /> },
+  { path: `${process.env.PUBLIC_URL}/trulytrust`, Component: <Trustly /> },
   { path: `${process.env.PUBLIC_URL}/trulytrust-scanner`, Component: <TrustlyScaner /> },
   { path: `${process.env.PUBLIC_URL}/solutions`, Component: <Solutions /> },
   { path: `${process.env.PUBLIC_URL}/support`, Component: <Support /> },
@@ -158,10 +158,9 @@ export const routes = [
   { path: `${process.env.PUBLIC_URL}/wiki/ssl-reissue-renewal/how-to-reissue-ssl`, Component: <ReissueSSL /> },
   { path: `${process.env.PUBLIC_URL}/wiki/ssl-reissue-renewal/ssl-renewal-process`, Component: <RenewSSL /> },
   { path: `${process.env.PUBLIC_URL}/wiki/ssl-reissue-renewal/buy-more-san-items`, Component: <MoreSanItems /> },
-  { path: `${process.env.PUBLIC_URL}/wiki/ssl-reissue-renewal/buy-more-san-items`, Component: <MoreSanItems /> },
   { path: `${process.env.PUBLIC_URL}/wiki/ssl-basics/what-is-ssl-tls`, Component: <SslTsl /> },
   { path: `${process.env.PUBLIC_URL}/wiki/ssl-basics/dv-certs`, Component: <DomianValidations /> },
-  { path: `${process.env.PUBLIC_URL}/wiki/ssl-basics/ov-certs`, Component: <BussinessValidations /> },
+  { path: `${process.env.PUBLIC_URL}/wiki/ssl-basics/ov-certs`, Component: <BusinessValidationFaq /> },
   { path: `${process.env.PUBLIC_URL}/wiki/ssl-basics/ev-certs`, Component: <ExtendedValidations /> },
   { path: `${process.env.PUBLIC_URL}/wiki/ssl-basics/wildcard-certs`, Component: <Wildcardssl /> },
   { path: `${process.env.PUBLIC_URL}/wiki/ssl-basics/san-certs`, Component: <MultiDomianSsl /> },

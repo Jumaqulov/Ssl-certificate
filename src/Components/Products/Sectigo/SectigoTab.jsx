@@ -1,6 +1,7 @@
 import React from 'react';
 import { IoIosArrowForward } from "react-icons/io";
 import { USD } from '../../../Requests/request';
+import { Link } from 'react-router-dom';
 
 export default function SectigoTab({ filteredProducts }) {
     const arrow_link = () => {
@@ -63,10 +64,10 @@ export default function SectigoTab({ filteredProducts }) {
                                     <td className='product-name'>{firstTextColor(item.product)}</td>
                                     <td className='product-price'>{formatNumber(roundToTwoDecimalPlaces(item.prices[12] * USD + item.prices[12] * USD * 0.12))} UZS</td>
                                     <td className='details-btn'>
-                                        <a href={`/product/${normalizeProductName(item.product)}`} className='details-arrow-btn'>
+                                        <Link to={`/product/${normalizeProductName(item.product)}`} className='details-arrow-btn'>
                                             {arrow_link()}
                                             <span>Подробности</span>
-                                        </a>
+                                        </Link>
                                     </td>
                                 </tr>
                             )

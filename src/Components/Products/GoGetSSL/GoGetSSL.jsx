@@ -4,26 +4,47 @@ import { RiLock2Line } from "react-icons/ri";
 import GoGetSslTabs from './GoGetSslTabs';
 import Allproducts from '../../../Requests/Allproducts';
 import { Helmet } from 'react-helmet';
+import { CACHE_DURATION } from '../../../Requests/request';
 
 
 export default function GoGetSSL() {
     const [productList, setProductList] = useState([]);
     const [loading, setLoading] = useState(true);
 
-    async function products() {
-        setLoading(true)
-        const currentProducts = await Allproducts.getProducts()
-        setProductList(currentProducts)
-        setLoading(false)
-    }
+    const fetchProducts = async () => {
+        setLoading(true);
+        const currentProducts = await Allproducts.getProducts();
+        setProductList(currentProducts);
+        localStorage.setItem('productList', JSON.stringify(currentProducts));
+        localStorage.setItem('lastFetchTime', Date.now());
+        setLoading(false);
+    };
+
+    useEffect(() => {
+        const loadProducts = async () => {
+            const cachedProducts = localStorage.getItem('productList');
+            const cachedTime = localStorage.getItem('lastFetchTime');
+
+            if (cachedProducts && cachedTime && (Date.now() - cachedTime < CACHE_DURATION)) {
+                setProductList(JSON.parse(cachedProducts));
+                setLoading(false);
+            } else {
+                await fetchProducts();
+            }
+        };
+
+        loadProducts();
+
+        const interval = setInterval(async () => {
+            await fetchProducts();
+        }, CACHE_DURATION);
+
+        return () => clearInterval(interval);
+    }, []);
 
     const filteredProducts = productList.length > 0 ? productList.filter(digicert => {
         return digicert.brand === "comodo_ggssl";
     }) : [];
-
-    useEffect(() => {
-        products()
-    }, []);
     return (
         <>
             <Helmet>

@@ -1,7 +1,8 @@
 import React from 'react'
 import { IoIosArrowForward } from 'react-icons/io'
 import { LiaShieldAltSolid } from 'react-icons/lia'
-import { USD } from '../../../Requests/request'
+import { USD } from '../../../Requests/request.js'
+import { Link } from 'react-router-dom'
 
 export default function CS2({ cs }) {
     const arrow_link = () => {
@@ -74,10 +75,10 @@ export default function CS2({ cs }) {
                                     <td className='product-name'>{firstTextColor(item.product_name)}</td>
                                     <td className='product-price'>{formatNumber(roundToTwoDecimalPlaces(item.product_prices[0].price * USD + item.product_prices[0].price * USD * 0.12))} UZS</td>
                                     <td className='details-btn'>
-                                        <a href={`/product/${normalizeProductName(item.product_name)}`} className='details-arrow-btn'>
+                                        <Link to={`/product/${normalizeProductName(item.product_name)}`} className='details-arrow-btn'>
                                             {arrow_link()}
                                             <span>Подробности</span>
-                                        </a>
+                                        </Link>
                                     </td>
                                 </tr>
                             )

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { TbCircleLetterO } from 'react-icons/tb'
 
-export default function BussinessValidations() {
+export default function BussinessValidationsFaq() {
     useEffect(()=>{
         document.title = 'SSL-сертификаты с проверкой бизнеса'
     },[])

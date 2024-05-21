@@ -3,15 +3,15 @@ const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 
 const app = express();
-const port = 80; 
+const port = 80;
 
 app.use(bodyParser.json());
 
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'avazbekjumoquloff@gmail.com', 
-        pass: 'sizning_gmail_parolingiz'
+        user: 'avazbekjumoquloff@gmail.com',
+        pass: 'Yaratilgan ilova paroli' // bu yerga yaratilgan ilova parolini joylashtiring
     }
 });
 
@@ -36,8 +36,8 @@ app.post('/api/send-email', async (req, res) => {
     `;
 
     const mailOptions = {
-        from: 'sizning_email@gmail.com', 
-        to: 'avazjonjumoqulov@gmail.com', 
+        from: 'avazbekjumoquloff@gmail.com',
+        to: 'avazjonjumoqulov@gmail.com',
         subject: 'Form Data',
         text: messageContent
     };

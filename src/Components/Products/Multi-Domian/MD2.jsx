@@ -1,12 +1,12 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { IoIosArrowForward } from "react-icons/io";
 import { LiaShieldAltSolid } from "react-icons/lia";
 import { USD } from '../../../Requests/request';
 
 
 export default function MD2({ md }) {
-
+    console.log(md);
     const arrow_link = () => {
         return (
             <span className='arrow-link'>
@@ -76,10 +76,10 @@ export default function MD2({ md }) {
                                     <td className='product-name'>{firstTextColor(item.product_name)}</td>
                                     <td className='product-price'>{formatNumber(roundToTwoDecimalPlaces(item.product_prices[0].price * USD + item.product_prices[0].price * USD * 0.12))} UZS</td>
                                     <td className='details-btn'>
-                                        <a href={`/product/${normalizeProductName(item.product_name)}`} className='details-arrow-btn'>
+                                        <Link to={`/product/${normalizeProductName(item.product_name)}`} className='details-arrow-btn'>
                                             {arrow_link()}
                                             <span>Подробности</span>
-                                        </a>
+                                        </Link>
                                     </td>
                                 </tr>
                             )
