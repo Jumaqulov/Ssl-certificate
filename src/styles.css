@@ -5798,6 +5798,7 @@ body {
   gap: 15px;
   font-size: 20px;
   color: #9e9e9e;
+  cursor: pointer;
 }
 
 .span-year {
@@ -5862,7 +5863,7 @@ body {
 .buy-ssl {
   border: 1px solid #78a22e;
   color: rgba(120, 162, 46, 0.9);
-  margin: 15px 5px;
+  margin: 15px 5px 10px 5px;
 }
 
 .buy-ssl:hover {
@@ -5884,7 +5885,7 @@ body {
 }
 
 .check-multi-year {
-  margin: 10px 0 0 0;
+  margin: 0;
   color: #c63200;
   border: 1px solid #404040;
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4);

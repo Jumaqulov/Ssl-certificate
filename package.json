@@ -2,6 +2,8 @@
   "name": "ssl",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://127.0.0.1:8000",
+  "type": "module",
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
     "@testing-library/jest-dom": "^5.17.0",
@@ -10,6 +12,7 @@
     "axios": "^1.6.5",
     "body-parser": "^1.20.2",
     "express": "^4.19.2",
+    "fs-extra": "^10.1.0",
     "nodemailer": "^6.9.13",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -22,6 +25,7 @@
     "react-slick": "^0.29.0",
     "react-tabs": "^6.0.2",
     "sass": "^1.69.7",
+    "sitemap": "^7.1.1",
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },

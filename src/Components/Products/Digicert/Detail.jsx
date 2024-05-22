@@ -56,6 +56,8 @@ export default function DDetail() {
                     <p className='total-price-txt'>ОБЩАЯ ЦЕНА</p>
                     <div className='selling-area'>
                         <button className='buying-ssl buy-ssl' onClick={send}>Купить SSL</button>
+                        <a className='buying-ssl check-multi-year' href="/wiki/general/multi-year-subscription-ssl">Проверьте многолетние правила!</a>
+
                     </div>
                 </>;
             case '3 год':
@@ -64,6 +66,7 @@ export default function DDetail() {
                     <p className='total-price-txt'>ОБЩАЯ ЦЕНА</p>
                     <div className='selling-area'>
                         <button className='buying-ssl buy-ssl' onClick={send}>Купить SSL</button>
+                        <a className='buying-ssl check-multi-year' href="/wiki/general/multi-year-subscription-ssl">Проверьте многолетние правила!</a>
                     </div>
                 </>;
         }
@@ -75,7 +78,7 @@ export default function DDetail() {
 
     const roundToTwoDecimalPlaces = (number) => {
         let roundedNumber = Math.ceil(number);
-        let result = (Math.ceil(roundedNumber / 100) * 100); 
+        let result = (Math.ceil(roundedNumber / 100) * 100);
         return result;
     }
 
@@ -207,4 +210,3 @@ export default function DDetail() {
 }
 {/* <a className='buying-ssl buy-ssl' href={`/order/product/${product.product_id}`}>Купить SSL</a> */ }
 {/* <a className='buying-ssl renew-ssl' href={`https://my-ssl-certificate.vercel.app/product/ssl/${product.product_id}`}>Обновить SSL</a> */ }
-{/* <a className='buying-ssl check-multi-year' href="/wiki/general/multi-year-subscription-ssl">Проверьте многолетние правила!</a> */ }
