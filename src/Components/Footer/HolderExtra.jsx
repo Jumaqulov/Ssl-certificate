@@ -1,5 +1,5 @@
 import React from 'react'
-import { USD } from '../../Requests/request'
+import { USD } from '../../Requests/request.js'
 
 export default function HolderExtra() {
     function formatNumber(number) {

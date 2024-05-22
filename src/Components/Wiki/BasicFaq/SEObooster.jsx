@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { IoIosArrowForward, IoLogoGoogle } from "react-icons/io";
-import { USD } from '../../../Requests/request';
+import { USD } from '../../../Requests/request.js';
 
 export default function SEObooster() {
     function arrow_link() {

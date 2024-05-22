@@ -1,8 +1,8 @@
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import './styles.scss'
-import { LayoutHome, LayoutOther } from './Layout';
-import { routes } from './Routes/Routes';
+import { LayoutHome, LayoutOther } from './Layout/index.jsx';
+import { routes } from './Routes/Routes.js';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

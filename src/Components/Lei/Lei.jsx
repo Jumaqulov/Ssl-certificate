@@ -8,7 +8,7 @@ import { HiBuildingOffice2 } from "react-icons/hi2";
 import { TbApi, TbArrowsExchange2 } from "react-icons/tb";
 import LeiTable from './LeiTable'
 import LeiPricing from './LeiPricing'
-import { USD } from '../../Requests/request';
+import { USD } from '../../Requests/request.js';
 
 export default function Lei() {
     return (

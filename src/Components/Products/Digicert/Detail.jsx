@@ -3,7 +3,7 @@ import axios from 'axios'
 import { FaArrowsToCircle } from "react-icons/fa6";
 import { Circles } from 'react-loader-spinner';
 import { useNavigate, useParams } from 'react-router-dom';
-import { SSLdetail, SSLproductDetail, USD } from '../../../Requests/request';
+import { SSLdetail, SSLproductDetail, USD } from '../../../Requests/request.js';
 import SanRow from './SanRow';
 import Allproducts from '../../../Requests/Allproducts';
 

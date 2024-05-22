@@ -1,6 +1,6 @@
 import React from 'react'
 import { MdOutlineDoneOutline } from "react-icons/md";
-import { USD } from '../../Requests/request';
+import { USD } from '../../Requests/request.js';
 
 
 export default function LeiPricing() {

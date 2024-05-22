@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { IoIosArrowForward } from "react-icons/io";
 import { LiaShieldAltSolid } from "react-icons/lia";
-import { USD } from '../../../Requests/request';
+import { USD } from '../../../Requests/request.js';
 
 
 export default function MD2({ md }) {

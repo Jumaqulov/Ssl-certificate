@@ -2,7 +2,7 @@ import React from 'react'
 import { CiLock } from "react-icons/ci";
 import { LiaShieldAltSolid } from "react-icons/lia";
 import { IoIosArrowForward } from 'react-icons/io'
-import { USD } from '../../Requests/request';
+import { USD } from '../../Requests/request.js';
 import { Helmet } from 'react-helmet';
 
 export default function Certificates() {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { IoIosArrowForward } from "react-icons/io";
-import { USD } from '../../../Requests/request';
+import { USD } from '../../../Requests/request.js';
 import { Link } from 'react-router-dom';
 
 export default function RapidSslTab({ filteredProducts }) {

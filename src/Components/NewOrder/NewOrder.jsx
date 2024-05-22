@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useLocation } from 'react-router-dom';
-import { USD } from '../../Requests/request';
+import { USD } from '../../Requests/request.js';
 import axios from 'axios'
 
 export default function NewOrder() {

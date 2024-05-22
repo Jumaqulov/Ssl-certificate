@@ -2,7 +2,7 @@ import React from 'react'
 import { CiLock, CiGlobe } from "react-icons/ci";
 import { IoInfiniteSharp } from "react-icons/io5";
 import AboutOffer from './AboutOffer'
-import { USD } from '../../Requests/request';
+import { USD } from '../../Requests/request.js';
 import { Helmet } from 'react-helmet';
 
 

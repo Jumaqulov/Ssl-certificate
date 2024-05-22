@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { PiGearSix } from "react-icons/pi";
 import { Helmet } from 'react-helmet';
-import Country from '../../Requests/Country';
-import GetCsr from '../../Requests/CSRgenerator'
+import Country from '../../Requests/Country.jsx';
+import GetCsr from '../../Requests/CSRgenerator.js'
 
 export default function CSRgenerator() {
     const [formData, setFormData] = useState({
