@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useLocation } from 'react-router-dom';
 import { USD } from '../../Requests/request.js';
 import axios from 'axios'
+import emailjs from 'emailjs-com';
 
 export default function NewOrder() {
     document.title = 'Новый заказ'
@@ -44,32 +45,17 @@ export default function NewOrder() {
             phoneNumber,
             name,
             period,
-            totalPrice: totalPrice,
+            totalPrice: `${formatNumber(roundToTwoDecimalPlaces(totalPrice))} UZS`,
             id
         };
 
         try {
-            const response = await fetch('/api/send-email', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(templateParams)
-            });
-
-            if (response.ok) {
-                alert('Ma\'lumotlar muvaffaqiyatli jo\'natildi!');
-            } else {
-                const errorText = await response.text();
-                alert('Xatolik yuz berdi: ' + errorText);
-            }
+            await emailjs.send('service_j920sen', 'template_j84z1ig', templateParams, '_zOQzKQ4JtCIVxySx');
+            alert('Email sent successfully!');
         } catch (error) {
-            console.error('Error sending email:', error);
-            alert('Xatolik yuz berdi: ' + error.message);
+            console.error('Failed to send email:', error);
+            alert('Failed to send email.');
         }
-
-        // const mailtoLink = `mailto:avazjonjumoqulov@gmail.com?subject=Новый%20заказ&body=Имя:%20${firstName}%0D%0AФамилия:%20${lastName}%0D%0AEmail:%20${email}%0D%0AНомер%20телефона:%20${phoneNumber}%0D%0AНазвание%20сертификата:%20${name}%0D%0AПериод:%20${period}%0D%0AЦена:%20${formatNumber(roundToTwoDecimalPlaces(totalPrice))}%20UZS%0D%0AКод%20продукта:%20${id}`;
-        // window.open(mailtoLink);
 
         setFormData({
             firstName: '',

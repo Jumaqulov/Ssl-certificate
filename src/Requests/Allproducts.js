@@ -1,22 +1,18 @@
-import axios from 'axios';
+import axios from 'axios'
 
-const api = axios.create({
-    baseURL: 'https://sslcertificate.uz/',
-    headers: {
-        'Content-Type': 'application/json',
-    },
-});
+const Url = 'http://192.168.0.19:8000/products/ssl/'
 
 class AllProducts {
     async getProducts() {
-        try {
-            const response = await api.get('products/ssl/');
-            return response.data.products;
-        } catch (error) {
-            console.error('Ошибка при получении продуктов:', error);
-            return error;
-        }
+        const products = await axios.get(Url)
+            .then(ress => {
+                return ress.data.products
+            })
+            .catch(err => {
+                return err
+            })
+        return products
     }
 }
 
-export default new AllProducts();
+export default new AllProducts()
