@@ -12,6 +12,7 @@ export default function DDetail() {
     const [list, setList] = useState([])
     const [product, setProduct] = useState()
     const [product2, setProduct2] = useState()
+    const [details, setDetails] = useState({})
     const [selectedRadio, setSelectedRadio] = useState('1 год');
     const { id } = useParams()
     const navigate = useNavigate()
@@ -109,13 +110,26 @@ export default function DDetail() {
                 } else {
                     console.error('ID topilmadi');
                 }
+
+                if (findID.id) {
+                    try {
+                        const response = await axios.get('/details.json');
+                        if (response.data.length > 0) {
+                            const foundItem = response.data.find(item => item.id == findID.id);
+                            setDetails(foundItem)
+                        }
+                    } catch (error) {
+                        console.error('Ma\'lumotlarni olishda xatolik yuz berdi:', error);
+                    }
+                }
+
+
             } catch (error) {
                 console.error(error);
             }
         };
         fetchData();
     }, [id]);
-    // console.log(product);
     return (
         product ?
             <div className='certificates'>
@@ -201,6 +215,36 @@ export default function DDetail() {
                         <SanRow product={product} product2={product2} />
                     </div>
                 </div>
+                {
+                    details ?
+                        <div className="cert-details">
+                            <h2>Описание SSL-сертификата</h2>
+                            <p>{details.sslDescription}</p>
+                            <ul className="trustly-part-3">
+                                {
+                                    details.rows ? details.rows.map((i, index) => {
+                                        return (
+                                            <li key={index}>
+                                                <div className={`trustly-part-3-left left-icon-${index + 1}`}>
+                                                    <span>
+                                                        <svg>
+                                                            <use xlinkHref={`/skin.svg#${i.icon}`}></use>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                                <div className={`trustly-part-3-right right-text-${index + 1}`}>
+                                                    <h3>{i.title}</h3>
+                                                    <div dangerouslySetInnerHTML={{ __html: i.content }}></div>
+                                                </div>
+                                            </li>
+                                        )
+                                    })
+                                        : ''
+                                }
+                            </ul>
+                        </div>
+                        : ''
+                }
             </div>
             :
             <div className="loader">
