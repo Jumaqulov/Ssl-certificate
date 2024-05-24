@@ -3,13 +3,13 @@ import axios from 'axios'
 import { FaArrowsToCircle } from "react-icons/fa6";
 import { Circles } from 'react-loader-spinner';
 import { useNavigate, useParams } from 'react-router-dom';
-import { SSLdetail, SSLproductDetail, USD } from '../../../Requests/request.js';
+import { FULL_SSLdetail, FULL_SSLproductDetail, USD } from '../../../Requests/request.js';
 import SanRow from './SanRow';
 import Allproducts from '../../../Requests/Allproducts';
+import { ProductDetails } from '../../../Data/Details.js';
 
 
 export default function DDetail() {
-    const [list, setList] = useState([])
     const [product, setProduct] = useState()
     const [product2, setProduct2] = useState()
     const [details, setDetails] = useState({})
@@ -91,14 +91,13 @@ export default function DDetail() {
         const fetchData = async () => {
             try {
                 const prodList = await Allproducts.getProducts();
-                setList(prodList);
 
                 const findID = prodList.find(prodName => normalizeProductName(prodName.product) === id);
 
                 if (findID) {
                     const [response1, response2] = await Promise.all([
-                        axios(SSLproductDetail + findID.id),
-                        axios(SSLdetail + findID.id)
+                        axios(`${FULL_SSLproductDetail}${findID.id}`),
+                        axios(`${FULL_SSLdetail}${findID.id}`)
                     ]);
                     const api1 = response1.data;
                     const api2 = response2.data.product;
@@ -112,15 +111,8 @@ export default function DDetail() {
                 }
 
                 if (findID.id) {
-                    try {
-                        const response = await axios.get('/details.json');
-                        if (response.data.length > 0) {
-                            const foundItem = response.data.find(item => item.id == findID.id);
-                            setDetails(foundItem)
-                        }
-                    } catch (error) {
-                        console.error('Ma\'lumotlarni olishda xatolik yuz berdi:', error);
-                    }
+                    const foundItem = ProductDetails.find(item => item.id == findID.id);
+                    setDetails(foundItem)
                 }
 
 
@@ -216,7 +208,7 @@ export default function DDetail() {
                     </div>
                 </div>
                 {
-                    details ?
+                    details && Object.keys(details).length > 0 ?
                         <div className="cert-details">
                             <h2>Описание SSL-сертификата</h2>
                             <p>{details.sslDescription}</p>

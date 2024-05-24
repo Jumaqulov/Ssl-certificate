@@ -12,7 +12,7 @@ export default function DV1({ productList }) {
     const fetchDetails = async (productList) => {
         try {
             const requests = productList.map(product =>
-                axios.get(`${Url}/products/details/${product.id}`)
+                axios.get(`${Url}products/details/${product.id}`)
             );
             const responses = await Promise.all(requests);
             const fetchedResults = responses.map(response => response.data);

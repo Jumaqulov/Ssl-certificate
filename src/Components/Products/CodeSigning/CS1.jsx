@@ -12,7 +12,7 @@ export default function CS1({ productList }) {
         setLoading(true);
         try {
             const requests = productList.map(product =>
-                axios.get(`${Url}/products/details/${product.id}`)
+                axios.get(`${Url}products/details/${product.id}`)
             );
             const responses = await Promise.all(requests);
             const fetchedResults = responses.map(response => response.data);
