@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { useLocation } from 'react-router-dom';
 import { USD } from '../../Requests/request.js';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios'
 import emailjs from 'emailjs-com';
 
@@ -51,10 +53,18 @@ export default function NewOrder() {
 
         try {
             await emailjs.send('service_j920sen', 'template_j84z1ig', templateParams, '_zOQzKQ4JtCIVxySx');
-            alert('Email sent successfully!');
+            toast.success('Заказ отправлен!', {
+                position: "top-center",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+            });
         } catch (error) {
-            console.error('Failed to send email:', error);
-            alert('Failed to send email.');
+            // console.error('Failed to send email:', error);
         }
 
         setFormData({
@@ -67,6 +77,7 @@ export default function NewOrder() {
 
     return (
         <div className='certificates'>
+            <ToastContainer />
             <div className="cert-txt">
                 <h1 title='SSL-сертификаты' className='text-center'>Новый заказ</h1>
                 <div className='info-ssl'>

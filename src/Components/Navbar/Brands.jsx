@@ -39,7 +39,7 @@ export default function Brands() {
     const normalizeProductName = (productName) => {
         return productName.split(' ').map(word => word.toLowerCase()).join('-');
     };
-    // console.log(productList);    
+
     const digicert = productList.length > 0 ? productList.filter(digicert => {
         return digicert.brand === "digicert";
     }) : [];
@@ -88,9 +88,11 @@ export default function Brands() {
                     {
                         gogetssl.length > 0 ?
                             gogetssl.map((link, index) => {
-                                return (
-                                    <a className='product-link' key={index} href={`/product/${normalizeProductName(link.product)}`}>{removeFirsttWord(link.product)}</a>
-                                )
+                                if (link.id !== 65) {   
+                                    return (
+                                        <a className='product-link' key={index} href={`/product/${normalizeProductName(link.product)}`}>{removeFirsttWord(link.product)}</a>
+                                    )
+                                }
                             })
                             : <p>Loading</p>
                     }
