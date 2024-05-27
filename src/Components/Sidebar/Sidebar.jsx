@@ -61,7 +61,7 @@ export default function Sidebar() {
                     <li>
                         <a className={`${link.link2 ? 'activeLink' : ''}`} href="/refund-policy">
                             <GiPriceTag className='side-bar-svg' />
-                            <span>Платежи/Возвраты</span>
+                            <span>Платежи</span>
                         </a>
                     </li>
                     <li>

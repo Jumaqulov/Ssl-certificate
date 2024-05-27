@@ -37,7 +37,7 @@ export default function Company() {
                         </div>
                         <div className='text-box'>
                             <span className="title">Условия и положения</span>
-                            <p>Правила, соглашения и политика возврата денег</p>
+                            <p>Правила соглашения</p>
                         </div>
                     </a>
                 </li>

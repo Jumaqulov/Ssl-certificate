@@ -2,7 +2,7 @@ export const corporate = [
     { url: '/', title: 'Главная страница' },
     { url: '/company', title: 'Компания' },
     { url: '/support', title: 'Онлайн-поддержка' },
-    { url: '/refund-policy', title: 'Платежи/Возвраты' },
+    { url: '/refund-policy', title: 'Платежи' },
     { url: '/news', title: 'Корпоративные новости' },
     { url: '/privacy-policy', title: 'Условия и положения' },
     { url: '/support', title: 'Контакты компании' },
