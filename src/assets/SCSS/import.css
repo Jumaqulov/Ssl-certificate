@@ -6,40 +6,16 @@ html {
   height: 100%;
 }
 html ::-moz-selection {
-  background: transparent;
-  color: transparent;
+  background: azure;
+  color: black;
 }
 html ::selection {
-  background: transparent;
-  color: transparent;
+  background: azure;
+  color: black;
 }
 
 body {
   background-image: url("../../Images/bg-main.jpg");
-}
-
-@font-face {
-  font-family: "Pacifico";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Pacifico Regular"), local("Pacifico-Regular"), url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2) format("woff2");
-  font-display: swap;
-}
-::-webkit-scrollbar {
-  width: 1px;
-}
-
-::-webkit-scrollbar {
-  height: 5px;
-}
-
-::-webkit-scrollbar-track {
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: rgb(28, 31, 26);
-  border-radius: 10px;
 }
 
 * {
@@ -6003,6 +5979,90 @@ body {
 .san-no p {
   font-size: 20px;
   color: #8c8c8c;
+}
+
+.cert-details h2 {
+  font-size: 32px;
+  color: #dc8510;
+  font-weight: 200;
+  margin: 35px 0 10px 0;
+}
+.cert-details p {
+  color: #9e9e9e;
+  font-size: 20px;
+  line-height: 145%;
+}
+.cert-details .left-icon-1 svg {
+  fill: rgba(201, 41, 103, 0.8509803922) !important;
+  color: rgba(201, 41, 103, 0.8509803922) !important;
+}
+.cert-details .left-icon-2 svg {
+  fill: rgba(35, 160, 149, 0.9019607843) !important;
+  color: rgba(35, 160, 149, 0.9019607843) !important;
+}
+.cert-details .left-icon-3 svg {
+  fill: rgba(120, 162, 46, 0.9019607843) !important;
+  color: rgba(120, 162, 46, 0.9019607843) !important;
+}
+.cert-details .left-icon-4 svg {
+  fill: rgba(198, 50, 0, 0.9019607843) !important;
+  color: rgba(198, 50, 0, 0.9019607843) !important;
+}
+.cert-details .left-icon-5 svg {
+  fill: #dc8510 !important;
+  color: #dc8510 !important;
+}
+.cert-details .left-icon-6 svg {
+  fill: #0e75bb !important;
+  color: #0e75bb !important;
+}
+.cert-details .left-icon-7 svg {
+  fill: #00b073 !important;
+  color: #00b073 !important;
+}
+.cert-details .right-text-1 a {
+  color: rgba(201, 41, 103, 0.8509803922);
+}
+.cert-details .right-text-2 a {
+  color: rgba(35, 160, 149, 0.9019607843);
+}
+.cert-details .right-text-3 a {
+  color: rgba(120, 162, 46, 0.9019607843);
+}
+.cert-details .right-text-4 a {
+  color: rgba(198, 50, 0, 0.9019607843);
+}
+.cert-details .right-text-5 a {
+  color: #dc8510;
+}
+.cert-details .right-text-6 a {
+  color: #0e75bb;
+}
+.cert-details .right-text-7 a {
+  color: #00b073;
+}
+.cert-details .right-text-1 a,
+.cert-details .right-text-2 a,
+.cert-details .right-text-3 a,
+.cert-details .right-text-4 a,
+.cert-details .right-text-5 a,
+.cert-details .right-text-6 a,
+.cert-details .right-text-7 a {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: none;
+  position: static;
+  text-decoration: underline;
+}
+.cert-details .right-text-1 a:hover,
+.cert-details .right-text-2 a:hover,
+.cert-details .right-text-3 a:hover,
+.cert-details .right-text-4 a:hover,
+.cert-details .right-text-5 a:hover,
+.cert-details .right-text-6 a:hover,
+.cert-details .right-text-7 a:hover {
+  text-decoration: none;
 }
 
 @media (max-width: 766px) {
