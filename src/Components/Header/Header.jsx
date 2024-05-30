@@ -1,7 +1,9 @@
-import React from 'react';
-import { RiShoppingCartLine, RiUserLine } from "react-icons/ri";
+import React, { Suspense, lazy } from 'react';
 import { SlSupport } from "react-icons/sl";
-import logo from '../../assets/Images/copylogo.webp';
+import logo from '../../assets/Images/copylogo.png';
+
+const RiShoppingCartLine = lazy(() => import('react-icons/ri').then(module => ({ default: module.RiShoppingCartLine })));
+const RiUserLine = lazy(() => import('react-icons/ri').then(module => ({ default: module.RiUserLine })));
 
 export default function Header() {
     return (
@@ -17,17 +19,20 @@ export default function Header() {
                 </div>
             </div>
             <div className='right-side'>
-                {/* Komponentlarni aktiv qilish yoki olib tashlash
-                <a className='right-side-link' href="/cart" target='_blank'>
-                    <RiShoppingCartLine className='ri-shopping-cart' />
-                    <span className='right-side-link-span'>Новый заказ</span>
-                    <span className='right-side-link-span right-side-link-d-none'>Заказать</span>
-                </a>
-                <a className='right-side-link' href="" target='_blank'>
-                    <RiUserLine className='ri-user-line' />
-                    <span className='right-side-link-span'>Мой аккаунт</span>
-                    <span className='right-side-link-span right-side-link-d-none'>Аккаунт</span>
-                </a> */}
+                <Suspense fallback={<div>Загрузка...</div>}>
+                    <a className='right-side-link' href="/cart" target='_blank'>
+                        <RiShoppingCartLine className='ri-shopping-cart' />
+                        <span className='right-side-link-span'>Новый заказ</span>
+                        <span className='right-side-link-span right-side-link-d-none'>Заказать</span>
+                    </a>
+                </Suspense>
+                <Suspense fallback={<div>Загрузка...</div>}>
+                    <a className='right-side-link' href="" target='_blank'>
+                        <RiUserLine className='ri-user-line' />
+                        <span className='right-side-link-span'>Мой аккаунт</span>
+                        <span className='right-side-link-span right-side-link-d-none'>Аккаунт</span>
+                    </a>
+                </Suspense>
                 <a className='right-side-link' href="/support">
                     <SlSupport className='sl-support' />
                     <span className='right-side-link-last-span'>Поддержка</span>
