@@ -9,6 +9,15 @@
     display: flex;
     align-items: center;
     gap: 20px;
+
+    a {
+        width: 327px;
+        height: 126px;
+        background-image: url('../../Images/copylogo.png');
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
 }
 
 .left-side div {
@@ -28,11 +37,11 @@
     font-size: 18px;
 }
 
-.left-side img {
-    width: 327px;
-    height: 126px;
-    object-fit: contain;
-}
+// .left-side img {
+//     width: 327px;
+//     height: 126px;
+//     object-fit: contain;
+// }
 
 .right-side {
     background-color: #3d3d3d;
@@ -66,7 +75,7 @@
     font-weight: bold;
 }
 
-.right-side-link:hover svg{
+.right-side-link:hover svg {
     transition: 0.4s;
     fill: #ccc;
 }
