@@ -1,16 +1,17 @@
 import React, { Suspense, lazy } from 'react';
 import { SlSupport } from "react-icons/sl";
 import logo from '../../assets/Images/copylogo.png';
+import OptimizedImg from './OptimizedImg';
 
-const RiShoppingCartLine = lazy(() => import('react-icons/ri').then(module => ({ default: module.RiShoppingCartLine })));
-const RiUserLine = lazy(() => import('react-icons/ri').then(module => ({ default: module.RiUserLine })));
+// const RiShoppingCartLine = lazy(() => import('react-icons/ri').then(module => ({ default: module.RiShoppingCartLine })));
+// const RiUserLine = lazy(() => import('react-icons/ri').then(module => ({ default: module.RiUserLine })));
 
 export default function Header() {
     return (
         <div className='header'>
             <div className='left-side'>
                 <a href="/">
-                    <img src={logo} alt="ssl certificate logo" loading="lazy" width="100" height="50" />
+                    <OptimizedImg src={logo} alt="ssl certificate logo" width="100" height="50" />
                 </a>
                 <div>
                     <b>SSL-сертификаты</b>
