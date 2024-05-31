@@ -38,7 +38,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "node server.js",
-    "client": "react-scripts start"
+    "client": "react-scripts start",
+    "analyze": "webpack --config webpack.config.cjs"
   },
   "eslintConfig": {
     "extends": [
@@ -59,6 +60,9 @@
     ]
   },
   "devDependencies": {
-    "concurrently": "^8.2.2"
+    "concurrently": "^8.2.2",
+    "webpack": "^5.91.0",
+    "webpack-bundle-analyzer": "^4.10.2",
+    "webpack-cli": "^5.1.4"
   }
 }
