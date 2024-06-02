@@ -3,14 +3,22 @@
         padding: 30px 10px;
         display: block;
     }
-    
+
     .left-side {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+
+        a {
+            text-align: center;
+            img {
+                width: 50%;
+                // height: 50px;
+            }
+        }
     }
-    
+
     .left-side div {
         text-align: center;
         width: 100%;
@@ -33,11 +41,11 @@
         flex-wrap: wrap;
         justify-content: center;
     }
-    
+
     .right-side-link span {
         margin-top: 10px;
     }
-    
+
     .right-side-link-span {
         display: none;
     }
