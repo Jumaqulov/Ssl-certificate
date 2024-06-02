@@ -23,7 +23,7 @@
     "react-lazy-load-image-component": "^1.6.0",
     "react-loader-spinner": "^6.1.6",
     "react-router-dom": "^6.21.1",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "react-slick": "^0.29.0",
     "react-tabs": "^6.0.2",
     "react-toastify": "^10.0.5",
@@ -61,10 +61,10 @@
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
+    "terser-webpack-plugin": "^5.3.3",
     "webpack": "^5.91.0",
     "webpack-bundle-analyzer": "^4.10.2",
-    "webpack-cli": "^5.1.4",
-    "terser-webpack-plugin": "^5.3.3"
+    "webpack-cli": "^5.1.4"
   },
   "sideEffects": false
 }

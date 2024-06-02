@@ -51,21 +51,21 @@ export default function FooterMiddle() {
                             </div>
                             <div className="social-links">
                                 <div className="social-row">
-                                    <a href="https://www.instagram.com/starlab.uz" target='_blank' className='instagram' title='Instagram' rel='noopener'>
+                                    <a href="https://www.instagram.com/starlab.uz" target='_blank' className='instagram' title='Instagram' name='Instagram' rel='noopener'>
                                         <FaInstagram />
                                     </a>
-                                    <a href="https://www.facebook.com/starlab.uz" target='_blank' className='facebook' title='Facebook' rel='noopener'>
+                                    <a href="https://www.facebook.com/starlab.uz" target='_blank' className='facebook' title='Facebook' name='Facebook' rel='noopener'>
                                         <FaFacebook />
                                     </a>
-                                    <a href="https://www.youtube.com/channel/UCqshldoZsm4jd9DScHqZhdQ" target='_blank' className='youtube' rel='noopener'>
+                                    <a href="https://www.youtube.com/channel/UCqshldoZsm4jd9DScHqZhdQ" target='_blank' className='youtube' name='Youtube' rel='noopener'>
                                         <FaYoutube />
                                     </a>
                                 </div>
                                 <div className="social-row">
-                                    <a href="https://t.me/starlabuz" target='_blank' title='Telegram' className='telegram' rel='noopener'>
+                                    <a href="https://t.me/starlabuz" target='_blank' title='Telegram' className='telegram' name='Telegram' rel='noopener'>
                                         <FaTelegram />
                                     </a>
-                                    <a href="mailto:info@starlab.uz" target='_blank' title='Email' className='email' rel='noopener'>
+                                    <a href="mailto:info@starlab.uz" target='_blank' title='Email' className='email' name='Email' rel='noopener'>
                                         <TfiEmail />
                                     </a>
                                 </div>
