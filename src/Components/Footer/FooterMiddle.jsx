@@ -51,22 +51,22 @@ export default function FooterMiddle() {
                             </div>
                             <div className="social-links">
                                 <div className="social-row">
-                                    <a href="https://www.instagram.com/starlab.uz" target='_blank' className='instagram' title='Instagram' name='Instagram' rel='noopener'>
-                                        <FaInstagram />
+                                    <a href="https://www.instagram.com/starlab.uz" target='_blank' className='instagram' title='Instagram' name='Instagram' rel='noopener' aria-label='Instagram sahifamizga obuna bo‘ling'>
+                                        <FaInstagram aria-hidden="true" />
                                     </a>
-                                    <a href="https://www.facebook.com/starlab.uz" target='_blank' className='facebook' title='Facebook' name='Facebook' rel='noopener'>
-                                        <FaFacebook />
+                                    <a href="https://www.facebook.com/starlab.uz" target='_blank' className='facebook' title='Facebook' name='Facebook' rel='noopener' aria-label='Facebook sahifamizga obuna bo‘ling'>
+                                        <FaFacebook aria-hidden="true" />
                                     </a>
-                                    <a href="https://www.youtube.com/channel/UCqshldoZsm4jd9DScHqZhdQ" target='_blank' className='youtube' name='Youtube' rel='noopener'>
-                                        <FaYoutube />
+                                    <a href="https://www.youtube.com/channel/UCqshldoZsm4jd9DScHqZhdQ" target='_blank' className='youtube' name='YouTube' rel='noopener' aria-label='YouTube kanalimizga obuna bo‘ling'>
+                                        <FaYoutube aria-hidden="true" />
                                     </a>
                                 </div>
                                 <div className="social-row">
-                                    <a href="https://t.me/starlabuz" target='_blank' title='Telegram' className='telegram' name='Telegram' rel='noopener'>
-                                        <FaTelegram />
+                                    <a href="https://t.me/starlabuz" target='_blank' title='Telegram' className='telegram' name='Telegram' rel='noopener' aria-label='Telegram kanalimizga qo‘shiling'>
+                                        <FaTelegram aria-hidden="true" />
                                     </a>
-                                    <a href="mailto:info@starlab.uz" target='_blank' title='Email' className='email' name='Email' rel='noopener'>
-                                        <TfiEmail />
+                                    <a href="mailto:info@starlab.uz" target='_blank' title='Email' className='email' name='Email' rel='noopener' aria-label='Bizga elektron pochta orqali xabar yuboring'>
+                                        <TfiEmail aria-hidden="true" />
                                     </a>
                                 </div>
                             </div>
@@ -74,6 +74,6 @@ export default function FooterMiddle() {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
