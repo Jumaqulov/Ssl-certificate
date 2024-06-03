@@ -13,7 +13,7 @@ export default function Header() {
                 <a href="/">
                     <OptimizedImg src={logo} alt="ssl certificate logo" width="100" height="50" />
                 </a>
-                <div>
+                <div className='hhgg'>
                     <b>SSL-сертификаты</b>
                     <br />
                     <span>Доверительные решения</span>
