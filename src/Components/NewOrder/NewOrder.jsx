@@ -3,8 +3,8 @@ import { useLocation } from 'react-router-dom';
 import { USD } from '../../Requests/request.js';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import emailjs from 'emailjs-com';
 import ReCAPTCHA from 'react-google-recaptcha';
+import axios from 'axios';
 
 export default function NewOrder() {
     document.title = 'Новый заказ';
@@ -62,19 +62,21 @@ export default function NewOrder() {
         const totalPrice = price * USD + price * USD * 0.12;
 
         const templateParams = {
-            firstName,
-            lastName,
-            email,
-            phoneNumber,
-            name,
-            period,
-            totalPrice: `${formatNumber(roundToTwoDecimalPlaces(totalPrice))} UZS`,
-            id,
+            first_name: firstName.trim(),
+            last_name: lastName.trim(),
+            email: email.trim(),
+            phone: phoneNumber.trim(),
+            product_name: name,
+            period: parseFloat(period),
+            price: `${formatNumber(roundToTwoDecimalPlaces(totalPrice))} UZS`,
+            id: id,
             'g-recaptcha-response': captchaValue
         };
+        // console.log('Sending data:', templateParams);
 
         try {
-            await emailjs.send('service_j920sen', 'template_j84z1ig', templateParams, '_zOQzKQ4JtCIVxySx');
+            const response = await axios.post('http://192.168.0.19:8000/products/buy-form/', templateParams);
+            // console.log('Response:', response); 
             toast.success('Заказ отправлен!', {
                 position: "top-center",
                 autoClose: 3000,
@@ -86,7 +88,8 @@ export default function NewOrder() {
                 theme: "dark",
             });
         } catch (error) {
-            toast.error('Email yuborishda xatolik yuz berdi');
+            console.error('Error:', error.response ? error.response.data : error.message); 
+            toast.error('Ошибка отправки электронной почты');
         }
 
         setFormData({
@@ -96,7 +99,9 @@ export default function NewOrder() {
             phoneNumber: ''
         });
         setCaptchaValue(null);
-        recaptchaRef.current.reset(); // reCAPTCHA-ni qayta tiklash
+        if (recaptchaRef.current) {
+            recaptchaRef.current.reset();
+        }
     };
 
     return (
