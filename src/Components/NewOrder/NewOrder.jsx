@@ -125,7 +125,7 @@ export default function NewOrder() {
                             <input type="text" name="lastName" placeholder='Фамилия' value={formData.lastName} onChange={handleChange} autoComplete='on' required />
                             <input type="email" name="email" placeholder='Электронная почта' value={formData.email} onChange={handleChange} autoComplete='on' required />
                             <input type="number" name="phoneNumber" placeholder='Номер телефона' value={formData.phoneNumber} onChange={handleChange} autoComplete='on' required />
-                            <ReCAPTCHA ref={recaptchaRef} sitekey="6LfUIMMUAAAAAC9hxAo23ambiOHwIvXn_d3ap7Fh" onChange={handleCaptchaChange} />
+                            <ReCAPTCHA ref={recaptchaRef} sitekey="6Ld4TvApAAAAAMjSt5cP1ALRvNyL-pw-FdlaetT8" onChange={handleCaptchaChange} />
                             <div className='form-submit'>
                                 <button type='submit'>Отправить</button>
                             </div>
