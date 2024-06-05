@@ -18,7 +18,12 @@
         }
 
         div {
-            display: none;
+            border: none !important;
+            width: 50% !important;
+            b,
+            span {
+                font-size: 15px;
+            }
         }
     }
 
