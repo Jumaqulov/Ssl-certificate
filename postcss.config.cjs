@@ -7,6 +7,7 @@ module.exports = {
                 './src/**/*.jsx',
                 './public/index.html'
             ],
+            css: ['./src/styles.css'],
             defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
         })
     ]

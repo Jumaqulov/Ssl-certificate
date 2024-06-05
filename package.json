@@ -28,8 +28,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build:css": "postcss src/**/*.css --dir src/",
-    "purgecss": "purgecss --css src/**/*.css --content src/**/*.js src/**/*.jsx public/index.html --output src/",
+    "build:css": "postcss src/styles.css --dir src/",
+    "purgecss": "purgecss --css src/styles.css --content src/**/*.js src/**/*.jsx public/index.html --output src/",
     "build": "npm run build:css && npm run purgecss && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
