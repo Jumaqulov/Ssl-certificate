@@ -9,7 +9,7 @@
   <meta name="geo.placename" content="Ташкент">
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico">
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-  <link rel="preload" href="%PUBLIC_URL%/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="%PUBLIC_URL%/styles.css" media="print" onload="this.media='all'">
   <noscript>
     <link rel="stylesheet" href="%PUBLIC_URL%/styles.css">
   </noscript>
@@ -21,7 +21,7 @@
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
-  <script type="text/javascript">
+  <script type="text/javascript" defer>
     (function (d, w, c) {
       (w[c] = w[c] || []).push(function () {
         try {
