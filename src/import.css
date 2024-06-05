@@ -183,7 +183,7 @@ body {
 }
 
 .symbol-v {
-  color: #23a095e6;
+  color: rgba(35, 160, 149, 0.9019607843);
 }
 
 .nav-item-li {
@@ -5727,4 +5727,4 @@ body {
     list-style: none;
   }
 }
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=import.css.map */

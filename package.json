@@ -28,7 +28,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build:css": "postcss src/**/*.css -d src/",
+    "build": "npm run build:css && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "node server.js",
@@ -53,6 +54,8 @@
     ]
   },
   "devDependencies": {
-    "concurrently": "^8.2.2"
+    "@fullhuman/postcss-purgecss": "^6.0.0",
+    "concurrently": "^8.2.2",
+    "postcss-cli": "^10.0.0"
   }
 }
