@@ -11,6 +11,13 @@ export default function OptimizedImg({ src, alt, width, height }) {
         preloadImage(src);
     }, [src]);
     return (
-        <img src={src} alt={alt} width={width} height={height} loading="eager" />
+        <img
+            src={src}
+            alt={alt}
+            width={width}
+            height={height}
+            loading="lazy"
+            style={{ maxWidth: '100%', height: 'auto' }}
+        />
     )
 }
