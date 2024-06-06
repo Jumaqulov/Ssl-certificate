@@ -9,6 +9,20 @@ html {
         background: azure;
         color: black;
     }
+
+    ::-webkit-scrollbar {
+        height: 5px;
+        width: 1px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #1c1f1a;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 10px;
+    }
 }
 
 body {

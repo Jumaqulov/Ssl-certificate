@@ -13,6 +13,17 @@ html ::selection {
   background: azure;
   color: black;
 }
+html ::-webkit-scrollbar {
+  height: 5px;
+  width: 1px;
+}
+html ::-webkit-scrollbar-thumb {
+  background-color: #1c1f1a;
+  border-radius: 10px;
+}
+html ::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
 
 body {
   background-image: url("../../Images/bg-main.jpg");
@@ -835,8 +846,8 @@ body {
 }
 
 .left-side img {
-  width: 327px;
-  height: 126px;
+  width: 300px;
+  height: 100px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -901,6 +912,19 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
+  }
+  .left-side a img {
+    width: 150px;
+    height: 50px;
+  }
+  .left-side div {
+    border: none !important;
+    width: 50% !important;
+  }
+  .left-side div b,
+  .left-side div span {
+    font-size: 15px;
   }
   .left-side div {
     text-align: center;
