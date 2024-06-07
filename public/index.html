@@ -9,9 +9,9 @@
   <meta name="geo.placename" content="Ташкент">
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico">
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-  <link rel="stylesheet" href="%PUBLIC_URL%/styles.css" media="print" onload="this.media='all'">
+  <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
-    <link rel="stylesheet" href="%PUBLIC_URL%/styles.css">
+    <link rel="stylesheet" href="styles.css">
   </noscript>
 
   <title>SSL</title>
