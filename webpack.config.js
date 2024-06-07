@@ -1,21 +1,22 @@
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
 module.exports = {
-    plugins: [
-        require('autoprefixer'),
-        require('@fullhuman/postcss-purgecss')({
-            content: [
-                './src/**/*.{js,jsx,ts,tsx,html}',
-                './public/index.html'
-            ],
-            css: ['./src/**/*.css'],
-            defaultExtractor: content => content.match(/[\w-/.:]+(?<!:)/g) || [],
-            safelist: {
-                standard: [],
-                deep: [],
-                greedy: []
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    'postcss-loader' // Bu yerda postcss-loader ni qo'shing
+                ]
             }
-        }),
-        require('cssnano')({
-            preset: 'default',
+        ]
+    },
+    plugins: [
+        new MiniCssExtractPlugin({
+            filename: '[name].css',
+            chunkFilename: '[id].css',
         }),
     ]
 }
