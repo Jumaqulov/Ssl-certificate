@@ -12,7 +12,6 @@ export default function NewOrder() {
     const [loading, setLoading] = useState(false);
     const [formData, setFormData] = useState({
         firstName: '',
-        lastName: '',
         email: '',
         phoneNumber: ''
     });
@@ -63,7 +62,6 @@ export default function NewOrder() {
 
         const templateParams = {
             first_name: firstName.trim(),
-            last_name: lastName.trim(),
             email: email.trim(),
             phone: phoneNumber.trim(),
             product_name: name,
@@ -96,7 +94,6 @@ export default function NewOrder() {
 
         setFormData({
             firstName: '',
-            lastName: '',
             email: '',
             phoneNumber: ''
         });
@@ -124,10 +121,11 @@ export default function NewOrder() {
                     state !== null ?
                         <form className='reseller-form' onSubmit={handleSubmit} method='post'>
                             <input type="text" name="firstName" placeholder='Имя' value={formData.firstName} onChange={handleChange} autoComplete='on' required />
-                            <input type="text" name="lastName" placeholder='Фамилия' value={formData.lastName} onChange={handleChange} autoComplete='on' required />
                             <input type="email" name="email" placeholder='Электронная почта' value={formData.email} onChange={handleChange} autoComplete='on' required />
                             <input type="number" name="phoneNumber" placeholder='Номер телефона' value={formData.phoneNumber} onChange={handleChange} autoComplete='on' required />
-                            <ReCAPTCHA ref={recaptchaRef} sitekey="6Ld4TvApAAAAAMjSt5cP1ALRvNyL-pw-FdlaetT8" onChange={handleCaptchaChange} />
+                            <div className='recaptcha'>
+                                <ReCAPTCHA ref={recaptchaRef} sitekey="6Ld4TvApAAAAAMjSt5cP1ALRvNyL-pw-FdlaetT8" onChange={handleCaptchaChange} />
+                            </div>
                             <div className='form-submit'>
                                 <button type='submit'>{loading ? <div className="spinner"></div> : 'Отправить'}</button>
                             </div>
