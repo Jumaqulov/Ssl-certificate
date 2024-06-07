@@ -9,14 +9,15 @@ import axios from 'axios';
 export default function NewOrder() {
     document.title = 'Новый заказ';
     const { state } = useLocation();
+    const [loading, setLoading] = useState(false);
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
         email: '',
         phoneNumber: ''
     });
-    const [captchaValue, setCaptchaValue] = useState(null);
-    const recaptchaRef = useRef(null);
+    // const [captchaValue, setCaptchaValue] = useState(null);
+    // const recaptchaRef = useRef(null);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -26,9 +27,9 @@ export default function NewOrder() {
         }));
     };
 
-    const handleCaptchaChange = (value) => {
-        setCaptchaValue(value);
-    };
+    // const handleCaptchaChange = (value) => {
+    //     setCaptchaValue(value);
+    // };
 
     function formatNumber(number) {
         return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
@@ -42,21 +43,20 @@ export default function NewOrder() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
-        if (!captchaValue) {
-            toast.error('Пожалуйста, заполните reCAPTCHA', {
-                position: "top-center",
-                autoClose: 3000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "dark",
-            });
-            return;
-        }
-
+        // if (!captchaValue) {
+        //     toast.error('Пожалуйста, заполните reCAPTCHA', {
+        //         position: "top-center",
+        //         autoClose: 3000,
+        //         hideProgressBar: false,
+        //         closeOnClick: true,
+        //         pauseOnHover: true,
+        //         draggable: true,
+        //         progress: undefined,
+        //         theme: "dark",
+        //     });
+        //     return;
+        // }
+        setLoading(true);
         const { firstName, lastName, email, phoneNumber } = formData;
         const { name, period, price, id } = state;
         const totalPrice = price * USD + price * USD * 0.12;
@@ -70,7 +70,7 @@ export default function NewOrder() {
             period: parseFloat(period),
             price: `${formatNumber(roundToTwoDecimalPlaces(totalPrice))} UZS`,
             id: id,
-            'g-recaptcha-response': captchaValue
+            // 'g-recaptcha-response': captchaValue
         };
         // console.log('Sending data:', templateParams);
 
@@ -88,8 +88,10 @@ export default function NewOrder() {
                 theme: "dark",
             });
         } catch (error) {
-            console.error('Error:', error.response ? error.response.data : error.message); 
+            console.error('Error:', error.response ? error.response.data : error.message);
             toast.error('Ошибка отправки электронной почты');
+        } finally {
+            setLoading(false);
         }
 
         setFormData({
@@ -98,10 +100,10 @@ export default function NewOrder() {
             email: '',
             phoneNumber: ''
         });
-        setCaptchaValue(null);
-        if (recaptchaRef.current) {
-            recaptchaRef.current.reset();
-        }
+        // setCaptchaValue(null);
+        // if (recaptchaRef.current) {
+        //     recaptchaRef.current.reset();
+        // }
     };
 
     return (
@@ -125,9 +127,9 @@ export default function NewOrder() {
                             <input type="text" name="lastName" placeholder='Фамилия' value={formData.lastName} onChange={handleChange} autoComplete='on' required />
                             <input type="email" name="email" placeholder='Электронная почта' value={formData.email} onChange={handleChange} autoComplete='on' required />
                             <input type="number" name="phoneNumber" placeholder='Номер телефона' value={formData.phoneNumber} onChange={handleChange} autoComplete='on' required />
-                            <ReCAPTCHA ref={recaptchaRef} sitekey="6Ld4TvApAAAAAMjSt5cP1ALRvNyL-pw-FdlaetT8" onChange={handleCaptchaChange} />
+                            {/* <ReCAPTCHA ref={recaptchaRef} sitekey="6Ld4TvApAAAAAMjSt5cP1ALRvNyL-pw-FdlaetT8" onChange={handleCaptchaChange} /> */}
                             <div className='form-submit'>
-                                <button type='submit'>Отправить</button>
+                                <button type='submit'>{loading ? <div className="spinner"></div> : 'Отправить'}</button>
                             </div>
                         </form>
                         : ''
