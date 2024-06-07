@@ -58,6 +58,7 @@
     "@fullhuman/postcss-purgecss": "^6.0.0",
     "concurrently": "^8.2.2",
     "postcss-cli": "^10.1.0",
+    "postcss-loader": "^8.1.1",
     "purgecss": "^4.0.3"
   }
 }
