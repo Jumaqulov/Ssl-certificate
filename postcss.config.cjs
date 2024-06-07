@@ -3,19 +3,16 @@ module.exports = {
         require('autoprefixer'),
         require('@fullhuman/postcss-purgecss')({
             content: [
-                './src/**/*.{js,jsx,html}',
+                './src/**/*.{js,jsx,ts,tsx,html}',
                 './public/index.html'
             ],
             css: ['./src/**/*.css'],
             defaultExtractor: content => content.match(/[\w-/.:]+(?<!:)/g) || [],
             safelist: {
                 standard: [],
-                deep: [],
-                greedy: []
+                deep: [], 
+                greedy: [] 
             }
-        }),
-        require('cssnano')({
-            preset: 'default',
-        }),
+        })
     ]
 }
