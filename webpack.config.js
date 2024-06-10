@@ -1,6 +1,6 @@
-module.exports = {
-    mode: 'production',
-    optimization: {
-        usedExports: true,
-    },
-};
+// module.exports = {
+//     mode: 'production',
+//     optimization: {
+//         usedExports: true,
+//     },
+// };
