@@ -20,14 +20,14 @@ export default function HomeOffers() {
         <>
             <Helmet>
                 <meta name="keywords" content="DigiCert SSL, RapidSSL SSL, Sectigo SSL, Thawte SSL, GeoTrust SSL, SSL sotib olish, купить SSL, сертификаты SSL, узбекистан, Ташкент" />
-                <meta name="description" content="Дешевые SSL-сертификаты. Профессиональные SSL-сертификаты от DigiCert, Thawte, GeoTrust, RapidSSL, GoGetSSL и Sectigo по низким ценам. DV, OV, EV, Wildcard SSL и многодоменные сертификаты. Защитите ваш сайт с высококачественными сертификатами по доступной цене. Наши SSL-сертификаты обеспечат надежную защиту данных и увеличат доверие ваших клиентов. Подходят для любых сайтов и бизнесов, с поддержкой 24/7. Простая установка и быстрый выпуск сертификатов. Получите бесплатную консультацию и подберите оптимальный сертификат для вашего сайта уже сегодня." />
-                <meta property="og:description" content="Дешевые SSL-сертификаты. Профессиональные SSL-сертификаты от DigiCert, Thawte, GeoTrust, RapidSSL, GoGetSSL и Sectigo по низким ценам. DV, OV, EV, Wildcard SSL и многодоменные сертификаты. Защитите ваш сайт с высококачественными сертификатами по доступной цене. Наши SSL-сертификаты обеспечат надежную защиту данных и увеличат доверие ваших клиентов. Подходят для любых сайтов и бизнесов, с поддержкой 24/7. Простая установка и быстрый выпуск сертификатов. Получите бесплатную консультацию и подберите оптимальный сертификат для вашего сайта уже сегодня." />
+                <meta name="description" content="Дешевые SSL-сертификаты. Профессиональные SSL-сертификаты от DigiCert, Thawte, GeoTrust, RapidSSL, GoGetSSL и Sectigo по низким ценам. DV, OV, EV, Wildcard SSL и многодоменные сертификаты" />
+                <meta property="og:description" content="Дешевые SSL-сертификаты. Профессиональные SSL-сертификаты от DigiCert, Thawte, GeoTrust, RapidSSL, GoGetSSL и Sectigo по низким ценам. DV, OV, EV, Wildcard SSL и многодоменные сертификаты" />
                 <meta property="og:locale" content="ru_RU" />
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="Дешевые SSL-сертификаты" />
                 <meta property="og:site_name" content="SSL Certificate" />
                 <meta property="og:url" content="https://sslcertificate.uz" />
-                <title>Дешевые SSL-сертификаты</title>
+                <title>Дешевые и Надежные SSL-сертификаты для вашего сайта</title>
             </Helmet>
             <div className='home-offers'>
                 <div className='offer-box'>
