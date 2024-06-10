@@ -1,7 +1,6 @@
 {
   "name": "ssl",
   "version": "0.1.0",
-  "sideEffects": false,
   "private": true,
   "proxy": "http://127.0.0.1:8000",
   "type": "module",
@@ -29,12 +28,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build:css": "npx postcss src/styles.scss --output src/styles.css",
-    "purgecss": "npx purgecss --css src/styles.css --content src/**/*.js src/**/*.jsx public/index.html --output src/",
-    "build": "npm run build:css && npm run purgecss && react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "node src/Server/server.js",
     "client": "react-scripts start"
   },
   "eslintConfig": {
@@ -58,9 +54,7 @@
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^6.0.0",
     "concurrently": "^8.2.2",
-    "cssnano": "^7.0.2",
     "postcss-cli": "^10.1.0",
-    "postcss-loader": "^8.1.1",
     "purgecss": "^4.0.3"
   }
 }
