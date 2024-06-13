@@ -11,7 +11,7 @@ export default function Header() {
         <div className='header'>
             <div className='left-side'>
                 <a href="/">
-                    <OptimizedImg src={logo} alt="ssl certificate logo" width="100" height="50" />
+                    <img src={logo} alt="ssl certificate logo" width="100" height="50" />
                 </a>
                 <div className='hhgg'>
                     <b>SSL-сертификаты</b>
