@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { USD } from '../../Requests/request.js';
 import { ToastContainer, toast } from 'react-toastify';
@@ -17,6 +17,20 @@ export default function NewOrder() {
     });
     const [captchaValue, setCaptchaValue] = useState(null);
     const recaptchaRef = useRef(null);
+    const [ipAddress, setIpAddress] = useState('');
+
+    useEffect(() => {
+        const fetchIpAddress = async () => {
+            try {
+                const response = await axios.get('https://api.ipify.org?format=json');
+                setIpAddress(response.data.ip);
+            } catch (error) {
+                console.error('Error fetching IP address:', error);
+            }
+        };
+
+        fetchIpAddress();
+    }, []);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -56,7 +70,7 @@ export default function NewOrder() {
             return;
         }
         setLoading(true);
-        const { firstName, lastName, email, phoneNumber } = formData;
+        const { firstName, email, phoneNumber } = formData;
         const { name, period, price, id } = state;
         const totalPrice = price * USD + price * USD * 0.12;
 
@@ -68,9 +82,10 @@ export default function NewOrder() {
             period: parseFloat(period),
             price: `${formatNumber(roundToTwoDecimalPlaces(totalPrice))} UZS`,
             id: id,
-            // 'g-recaptcha-response': captchaValue
+            ip_address: ipAddress,
+            url: window.location.href,
         };
-        // console.log('Sending data:', templateParams);
+        console.log('Sending data:', templateParams);
 
         try {
             const response = await axios.post('http://127.0.0.1:8000/products/buy-form/', templateParams);

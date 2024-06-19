@@ -94,6 +94,8 @@ import HowToIIS10 from "../Components/Wiki/CSR/HowToIIS10.jsx";
 import OfficialIstalition from "../Components/Wiki/Installitions/OfficialIstalition.jsx";
 import HttpToHttps from "../Components/Wiki/Installitions/HttpToHttps.jsx";
 import CodeSign from "../Components/Products/CodeSigning/CodeSign.jsx";
+import News from "../Components/News/News.jsx";
+import NewsDetail from "../Components/News/NewsDetail.jsx";
 
 export const routes = [
   { path: `${process.env.PUBLIC_URL}/ssl-certificates`, Component: <Certificates /> },
@@ -194,4 +196,6 @@ export const routes = [
   { path: `${process.env.PUBLIC_URL}/multi-domian-ssl`, Component: <MDSSL /> },
   { path: `${process.env.PUBLIC_URL}/wildcard-ssl`, Component: <WSSL /> },
   { path: `${process.env.PUBLIC_URL}/code-signing-ssl`, Component: <CodeSign /> },
+  { path: `${process.env.PUBLIC_URL}/news`, Component: <News /> },
+  { path: `${process.env.PUBLIC_URL}/news/:id`, Component: <NewsDetail /> },
 ]
