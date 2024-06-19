@@ -85,10 +85,10 @@ export default function NewOrder() {
             ip_address: ipAddress,
             url: window.location.href,
         };
-        console.log('Sending data:', templateParams);
+        // console.log('Sending data:', templateParams);
 
         try {
-            const response = await axios.post('http://127.0.0.1:8000/products/buy-form/', templateParams);
+            const response = await axios.post('https://sslcertificate.uz/products/buy-form/', templateParams);
             // console.log('Response:', response); 
             toast.success('Заказ отправлен!', {
                 position: "top-center",
