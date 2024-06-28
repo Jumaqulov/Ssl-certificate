@@ -67,12 +67,7 @@ export default function News() {
                     ))
                 )}
             </ul>
-            <Pagination
-                newsPerPage={newsPerPage}
-                totalNews={news.length}
-                paginate={paginate}
-                currentPage={currentPage}
-            />
+            <Pagination newsPerPage={newsPerPage} totalNews={news.length} paginate={paginate} currentPage={currentPage}/>
         </div>
     );
 }
