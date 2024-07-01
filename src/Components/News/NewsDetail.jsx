@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { Circles } from 'react-loader-spinner';
 import axios from 'axios';
+import { NewsList, Url } from '../../Requests/request';
 
 export default function NewsDetail() {
     const { id } = useParams()
@@ -12,7 +13,7 @@ export default function NewsDetail() {
     useEffect(() => {
         const fetchNewsDetail = async () => {
             try {
-                const response = await axios.get(`http://192.168.0.19:8000/shared/news/${id}`);
+                const response = await axios.get(`${Url + NewsList}/${id}`);
                 setNewsDetail(response.data);
             } catch (error) {
                 setError('Ошибка при загрузке новостей');

@@ -7,6 +7,10 @@ const Pagination = ({ newsPerPage, totalNews, paginate, currentPage }) => {
         pageNumbers.push(i);
     }
 
+    if (pageNumbers.length <= 1) {
+        return null;
+    }
+
     return (
         <nav className="pagination-nav">
             <ul className="pagination">

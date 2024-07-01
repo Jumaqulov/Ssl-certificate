@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Circles } from 'react-loader-spinner';
 import Pagination from './Pagination';
+import { BASE_URL, NewsList } from '../../Requests/request';
 
 export default function News() {
     const [news, setNews] = useState([]);
@@ -19,13 +20,14 @@ export default function News() {
 
     const indexOfLastNews = currentPage * newsPerPage;
     const indexOfFirstNews = indexOfLastNews - newsPerPage;
-    const currentNews = news.slice(indexOfFirstNews, indexOfLastNews);
+    const currentNews = Array.isArray(news) ? news.slice(indexOfFirstNews, indexOfLastNews) : [];
+
     const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
     useEffect(() => {
         const fetchNews = async () => {
             try {
-                const response = await axios.get('http://192.168.0.19:8000/shared/news/');
+                const response = await axios.get(`${BASE_URL + NewsList}`);
                 setNews(response.data);
             } catch (error) {
                 console.error('Ошибка при загрузке новостей:', error);
@@ -36,19 +38,20 @@ export default function News() {
 
         fetchNews();
     }, []);
+
     if (loading) {
-        return <div className="loader">
-            <Circles height="80" width="80" color="#dc8510" ariaLabel="circles-loading" wrapperStyle={{}} wrapperClass="" visible={true} />
-        </div>;
+        return (
+            <div className="loader">
+                <Circles height="80" width="80" color="#dc8510" ariaLabel="circles-loading" wrapperStyle={{}} wrapperClass="" visible={true} />
+            </div>
+        );
     }
 
     return (
         <div className='certificates'>
-            <h1 className='title-news'>Новости компаний</h1>
+            <h1 className='title-news'>Корпоративные новости</h1>
             <ul className='news-box'>
-                {currentNews.length === 0 ? (
-                    <div>Нет новостей</div>
-                ) : (
+                {currentNews.length > 0 ? (
                     currentNews.map((item) => (
                         <li key={item.id} className='news-item'>
                             <div className='news-item-left'>
@@ -65,9 +68,13 @@ export default function News() {
                             </div>
                         </li>
                     ))
+                ) : (
+                    <div>
+                        <p className='no-result'>Нет новостей</p>
+                    </div>
                 )}
             </ul>
-            <Pagination newsPerPage={newsPerPage} totalNews={news.length} paginate={paginate} currentPage={currentPage}/>
+            {currentNews.length > 0 ? <Pagination newsPerPage={newsPerPage} totalNews={news.length} paginate={paginate} currentPage={currentPage} /> : ''}
         </div>
     );
 }
